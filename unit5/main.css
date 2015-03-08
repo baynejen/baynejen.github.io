@@ -1,0 +1,235 @@
+body{
+	font-family: 'Special Elite', cursive;
+  	color: white;
+  	font-size: 18px;
+  	margin: 0;
+  	text-align: left;
+ }
+
+
+/*
+<---- typography --->
+*/
+
+
+
+h1{
+	background-color: rgba(0,0,0,0.8);
+	padding: 40px 55px;
+	line-height: 1.2em;
+	letter-spacing: .1em;
+	font-size: 2em;
+	margin: 0;
+}
+
+h3{
+	font-size: 1.3em;
+	letter-spacing: 0.07em;
+}
+
+h4{
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.07em;
+}
+
+p{
+	line-height: 1.6em;
+	letter-spacing: 0.06em;
+	font-weight: 300;
+  	font-family: 'Oswald', Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover{
+	color: #e51111;
+	padding-left: 6px;
+}
+
+
+
+/*
+<---- hero content --->
+*/
+
+
+#wrapper{
+	background: url("images/bg6.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding: 0 0 100px 0;
+}
+
+
+header{
+	margin: 0 30px;
+	display: inline-block;
+}
+
+nav{
+	font-weight: 300;
+	margin: 60px 0px;
+  	font-family: 'Oswald', Arial, sans-serif;
+  	letter-spacing: 0.06em;
+
+}
+
+ul{
+	list-style: none;
+	padding-left: 85px;
+}
+
+hr{
+	width: 20px;
+	display: inline-block;
+	margin: 10px 0;
+	background-color: white;
+	padding: 1px 0 0 0;
+}
+
+#about{
+	background-color: rgba(0,0,0,0.6);
+	display: inline-block;
+	margin: 0 30px;
+	padding: 55px;
+}
+
+#about h3{
+	margin:0;
+}
+
+#about p{
+	margin: 30px 0 0 0;
+}
+
+
+
+/*
+<---- gigs --->
+*/
+
+
+#gigs{
+	margin: 80px 30px;
+	color: #000;
+}
+
+#gigs h3{
+	padding: 0 0 30px 0;
+}
+
+.listing{
+	width: 31%;
+	display: inline-block;
+	padding: 30px 0;
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+  	font-family: 'Oswald', Arial, sans-serif;
+}
+
+#second{
+	margin: 0 30px;
+}
+
+.date{
+ 	font-weight: 700;
+ 	margin: 0;
+}
+
+.venue{
+	margin: 10px 0;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+
+.buy{
+	background-color: #e51111;
+	display: inline-block;
+	padding: 12px 30px;
+	margin-top: 10px;
+	color: white;
+}
+
+a .buy:hover{
+	background-color: black;
+}
+
+
+
+/*
+<---- news content --->
+*/
+
+
+#news{
+	background: url("images/drum.png") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding: 0 0 100px 0;
+	color: #000;
+}
+
+#news h3{
+	padding: 80px 0 0 30px;
+}	
+
+.entry {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	padding: 30px;
+	width: 42%;
+	display: inline-block;
+}
+
+#left{
+	margin: 30px 15px 30px 30px;
+}
+
+#right{
+	margin: 30px 30px 30px 15px;
+}
+
+.text{
+	margin: 20px 0;
+}
+
+.more{
+  	font-family: 'Oswald', Arial, sans-serif;
+	text-decoration: underline;
+	font-weight: 300;
+	letter-spacing: 0.06em;
+}
+
+.more:hover{
+	color: #e51111;
+}
+
+
+
+/*
+<---- footer content --->
+*/
+
+
+footer{
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+#copyright{
+	margin:0;
+	padding: 40px 30px;
+	font-weight: 300;
+	letter-spacing: 0.06em;
+	font-size: 0.8em;
+}
