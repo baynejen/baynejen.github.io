@@ -27,7 +27,7 @@ body{
 
 
 
-h2,h3,h4,h5,p{
+h3,h4,h5,p{
 	line-height: 1.7em;
 }
 
@@ -42,6 +42,7 @@ h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 2.2em;
+	margin-bottom: 4%;
 }
 
 h3{
@@ -184,7 +185,6 @@ header{
 
 #films_wrap{
 	width: 100%;
-	margin-top: 2%;
 }
 
 .film{
@@ -230,7 +230,7 @@ header{
 
 #about_wrap{
 	width: 100%;
-	margin: 2% 0 8% 0;
+	margin: 0 0 8% 0;
 }
 
 .col{
@@ -268,7 +268,7 @@ header{
 
 #blog_wrap{
 	width: 100%;
-	margin: 2% 0 8% 0;
+	margin: 0 0 8% 0;
 }
 
 #col_blog1{
@@ -326,7 +326,7 @@ header{
 }
 
 #contact p{
-	margin: 2% 0 4% 0;
+	margin: 0 0 4% 0;
 }
 
 #contact ul li{
