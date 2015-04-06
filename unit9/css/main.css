@@ -322,7 +322,7 @@ header{
 	max-width: 1400px;
 	margin-left: 24%;
 	color: #fff;
-	padding: 8% 0 6% 0;
+	padding: 8% 0 0 0;
 }
 
 #contact p{
@@ -411,6 +411,7 @@ footer{
 
 #contact .top{
 	border: 1px solid #fff;
+	margin: 5% 0;
 }
 
 #contact .top:hover{
@@ -427,7 +428,6 @@ header .cta{
 header .cta:hover{
 	color: #EEC79A;
 }
-
 
 
 
@@ -602,7 +602,6 @@ header .cta:hover{
 
 	#contact .top{
 		float: none;
-		margin: 0 0 4% 0;
 	}
 }
 
@@ -618,6 +617,10 @@ header .cta:hover{
 	header .cta{
 		display: block;
 		margin: 6% 0 0 0;
+	}
+
+	#contact .top{
+		margin: 8% 0;
 	}
 }
 
