@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -15,38 +16,52 @@
 <body>
 
 
+
+
+<!-- NAV FOR MOBILE -->
+<!-- <nav id="mobile_nav">
+	<ul>
+		<hr><a ihref="#"><li>home</li></a>
+		<hr><a href="#container_2"><li>recent projects</li></a>
+		<hr><a href="#"><li>portfolio</li></a>
+		<hr><a href="#container_3"><li>about me</li></a>
+		<hr><a href="#container_4"><li>blog</li></a>
+		<hr><a href="#container_5"><li>contact</li></a>
+		<hr>
+	</ul>
+</nav> -->
+
+
+<!--WRAPPER-->
+
+
 	<div id="site-wrapper">
 
 
-
-<!-- NAV-->
-
-
-	
-		<div id="menu">
-			<nav>
-				<ul>
-					<hr><a href="#container_2"><li>recent projects</li></a>
-					<hr><a href="#"><li>portfolio</li></a>
-					<hr><a href="#container_3"><li>about me</li></a>
-					<hr><a href="#container_4"><li>blog</li></a>
-					<hr><a href="#"><li>contact</li></a>
-					<hr>
-				</ul>
-			</nav>
-		</div>
-
-
-
-<!-- HERO -->
-
+<!-- NAV AND HERO -->
 
 
 		<section id="container_1">
+			<div id="menu">
+				<nav class="clearfix">
+					<ul>
+						<hr><a id="first" href="#"><li>home</li></a>
+						<hr><a href="#container_2"><li>recent projects</li></a>
+						<hr><a href="#"><li>portfolio</li></a>
+						<hr><a href="#container_3"><li>about me</li></a>
+						<hr><a href="#container_4"><li>blog</li></a>
+						<hr><a href="#container_5"><li>contact</li></a>
+						<hr>
+					</ul>
+				</nav>
+			</div>
 			<div id="hero">
 				<header>
 					<h1>Alasdair Bayne.</h1>
 					<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et dignissim nisl. Donec ac viverra orci. Mauris ornare tincidunt ornare. Curabitur sagittis felis eu enim laoreet mollis.</h5>
+					<a class="cta" href="#container_5">contact me</a>
+					<a class="cta" href="#container_2">my work</a>
+					<a class="cta" href="#container_3">about</a>
 					<div id="logos_wrap" class="clearfix">
 						<div class="logo"><a href="#"><img src="images/vimeo.png"></a>
 						</div>
@@ -82,7 +97,10 @@
 						<p>In 2004 a wallaby was found dead on the Scottish isle of Islay; how it got there and how it died remains a mystery. A crack documentary team went with one single goal: to unearth the truth, only to discover there’s more to island life than they first expected.</p>
 					</div>
 				</div>
-				<a class="cta" href="#">view all work</a>
+				<div class="clearfix">
+					<a class="cta" href="#container_2">view all work</a>
+					<a class="top" href="#">back to top &uarr;</a>
+				</div>
 			</div>
 		</section>
 
@@ -103,7 +121,10 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere massa sollicitudin, eleifend ipsum tincidunt, imperdiet neque. Duis in lorem ac lorem accumsan ullamcorper ut eget magna. Sed quis ex congue, dictum arcu sit amet, varius est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 					</div>
 				</div>
-				<a class="cta" href="#">contact me</a>
+				<div class="clearfix">
+					<a class="cta" href="#container_5">contact me</a>
+					<a class="top" href="#">back to top &uarr;</a>
+				</div>
 			</div>
 		</section>
 
@@ -138,18 +159,39 @@
 							</div>
 						</div>
 					</div>
-				<a class="cta" href="#">read all blog posts</a>
+					<div class="clearfix">
+						<a class="cta" href="#container_4">read all blog posts</a>
+						<a class="top" href="#">back to top &uarr;</a>
+					</div>
 			</div>
+		</section>
+
+
+
+<!-- CONTACT AND FOOTER-->
+
+
+
+		<section id="container_5">
+			<div id="contact">
+				<h2>contact me.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere massa sollicitudin, eleifend ipsum tincidunt, imperdiet neque.</p>
+				<ul>
+					<li>&rarr; &nbsp; &nbsp;<a href="#">Send me an email</a></li>
+					<li>&rarr; &nbsp; &nbsp;<a href="#">Follow me on Twitter</a></li>
+					<li>&rarr; &nbsp; &nbsp;<a href="#">Connect on Linkedin</a></li>
+				</ul>
+				<a class="top" href="#">back to top &uarr;</a>
+			</div>
+			<footer>
+				<div id="footer_wrap" 
+					<p>&copy; 2015 Alasdair Bayne.</p>
+				</div>
+			</footer>
 		</section>
 
 	</div>
 
 
-<!-- FOOTER -->
-
-
-	<footer>
-	<p>&copy; 2015 Alasdair Bayne.</p>
-	</footer>
 </body>
 </html>
