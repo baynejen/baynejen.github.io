@@ -622,7 +622,7 @@ header .cta:hover{
 
 	#container_1{
 		background: url("../images/bg-400.jpg") no-repeat center center fixed;	
-		background-image-max-width: 500px; 
+		background-image-size: 50%; 
 	}
 
 	.logo{
