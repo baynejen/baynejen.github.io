@@ -10,6 +10,8 @@ body{
 	font-family: 'Merriweather', serif;
 	color: white;
 	letter-spacing: .03em;
+	overflow: scroll;
+-webkit-overflow-scrolling: touch;
 }
 
 /*#mobile_nav{
@@ -124,6 +126,8 @@ nav a:hover{
   	width: 100%;
   	padding: 8% 7% 25% 0;
   	box-sizing: border-box;
+  	center center fixed;
+	overflow: hidden;
 }
 
 #hero{
@@ -621,9 +625,9 @@ header .cta:hover{
 
 
 	#container_1{
-		background: url("../images/bg-400.jpg");
-		background-size: cover;
-		background-attachment: scroll;
+		background: url("../images/bg-400.jpg") no-repeat center center fixed;
+
+
 	}
 
 	.logo{
