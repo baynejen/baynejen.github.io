@@ -621,7 +621,9 @@ header .cta:hover{
 
 
 	#container_1{
-		background: url("../images/bg-400.jpg");	
+		background: url("../images/bg-400.jpg");
+		background-size: cover;
+		background-attachment: scroll;
 	}
 
 	.logo{
