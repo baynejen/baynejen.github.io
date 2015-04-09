@@ -35,8 +35,7 @@ h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 3.9em;
-/*	text-shadow: 1px 1px rgba(0,0,0,.3);
-*/}
+}
 
 h2{
 	font-family: 'Montserrat', sans-serif;
@@ -60,6 +59,7 @@ h4{
 }
 
 h5{
+	font-size: 1em;
 	font-weight: 400;
 	margin: 2.5em 0 0 0;
 	width: 70%;
@@ -122,6 +122,7 @@ nav a:hover{
   	-o-background-size: cover;
   	background-size: cover;
   	width: 100%;
+  	height: auto;
   	padding: 8% 7% 25% 0;
   	box-sizing: border-box;
 }
@@ -330,11 +331,14 @@ header{
 }
 
 #contact ul li{
-	padding: 2% 0 3% 0;
+	padding: 2% 0 3% 1%;
+	list-style-type: circle;
+	margin-left: 2%;
 }
 
 #contact a{
 	color: #fff;
+	font-size: .9em;
 }
 
 #contact a:hover{
@@ -516,6 +520,11 @@ header .cta:hover{
 		font-size: 16px;
 	}
 
+	/*#container_1{
+	background: url("../images/bg-800.jpg") no-repeat center center fixed;	 
+	}*/
+
+
 	#logos_wrap{
 		width: 100%;
 	}
@@ -557,6 +566,10 @@ header .cta:hover{
 	body{
 		font-size: 15px;
 	}
+
+/*	#container_1{
+	background: url("../images/bg-615.jpg") no-repeat center center fixed;	 
+	}*/
 
 	h5{
 		width: 100%;
@@ -609,6 +622,11 @@ header .cta:hover{
 	#logos_wrap{
 		width: 100%;
 	}
+
+
+	/*#container_1{
+		background: url("../images/bg.jpg") no-repeat center center fixed;	 
+	}*/
 
 	.logo{
 		width: 12%;
