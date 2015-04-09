@@ -330,10 +330,13 @@ header{
 	margin: 0 0 4% 0;
 }
 
+#contact ul{
+	margin-left: 3%;
+}
+
 #contact ul li{
 	padding: 2% 0 3% 1%;
 	list-style-type: circle;
-	margin-left: 2%;
 }
 
 #contact a{
@@ -600,6 +603,11 @@ header .cta:hover{
 		padding: 4% 0;
 	}
 
+	#contact ul{
+		margin-left: 6%;
+		margin-top: 6%;
+	}
+
 	#contact ul li{
 		padding-bottom: 8%;
 	}
@@ -616,6 +624,7 @@ header .cta:hover{
 	#contact .top{
 		float: none;
 	}
+
 }
 
 @media only screen and (max-width: 450px){
@@ -623,13 +632,21 @@ header .cta:hover{
 		width: 100%;
 	}
 
-
 	/*#container_1{
 		background: url("../images/bg.jpg") no-repeat center center fixed;	 
 	}*/
 
+	h2{
+		margin-bottom: 8%;
+	}
+
 	.logo{
 		width: 12%;
+	}
+
+	#contact ul{
+		margin-left: 6%;
+		margin-top: 6%;
 	}
 
 	header .cta{
