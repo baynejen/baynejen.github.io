@@ -121,10 +121,9 @@ nav a:hover{
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	width: 100%;
-  	height: auto;
+/*  	width: 100%;
+  	height: auto;*/
   	padding: 8% 7% 25% 0;
-  	box-sizing: border-box;
 }
 
 #hero{
@@ -631,9 +630,10 @@ header .cta:hover{
 	#logos_wrap{
 		width: 100%;
 	}
-/*
-	#container_1{
-		background: url("../images/bg-mobile.jpg") no-repeat center center fixed;	 
+
+	/*#container_1{
+		background: url("../images/bg-mobile.jpg") no-repeat center center static;	 
+		background-position: static;
 		-webkit-background-size: 100%;
   		-moz-background-size: 100%;
   		-o-background-size: 100%;
@@ -644,6 +644,17 @@ header .cta:hover{
   		box-sizing: border-box;
 		background-size: 100%;
 	}*/
+
+	#container_1{
+		background: url("../images/bg-mobile.jpg") no-repeat center center static;	 
+		-webkit-background-size: auto;
+  		-moz-background-size: auto;
+  		-o-background-size: auto;
+  		background-size: auto;
+/*  		width: 100%;
+  		height: auto;*/
+  		padding: 8% 7% 25% 0;
+	}
 
 	h2{
 		margin-bottom: 8%;
