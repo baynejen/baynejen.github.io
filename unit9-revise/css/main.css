@@ -262,6 +262,7 @@ header{
 
 
 
+
 /*	<---BLOG--->*/
 
 
@@ -659,7 +660,6 @@ header .cta:hover{
 
 	#container_1{
 		background: url("../images/bg-mobile.jpg") no-repeat center center scroll;
-		margin-top: -1.9%;
 		/*-webkit-background-size: cover;
   		-moz-background-size: cover;
   		-o-background-size: cover;
@@ -669,16 +669,25 @@ header .cta:hover{
   		padding: 8% 7% 25% 0;*/
 	}
 
+	#container_3{
+		background: url("../images/about-mobile.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	width: 100%;
+	  	padding: 8% 7% 8% 0;*/
+	}
+
+	
+
+
 	h2{
 		margin-bottom: 8%;
 	}
 
 	.logo{
 		width: 12%;
-	}
-
-	#container_2{
-		margin-top: -1.8%;
 	}
 
 	#contact ul{
