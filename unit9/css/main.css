@@ -636,6 +636,20 @@ header .cta:hover{
 		background: url("../images/bg.jpg") no-repeat center center fixed;	 
 	}*/
 
+	#container_1{
+		background: url("../images/bg-mobile.jpg") no-repeat center center fixed;	 
+		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		width: 100%;
+  		height: auto;
+  		padding: 8% 7% 25% 0;
+  		box-sizing: border-box;
+		background-size: 100%;
+	}
+
+
 	h2{
 		margin-bottom: 8%;
 	}
