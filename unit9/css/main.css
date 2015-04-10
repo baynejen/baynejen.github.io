@@ -116,14 +116,14 @@ nav a:hover{
 
 
 #container_1{
-/*	background: url("../images/bg.jpg") no-repeat center center fixed;	 
-*/	/*-webkit-background-size: cover;
+	background: url("../images/bg.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover;*/
-/*  	width: 100%;
+  	background-size: cover;
+  	width: 100%;
   	height: auto;
-  	padding: 8% 7% 25% 0;*/
+  	padding: 8% 7% 25% 0;
 }
 
 #hero{
@@ -645,16 +645,15 @@ header .cta:hover{
 		background-size: 100%;
 	}*/
 
-	#container_1{
+	/*#container_1{
 		background: url("../images/bg-mobile.jpg") no-repeat center center fixed;	 
 		-webkit-background-size: initial;
   		-moz-background-size: initial;
   		-o-background-size: initial;
   		background-size: initial;
   		width: 100%;
-/*  		height: auto;
-*/  		padding: 8% 7% 25% 0;
-	}
+  		padding: 8% 7% 25% 0;
+	}*/
 
 	h2{
 		margin-bottom: 8%;
