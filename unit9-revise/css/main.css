@@ -485,6 +485,27 @@ header .cta:hover{
 
 
 @media only screen and (max-width: 1000px){
+	#container_1{
+		background: url("../images/bg-mobile4.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		width: 100%;
+  		height: auto;
+  		padding: 8% 7% 25% 0;*/
+	}
+
+	#container_3{
+		background: url("../images/about-mobile4.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	width: 100%;
+	  	padding: 8% 7% 8% 0;*/
+	}
+
 	#menu{
 		position: static;
 		margin: 0 7% 8% 7%;
@@ -549,10 +570,26 @@ header .cta:hover{
 		font-size: 16px;
 	}
 
-	/*#container_1{
-	background: url("../images/bg-800.jpg") no-repeat center center fixed;	 
-	}*/
+	#container_1{
+		background: url("../images/bg-mobile3.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		width: 100%;
+  		height: auto;
+  		padding: 8% 7% 25% 0;*/
+	}
 
+	#container_3{
+		background: url("../images/about-mobile3.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	width: 100%;
+	  	padding: 8% 7% 8% 0;*/
+	}
 
 	#logos_wrap{
 		width: 100%;
@@ -596,9 +633,27 @@ header .cta:hover{
 		font-size: 15px;
 	}
 
-/*	#container_1{
-	background: url("../images/bg-615.jpg") no-repeat center center fixed;	 
-	}*/
+	#container_1{
+		background: url("../images/bg-mobile2.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		width: 100%;
+  		height: auto;
+  		padding: 8% 7% 25% 0;*/
+	}
+
+	#container_3{
+		background: url("../images/about-mobile2.jpg") no-repeat center center scroll;
+		/*-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	width: 100%;
+	  	padding: 8% 7% 8% 0;*/
+	}
+
 
 	h5{
 		width: 100%;
@@ -678,9 +733,6 @@ header .cta:hover{
 	  	width: 100%;
 	  	padding: 8% 7% 8% 0;*/
 	}
-
-	
-
 
 	h2{
 		margin-bottom: 8%;
