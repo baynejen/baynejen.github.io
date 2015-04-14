@@ -5,9 +5,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>Welome to my newsletter!</title>
 	<style type="text/css">
-		@media only screen and (max-device-width: 480px){
-			#wrapper{
+		@media only screen and (max-width: 480px){
+			body{
+				box-sizing: border-box !important;
+				width: 100% !important;
 				max-width: 100% !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				min-width: 100% !important;
+			}
+
+			#wrapper{
+				width: 100% !important;
+				max-width: 480px !important;
 				font-size: 18px !important;
 				box-sizing: border-box !important;
 			}
@@ -113,29 +123,29 @@
 	</style>
 </head>
 
-<body border="0" cellspacing="0" cellpadding="0" width="100%" style="margin: 0 auto; padding: 0; background-color: #272a35;">
+<body border="0" cellspacing="0" cellpadding="0" width="100%" style="margin: 0 auto; padding: 0; background-color: #272a35; box-sizing: border-box; width: 100%; max-width: 100%; min-width:100%;" align="center">
 
 <!-- WRAPPER TABLE: WIDTH 100% -->
 
-	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="margin: 0; padding: 0; background-color: #272a35; font-family: Arial, sans-serif;  border-top: 9px solid #f5b340; font-size: 17px;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="margin: 0; padding: 0; background-color: #272a35; font-family: Arial, sans-serif; font-size: 17px; box-sizing: border-box; width: 100%; max-width: 100%; min-width: 100%; border-top: 9px solid #f5b340;">
 		<tr>
-			<td align="center" valign="top" width="100%">
+			<td align="center" valign="top" width="100%" style="padding: 0; margin: 0; width: 100%;">
 
 <!--  BODY WRAPPER TABLE: WIDTH 600PX -->
 
-				<table id="wrapper" border="0" cellpadding="10" cellspacing="0" style="margin: 0; padding: 0; max-width: 600px;" width="100%">
+				<table id="wrapper" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 10px; max-width: 600px; box-sizing: border-box; width: 100%;" width="100%">
 					<tr>
-						<td width="100%">
+						<td width="100%" style="padding: 0; margin: 0; width: 100%;">
 
 
 			<!-- HEADER TABLE -->		
 
-							<table id="header" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0 0 10px 0;">
+							<table id="header" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0 0 10px 0; box-sizing: border-box; width: 100%;">
 								<tr>
-									<td style="font-family: 'Arial Black', Arial, sans-serif !important; font-size: 1.3em; color: #ffffff; letter-spacing: .2em; width: 50%; font-weight: bold !important;">
+									<td style="font-family: 'Arial Black', Arial, sans-serif !important; font-size: 1.3em; color: #ffffff; letter-spacing: .2em; width: 50%; font-weight: bold !important; padding: 0; margin: 0;">
 										<p>Alasdair Bayne.</p>
 									</td>
-									<td id="browser" style="font-size: .6em;; width: 50%; text-align: right;">
+									<td id="browser" style="font-size: .6em;; width: 50%; text-align: right; padding: 0; margin: 0;">
 										<a href="#" style="color: #d5d5d5; text-decoration: underline;">View email in your browser.</a>
 									</td>
 								</tr>
@@ -144,22 +154,22 @@
 
 			<!-- BODY TABLE -->
 
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; background-color: #ffffff; border-collapse: collapse; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; background-color: #ffffff; border-collapse: collapse; border-top-right-radius: 10px; border-top-left-radius: 10px; box-sizing: border-box; width: 100%;">
 								<tr>
-									<td>
+									<td style="padding: 0; margin: 0; width: 100%;">
 
 									<!-- LARGE IMAGE -->
 
-										<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0;">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; box-sizing: border-box; width: 100%;">
 											<tr>
-												<td width="100%"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/72286c20-f939-49ad-9018-e71f9cd5555f.jpg" style="width: 100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+												<td width="100%" style="width: 100%; margin: 0; padding: 0;"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/72286c20-f939-49ad-9018-e71f9cd5555f.jpg" style="width: 100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
 												</td>
 											</tr>
 										</table>
 
 						<!-- BODY COPY -->	
 
-										<table id="body_wrap" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 30px; border-spacing: 0;">
+										<table id="body_wrap" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 30px; border-spacing: 0; box-sizing: border-box; width: 100%;">
 											<tr>
 												<td width="100%">
 													<h1 id="welcome" style="font-size: 1.2em; font-weight: bold; color: #232428; margin: 20px 0; padding: 0;">Welcome to my newsletter!</h1>
@@ -173,7 +183,7 @@
 
 											<tr>
 												<td width="100%">
-													<table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; max-width: 100%;" width="100%" width="100%">
+													<table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; max-width: 100%; box-sizing: border-box; width: 100%;" width="100%">
 														<tr>
 
 															<!-- LEFT COLUMN -->
@@ -220,7 +230,7 @@
 
 											<tr>
 												<td style="padding: 60px 0 30px 0;" width="100%">
-			                						<table id="button" bgcolor="#272a35" border="0" cellspacing="0" cellpadding="0" style="text-align: center;" align="center">
+			                						<table id="button" bgcolor="#272a35" border="0" cellspacing="0" cellpadding="0" style="text-align: center; box-sizing: border-box;" align="center">
 			                  							<tr>
 			                   			 					<td id="cta" style="padding: 20px 40px;">
 			                      								<a href="#" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1em;">Visit my website</a>
@@ -236,17 +246,17 @@
 
 			<!-- FOOTER TABLE -->
 
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0 0 50px 0; padding: 0; background-color: #f5b340; border-collapse: collapse; border-spacing: 0 !important; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0 0 50px 0; padding: 0; background-color: #f5b340; border-collapse: collapse; border-spacing: 0 !important; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width: 100%; box-sizing: border-box;">
 								<tr>
 									<td>
-										<table id="footer_0"border="0" cellspacing="0" cellpadding="0" width="100%"style="padding: 30px;">
+										<table id="footer_0"border="0" cellspacing="0" cellpadding="0" width="100%"style="padding: 30px; width: 100%; box-sizing: border-box;">
 											<tr>
 												<td id="footer_1" width="50%" border="0" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0;" valign="bottom">
 													<p style=" font-size: .8em; color: #404142; margin: 0; padding: 0;">Copyright 2015 Alasdair Bayne.</p>
-													<p style=" font-size: .8em; color: #404142;">Unsubscribe <a href="#" style="color: #404142; text-decoration: underline; margin: 0; padding: 0;">here</a>.</p>
+													<p style=" font-size: .8em; color: #404142;">Unsubscribe <a href="*|UNSUB|*" style="color: #404142; text-decoration: underline; margin: 0; padding: 0;">here</a>.</p>
 												</td>
 												<td id="footer_2"width="50%" border="0" ellspacing="0" cellpadding="0" style="margin: 0; padding: 0;" valign="middle" align="right">
-													<table id="social" border="0" cellspacing="0" cellpadding="0">
+													<table id="social" border="0" cellspacing="0" cellpadding="0" style="width: 100%; box-sizing: border-box;">
 														<tr>
 															<td style="padding: 0;">
 																<a href="#"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/3caf63fe-cfcc-47b3-a661-a9d4861d0c55.png" width="50"></a>
