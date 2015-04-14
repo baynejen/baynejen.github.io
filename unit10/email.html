@@ -3,41 +3,121 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Welome to my world.</title>
+	<title>Welome to my newsletter!</title>
 	<style type="text/css">
 		@media only screen and (max-device-width: 480px){
 			#wrapper{
 				max-width: 100% !important;
+				font-size: 18px !important;
+				box-sizing: border-box !important;
 			}
 
-			#col_1{
-				width: 100% !important;
-				float: none !important ;
+			#body_wrap{
+				box-sizing: border-box !important;
 			}
 
-			#col_2{
-				width: 100% !important;
-				float: none !important;
+			#welcome {
+				text-align: left !important;
 			}
+
+			#intro{
+				text-align: left !important;
+			}
+
+			#news{
+				text-align: left !important;
+			}
+
+			.title{
+				text-align: left !important;
+			}
+
+			.details{
+				text-align: left !important;
+			}
+
+			#header table, tbody, tr, td{
+				display: block !important;
+				width: 100% !important;
+				text-align: center !important;
+			}
+
+			#header p{
+				font-family: 'Arial Black', Arial, sans-serif !important;
+			}
+
+			#browser{
+				margin: 0 !important;
+				padding: 0 0 20px 0 !important;
+
+			}
+
+   			#col_1 table, tbody, tr, td{
+   				display: block !important;
+   				width: 100% !important;
+/*				float: none !important ;
+*/   		}
+
+   			#col_2 table, tbody, tr, td{
+   				display: block !important;
+   				width: 100% !important;
+/*				float: none !important ;
+*/   		}
+
+   			#col_2{
+   				padding-top: 50px !important;
+   			}
+
+   			#button{
+   				width: 100% !important;
+   				text-align: center !important;
+   			}
+
+   			#cta{
+   				box-sizing: border-box !important;
+   			}
+
+   			#footer_0{
+   				box-sizing: border-box !important;
+   			}
 
 			#footer_1{
 				width: 100% !important;
-
+				text-align: center !important;
 			}
 
 			#footer_2{
 				width: 100% !important;
+				text-align: center !important;
+				display: inline-block !important;
+				text-align: center !important;
+				margin: 0 auto !important;
+				width: 100% !important;
+			}
+
+			#social{
+				display: block !important;
+				margin: 0 auto !important;
+				padding: 20px 0 !important;
+			}
+
+			#social td{
+				display: inline !important;
+			}
+
+			#social td img{
+				padding: 0 5px !important;
 			}
 		}
 
 	</style>
 </head>
 
-<body border="0" cellspacing="0" cellpadding="0" width="100%" style="margin: 0; padding: 0;">
+<body border="0" cellspacing="0" cellpadding="0" width="100%" style="margin: 0 auto; padding: 0; background-color: #272a35;">
 
 <!-- WRAPPER TABLE: WIDTH 100% -->
 
-	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="margin: 0; padding: 0; background-color: #272a35; font-family: Arial, sans-serif;  border-top: 9px solid #f5b340; font-size: 17px;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="margin: 0; padding: 0; background-color: #272a35; font-family: Arial, sans-serif;  border-top: 9px solid #f5b340; font-size: 17px;">
 		<tr>
 			<td align="center" valign="top" width="100%">
 
@@ -50,12 +130,12 @@
 
 			<!-- HEADER TABLE -->		
 
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0 0 10px 0;">
+							<table id="header" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0 0 10px 0;">
 								<tr>
 									<td style="font-family: 'Arial Black', Arial, sans-serif !important; font-size: 1.3em; color: #ffffff; letter-spacing: .2em; width: 50%; font-weight: bold !important;">
 										<p>Alasdair Bayne.</p>
 									</td>
-									<td style="font-size: .6em;; width: 50%; text-align: right;">
+									<td id="browser" style="font-size: .6em;; width: 50%; text-align: right;">
 										<a href="#" style="color: #d5d5d5; text-decoration: underline;">View email in your browser.</a>
 									</td>
 								</tr>
@@ -72,20 +152,20 @@
 
 										<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0;">
 											<tr>
-												<td width="100%"><img src="ali.jpg" style="width: 100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+												<td width="100%"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/72286c20-f939-49ad-9018-e71f9cd5555f.jpg" style="width: 100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
 												</td>
 											</tr>
 										</table>
 
 						<!-- BODY COPY -->	
 
-										<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 30px; border-spacing: 0;">
+										<table id="body_wrap" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 30px; border-spacing: 0;">
 											<tr>
 												<td width="100%">
-													<h1 style="font-size: 1.2em; font-weight: bold; color: #232428; margin: 20px 0; padding: 0;">Welcome to my newsletter!</h1>
-													<p style="font-size: 1em; line-height: 1.3; letter-spacing: .01em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere massa sollicitudin, eleifend ipsum tincidunt, imperdiet neque. Duis in lorem ac lorem accumsan ullamcorper ut eget magna.</p>
+													<h1 id="welcome" style="font-size: 1.2em; font-weight: bold; color: #232428; margin: 20px 0; padding: 0;">Welcome to my newsletter!</h1>
+													<p id="intro" style="font-size: 1em; line-height: 1.3; letter-spacing: .01em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere massa sollicitudin, eleifend ipsum tincidunt, imperdiet neque. Duis in lorem ac lorem accumsan ullamcorper ut eget magna.</p>
 													<hr style="background: #f5b340; height: 5px; border: 0; margin: 60px 0; padding: 0; width: 100%;">
-													<h2 style="font-size: 1.1em; font-weight: bold; color: #232428; margin: 0 0 20px 0;">Recent News</h2>
+													<h2 id="news" style="font-size: 1.1em; font-weight: bold; color: #232428; margin: 0 0 20px 0;">Recent News</h2>
 												</td>
 											</tr>
 
@@ -101,13 +181,13 @@
 															<td id="col_1" width="50%" valign="top" style="width: 50%; float: left;">
 																<table border="0" cellpadding="0" cellspacing="0" width="95%" align="left">
 																	<tr>
-																		<td width="100%" cellspacing="0" cellpadding="0"><img src="everest.jpg" width="100%" style="margin: 0; padding: 0;">
+																		<td width="100%" cellspacing="0" cellpadding="0"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/0ced16ad-b110-4b24-87d7-563b4f7d6b83.jpg" width="100%" style="margin: 0; padding: 0;">
 																		</td>
 																	</tr>
 																	<tr>
 																		<td>
-																			<h3 style="font-size: 1em; font-weight: bold; margin: 10px 0; padding: 0; line-height: 1.4em;">I'm going to Everest!</h3>
-																			<p style="font-size: 1em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+																			<h3 class="title" style="font-size: 1em; font-weight: bold; margin: 10px 0; padding: 0; line-height: 1.4em;">I'm going to Everest!</h3>
+																			<p class="details" style="font-size: 1em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 																			
 																		</td>
 																	</tr>
@@ -120,13 +200,13 @@
 															<td id="col_2" width="50%" align="top"  style="width: 50%; float: right;">
 																<table border="0" cellpadding="0" cellspacing="0" width="95%" align="right">
 																	<tr>
-																		<td width="100%" cellspacing="0" cellpadding="0"><img src="bird.jpg" width="100%" style="margin: 0; padding: 0;">
+																		<td width="100%" cellspacing="0" cellpadding="0"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/7b4f3b66-fa1e-4502-a8c8-3678eecbed7d.jpg" width="100%" style="margin: 0; padding: 0;">
 																		</td>
 																	</tr>
 																	<tr>
 																		<td> 
-																			<h3 style="font-size: 1em; font-weight: bold; margin: 10px 0; padding: 0; line-height: 1.4em;">Scottish BAFTA nomination</h3>
-																			<p style="font-size: 1em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+																			<h3 class="title" style="font-size: 1em; font-weight: bold; margin: 10px 0; padding: 0; line-height: 1.4em;">Scottish BAFTA nomination</h3>
+																			<p class="details" style="font-size: 1em; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 																		</td>
 																	</tr>
 																</table>
@@ -140,9 +220,9 @@
 
 											<tr>
 												<td style="padding: 60px 0 30px 0;" width="100%">
-			                						<table bgcolor="#272a35" border="0" cellspacing="0" cellpadding="0" align="center" >
+			                						<table id="button" bgcolor="#272a35" border="0" cellspacing="0" cellpadding="0" style="text-align: center;" align="center">
 			                  							<tr>
-			                   			 					<td style="padding: 20px 40px;">
+			                   			 					<td id="cta" style="padding: 20px 40px;">
 			                      								<a href="#" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1em;">Visit my website</a>
 			                    							</td>
 			                  							</tr>
@@ -159,22 +239,22 @@
 							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0 0 50px 0; padding: 0; background-color: #f5b340; border-collapse: collapse; border-spacing: 0 !important; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
 								<tr>
 									<td>
-										<table border="0" cellspacing="0" cellpadding="0" width="100%"style="padding: 30px;">
+										<table id="footer_0"border="0" cellspacing="0" cellpadding="0" width="100%"style="padding: 30px;">
 											<tr>
 												<td id="footer_1" width="50%" border="0" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0;" valign="bottom">
 													<p style=" font-size: .8em; color: #404142; margin: 0; padding: 0;">Copyright 2015 Alasdair Bayne.</p>
 													<p style=" font-size: .8em; color: #404142;">Unsubscribe <a href="#" style="color: #404142; text-decoration: underline; margin: 0; padding: 0;">here</a>.</p>
 												</td>
 												<td id="footer_2"width="50%" border="0" ellspacing="0" cellpadding="0" style="margin: 0; padding: 0;" valign="middle" align="right">
-													<table border="0" cellspacing="0" cellpadding="0">
+													<table id="social" border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td style="padding: 0;">
-																<a href="#"><img src="vimeo.png" width="50"></a>
+																<a href="#"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/3caf63fe-cfcc-47b3-a661-a9d4861d0c55.png" width="50"></a>
 															</td>
 															<td style="padding: 0 10px;">
-																<a href="#"><img src="tumblr.png" width="50"></a></td>
+																<a href="#"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/964aff90-5587-4f0d-9bb0-e2c9f9893e1b.png" width="50"></a></td>
 															<td style="padding: 0;">
-																<a href="#"><img src="linkedin.png" width="50"></a></td>
+																<a href="#"><img src="https://gallery.mailchimp.com/fc3242b02b81ff61815141b33/images/28dd5611-23d6-427f-9518-dd492db42a56.png" width="50"></a></td>
 														</tr>
 													</table>
 												</td>
