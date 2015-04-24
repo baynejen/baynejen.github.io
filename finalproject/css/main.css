@@ -21,7 +21,7 @@ h1{
 }
 
 h2{
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 p{
@@ -88,15 +88,6 @@ a{
 li.offsite-nav-item:hover a{
 	color: #46464f;
 }
-
-.offsite-nav-item:focus {
-	background-color: #d7dbdf;
-}
-
-li.offsite-nav-item:focus a{
-	color: #46464f;
-}
-
 
 .offsite-navigation .offsite-nav-item a{
 	display: block;
@@ -273,7 +264,7 @@ li:hover{
 }
 
 .content h2{
-	padding: 5% 0;
+	padding: 4% 0 5% 0;
 }
 
 .columns{
@@ -281,10 +272,10 @@ li:hover{
 }
 
 .col{
-	width: 27%;
+	width: 28%;
 	float: left;
 	display: inline-block;
-	margin: 3.16666666666667%;
+	margin: 2.66666666666667%;
 }
 
 .col img{
@@ -297,30 +288,29 @@ li:hover{
 }
 
 p.intro-text-what{
-	padding: 0 0 3% 0;
+	padding: 0 0 4% 0;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
-	/*font-size: 1.1em;*/
+	font-size: 1.1em;
 }
 
 p.intro-text-details{
-	padding: 0 0 3% 0;
+	padding: 0 0 4% 0;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
-	font-size: .9em;
+	font-weight: .9em;
 }
 
 p.detail{
 	font-size: .8em;
 	padding-bottom: 7%;
-	line-height: 1.8em;
 }
 
 
 .scrollup{
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 0 5% 0;
+	padding: 5% 0;
 }
 
 .scrollup img{
@@ -331,8 +321,6 @@ p.detail{
 	margin-top: 1%;
 	font-size: .9em;
 	color: #46464f;
-	font-family: 'Quicksand', sans-serif;
-
 }
 
 /*	<---SUBPAGE NAVIGATION--->*/
@@ -399,39 +387,39 @@ nav.subpage-nav ul li.section-selected{
 }
 
 #viewall-image{
-	width: 12.5%;
+	width: 13%;
 	text-align: center;
-	margin-top: -3.2%;
+	margin-top: -3.5%;
 }
 
 #music-image{
-	width: 7.5%;
-	text-align: center;
-	margin-top: -4.5%;
-}
-
-#culture-image{
-	width: 10.5%;
-	text-align: center;
-	margin-top: -4.2%;
-}
-
-#travel-image{
-	width: 9.5%;
+	width: 8%;
 	text-align: center;
 	margin-top: -5%;
 }
 
+#culture-image{
+	width: 11%;
+	text-align: center;
+	margin-top: -4.45%;
+}
+
+#travel-image{
+	width: 10%;
+	text-align: center;
+	margin-top: -5.6%;
+}
+
 #fooddrink-image{
-	width: 8%;
+	width: 8.5%;
 	text-align: center;
 	margin-top: -6.3%;
 }
 
 #comedy-image{
-	width: 8%;
+	width: 8.5%;
 	text-align: center;
-	margin-top: -5.3%;
+	margin-top: -5.6%;
 }
 
 
@@ -450,7 +438,7 @@ footer{
 }
 
 #icons{
-	width: 14%;
+	width: 17%;
 	padding-top: 2%;
 	margin: 0 auto;
 }
@@ -524,17 +512,16 @@ height: 0;
 
 @media screen and (max-width: 1650px){
 	#title-content h1{
-		padding: 7.5% 0 9% 0;
+		padding: 8% 0 9% 0;
 	}
 
 	#slogan-wrapper{
-		padding: 3.5% 0;
+		width: 100%;
+		padding: 4% 0;
 	}
 
-	#icons{
-		width: 17%;
-		padding-top: 3.5%;
-		margin: 0 auto;
+	.scrollup img{
+		width: 3.5%;
 	}
 }
 
@@ -611,6 +598,11 @@ height: 0;
 		margin: 3%;
 	}
 
+	.scrollup{
+		padding: 5% 0 7% 0;
+
+	}
+
 	.scrollup img{
 		width: 4%;
 	}
@@ -621,6 +613,8 @@ height: 0;
 
 	#icons{
 		width: 21%;
+		padding-top: 3%;
+		margin: 0 auto;
 	}
 }
 
@@ -662,6 +656,8 @@ height: 0;
 
 	#icons{
 		width: 22%;
+		padding-top: 3.5%;
+		margin: 0 auto;
 	}
 }
 
@@ -717,7 +713,7 @@ height: 0;
 	}
 
 	.content h2{
-		padding: 6%;
+		padding: 5% 0 6% 0;
 	}
 
 	nav.subpage-nav{
@@ -769,7 +765,7 @@ height: 0;
 	}
 
 	.scrollup{
-		padding: 4% 0 8% 0;
+		padding: 6% 0 8% 0;
 	}
 
 	.scrollup img{
@@ -782,6 +778,8 @@ height: 0;
 
 	#icons{
 		width: 28%;
+		padding-top: 4%;
+		margin: 0 auto;
 	}
 }
 
@@ -793,8 +791,7 @@ height: 0;
 	}
 
 	.content h2{
-		padding: 10% 0 5% 0;
-		font-size: 1.2em;
+		padding: 9% 0 5% 0;
 	}
 
 	#balloon{
@@ -854,11 +851,11 @@ height: 0;
 	}
 
 	.scrollup{
-		padding: 0 0 14% 0;
+		padding: 0 0 15% 0;
 	}
 
 	.scrollup img{
-		width: 7%;
+		width: 8%;
 	}
 
 	footer{
@@ -867,12 +864,14 @@ height: 0;
 
 	#icons{
 		width: 35%;
+		padding-top: 5%;
+		margin: 0 auto;
 	}
 
 }
 
 
-/*@media screen and (max-width: 600px) and (orientation: landscape){
+@media screen and (max-width: 600px) and (orientation: landscape){
 	#title-content h1{
 		padding: 10% 0 16% 0;
 	}
@@ -889,7 +888,7 @@ height: 0;
 		padding: 10% 0;
 	}
 
-}*/
+}
 
 
 @media screen and (max-width: 400px){
@@ -898,8 +897,9 @@ height: 0;
 	}
 
 	.content h2{
-		line-height: 1.7em;
-		font-size: 1.1em;
+/*		padding: 8% 0 5% 0;
+*/		line-height: 1.7em;
+		font-size: 1.2em;
 	}
 
 	#balloon{
@@ -924,7 +924,8 @@ height: 0;
 
 	#icons{
 		width: 45%;
-		padding-top: 6%;
+		padding-top: 8%;
+		margin: 0 auto;
 	}
 
 	label[for="nav-trigger"] {
