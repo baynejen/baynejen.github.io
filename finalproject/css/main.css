@@ -74,7 +74,7 @@ a{
 .offsite-navigation .offsite-nav-item img{
 	width: 40px;
 	text-align: center;
-	transform: translateX(50px) !important;
+	transform: translateX(50px);
 }
 
 .offsite-navigation .offsite-nav-item-selected{
@@ -629,16 +629,7 @@ height: 0;
 }
 
 
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
-	header{
-	background-color: #d7dbdf;
-	position: relative;
-	height: 100vh;
-	color: #46464f;
 
-}
-
-*/
 
 @media screen and (max-width: 1000px){
 	#title-content h1{
