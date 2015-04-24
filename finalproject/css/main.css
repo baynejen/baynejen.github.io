@@ -629,7 +629,7 @@ height: 0;
 }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
 	header{
 	background-color: #d7dbdf;
 	position: relative;
@@ -638,7 +638,7 @@ height: 0;
 
 }
 
-
+*/
 
 @media screen and (max-width: 1000px){
 	#title-content h1{
