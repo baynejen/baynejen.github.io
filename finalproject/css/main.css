@@ -674,6 +674,22 @@ footer{
    		z-index: 2;
 	}
 
+	.offsite-nav-item:hover {
+		background-color: #46464f;
+		color: #fff;
+		transition: none;
+	}
+
+	.offsite-nav-item li:hover{
+		background-color: #46464f;
+		color: #fff;
+		transition: none;
+	}
+
+	.offsite-balloon li:hover{
+		background-color: #d7dbdf;
+	}
+
 	nav{
 		display: none;
 	}
@@ -862,22 +878,6 @@ footer{
 
 	.offsite-nav-item.offsite-balloon{	
 		padding: 0;
-	}
-
-	.offsite-nav-item:hover {
-		background-color: #46464f;
-		color: #fff;
-		transition: none;
-	}
-
-	.offsite-nav-item li:hover{
-		background-color: #46464f;
-		color: #fff;
-		transition: none;
-	}
-
-	.offsite-balloon li:hover{
-		background-color: #d7dbdf;
 	}
 
 	#homepage-title h1{
