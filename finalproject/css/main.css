@@ -72,6 +72,11 @@ a{
 	padding-top: 45px;
 }
 
+
+#bottom{
+	margin-bottom: 85px;
+}
+
 .offsite-nav-item.offsite-balloon{
 	background-color: #d7dbdf;
 	width: 200px;
@@ -104,12 +109,6 @@ a{
 	color: #46464f;
 	transition: none;
 }
-/*
-.offsite-nav-item:active {
-	background-color: #d7dbdf;
-	color: #46464f;
-	transition: none;
-}*/
 
 .nav-trigger {
     position: absolute;
@@ -855,6 +854,26 @@ footer{
 
 
 @media screen and (max-width: 400px){
+/*	.offsite-nav-item:hover {
+		background-color: #d7dbdf;
+		color: #46464f;
+		transition: none;
+	}
+
+	.offsite-nav-item:focus {
+		background-color: #d7dbdf;
+		color: #46464f;
+		transition: none;
+	}*/
+
+	.offsite-navigation .offsite-nav-item{
+		padding: 20px 25px;
+	}
+
+	.offsite-nav-item.offsite-balloon{	
+		padding: 0;
+	}
+
 	#homepage-title h1{
 		padding: 25% 0 30% 0;
 		font-size: 2.1em;
