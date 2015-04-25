@@ -53,6 +53,7 @@ a{
     z-index: 0;
     padding-top: 0;
     overflow: scroll;
+    padding-bottom: 100px;
 }
 
 .offsite-navigation .offsite-nav-item{
@@ -70,11 +71,6 @@ a{
 
 #top{
 	padding-top: 45px;
-}
-
-
-#bottom{
-	margin-bottom: 85px;
 }
 
 .offsite-nav-item.offsite-balloon{
@@ -104,7 +100,13 @@ a{
 	transition: none;
 }
 
-.offsite-nav-item:focus {
+/*.offsite-nav-item:focus {
+	background-color: #d7dbdf;
+	color: #46464f;
+	transition: none;
+}*/
+
+.offsite-nav-item li:hover{
 	background-color: #d7dbdf;
 	color: #46464f;
 	transition: none;
@@ -854,24 +856,28 @@ footer{
 
 
 @media screen and (max-width: 400px){
-/*	.offsite-nav-item:hover {
-		background-color: #d7dbdf;
-		color: #46464f;
-		transition: none;
-	}
-
-	.offsite-nav-item:focus {
-		background-color: #d7dbdf;
-		color: #46464f;
-		transition: none;
-	}*/
-
 	.offsite-navigation .offsite-nav-item{
 		padding: 20px 25px;
 	}
 
 	.offsite-nav-item.offsite-balloon{	
 		padding: 0;
+	}
+
+	.offsite-nav-item:hover {
+		background-color: #46464f;
+		color: #fff;
+		transition: none;
+	}
+
+	.offsite-nav-item li:hover{
+		background-color: #46464f;
+		color: #fff;
+		transition: none;
+	}
+
+	.offsite-balloon li:hover{
+		background-color: #d7dbdf;
 	}
 
 	#homepage-title h1{
