@@ -104,12 +104,12 @@ a{
 	color: #46464f;
 	transition: none;
 }
-
+/*
 .offsite-nav-item:active {
 	background-color: #d7dbdf;
 	color: #46464f;
 	transition: none;
-}
+}*/
 
 .nav-trigger {
     position: absolute;
