@@ -665,7 +665,7 @@ footer{
 		display: none;
 	}
 
-	.offsite-navigation .offsite-nav-item a:hover{
+	.offsite-navigation .offsite-nav-item a:active{
 		background-color: #d7dbdf;
 		color: #46464f;
 	}
