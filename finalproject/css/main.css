@@ -665,10 +665,10 @@ footer{
 		display: none;
 	}
 
-	/*.offsite-navigation .offsite-nav-item a:hover{
+	.offsite-navigation .offsite-nav-item a:hover{
 		background-color: #d7dbdf;
 		color: #46464f;
-	}*/
+	}
 
 	#homepage-title h1{
 		padding: 11% 0 18% 0;
