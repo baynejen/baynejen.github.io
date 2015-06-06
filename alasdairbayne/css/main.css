@@ -1,0 +1,536 @@
+body{
+	width: 100%;
+	font-size: 17px;
+	font-family: 'Playfair Display', Georgia, serif;
+	text-align: center;
+}
+
+.site-wrapper{
+	width: 100%;
+  	background: #ecf2f6;
+}
+
+.body-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+
+
+/*	<--TYPOGRAPHY-->*/
+
+
+
+h1,h2,h3,h4{
+	font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+	font-weight: 700;
+}
+
+h1{
+	font-size: 2.5em;
+	letter-spacing: 0.05em;
+	text-align: left;
+}
+
+h2{
+	font-size: 1.7em;
+	color: #3f415f;
+	letter-spacing: 0.06em;
+}
+
+h3{
+	font-size: 1.6em;
+	letter-spacing: 0.06em;
+}
+
+h4{
+	font-size: 1.4em;
+	letter-spacing: 0.03em;
+	color: #3f415f;
+}
+
+p{
+	line-height: 1.6em;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+/*	<--NAV-->*/
+
+
+
+#homepage-nav-wrapper{
+	width: 100%;
+}
+
+.nav-wrapper{
+	width: 100%;
+	background: url("../images/mountain-top.png") no-repeat center center;	 
+	-webkit-background-size: 400px;
+  	-moz-background-size: 400px;
+  	-o-background-size: 400px;
+  	background-size: 400px;
+  	background-color: #ecf2f6;
+  	margin: 0 auto 30px auto;
+}
+
+.nav-contents{
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	margin: 0 auto;
+	padding: 3% 3.5% 3.5% 3.5%;
+}
+
+.logo{
+	float: left;
+}
+
+.logo a{
+	color: #ff584c;
+}
+
+.logo a:hover{
+	color: #3f415f;
+}
+
+.nav-links{
+	float: right;
+	height: 43px;
+	text-align: right;
+	padding-top: 13px;
+	font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+}
+
+.nav-links ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links ul li{
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.nav-links ul li:last-of-type{
+	padding-right: 0;
+}
+
+.nav-links a{
+	text-transform: uppercase;
+	color: #3f415f;
+	font-weight: 700;
+	font-size: .9em;
+	letter-spacing: 0.05em;
+}
+
+.nav-links a.highlighted{
+	color: #ff584c;
+}
+
+.nav-links a:hover{
+	color: #ff584c;
+}
+
+
+
+/*<--HOMEPAGE CONTENT--->*/
+
+
+
+#rows{
+	width: 100%;
+}
+
+#col-1{
+	background: url("../images/everest.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: 0;
+}
+
+#col-2{
+	background: url("../images/bird.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: 0;
+}
+
+#col-3{
+	background: url("../images/iceland.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: 0;
+}
+
+#col-4{
+	background: url("../images/storyboard.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: 0;
+}
+
+#col-5{
+	background: url("../images/strangeplaces.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: 0;
+}
+
+#rows a{
+	width: 100%;
+	display: block;
+}
+
+#rows h3{
+	text-align: center;
+	padding: 15% 0;
+	color: rgba(236,242,246,.7);
+}
+
+#rows h3:hover{
+	color: rgba(236,242,246,1)
+}
+
+
+
+/*	<--SCROLLER NAV ON SUBPAGE-->*/
+
+
+
+.scroller_anchor{
+	height: 0;
+	margin:0;
+	padding:0;
+}
+
+.scroller{
+	text-align: center;
+	margin: 0 auto;
+	background-color: #3f415f;
+	width: 100%;
+	z-index:100;
+	height: 79px;
+}
+
+.scroller ul{
+	list-style: none;
+}
+
+.scroller ul li{
+	display: inline-block;
+	height: 79px;
+	padding: 0 30px;
+}
+
+.scroller .selected{
+	color: #fff;
+}
+
+.scroller a{
+	font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+	font-weight: 400;
+	color: rgba(255,255,255,.4);
+	font-size: .9em;
+	letter-spacing: 0.05em;
+	padding: 30px 0;
+	line-height: 79px;
+}
+
+.scroller a:hover{
+	color: #fff;
+}
+
+
+/*	<--SUBPAGE CONTENT NEW-->*/
+
+
+
+.content-wrapper{
+	width: 100%;
+	padding: 0;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 5% 0;
+	color: #494951;
+}
+
+hr{
+	text-align: center;
+	padding: 0;
+	margin: 25px auto;
+	height: 4px;
+	border: 0;
+	background-color: #3f415f;
+	width: 6%;
+}
+
+.film-divider{
+	padding: 0;
+	margin: 0 auto;
+	height: 6px;
+	border: 0;
+	background-color: #ecf2f6;
+	width: 1000px;
+}
+
+.vimeo-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5% 0;
+}
+
+.vimeo-embed{
+	width: 1000px;
+	height: 563px;
+}
+
+.film-image{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5% 0;
+}
+
+.editing-image{
+	width: 100%;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+.editing-image img{
+	width: 48%;
+	float: left;
+}
+
+.editing-image img.left{
+	margin: 2% 2% 2% 0;
+}
+
+.editing-image img.right{
+	margin: 2% 0 2% 2%;
+}
+
+.film-content-wrapper{
+	width: 100%;
+	text-align: left;
+}
+
+.film-content-left{
+	float: left;
+	width: 55%;
+	margin-right: 5%;
+}
+
+.film-content-left a{
+	text-decoration: underline;
+	color: #494951;
+}
+
+.film-content-right{
+	float: left;
+	width: 35%;
+	margin-left: 5%;
+}
+
+.film-content-right a{
+	text-decoration: underline;
+	color: #494951;
+}
+
+.film-content-wrapper h4{
+	padding: 8% 0 2%;
+}
+
+.film-content-wrapper h4:first-of-type{
+	padding-top: 0;
+}
+
+.film-content-wrapper ul{
+	list-style: none;
+}
+
+.film-content-wrapper ul li{
+	padding: 1% 0;
+	line-height: 1.5em;
+}
+
+.triangle{
+	width: 0;
+    height: 0; 
+    margin-right: 10px;
+    background:no-repeat right center;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid #ff584c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+
+
+/*	<--ABOUT/ABOUT-->*/
+
+.avatar{
+	width: 20%;
+	margin: 0 auto;
+	padding-bottom: 4%;
+}
+
+.avatar img{
+	border-radius: 0%;
+	width: 100%;
+	border-bottom: 8px solid #ff584c;
+}
+
+p.about-subtitle{
+	padding: 0 0 6% 0;
+}
+
+p.contact-subtitle{
+	padding: 0 20% 6% 20%;
+}
+
+#social-connect{
+	padding: 0 0 6% 0;
+}
+
+#social-connect img{
+	width: 26px;
+	vertical-align: middle;
+	margin: 0 .5% 1% 0;
+}
+
+#social-connect a{
+	color: #3f415f;
+	text-decoration: none;
+}
+
+#social-connect a:hover{
+	text-decoration: underline;
+}
+
+p.email{
+	padding: 0 0 4% 0;
+}
+
+
+
+/*	<--FOOTER-->*/
+
+
+
+.footer-wrapper{
+	width: 100%;
+	background: url("../images/mountain-bottom.png") no-repeat center center;	 
+	-webkit-background-size: 400px;
+  	-moz-background-size: 400px;
+  	-o-background-size: 400px;
+  	background-size: 400px;
+  	font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+	margin: 0 auto;
+	padding-top: 70px;
+
+}
+
+.footer-contents{
+	width: 100%;
+	text-align: center;
+}
+
+.social-container{
+	width: 14%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.icon{
+	text-align: center;
+	display: inline-block;
+	width: 19%;
+	margin: 0 2.16666666666667%;
+}
+
+.icon img{
+	width: 100%;
+	display: block;
+}
+
+.icon a{
+	width: 100%;
+	display: block;
+}
+
+.icon img:hover{
+	opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+    -webkit-transition: all .005s ease-in-out;
+  	-moz-transition: all .005s ease-in-out;
+  	-o-transition: all .005s ease-in-out;
+ 	transition: all .005s ease-in-out;
+}
+
+.copyright{
+	font-size: .9em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	color: #3f415f;
+	text-align: center;
+	width: 100%;
+	padding: 45px 0 190px 0;
+}
+
+.copyright a{
+	color: #3f415f;
+	text-decoration: underline;
+}
+
+
+
+/*	<--CLEARFIX-->*/
+
+
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+
+
+/*	<--RESPONSIVE-->*/
+
+
+
+@media screen and (max-width: 2000px){
+	nav{
+		
+		padding: 4.5% 3.5% 3.5% 3.5%;
+	}
+}
+
+
+
