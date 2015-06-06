@@ -406,6 +406,22 @@ p.about-subtitle{
 	padding: 0 0 6% 0;
 }
 
+#partners{
+	width: 60%;
+	margin: 10% auto 0 auto;
+	height: 100%;
+}
+
+.partner-logo{
+	float: left;
+	width: 25%;
+	padding: 0 5%;
+}
+
+.partner-logo img{
+	width: 100%;
+}
+
 p.contact-subtitle{
 	padding: 0 20% 6% 20%;
 }
