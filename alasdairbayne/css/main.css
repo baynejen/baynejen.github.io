@@ -261,7 +261,7 @@ nav{
 	color: #fff;
 	font-weight: 400;
 	text-align: center;
-	padding: 5px 105px;
+	padding: 5px 0;
 	display: none;
   	cursor: pointer;
 }
@@ -329,21 +329,51 @@ nav{
   	margin: 0;
 }
 
-#rows a{
+a{
 	width: 100%;
 	display: block;
 }
 
-#rows h3{
+h3{
 	text-align: center;
 	padding: 15% 0;
 	text-transform: uppercase;
 	color: rgba(236,242,246,.5);
 }
 
-#rows h3:hover{
+h3:hover{
 	color: rgba(236,242,246,.4)
 }
+
+#rows-tablet{
+	display: none;
+	width: 100%;
+}
+
+#rows-tablet .col{
+	width: 100%;
+	display: block;
+	line-height: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+#rows-tablet .col img{
+	display: block;
+	height: 500px;
+	position: relative;
+	left: 50%;
+    transform: translate(-50%,0);
+    vertical-align: text-bottom;
+}
+
+#rows-tablet .col h3{
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-250px);
+}
+
 
 
 
@@ -532,7 +562,7 @@ p.contact-subtitle{
 }
 
 #social-connect{
-	padding: 0 0 6% 0;
+	padding: 0;
 }
 
 #social-connect li{
@@ -702,8 +732,32 @@ p.email{
 		padding: 0 20px;
 	}
 
-	#rows h3{
-		padding: 20% 0;
+	#rows{
+		display: none;
+	}
+
+	#col-1{
+		display: none;
+	}
+
+	#col-2{
+		display: none;
+	}
+
+	#col-3{
+		display: none;
+	}
+
+	#col-4{
+		display: none;
+	}
+
+	#col-5{
+		display: none;
+	}
+
+	#rows-tablet{
+		display: block;
 	}
 
 	.social-container{
@@ -726,9 +780,11 @@ p.email{
 
 
 @media screen and (max-width: 800px){
-	#rows h3{
+	h3{
 		padding: 25% 0;
 	}
+
+
 
 	.social-container{
 		width: 25%;
@@ -799,9 +855,7 @@ p.email{
 		padding: 0 20% 10% 20%;
 	}
 
-	#social-connect{
-		padding: 0 0 10% 0;
-	}
+	
 
 	#social-connect li{
 		padding-top: 5%;
@@ -826,9 +880,7 @@ p.email{
 		padding: 5.5% 3.5% 5.5% 3.5%;
 	}
 
-	#rows h3{
-		padding: 35% 0;
-	}
+
 
 	.social-container{
 		width: 40%;
@@ -876,12 +928,25 @@ p.email{
 	}
 
 	.avatar{
-		width: 60%;
+		width: 80%;
 		padding-top: 5%;
 	}
 }
 
 @media screen and (max-width: 400px){
+
+	#homepage-nav-wrapper-responsive{
+		display: block;
+	}
+
+	#homepage-nav-wrapper-responsive nav{
+		padding: 3% 2% 3.5% 2%;
+	}
+
+	.nav-links ul li{
+		padding: 0 15px;
+	}
+
 	.social-container{
 		width: 60%;
 	}
@@ -917,10 +982,7 @@ p.email{
 		padding: 0 20% 20% 20%;
 	}
 
-	#social-connect{
-		padding: 0 0 20% 0;
-	}
-
+	
 	#social-connect li{
 		padding-top: 10%;
 	}
