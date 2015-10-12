@@ -42,7 +42,7 @@ h3{
 	font-size: 3em;
 	letter-spacing: 0.1em;
 	text-align: center;
-	padding: 15% 0;
+	padding: 17% 0;
 	text-transform: uppercase;
 	color: rgba(236,242,246,.7);
 }
@@ -341,7 +341,7 @@ nav{
 }
 
 #col-4{
-	background: url("../images/iceland2.jpg") no-repeat center center fixed;	 
+	background: url("../images/iceland3.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -357,37 +357,6 @@ nav{
   	background-size: cover;
   	margin: 0;
 }
-/*
-#rows-tablet{
-	display: none;
-	width: 100%;
-}
-
-#rows-tablet .col{
-	width: 100%;
-	display: block;
-	line-height: 0;
-	text-align: center;
-	overflow: hidden;
-}
-
-#rows-tablet .col img{
-	display: block;
-	height: 500px;
-	position: relative;
-	left: 50%;
-    transform: translate(-50%,0);
-    vertical-align: text-bottom;
-}
-
-#rows-tablet .col h3{
-	padding: 0;
-	width: 100%;
-	text-align: center;
-	transform: translateY(-250px);
-}
-*/
-
 
 
 /*	<--SUBPAGE CONTENT -->*/
@@ -770,39 +739,10 @@ p.email{
 	.nav-links ul li{
 		padding: 0 20px;
 	}
-/*
-	#rows{
-		display: none;
-	}
-
-	#col-1{
-		display: none;
-	}
-
-	#col-2{
-		display: none;
-	}
-
-	#col-3{
-		display: none;
-	}
-
-	#col-4{
-		display: none;
-	}
-
-	#col-5{
-		display: none;
-	}
-
-	#rows-tablet{
-		display: block;
-	}*/
 
 	h3{
 		padding: 25% 0;
 	}
-
 
 	#col-1{
 		background: url("../images/everest.jpg");	 
@@ -837,7 +777,7 @@ p.email{
 	}
 
 	#col-4{
-		background: url("../images/iceland2.jpg");	 
+		background: url("../images/iceland3.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
@@ -857,7 +797,9 @@ p.email{
 	  	background-position: 50% 0;
 	}
 
-
+	h3:hover{
+		color: rgba(236,242,246,.7)
+	}
 
 	.social-container{
 		width: 20%;
@@ -983,10 +925,6 @@ p.email{
 		display: none;
 	}
 
-	.mobile-menu {
-		display: block;
-		padding: 3.5%;
-	}
 
 	.content-wrapper{
 		padding: 10% 0;
@@ -1028,6 +966,10 @@ p.email{
 
 	hr{
 		width: 10%;
+	}
+	.mobile-menu {
+		display: block;
+		padding: 4.5% 3.5%;
 	}
 }
 
@@ -1088,11 +1030,6 @@ p.email{
 		padding-top: 0;
 	}
 
-	.mobile-menu {
-		display: block;
-		padding: 4.5% 3.5%;
-	}
-
 	hr{
 		width: 15%;
 	}
@@ -1103,6 +1040,11 @@ p.email{
 
 	h3{
 		font-size: 2.6em;
+	}
+
+	.mobile-menu {
+		display: block;
+		padding: 5% 3.5%;
 	}
 
 }
