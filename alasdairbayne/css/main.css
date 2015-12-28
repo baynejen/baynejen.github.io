@@ -17,9 +17,7 @@ body{
 }
 
 
-
 /*	<--TYPOGRAPHY-->*/
-
 
 
 h1,h2,h3,h4{
@@ -42,13 +40,9 @@ h3{
 	font-size: 3em;
 	letter-spacing: 0.1em;
 	text-align: center;
-	padding: 17% 0;
+	padding: 22% 0;
 	text-transform: uppercase;
 	color: rgba(236,242,246,.7);
-}
-
-h3:hover{
-	color: rgba(236,242,246,.3)
 }
 
 h4{
@@ -77,7 +71,6 @@ p a{
 /*	<--NAV-->*/
 
 
-
 #homepage-nav-wrapper{
 	width: 100%;
 }
@@ -99,7 +92,7 @@ p a{
 
 .nav-wrapper{
 	width: 100%;
-	background: url("../images/mountain-top.png") no-repeat center center;	 
+	background: url("../images/base/mountain-top.png") no-repeat center center;	 
 	-webkit-background-size: 400px;
   	-moz-background-size: 400px;
   	-o-background-size: 400px;
@@ -107,15 +100,14 @@ p a{
   	margin: 0 auto 30px auto;
 }
 
-
 .nav-wrapper-alt{
 	width: 100%;
-	background: url("../images/mountain-top.png") no-repeat center center;	 
+	background: url("../images/base/mountain-top.png") no-repeat center center;	 
 	-webkit-background-size: 400px;
   	-moz-background-size: 400px;
   	-o-background-size: 400px;
   	background-size: 400px;
-  	margin: 0 auto 10px auto;
+  	margin: 0 auto;
 }
 
 .nav-contents{
@@ -186,9 +178,7 @@ nav{
 }
 
 
-
 /*	<--SCROLLER NAV-->*/
-
 
 
 .scroller_anchor{
@@ -203,7 +193,7 @@ nav{
 	background-color: #ecf2f6;
 	width: 100%;
 	z-index:100;
-	height: 90px;
+	height: 75px;
 	padding: 0 3.5%;
 }
 
@@ -213,7 +203,7 @@ nav{
 
 .scroller ul li{
 	display: inline-block;
-	height: 90px;
+	height: 75px;
 	padding: 0 20px;
 }
 
@@ -227,7 +217,7 @@ nav{
 	letter-spacing: 0.05em;
 	color: rgba(63,65,95,.4);
 	padding: 30px 0;
-	line-height: 90px;
+	line-height: 75px;
 	text-transform: uppercase;
 }
 
@@ -236,9 +226,7 @@ nav{
 }
 
 
-
 /*<--HAMBURGER NAV-->*/
-
 
 
 .mobile-menu {
@@ -249,7 +237,6 @@ nav{
 	text-align:center;
 	position: relative;
   	margin:0 auto;
-/*  	margin-top: 4%;*/
   	letter-spacing: 0.1em;
   	text-transform: uppercase;
   	font-size: 0.9em;
@@ -304,9 +291,7 @@ nav{
 }
 
 
-
 /*<--HOMEPAGE CONTENT--->*/
-
 
 
 #rows{
@@ -314,7 +299,7 @@ nav{
 }
 
 #col-1{
-	background: url("../images/everest.jpg") no-repeat center center fixed;	 
+	background: url("../images/homepage/drama.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -323,7 +308,7 @@ nav{
 }
 
 #col-2{
-	background: url("../images/bird2.jpg") no-repeat center center fixed;	 
+	background: url("../images/homepage/documentary.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -332,7 +317,7 @@ nav{
 }
 
 #col-3{
-	background: url("../images/strangeplaces.jpg") no-repeat center center fixed;	 
+	background: url("../images/homepage/future.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -341,7 +326,7 @@ nav{
 }
 
 #col-4{
-	background: url("../images/iceland3.jpg") no-repeat center center fixed;	 
+	background: url("../images/homepage/editing.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -350,7 +335,7 @@ nav{
 }
 
 #col-5{
-	background: url("../images/storyboard.jpg") no-repeat center center fixed;	 
+	background: url("../images/homepage/storyboard.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -360,7 +345,6 @@ nav{
 
 
 /*	<--SUBPAGE CONTENT -->*/
-
 
 
 .content-wrapper{
@@ -404,6 +388,7 @@ hr{
 	overflow: hidden;
 	max-width: 100%;
 } 
+
 .embed-container iframe, .embed-container object, .embed-container embed{
 	position: absolute;
 	top: 0;
@@ -501,10 +486,17 @@ hr{
     vertical-align:middle;
 }
 
+.attribution{
+	font-size: 0.7em;
+	padding-top: 10px;
+}
+
+.attribution a{
+	color: #494951;
+}
 
 
 /*	<--ABOUT-->*/
-
 
 
 .avatar{
@@ -541,7 +533,7 @@ p.about-subtitle{
 
 .partner-logo{
 	float: left;
-	width: 50%;
+	width: 33.33%;
 	padding: 0 6%;
 }
 
@@ -550,7 +542,7 @@ p.about-subtitle{
 }
 
 p.contact-subtitle{
-	padding: 0 20% 6% 20%;
+	padding: 0 20% 2% 20%;
 }
 
 #social-connect{
@@ -565,7 +557,6 @@ p.contact-subtitle{
 	height: 20px;
 	vertical-align: bottom;
 	padding-right: 15px;
-	/*margin: 0 .5% 1% 0;*/
 }
 
 #social-connect a{
@@ -592,22 +583,20 @@ p.email{
 }
 
 
-
 /*<--BLOG-->*/
+
 
 .blog-spacer{
 	padding: 20px 0;
 }
 
 
-
 /*	<--FOOTER-->*/
-
 
 
 .footer-wrapper{
 	width: 100%;
-	background: url("../images/mountain-bottom.png") no-repeat center center;	 
+	background: url("../images/base/mountain-bottom.png") no-repeat center center;	 
 	-webkit-background-size: 400px;
   	-moz-background-size: 400px;
   	-o-background-size: 400px;
@@ -667,10 +656,25 @@ p.email{
 	font-weight: 700;
 }
 
+#carousel{
+	padding: 0 10px 30px 10px;
+}
+
+#owl-example .item{
+	padding: 10px;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+}
+
+#owl-example .item img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
 
 
 /*	<--CLEARFIX-->*/
-
 
 
 .clearfix:after { 
@@ -683,9 +687,7 @@ p.email{
 }
 
 
-
 /*	<--RESPONSIVE-->*/
-
 
 
 @media screen and (max-width: 2000px){
@@ -741,11 +743,11 @@ p.email{
 	}
 
 	h3{
-		padding: 25% 0;
+		padding: 29% 0;
 	}
 
 	#col-1{
-		background: url("../images/everest.jpg");	 
+		background: url("../images/homepage/drama.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
@@ -755,50 +757,43 @@ p.email{
 	}
 
 	#col-2{
-		background: url("../images/bird2.jpg");	 
+		background: url("../images/homepage/documentary2.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
 	  	margin: 0;
 	  	background-position: 50% 0;
-
 	}
 
 	#col-3{
-		background: url("../images/strangeplaces.jpg"); 
+		background: url("../images/homepage/future.jpg"); 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
 	  	margin: 0;
 	  	background-position: 50% 0;
-
 	}
 
 	#col-4{
-		background: url("../images/iceland3.jpg");	 
+		background: url("../images/homepage/editing.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
 	  	margin: 0;
 	  	background-position: 50% 0;
-
 	}
 
 	#col-5{
-		background: url("../images/storyboard.jpg");	 
+		background: url("../images/homepage/storyboard.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
 	  	margin: 0;
 	  	background-position: 50% 0;
-	}
-
-	h3:hover{
-		color: rgba(236,242,246,.7)
 	}
 
 	.social-container{
@@ -818,7 +813,6 @@ p.email{
 		width: 40%;
 	}
 }
-
 
 @media screen and (max-width: 800px){
 	.social-container{
@@ -869,14 +863,14 @@ p.email{
 
 	#partner-logo-left{
 		float: none;
-		width: 70%;
+		width: 90%;
 		margin: 0 auto;
 		display: block;
 	}
 
 	#partner-logo-right{
 		float: none;
-		width: 70%;
+		width: 90%;
 		margin: 0 auto;
 		padding-top: 5%;
 		display: block;
@@ -887,7 +881,7 @@ p.email{
 	}
 
 	p.contact-subtitle{
-		padding: 0 10% 10% 10%;
+		padding: 0 10% 8% 10%;
 	}
 
 	#social-connect li{
@@ -898,7 +892,6 @@ p.email{
 		padding-top: 0;
 	}
 }
-
 
 @media screen and (max-width: 700px){
 	.nav-links ul li{
@@ -925,7 +918,6 @@ p.email{
 		display: none;
 	}
 
-
 	.content-wrapper{
 		padding: 10% 0;
 	}
@@ -935,11 +927,11 @@ p.email{
 		vertical-align: top;
 		padding-left: .8em;
 	}
+
 	.mobile-menu .lines img{
 		max-width: 15px;
         max-height: 15px;
-/*        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUUlEQVQ4T2NkoBAwUqifgfH///8bgIbwk2nQB5ABBUDNAmQbQKZGuDbKw4BiFwDDYALQEH0yDboACkSQAQZkG0CmxkEWiKCERFFKBCXlIZwSAYKnG1yU1qb1AAAAAElFTkSuQmCC');
-*/    }                                
+    }                                
 
 	.mobile-menu ul {
 		position: static;
@@ -1019,7 +1011,7 @@ p.email{
 	}
 
 	p.contact-subtitle{
-		padding: 0 10% 20% 10%;
+		padding: 0 10% 10% 10%;
 	}
 	
 	#social-connect li{
@@ -1035,10 +1027,7 @@ p.email{
 	}
 
 	h3{
-		padding: 35% 0;
-	}
-
-	h3{
+		padding: 52% 0;
 		font-size: 2.6em;
 	}
 
@@ -1046,6 +1035,4 @@ p.email{
 		display: block;
 		padding: 5% 3.5%;
 	}
-
 }
-
