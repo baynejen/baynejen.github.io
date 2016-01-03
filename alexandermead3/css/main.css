@@ -100,13 +100,11 @@ footer a:hover{
 
 .links{
 	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 55px 500px 0 55px;
+	padding: 55px 0 0 55px;
 }
 
 .links ul{
-	width: 400px;
+	width: 100%;
 }
 
 .links ul li{
@@ -232,7 +230,6 @@ footer a:hover{
 		padding-left: 40px;
 		padding-top: 30px;
 		background-color: #fff;
-		width: 100%;
 	}
 
 	.links ul li:hover{
@@ -257,3 +254,29 @@ footer a:hover{
 		display: block;
 	}
 }
+/*
+@media only screen and (max-width: 450px){
+	.links{
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-top: 30px;
+		background-color: #fff;
+		width: 100%;
+	}
+
+	.links ul{
+		width: auto;
+	}
+
+	.links ul li{
+		list-style: none;
+		display: block;
+		padding: 20px;
+		border: 1px solid #a5a5a5;
+		text-align: center;
+		margin: 0 5px 0 0;
+		width: 100%;
+	}
+
+}*/
+
