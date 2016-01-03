@@ -1,0 +1,390 @@
+body{
+	width: 100%;
+	font-size: 17px;
+	font-family: 'Inconsolata', Courier, serif;
+	text-align: left;
+	background-color: #ecf2f6;
+}
+
+.page-wrapper{
+	width: 100%;
+}
+
+/*	<--TYPOGRAPHY-->*/
+
+p{
+	color: black;
+}
+
+p a{
+	color: black;
+	text-decoration: underline;
+}
+
+h2{
+	font-family: 'Karla', sans-serif;
+	font-size: 1.3em;
+	font-weight: 700;
+	line-height: 1.5em;
+	color: black;
+}
+
+h4{
+	font-size: 0.9em;
+	font-weight: 400;
+	font-family: 'Inconsolata', Courier, serif;
+	color: rgba(0,0,0,.5);
+	line-height: 1.5em;
+}
+
+p{
+	line-height: 1.5em;
+}
+
+/*<--NAV-->*/
+
+.scroller_anchor{
+	height: 0;
+	margin:0;
+	padding:0;
+}
+
+nav{
+	background-image: url("../images/nav/gingham.png");	
+  	width: 100%;
+  	height: 150px;
+  	padding: 0 30px;
+  	position: relative;
+}
+
+.nav-scroller-border{
+	z-index:100;
+	width: 100%;
+	border-bottom: 5px solid #f4bc46;
+}
+
+.nav-content{
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.nav-content .logo{
+	float: left;
+	height: 150px;
+	padding: 25px 0;
+	width: 15%;
+	text-align: left;
+}
+
+.nav-content .logo img{
+	height: 100px;
+}
+
+.nav-content .nav-links{
+	float: right;
+	text-align: right;
+	width: 85%;
+}
+
+.nav-content .nav-links ul li{
+	display: inline-block;
+	padding: 0 30px 43px 30px;
+	font-weight: 700;
+	position: relative;
+	margin-top: 100px;
+}
+
+.nav-content .nav-links ul li:last-of-type{
+	padding-right: 0;
+}
+
+.nav-content .nav-links ul a{
+	text-decoration: none;
+	color: black;
+}
+
+.nav-content .nav-links ul li:hover{
+	color: rgba(0,0,0,.5);
+}
+
+.nav-content .nav-links ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 155px;
+  display: none;
+  opacity: 0;
+  z-index: 200;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+.nav-content .nav-links ul li ul li { 
+  background: #f4bc46; 
+  display: block; 
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 0;
+}
+
+.nav-content .nav-links ul li ul li:hover {
+	background: #f3d07c;
+	color: black;
+}
+
+.nav-content .nav-links ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible; 
+}
+
+/*<--MOBILE NAV-->*/
+
+#mobile-nav{
+	width: 100%;
+	padding: 30px 0 10px 0;
+	display: block;
+	text-align: left;
+	display: none;
+}
+
+#mobile-nav img{
+	width: 160px;
+}
+
+#cssmenu{
+	display: none;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+	display: block;
+}
+
+#cssmenu a {
+  	padding: 15px 0;
+  	color: #000;
+  	text-decoration: none;
+}
+
+#cssmenu a:hover {
+  	color: rgba(0,0,0,.5);
+}
+
+#cssmenu.small-screen {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-top: -80px;
+}
+
+#cssmenu.small-screen ul li{
+	float: none;
+	display: block;
+}
+
+#cssmenu.small-screen #menu-button {
+	display: block;
+	padding: 16px 20px;
+	cursor: pointer;
+	top: 0;
+	right: 10px;
+	padding-bottom: 80px;
+}
+
+#cssmenu.small-screen #menu-button:after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	display: block;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	width: 22px;
+	height: 3px;
+}
+
+#cssmenu.small-screen #menu-button:before {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 27px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #000;
+}
+
+/*<--BODY-->*/
+
+.body-wrapper{
+	padding: 50px 30px;
+	width: 100%;
+}
+
+.content-wrapper{
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.egg-entry{
+	width: 100%;
+	padding-bottom: 60px;
+}
+
+.entry-left{
+	float: left;
+	width: 20%;
+	padding-right: 20px 
+}
+
+.entry-right{
+	float: left;
+	width: 80%;
+}
+
+.egg-name{
+	padding-bottom: 20px;
+}
+
+.description{
+	padding-top: 20px;
+}
+
+.egg-image{
+	padding-top: 20px;
+	width: 100%;
+}
+
+.egg-image img{
+	width: 100%;
+}
+
+.about-image{
+	padding-top: 20px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.about-image img{
+	width: 400px;
+}
+
+.contact{
+	padding-bottom: 20px;
+}
+
+/*FOOTER*/
+
+.footer{
+	padding: 30px;
+	width: 100%;
+	background-color: #f3d07c;
+	border-top: 5px solid #f4bc46;
+}
+
+.footer p{
+	font-size: 0.9em;
+	font-weight: 700;
+	color: rgba(0,0,0,.5);
+	line-height: 35px;
+}
+
+.footer a{
+	color: rgba(0,0,0,.5);
+}
+
+.footer a:hover{
+	color: rgba(0,0,0,.9);
+}
+
+.copyright{
+	width: 50%;
+	float: left;
+}
+
+.social{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.social img{
+	width: 35px;
+	opacity: .7;
+}
+
+.social img:hover{
+	opacity: 1;
+}
+
+/*<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+@media only screen and (max-width: 900px){
+	.body-wrapper{
+		padding: 40px 30px;
+	}
+
+	.entry-left{
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.entry-left h2{
+		padding-bottom: 10px;
+	}
+
+	.entry-right{
+		float: none;
+		width: 100%;
+	}
+
+	.scroller_anchor{
+		display: none;
+	}
+
+	nav{
+		background-image: url("../images/nav/gingham.png");	
+	  	height: auto;
+	  	border-bottom: 5px solid #f4bc46;
+	}
+
+	.nav-scroller-border{
+		display: none;
+	}
+
+	/*.nav-content{
+		display: none;
+	}
+
+	#mobile-nav{
+		display: block;
+	}*/
+}
+
+@media only screen and (max-width: 500px){
+	.about-image img{
+		width: 100%;
+	}
+}

@@ -1,0 +1,434 @@
+@font-face{
+	font-family: 'shorelines';
+	src: url(../font/shorelines.otf);
+}
+
+body{
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	background-color: #ecf2f6;
+	color: #5b6164;
+	font-family: Arial, sans-serif;
+}
+
+#site-wrapper{
+	width: 100%;
+}
+
+#body-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 55px 40px 40px 300px;
+}
+
+.container{
+	padding-bottom: 100px;
+	width: 90%;
+}
+
+/*	<--TYPOGRAPHY-->*/
+
+h1{
+	font-size: 1.8em;
+	color: #c5c8cf;
+	letter-spacing: 0.0em;
+	padding-bottom: 30px;
+	font-family: 'shorelines', arial, sans-serif;
+}
+
+h2{
+	color: #5b6164;
+	text-align: left;
+	font-size: 1.3em;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+p{
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+	font-family: Arial, sans-serif;
+}
+
+/*	<--NAV-->*/
+
+nav{
+	background-color: #fff;
+	position: fixed;
+	width: 240px;
+	z-index: 1;
+	padding: 40px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	text-align: center;
+}
+
+nav img{
+	width: 160px;
+}
+
+nav ul{
+	padding-top: 40px;
+}
+
+nav ul li{
+	padding: 10px 0;
+}
+
+nav ul li a{
+	color: #5b6164;
+	opacity: 0.3;
+	font-family: 'Fjalla One', sans-serif;
+	text-decoration: none;
+}
+
+nav a:hover{
+	opacity: 1;
+}
+
+#footer{
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	margin-bottom: 20px;
+}
+
+#social{
+	opacity: 0.3;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#social:hover{
+	opacity: 1;
+}
+
+#social img{
+	width: 30px;
+	margin: 0 5px;
+	-webkit-transition: -webkit-transform .08s ease-in-out;
+  	transition: transform .08s ease-in-out;
+}
+
+#social img:hover{
+	-webkit-transform: rotate(9deg);
+  	transform: rotate(9deg);
+}
+
+#footer p{
+	color: #5b6164;
+	opacity: 0.3;
+	font-size: 0.7em;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+/*<--MOBILE NAV-->*/
+
+#mobile-nav{
+	background-color: #fff;
+	width: 100%;
+	padding: 30px;
+	display: none;
+	text-align: left;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#mobile-nav img{
+	width: 160px;
+}
+
+#cssmenu{
+	display: none;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+	display: block;
+}
+
+#cssmenu a {
+  	padding: 16px 0;
+  	color: #5b6164;
+	opacity: 0.3;
+  	text-decoration: none;
+}
+
+#cssmenu a:hover {
+  	opacity: 1;
+}
+
+#cssmenu.small-screen {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-top: -100px;
+}
+
+#cssmenu.small-screen ul li{
+	float: none;
+	display: block;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+}
+
+#cssmenu.small-screen ul li:last-of-type {
+	float: none;
+	display: block;
+	border-bottom: none;
+}
+
+#cssmenu.small-screen ul li:first-of-type{
+	padding-top: 20px;
+}
+
+#cssmenu.small-screen #menu-button {
+	display: block;
+	padding: 16px 20px;
+	cursor: pointer;
+	top: 0;
+	right: 10px;
+	padding-bottom: 80px;
+}
+
+#cssmenu.small-screen #menu-button:after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	display: block;
+	border-top: 2px solid #c5c8cf;
+	border-bottom: 2px solid #c5c8cf;
+	width: 22px;
+	height: 3px;
+}
+
+#cssmenu.small-screen #menu-button:before {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 27px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #c5c8cf;
+}
+
+/*  <--PORTFOLIO--->*/
+
+#portfolio{
+	width: 100%;
+	padding-bottom: 40px;
+	margin-top: -50px;
+}
+
+.project-wrapper{
+	width: 46%;
+	float: left;
+	padding-right: 4%;
+	padding-bottom: 60px;
+}
+
+.project-wrapper img{
+	width: 100%;
+}
+
+.project-wrapper img:hover{
+	opacity: 0.8;
+}
+
+.project-info{
+	width: 100%;
+	padding-top: 30px;
+}
+
+.project-info a{
+	font-size: 0.9em;
+	color: #5b6164;
+	line-height: 3.5em;
+	letter-spacing: 0.02em;
+	font-family: 'Fjalla One', sans-serif;
+	text-decoration: none;
+}
+
+.project-info a:hover{
+	text-decoration: underline;
+}
+
+/*<--ABOUT-->*/
+
+#about-image{
+	width: 20%;
+	float: left;
+}
+
+#about-image img{
+	width: 100%;
+}
+
+#about-description{
+	width: 80%;
+	float: left;
+	padding-left: 20px;
+}
+
+#about-1{
+	padding-bottom: 20px;
+}
+
+#about-3{
+	display: none;
+	width: 100%;
+	padding-top: 20px;
+}
+
+/*<--CONTACT-->*/
+
+#contact ul{
+	padding-top: 30px;
+	list-style-type: square;
+	padding-left: 20px;
+}
+
+#contact ul li{
+	padding: 15px 0;
+}
+
+#contact ul li:first-of-type{
+	padding: 0;
+}
+
+#contact ul li:last-of-type{
+	padding: 0;
+}
+
+#contact ul li a{
+	color: #5b6164;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+#contact ul li a:hover{
+	text-decoration: underline;
+}
+
+/*<--MOBILE FOOTER-->*/
+
+
+#mobile-footer{
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 0 20px 0;
+	text-align: center;
+	display: none;
+}
+
+#mobile-social{
+	opacity: 0.3;
+	padding-bottom: 20px;
+}
+
+#mobile-social:hover{
+	opacity: 1;
+}
+
+#mobile-social img{
+	width: 30px;
+	margin: 0 5px;
+	-webkit-transition: -webkit-transform .08s ease-in-out;
+  	transition: transform .08s ease-in-out;
+}
+
+#mobile-social img:hover{
+	-webkit-transform: rotate(9deg);
+  	transform: rotate(9deg);
+}
+
+#mobile-footer p{
+	color: #5b6164;
+	opacity: 0.3;
+	font-size: 0.7em;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+/*	<--RESPONSIVE-->*/
+
+@media only screen and (max-width: 1080px){
+	#about-2{
+		display: none;
+	}
+
+	#about-3{
+		display: block;
+	}
+
+	.project-wrapper{
+		width: 90%;
+		float: none;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	#about-image{
+		width: 50%;
+		float: none;
+	}
+
+	#about-description{
+		width: 100%;
+		float: none;
+		padding-left: 0;
+		padding-top: 20px;
+	}
+
+	#about-3{
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	nav{
+		display: none;
+	}
+
+	#mobile-nav{
+		display: block;
+	}
+
+	#body-wrapper{
+		width: 100%;
+		margin: 0 auto;
+		padding: 55px 40px 40px 40px;
+	}
+
+	.container{
+		width: 100%;
+	}
+
+	.container:last-of-type{
+		padding-bottom: 20px;
+	}
+
+	.project-wrapper{
+		width: 100%;
+	}
+
+	#mobile-footer{
+		display: block;
+	}
+}

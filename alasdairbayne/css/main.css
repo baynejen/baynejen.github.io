@@ -218,8 +218,7 @@ nav{
 	color: rgba(63,65,95,.4);
 	padding: 30px 0;
 	line-height: 75px;
-/*	text-transform: uppercase;
-*/}
+}
 
 .scroller a:hover{
 	color: #3f415f;
@@ -232,31 +231,30 @@ nav{
 .mobile-menu {
   	display:none;
   	width:100%;
-	background: #3f415f;
+	background: #ecf2f6;
+	border-top: 2px solid #d5d8df;
 	width:100%;
 	text-align:center;
 	position: relative;
   	margin:0 auto;
-  	letter-spacing: 0.1em;
-/*  	text-transform: uppercase;
-*/  	font-size: 0.9em;
 }
 
 .mobile-menu li a {
 	display:block;
 	text-align: center;
-	color: rgba(255,255,255,.4);
-	text-decoration: none;
+	color: rgba(63,65,95,.4);
   	padding: 20px 0;  
-  	font-weight: 300;
+  	font-size: 0.9em;
+  	font-weight: 700;
+	letter-spacing: 0.05em;
 }
 
-.mobile-menu .selected{
-	color: #fff;
+.mobile-menu li a.selected{
+	color: #3f415f;
 }
 
-.mobile-menu a:hover{
-	color: #fff;
+.mobile-menu li a:hover{
+	color: #3f415f;
 }
 
 .mobile-menu li ul {
@@ -274,12 +272,14 @@ nav{
 
 .mobile-menu .show-menu {
 	text-decoration: none;
-	color: #fff;
-	font-weight: 400;
 	text-align: center;
 	padding: 5px 0;
 	display: none;
   	cursor: pointer;
+  	color: #3f415f;
+  	font-size: 0.9em;
+  	font-weight: 700;
+	letter-spacing: 0.05em;
 }
 
 .mobile-menu input[type=checkbox]{
@@ -868,12 +868,13 @@ p.email{
 	.mobile-menu .lines{
 		display: inline-block;
 		vertical-align: top;
-		padding-left: .8em;
+		margin-left: -6.5em;
+		padding-right: 5.5em;
 	}
 
 	.mobile-menu .lines img{
-		max-width: 15px;
-        max-height: 15px;
+		max-width: 14px;
+        max-height: 14px;
     }                                
 
 	.mobile-menu ul {
@@ -1080,6 +1081,6 @@ p.email{
 
 	.mobile-menu {
 		display: block;
-		padding: 5% 3.5%;
+		padding: 6% 3.5%;
 	}
 }
