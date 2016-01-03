@@ -7,7 +7,7 @@ body{
 	width: 100%;
 	font-size: 16px;
 	text-align: left;
-	background-color: #ecf2f6;
+	background-color: #fff;
 	color: #5b6164;
 	font-family: Arial, sans-serif;
 }
@@ -20,6 +20,7 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	padding: 55px 40px 40px 300px;
+	background-color: #ecf2f6;
 }
 
 .container{
