@@ -136,6 +136,10 @@ nav{
 	color: #4460ba;
 }
 
+.publication-detail a:hover{
+	color: #6095cc;
+}
+
 .date{
 	color: #8e8e8e;
 }
