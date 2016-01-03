@@ -111,7 +111,7 @@ footer a:hover{
 	list-style: none;
 	display: inline-block;
 	padding: 20px;
-	border: 1px solid #a5a5a5;
+	border: 1px solid #c2c2c2;
 	text-align: center;
 	margin: 0 5px 0 0;
 }
@@ -241,7 +241,7 @@ footer a:hover{
 	#body-wrapper{
 		width: 100%;
 		margin: 0 auto;
-		padding: 30px;
+		padding: 40px;
 	}
 
 	.container{
@@ -254,12 +254,19 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 450px){
+	.links{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
 	.links ul li{
 		padding: 15px 10px;
+		display: block;
+		margin: 0 0 10px 0;
 	}
 
 	h1{
-		font-size: 2em;
+		font-size: 1.9em;
 	}
 
 }
