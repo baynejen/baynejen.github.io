@@ -1,0 +1,270 @@
+body{
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #d8d8d8;
+	text-align: left;
+	color: #000
+}
+
+.page-wrapper{
+	width: 100%;
+}
+
+/*	<--TYPOGRAPHY-->*/
+
+h1{
+	font-size: 3.2em;
+	font-family: 'Playfair Display', serif;
+}
+
+h2{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-bottom: 20px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+p{
+	line-height: 1.7em;
+	letter-spacing: 0.01em;
+}
+
+/*<--NAV-->*/
+
+nav{
+  	width: 100%;
+  	padding: 100px 50px 40px 50px;
+  	background-color: #ebebeb;
+  	max-width: 1200px;
+  	margin: 0 auto;
+}
+
+.nav-content{
+	width: 100%;
+}
+
+.nav-content .logo{
+	width: 50%;
+	float: left;
+}
+
+.nav-content .logo p{
+	padding-top: 12px;
+}
+
+.nav-content .nav-links{
+	width: 50%;
+	float: left;
+}
+
+.nav-content .nav-links ul{
+	width: 100%;
+}
+
+.nav-content .nav-links ul li{
+	display: block;
+	padding: 4px 0;
+	position: relative;
+	letter-spacing: 0.05em;
+	text-align: right;
+	font-size: .9em;
+}
+
+.nav-content a{
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-content .nav-links ul li:hover{
+	text-decoration: underline;
+}
+
+/*<--BODY-->*/
+
+.body-wrapper{
+	width: 100%;
+	background-color: #ebebeb;
+}
+
+.content-wrapper{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.entry-left{
+	float: left;
+	width: 50%;
+}
+
+.entry-left img{
+	width: 100%;
+}
+
+.entry-right{
+	float: left;
+	width: 50%;
+	padding: 50px; 
+}
+
+.content-wrapper ul{
+	width: 100%;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.content-wrapper ul li{
+	padding-bottom: 15px;
+	letter-spacing: 0.01em;
+	list-style-type: disc;
+}
+
+.content-wrapper p{
+	padding-bottom: 25px;
+}
+
+/*PUBLICATIONS*/
+
+/*#publications{
+	width: 70%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.publication{
+	padding-bottom: 30px;
+}
+
+.publication-detail{
+	padding-bottom: 5px;
+	font-size: 1.1em;
+}
+
+.publication-detail a{
+	color: #4460ba;
+}
+
+.publication-detail a:hover{
+	color: #6095cc;
+}
+
+.date{
+	color: #8e8e8e;
+}
+*/
+/*CONTACT*/
+
+/*#contact{
+	width: 70%;
+	margin: 0 auto;
+	padding: 30px;
+	height:50vh;
+}
+
+#contact p:first-of-type{
+	padding-bottom: 20px;
+}*/
+
+/*FOOTER*/
+
+footer{
+	padding: 50px;
+	width: 100%;
+	background-color: #ebebeb;
+  	max-width: 1200px;
+  	margin: 0 auto;
+	bottom: 0;
+}
+
+footer p{
+	font-weight: 400;
+	font-size: .8em;
+	letter-spacing: 0.02em;
+	color: #000;
+}
+
+footer a{
+	color: #000;
+}
+
+footer a:hover{
+	opacity: .6;
+}
+
+/*<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+/*<--RESPONSIVE-->*/
+
+@media only screen and (max-width: 1024px){
+	#entry-left{
+		float: left;
+		width: 50%;
+		padding: 20px;
+	}
+
+	#entry-middle{
+		float: left;
+		width: 50%;
+		padding: 20px;
+	}
+
+	#entry-right{
+		float: none;
+		width: 100%;
+		padding: 20px;
+		clear: both;
+	}
+
+	#publications{
+		width: 100%;
+	}
+
+	#contact{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	nav{
+		padding: 30px; 
+		background-image: url("../images/nav/nav-bg-mobile.jpg");	
+	  	height: auto;
+	}
+
+	.nav-content{
+		margin: 30px auto;
+	}
+
+	.nav-content .logo h1{
+		font-size: 2.2em;
+	}
+
+	.nav-content .nav-links ul li{
+		padding: 10px 0;
+		display: block;
+	}
+
+	#entry-left{
+		float: none;
+		width: 100%;
+		padding: 20px;
+	}
+
+	#entry-middle{
+		float: none;
+		width: 100%;
+		padding: 20px;
+	}
+}
