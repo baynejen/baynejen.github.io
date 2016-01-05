@@ -93,6 +93,7 @@ nav{
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: #fff;
+	line-height: 0;
 }
 
 .entry-left{

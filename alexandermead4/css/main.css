@@ -7,7 +7,8 @@ body{
 
 .page-wrapper{
 	width: 100%;
-	background-color: #ebeaea;
+	height: 100vh;
+	background-color: #fff;
 }
 
 /*	<--TYPOGRAPHY-->*/
@@ -84,6 +85,7 @@ nav{
 .body-wrapper{
 	padding: 30px;
 	width: 100%;
+	background-color: #ebeaea;
 }
 
 .content-wrapper{
@@ -159,7 +161,6 @@ nav{
 	width: 70%;
 	margin: 0 auto;
 	padding: 30px;
-	height:80vh;
 }
 
 #contact p:first-of-type{
