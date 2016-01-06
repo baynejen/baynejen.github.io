@@ -50,7 +50,9 @@ nav{
 }
 
 .nav-content .logo p{
-	padding-top: 10px;
+	padding-top: 9px;
+	font-family: 'Cinzel', serif;
+	font-size: .9em;
 }
 
 .nav-content .nav-links{
@@ -58,7 +60,7 @@ nav{
 	float: left;
 	font-family: 'Cinzel', serif;
 	height: 120px;
-	padding-top: 16px;
+	padding-top: 14px;
 }
 
 .nav-content .nav-links ul{
