@@ -79,6 +79,10 @@ nav{
 	text-decoration: underline;
 }
 
+.nav-content .nav-links ul li a:active{
+	text-decoration: underline;
+}
+
 /*<--BODY-->*/
 
 .body-wrapper{
