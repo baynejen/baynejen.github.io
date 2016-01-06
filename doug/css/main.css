@@ -14,16 +14,15 @@ body{
 /*	<--TYPOGRAPHY-->*/
 
 h1{
-	font-size: 3.2em;
-	font-family: 'Playfair Display', serif;
+	font-size: 5.2em;
+	font-family: 'Tangerine', cursive;
 }
 
 h2{
 	font-size: 1.5em;
 	line-height: 1.5em;
-	padding-bottom: 20px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
+	padding-bottom: 30px;
+	font-family: 'Cinzel', serif;
 }
 
 p{
@@ -46,17 +45,20 @@ nav{
 }
 
 .nav-content .logo{
-	width: 50%;
+	width: 70%;
 	float: left;
 }
 
 .nav-content .logo p{
-	padding-top: 12px;
+	padding-top: 10px;
 }
 
 .nav-content .nav-links{
-	width: 50%;
+	width: 30%;
 	float: left;
+	font-family: 'Cinzel', serif;
+	height: 120px;
+	padding-top: 16px;
 }
 
 .nav-content .nav-links ul{
@@ -67,7 +69,6 @@ nav{
 	display: block;
 	padding: 4px 0;
 	position: relative;
-	letter-spacing: 0.05em;
 	text-align: right;
 	font-size: .9em;
 }
@@ -79,6 +80,100 @@ nav{
 
 .nav-content .nav-links ul li:hover{
 	text-decoration: underline;
+}
+
+
+/*<--MOBILE NAV-->*/
+
+#mobile-nav{
+	background-color: #ebebeb;
+	width: 100%;
+	padding: 90px 40px 30px 40px;
+	display: none;
+	text-align: left;
+}
+
+#mobile-nav a{
+	text-decoration: none;
+	color: #000;
+}
+
+#cssmenu{
+	display: none;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+	display: block;
+	font-family: 'Cinzel', serif;
+}
+
+#cssmenu a {
+  	padding: 15px 0;
+  	color: #000;
+  	text-decoration: none;
+}
+
+#cssmenu a:hover {
+  	text-decoration: underline;
+}
+
+#cssmenu.small-screen {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-top: -65px;
+}
+
+#cssmenu.small-screen ul li{
+	float: none;
+	display: block;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+	font-size: .9em;
+}
+
+#cssmenu.small-screen ul li:last-of-type {
+	float: none;
+	display: block;
+	border-bottom: none;
+}
+
+#cssmenu.small-screen ul li:first-of-type{
+	padding-top: 25px;
+}
+
+#cssmenu.small-screen #menu-button {
+	display: block;
+	padding: 16px 20px;
+	cursor: pointer;
+	top: 0;
+	right: 10px;
+	padding-bottom: 50px;
+}
+
+#cssmenu.small-screen #menu-button:after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	display: block;
+	border-top: 2px solid rgba(100,100,100,.6);
+	border-bottom: 2px solid rgba(100,100,100,.6);
+	width: 22px;
+	height: 3px;
+}
+
+#cssmenu.small-screen #menu-button:before {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 27px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: rgba(100,100,100,.6);
 }
 
 /*<--BODY-->*/
@@ -111,63 +206,13 @@ nav{
 	padding: 50px; 
 }
 
-.content-wrapper ul{
-	width: 100%;
-	margin-top: 25px;
-	margin-left: 20px;
-}
-
-.content-wrapper ul li{
-	padding-bottom: 15px;
-	letter-spacing: 0.01em;
-	list-style-type: disc;
-}
-
 .content-wrapper p{
 	padding-bottom: 25px;
 }
 
-/*PUBLICATIONS*/
-
-/*#publications{
-	width: 70%;
-	margin: 0 auto;
-	padding: 30px;
+.content-wrapper p:last-of-type{
+	padding-bottom: 0;
 }
-
-.publication{
-	padding-bottom: 30px;
-}
-
-.publication-detail{
-	padding-bottom: 5px;
-	font-size: 1.1em;
-}
-
-.publication-detail a{
-	color: #4460ba;
-}
-
-.publication-detail a:hover{
-	color: #6095cc;
-}
-
-.date{
-	color: #8e8e8e;
-}
-*/
-/*CONTACT*/
-
-/*#contact{
-	width: 70%;
-	margin: 0 auto;
-	padding: 30px;
-	height:50vh;
-}
-
-#contact p:first-of-type{
-	padding-bottom: 20px;
-}*/
 
 /*FOOTER*/
 
@@ -181,9 +226,7 @@ footer{
 }
 
 footer p{
-	font-weight: 400;
 	font-size: .8em;
-	letter-spacing: 0.02em;
 	color: #000;
 }
 
@@ -208,64 +251,76 @@ footer a:hover{
 
 /*<--RESPONSIVE-->*/
 
-@media only screen and (max-width: 1024px){
-	#entry-left{
-		float: left;
-		width: 50%;
-		padding: 20px;
+@media only screen and (max-width: 900px){
+	.entry-right{
+		padding: 35px; 
 	}
 
-	#entry-middle{
-		float: left;
-		width: 50%;
-		padding: 20px;
+	h2{
+		font-size: 1.4em;
+		padding-bottom: 20px;
 	}
 
-	#entry-right{
+	.content-wrapper p{
+		font-size: .95em;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.entry-left{
 		float: none;
 		width: 100%;
-		padding: 20px;
-		clear: both;
 	}
 
-	#publications{
+	.entry-right{
+		float: none;
 		width: 100%;
+		padding: 40px; 
 	}
 
-	#contact{
-		width: 100%;
+	.entry-right:first-of-type{
+		padding-top: 0;
+	}
+
+	.content-wrapper p{
+		font-size: 1em;
+	}
+
+
+	nav{
+	  	width: 100%;
+	  	padding: 100px 40px 30px 40px;
+	}
+
+	.nav-content .nav-links{
+		padding-top: 8px;
+	}
+
+	.nav-content .nav-links ul li{
+		padding: 6px 0;
+	}
+
+	footer{
+		padding: 40px;
 	}
 }
 
 @media only screen and (max-width: 700px){
 	nav{
-		padding: 30px; 
-		background-image: url("../images/nav/nav-bg-mobile.jpg");	
-	  	height: auto;
+		display: none;
 	}
 
-	.nav-content{
-		margin: 30px auto;
-	}
-
-	.nav-content .logo h1{
-		font-size: 2.2em;
-	}
-
-	.nav-content .nav-links ul li{
-		padding: 10px 0;
+	#mobile-nav{
 		display: block;
 	}
+}
 
-	#entry-left{
-		float: none;
-		width: 100%;
-		padding: 20px;
+@media only screen and (max-width: 450px){
+	#mobile-nav{
+		padding: 90px 20px 30px 25px;
 	}
 
-	#entry-middle{
-		float: none;
-		width: 100%;
-		padding: 20px;
+	.entry-right{
+		padding: 30px; 
 	}
 }
