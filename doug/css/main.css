@@ -317,10 +317,19 @@ footer a:hover{
 
 @media only screen and (max-width: 450px){
 	#mobile-nav{
-		padding: 90px 20px 30px 25px;
+		padding: 90px 10px 30px 20px;
 	}
 
 	.entry-right{
 		padding: 30px; 
+	}
+
+	.entry-right:first-of-type{
+		padding-top: 15px;
+	}
+
+	footer{
+		padding: 40px 30px;
+		text-align: center;
 	}
 }
