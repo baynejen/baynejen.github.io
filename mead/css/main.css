@@ -7,7 +7,7 @@ body{
 
 .page-wrapper{
 	width: 100%;
-	background-color: #ebeaea;
+	background-color: #fff;
 }
 
 /*	<--TYPOGRAPHY-->*/
@@ -84,6 +84,7 @@ nav{
 .body-wrapper{
 	padding: 30px;
 	width: 100%;
+	background-color: #ebeaea;
 }
 
 .content-wrapper{
@@ -113,6 +114,14 @@ nav{
 	float: left;
 	width: 35%;
 	padding: 20px;
+}
+
+.content-wrapper a{
+	color: #4460ba;
+}
+
+.content-wrapper a:hover{
+	color: #6095cc;
 }
 
 /*PUBLICATIONS*/
@@ -149,8 +158,7 @@ nav{
 #contact{
 	width: 70%;
 	margin: 0 auto;
-	padding: 30px;
-	height:50vh;
+	padding: 30px 30px 100px 30px;
 }
 
 #contact p:first-of-type{
@@ -225,6 +233,10 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 700px){
+	.body-wrapper{
+		padding: 15px;
+	}
+
 	nav{
 		padding: 30px; 
 		background-image: url("../images/nav/nav-bg-mobile.jpg");	
