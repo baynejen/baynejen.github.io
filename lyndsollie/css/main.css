@@ -14,7 +14,7 @@ body{
 
 .page-wrapper{
 	width: 100%;
-	background-image: url("../images/bunting3.png");	
+	background-image: url("../images/nav/bunting3.png");	
 	background-repeat: repeat-x;
 }
 
@@ -133,7 +133,7 @@ nav{
 	padding: 100px 30px 30px 30px;
 	display: none;
 	text-align: left;
-	background-image: url("../images/bunting3.png");	
+	background-image: url("../images/nav/bunting3.png");	
 	background-repeat: repeat-x;
 }
 
