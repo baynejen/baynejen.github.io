@@ -19,16 +19,14 @@ body{
 }
 
 
-.body-wrapper-1{
+.body-wrapper{
 	width: 100%;
 	background-color: #fff;
-	padding: 10px 40px 50px 40px;
+	padding: 40px 30px;
 }
 
-.body-wrapper-2{
-	width: 100%;
+.subsection{
 	background-color: #e7e7e7;
-	padding: 10px 40px 50px 40px;
 }
 
 .content-wrapper{
@@ -39,29 +37,25 @@ body{
 
 /*	<--TYPOGRAPHY-->*/
 
+h1,h2,h3,h4{
+	font-family: 'bakery', 'Helvetica', sans-serif;
+	line-height: 1em;
+}
+
 h1{
 	font-size: 5.4em;
-	line-height: 1em;
-	font-family: 'bakery';
 }
 
 h2{
 	font-size: 3em;
-	line-height: 1em;
-	font-family: 'bakery';
-	letter-spacing: 0.02em;
 }
 
 h3{
 	font-size: 2.4em;
-	font-family: 'bakery';
-	line-height: 1em;
 }
 
 h4{
 	font-size: 2.2em;
-	font-family: 'bakery';
-	line-height: 1em;
 	padding-bottom: 15px;
 }
 
@@ -104,8 +98,8 @@ nav{
 .nav-content .nav-links ul{
 	width: 604px;
 	margin: 0 auto;
-	border-top: 1px solid rgba(100, 100, 100, 0.3);
-	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+	border-top: 1px solid rgba(100, 100, 100, 0.2);
+	border-bottom: 1px solid rgba(100, 100, 100, 0.2);
 }
 
 .nav-content .nav-links ul li{
@@ -144,8 +138,8 @@ nav{
 }
 
 #mobile-nav h1{
-	font-size: 3.8em;
-	padding-left: 15px;
+	font-size: 3em;
+	padding-left: 10px;
 }
 
 #mobile-nav a{
@@ -185,7 +179,7 @@ nav{
 	width: 100%;
 	display: block;
 	position: relative;
-	margin-top: -58px;
+	margin-top: -50px;
 }
 
 #cssmenu.small-screen ul li{
@@ -217,7 +211,7 @@ nav{
 #cssmenu.small-screen #menu-button:after {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0px;
 	top: 17px;
 	display: block;
 	border-top: 2px solid rgba(100,100,100,.6);
@@ -229,7 +223,7 @@ nav{
 #cssmenu.small-screen #menu-button:before {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0px;
 	top: 27px;
 	display: block;
 	width: 22px;
@@ -244,84 +238,61 @@ nav{
 	width: 100%;
 }
 
-#jigsaw-1{
+.jigsaw-img{
+	width: 25%;
 	float: left;
-	width: 26.5%;
-	margin-top: 4%;
+	padding: 10px;
 }
 
-#jigsaw-2{
-	float: left;
-	width: 26.5%;
-	margin-left: -2%;
-	margin-top: 8%;
-}
-
-#jigsaw-3{
-	float: left;
-	width: 26.5%;
-	margin-left: -2%;
-	margin-top: 12%;
-}
-
-#jigsaw-4{
-	float: left;
-	width: 26%;
-	margin-top: 2%;
-	margin-left: -2%;
-}
-
-#jigsaw-5{
-	float: left;
-	width: 26.5%;
-	margin-top: -2%;
-}
-
-#jigsaw-6{
-	float: left;
-	width: 26.5%;
-	margin-left: -2%;
-	margin-top: -9.5%;
-}
-
-#jigsaw-7{
-	float: left;
-	width: 26.5%;
-	margin-left: -2%;
-	margin-top: 1.5%;
-}
-
-#jigsaw-8{
-	float: left;
-	width: 26%;
-	margin-top: -9%;
-	margin-left: -2%;
-}
-
-.jigsaw img{
+.jigsaw-img img{
 	width: 100%;
 	display: block;
 }
 
+.jigsaw-1{
+	margin-top: 2%;
+}
+
+.jigsaw-2{
+	margin-top: 6%;
+}
+
+.jigsaw-3{
+	margin-top: 4%;
+}
+
+.jigsaw-4{
+	margin-top: 0%;
+}
+
+.jigsaw-5{
+	margin-top: 0%;
+}
+
+.jigsaw-6{
+	margin-top: -6%;
+}
+
+.jigsaw-7{
+	margin-top: -2%;
+}
+
+.jigsaw-8{
+	margin-top: -6%;
+}
+
 /*<--OUR STORY-->*/
 
-#our-story-container{
-	padding-top: 60px;
-	width: 100%;
+.content-wrapper h2{
+	padding: 30px 0 50px 0;
 }
 
 #our-story{
 	width: 100%;
-	padding-top: 60px;
 	text-align: left;
 }
 
-#story-lynds{
-	width: 50%;
-	float: left;
-}
-
-#story-ollie{
+.story{
 	width: 50%;
 	float: left;
 }
@@ -353,15 +324,15 @@ footer{
 
 footer p{
 	font-size: .8em;
-	color: #000;
+	color: #a5a5a5;
 }
 
 footer a{
-	color: #000;
+	color: #a5a5a5;
 }
 
 footer a:hover{
-	opacity: .6;
+	color: #000;
 }
 
 /*<--CLEARFIX-->*/
@@ -378,70 +349,55 @@ footer a:hover{
 /*<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1100px){
-	#jigsaw-1{
-		width: 51%;
-		margin-top: 2%;
+	.jigsaw-1{
+		width: 50%;
+		margin-top: 0;
 	}
 
-	#jigsaw-2{
-		width: 51%;
-		margin-left: -2%;
-		margin-top: 9%;
+	.jigsaw-2{
+		width: 50%;
+		margin-top: 4%;
 	}
 
-	#jigsaw-3{
-		float: left;
-		width: 51%;
-		margin-left: 0;
-		margin-top: 2%;
+	.jigsaw-3{
+		width: 50%;
+		margin-top: 0;
 		clear: both;
 	}
 
-	#jigsaw-4{
-		float: left;
-		width: 51%;
-		margin-top: -13%;
-		margin-left: -2%;
+	.jigsaw-4{
+		width: 50%;
+		margin-top: -16%;
 	}
 
-	#jigsaw-5{
-		float: left;
-		width: 51%;
-		margin-top: 2%;
-		margin-left: 0;
+	.jigsaw-5{
+		width: 50%;
+		margin-top: 0;
 	}
 
-	#jigsaw-6{
-		float: left;
-		width: 51%;
-		margin-left: -2%;
-		margin-top: -13%;
+	.jigsaw-6{
+		width: 50%;
+		margin-top: -16%;
 	}
 
-	#jigsaw-7{
-		float: left;
-		width: 51%;
-		margin-left: 0;
-		margin-top: -13%;
+	.jigsaw-7{
+		width: 50%;
+		margin-top: -12%;
 		clear: both;
 	}
 
-	#jigsaw-8{
-		float: left;
-		width: 51%;
-		margin-top: 2%;
-		margin-left: -2%;
+	.jigsaw-8{
+		width: 50%;
+		margin-top: 0%;
 	}
 
-	#story-lynds{
+	.story{
 		width: 100%;
 		float: none;
 	}
 
-	#story-ollie{
-		width: 100%;
-		float: none;
-		padding-top: 30px
+	#story-2{
+		padding-top: 30px;
 	}
 
 	.story-img{
@@ -451,6 +407,14 @@ footer a:hover{
 	.story-detail{
 		width: 40%;
 		padding: 0 0 0 30px;
+	}
+
+	.body-wrapper{
+		padding: 30px 20px;
+	}
+
+	.subsection{
+		padding: 30px 30px 40px 30px;
 	}
 }
 
@@ -469,6 +433,11 @@ footer a:hover{
 
 	.story-detail{
 		width: 50%;
+		padding: 0 0 0 30px;
+	}
+
+	.jigsaw-7{
+		margin-top: -11%;
 	}
 }
 
@@ -481,31 +450,18 @@ footer a:hover{
 	.story-detail{
 		width: 100%;
 		float: none;
-		padding: 20px 0 0 0;
-	}
-}
-
-@media only screen and (max-width: 450px){
-	.body-wrapper-1{
-		padding: 10px 30px 50px 30px;
+		padding: 30px 0 0 0;
 	}
 
-	.body-wrapper-2{
-		padding: 10px 30px 50px 30px;
+	#story-2{
+		padding-top: 40px;
 	}
 
 	h2{
 		font-size: 2.5em;
 	}
-
-	#our-story-container{
-		padding-top: 50px;
-		width: 100%;
-	}
-
-	#our-story{
-		width: 100%;
-		padding-top: 50px;
-		text-align: left;
-	}
 }
+
+/*@media only screen and (max-width: 450px){
+
+}*/
