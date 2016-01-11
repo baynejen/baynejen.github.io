@@ -349,45 +349,41 @@ footer a:hover{
 /*<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1100px){
-	.jigsaw-1{
+	.jigsaw-img{
 		width: 50%;
+	}
+
+	.jigsaw-1{
 		margin-top: 0;
 	}
 
 	.jigsaw-2{
-		width: 50%;
 		margin-top: 4%;
 	}
 
 	.jigsaw-3{
-		width: 50%;
 		margin-top: 0;
 		clear: both;
 	}
 
 	.jigsaw-4{
-		width: 50%;
 		margin-top: -16%;
 	}
 
 	.jigsaw-5{
-		width: 50%;
 		margin-top: 0;
 	}
 
 	.jigsaw-6{
-		width: 50%;
 		margin-top: -16%;
 	}
 
 	.jigsaw-7{
-		width: 50%;
 		margin-top: -12%;
 		clear: both;
 	}
 
 	.jigsaw-8{
-		width: 50%;
 		margin-top: 0%;
 	}
 
@@ -464,10 +460,14 @@ footer a:hover{
 
 @media only screen and (max-width: 450px){
 	.body-wrapper{
-		padding: 20px 10px;
+		padding: 20px;
 	}
 
 	.content-wrapper h2{
 		padding: 30px 0 40px 0;
+	}
+
+	.jigsaw-img{
+		padding: 5px;
 	}
 }
