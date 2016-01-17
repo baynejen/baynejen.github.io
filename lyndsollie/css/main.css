@@ -920,6 +920,10 @@ footer a:hover{
 		padding-left: 20px;
 	}
 
+	p#contact{
+		padding-bottom: 30px;
+	}
+
 	#contact-area input, #contact-area textarea {
 		width: 90%;
 	}
