@@ -6,27 +6,21 @@
 body{
 	width: 100%;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-	background-color: #e7e7e7;
-	text-align: center;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #e0e1e4;
+	text-align: left;
 	color: #000;
 }
 
 .page-wrapper{
 	width: 100%;
-	background-image: url("../images/nav/bunting3.png");	
-	background-repeat: repeat-x;
+	background-color: #fff;
 }
-
 
 .body-wrapper{
 	width: 100%;
-	background-color: #fff;
-	padding: 40px 30px;
-}
-
-.subsection{
-	background-color: #e7e7e7;
+	background-color: #edeef0;
+	padding: 50px;
 }
 
 .content-wrapper{
@@ -37,26 +31,23 @@ body{
 
 /*	<--TYPOGRAPHY-->*/
 
-h1,h2,h3,h4{
-	font-family: 'bakery', 'Helvetica', sans-serif;
-	line-height: 1em;
-}
-
 h1{
-	font-size: 5.4em;
+	font-family: 'bakery', 'Helvetica', sans-serif;
+	font-size: 3.8em;
+	letter-spacing: 0.1em;
 }
 
 h2{
-	font-size: 3em;
+	font-family: 'bakery', 'Helvetica', sans-serif;
+	font-size: 2.2em;
+	letter-spacing: 0.03em;
 }
 
 h3{
-	font-size: 2.4em;
-}
-
-h4{
-	font-size: 2.2em;
-	padding-bottom: 15px;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
 }
 
 p{
@@ -64,30 +55,41 @@ p{
 	letter-spacing: 0.01em;
 }
 
+a{
+	color: #923fad;
+	text-decoration: underline;
+}
+
 /*<--NAV-->*/
 
 nav{
   	width: 100%;
-  	padding: 50px;
+  	padding: 50px 50px 40px 50px;
   	max-width: 1400px;
   	margin: 0 auto;
+  	text-align: center;
 }
 
 .nav-content{
 	width: 100%;
 }
 
-.nav-content .logo{
-	width: 100%;
-	padding-top: 55px;
+.nav-content h1 a{
+	color: #000;
+	text-decoration: none;
 }
 
-.nav-content .logo h1 a:hover{
-	color: #f9cd63;
+.nav-content h1 a:hover{
+	color: #f44a3b;
 }
 
-.nav-content .logo h3{
-	padding: 20px 0 30px 0;
+.nav-content img{
+	width: 50px;
+	padding: 0 10px 0 5px;
+}
+
+.nav-content h3{
+	padding: 25px 0;
 }
 
 .nav-content .nav-links{
@@ -96,10 +98,10 @@ nav{
 }
 
 .nav-content .nav-links ul{
-	width: 604px;
+	width: 650px;
 	margin: 0 auto;
 	border-top: 1px solid rgba(100, 100, 100, 0.2);
-	border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+	padding-top: 10px;
 }
 
 .nav-content .nav-links ul li{
@@ -108,43 +110,50 @@ nav{
 	font-size: .9em;
 }
 
-.nav-content a{
-	text-decoration: none;
-	color: #000;
-}
-
 .nav-content .nav-links ul li a{
 	padding: 15px;
-}
-
-.nav-content .nav-links ul li:hover{
-	background-color: #f9cd63;
+	text-decoration: none;
+	color: #7d8494;
+	letter-spacing: 0.02em;
 }
 
 .nav-content .nav-links ul li:hover a{
-	color: #fff;
+	color: #923fad;
+	font-weight: 700;
+}
+
+.nav-content .nav-links ul li a.highlighted{
+	color: #923fad;
+	font-weight: 700;
 }
 
 /*<--MOBILE NAV-->*/
 
 #mobile-nav{
-	background-color: #e7e7e7;
+	background-color: #fff;
 	width: 100%;
-	padding: 100px 30px 30px 30px;
+	padding: 60px 50px;
 	display: none;
-	text-align: left;
-	background-image: url("../images/nav/bunting3.png");	
-	background-repeat: repeat-x;
 }
 
 #mobile-nav h1{
-	font-size: 3em;
+	font-size: 3.3em;
+	letter-spacing: 0.1em;
 	padding-left: 10px;
 }
 
-#mobile-nav a{
+#mobile-nav h1 a{
 	text-decoration: none;
 	color: #000;
+}
+
+#mobile-nav h1 a:hover{
+	color: #f44a3b;
+}
+
+#mobile-nav img{
+	width: 50px;
+	padding: 0 10px 0 5px;
 }
 
 #cssmenu{
@@ -160,19 +169,26 @@ nav{
 
 #cssmenu h3{
 	padding-bottom: 20px;
-	font-size: 2.1em;
+	font-size: 1em;
+	color: #000;
 }
 
 #cssmenu a {
-  	padding: 20px 0 20px 10px;
-  	color: #000;
+  	padding: 15px 0;
+  	color: #7d8494;
+	letter-spacing: 0.02em;
   	text-decoration: none;
   	text-transform: uppercase;
 }
 
 #cssmenu a:hover {
-  	background-color: #f9cd63;
-  	color: #fff;
+	font-weight: 700;
+  	color: #923fad;
+}
+
+#cssmenu a.highlighted{
+	color: #923fad;
+	font-weight: 700;
 }
 
 #cssmenu.small-screen {
@@ -185,27 +201,27 @@ nav{
 #cssmenu.small-screen ul li{
 	float: none;
 	display: block;
-	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 	font-size: .9em;
 }
 
 #cssmenu.small-screen ul li:last-of-type {
 	float: none;
 	display: block;
-	border-bottom: none;
 }
 
 #cssmenu.small-screen ul li:first-of-type{
-	padding-top: 20px;
+	padding-top: 50px;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+	margin-bottom: 10px;
 }
 
-#cssmenu.small-screen #menu-button {
+#cssmenu.small-screen #menu-button{
 	display: block;
 	padding: 16px 20px;
 	cursor: pointer;
 	top: 0;
 	right: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 #cssmenu.small-screen #menu-button:after {
@@ -231,95 +247,346 @@ nav{
 	background: rgba(100,100,100,.6);
 }
 
-/*<--JIGSAW-->*/
+/*<--HOME-->*/
 
-.jigsaw{
+#gallery-container{
 	margin: 0 auto;
-	width: 100%;
-}
-
-.jigsaw-img{
-	width: 25%;
+	width: 50%;
 	float: left;
-	padding: 10px;
 }
 
-.jigsaw-img img{
+#story-container{
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding: 20px 0 10px 30px;
+}
+
+.gallery{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.gallery img{
 	width: 100%;
 	display: block;
 }
 
-.jigsaw-1{
-	margin-top: 2%;
+#story-container h3{
+	padding: 30px 0;
 }
 
-.jigsaw-2{
-	margin-top: 6%;
-}
+/*<--BIG DAY-->*/
 
-.jigsaw-3{
-	margin-top: 4%;
-}
-
-.jigsaw-4{
-	margin-top: 0%;
-}
-
-.jigsaw-5{
-	margin-top: 0%;
-}
-
-.jigsaw-6{
-	margin-top: -6%;
-}
-
-.jigsaw-7{
-	margin-top: -2%;
-}
-
-.jigsaw-8{
-	margin-top: -6%;
-}
-
-/*<--OUR STORY-->*/
-
-.content-wrapper h2{
-	padding: 30px 0 50px 0;
-}
-
-#our-story{
-	width: 100%;
-	text-align: left;
-}
-
-.story{
-	width: 50%;
-	float: left;
-}
-
-.story-img{
-	width: 50%;
-	float: left;
-}
-
-.story-img img{
+#bigday-hero{
 	width: 100%;
 }
 
-.story-detail{
+#bigday-hero img{
+	width: 100%;
+	display: block;
+}
+
+#bigday-container{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#bigday-container h2{
+	padding-bottom: 30px;
+}
+
+.bigday{
+	padding: 25px 0;
+	border-bottom: 1px solid rgba(100,100,100,.2);
+}
+
+.time{
+	width: 20%;
+	float: left;
+}
+
+.event{
+	width: 80%;
+	float: left;
+}
+
+#extra-info h2{
+	padding: 60px 0 20px 0;
+}
+
+/*<--BRIDAL PARTY-->*/
+
+
+.party-container{
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.party-container h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#bride{
 	width: 50%;
 	float: left;
-	padding: 0 30px;
+	padding-right: 20px;
+}
+
+#groom{
+	width: 50%;
+	float: left;
+	padding-left: 20px;
+	border-left: 1px solid rgba(100,100,100,.2);
+}
+
+#bridesmaids{
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+#groomsmen{
+	width: 50%;
+	float: left;
+	padding-left: 20px;
+	border-left: 1px solid rgba(100,100,100,.2);
+}
+
+.person{
+	width: 50%;
+	float: left;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.person img{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.person h3:last-of-type{
+	padding-bottom: 20px;
+}
+
+/*<--PRACTICAL-->*/
+
+#practical{
+	width: 100%;
+}
+
+.practical-links{
+	text-align: center;
+}
+
+.practical-links ul{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.practical-links  ul li{
+	display: inline-block;
+	padding: 15px 0;
+	font-size: .9em;
+	color: #7d8494;
+	margin: 0;
+}
+
+.practical-links ul li a{
+	padding: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #7d8494;
+}
+
+.practical-links ul li:hover{
+	color: #fff;
+	background-color: #7b4c96;
+	border-radius: 20px;
+}
+
+.practical-links ul li:hover a{
+	color: #fff;
+}
+
+.practical-links ul li.highlighted{
+	color: #fff;
+	background-color: #7b4c96;
+	border-radius: 20px;
+}
+
+.practical-links ul li.highlighted a{
+	color: #fff;
+}
+
+#addresses{
+	padding-top: 50px;
+}
+
+#addresses h3{
+	padding-bottom: 20px;
+}
+
+#service{
+	width: 50%;
+	float: left;
+	padding-right: 35px;
+}
+
+#reception{
+	width: 50%;
+	float: left;
+	padding-left: 35px;
+	border-left: 1px solid rgba(100,100,100,.2);
+}
+
+.address{
+	float: left;
+	width: 40%;
+}
+
+.map{
+	float: left;
+	width: 60%;
+	padding-left: 10px;
+}
+
+.map img{
+	width: 100%;
+}
+
+#practical hr{
+	width: 100%;
+	height: 1px;
+	border: 0;
+	margin: 40px auto 0 auto;
+	background-color: rgba(100,100,100,.2);
+	padding: 0;
+}
+
+#travel{
+	width: 100%;
+}
+
+#travel h3{
+	padding: 40px 0 10px 0;
+}
+
+#accommodation{
+	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#accommodation ul{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+#accommodation ul li{
+	padding: 10px 0;
+	list-style-type: disc;
+}
+
+#practical ul li a{
+	line-height: 1.5em;
+}
+
+/*<--GIFTS-->*/
+
+#gifts{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#gifts-content{
+	width: 100%;
+}
+
+#gifts-logo{
+	width: 100%;
+}
+
+#gifts-logo img{
+	padding-top: 30px;
+	width: 100%;
+	display: block;
+}
+
+/*<--RSVP-->*/
+
+#rsvp{
+	width: 100%;
+}
+
+#rsvp h2{
+	text-align: center;
+}
+
+#rsvp p{
+	text-align: center;
+	padding: 30px 0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#contact-area{
+	width: 700px;
+	margin: 0 auto;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 410px;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 1px solid #ccc;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #7b4c96;
+	padding: 10px 20px;
+}
+
+#contact-area input.submit-button:hover{
+	background-color: #f44a3b;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 260px;
+	padding-top: 18px;
+	font-size: 1em;
 }
 
 /*<--FOOTER-->*/
 
 footer{
-	padding: 30px;
+	padding: 30px 50px;
 	width: 100%;
-	background-color: #dadada;
+	text-align: center;
+	background-color: #e0e1e4;
   	margin: 0 auto;
 	bottom: 0;
+	max-width: 1400px;
 }
 
 footer p{
@@ -349,72 +616,76 @@ footer a:hover{
 /*<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1100px){
-	.jigsaw-img{
-		width: 50%;
+	.body-wrapper{
+		padding: 35px;
 	}
 
-	.jigsaw-1{
-		margin-top: 0;
+	#story-container{
+		padding: 20px 0 0 20px;
 	}
 
-	.jigsaw-2{
-		margin-top: 4%;
+	.gallery{
+		padding: 15px;
 	}
 
-	.jigsaw-3{
-		margin-top: 0;
-		clear: both;
+	.party-container{
+		padding-bottom: 0;
 	}
 
-	.jigsaw-4{
-		margin-top: -16%;
+	.party-container h2{
+		padding-top: 10px;
 	}
 
-	.jigsaw-5{
-		margin-top: 0;
+	#bride{
+		width: 100%;
+		float: none;
+		padding-right: 0;
 	}
 
-	.jigsaw-6{
-		margin-top: -16%;
+	#groom{
+		width: 100%;
+		float: none;
+		border-top: 1px solid rgba(100,100,100,.2);
+		padding-left: 0;
+		border-left: none;
+		padding-top: 30px;
 	}
 
-	.jigsaw-7{
-		margin-top: -12%;
-		clear: both;
+	#bridesmaids{
+		width: 100%;
+		float: none;
+		padding-right: 0;
+		border-top: 1px solid rgba(100,100,100,.2);
+		padding-top: 30px;
 	}
 
-	.jigsaw-8{
-		margin-top: 0%;
+	#groomsmen{
+		width: 100%;
+		float: none;
+		border-top: 1px solid rgba(100,100,100,.2);
+		padding-top: 30px;
+		padding-left: 0;
+		border-left: none;
 	}
 
-	.story{
+	.address{
 		width: 100%;
 		float: none;
 	}
 
-	#story-2{
+	.map{
+		width: 100%;
+		float: none;
+		padding-left: 0;
 		padding-top: 30px;
 	}
 
-	.story-img{
-		width: 60%;
-	}
-
-	.story-detail{
-		width: 40%;
-		padding: 0 0 0 30px;
-	}
-
-	.body-wrapper{
-		padding: 30px 20px;
-	}
-
-	.subsection{
-		padding: 30px 30px 40px 30px;
+	#rsvp p{
+		width: 80%;
 	}
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 970px){
 	nav{
 		display: none;
 	}
@@ -423,59 +694,183 @@ footer a:hover{
 		display: block;
 	}
 
-	.story-img{
-		width: 50%;
+	.body-wrapper{
+		padding: 30px;
 	}
 
-	.story-detail{
-		width: 50%;
-		padding: 0 0 0 30px;
+	#gallery-container{
+		width: 100%;
+		float: none;
 	}
 
-	.jigsaw-7{
-		margin-top: -11%;
+	#story-container{
+		width: 100%;
+		float: none;
+		padding: 40px 15px 20px 15px;
+	}
+
+	.person{
+		padding: 15px;
+	}
+
+	#bigday-container{
+		width: 100%;
+		padding: 10px;
+	}
+
+	#bigday-container h2{
+		padding-top: 20px;
+	}
+
+	#extra-info h2{
+		padding: 60px 0 20px 0;
+	}
+
+	#practical{
+		padding: 10px;
+	}
+
+	.practical-links{
+		text-align: left;
+	}
+
+	#accommodation{
+		width: 100%;
+	}
+
+	#gifts{
+		width: 100%;
+		padding: 10px;
+	}
+
+	#rsvp h2{
+		padding-top: 20px;
+	}
+
+	#rsvp p{
+		width: 90%;
+	}
+
+	#contact-area{
+		width: 540px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 250px;
 	}
 }
 
 @media only screen and (max-width: 600px){
-	.story-img{
-		width: 100%;
-		float: none;
+	.body-wrapper{
+		padding: 20px;
 	}
 
-	.story-detail{
-		width: 100%;
-		float: none;
-		padding: 30px 0 0 0;
+	#mobile-nav{
+		padding: 50px 40px;
 	}
 
-	#story-2{
+	footer{
+		padding: 30px;
+	}
+
+	.party-container h2{
+		padding-top: 20px;
+	}
+
+	#groom h2{
+		padding-top: 10px;
+	}
+
+	#bridesmaids h2{
+		padding-top: 10px;
+	}
+
+	#groomsmen h2{
+		padding-top: 10px;
+	}
+
+	#service{
+		width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+
+	#reception{
+		width: 100%;
+		float: none;
+		padding-left: 0;
+		border-left: none;
+		border-top: 1px solid rgba(100,100,100,.2);
 		padding-top: 40px;
+		margin-top: 40px;
 	}
 
-	h2{
-		font-size: 2.2em;
+	#rsvp p{
+		width: 100%;
+	}
+
+	#contact-area{
+		width: 100%;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 95%;
+		display: block;
+		margin-bottom: 25px;
+		padding: 10px;
+	}
+
+	#contact-area input.submit-button {
+		width: 100px;
+		float: none;
+		text-align: center;
+	}
+
+	label {
+		float: none;
+		text-align: left;
+		margin-right: 0;
+		width: 100%;
+		padding-top: 0;
+		display: block;
 	}
 }
 
 @media only screen and (max-width: 450px){
-	.body-wrapper{
-		padding: 20px 10px;
-	}
-
-	.subsection{
-		padding: 30px 20px;
-	}
-
-	.content-wrapper h2{
-		padding: 20px 0 40px 0;
-	}
-
-	.jigsaw-img{
-		padding: 5px;
-	}
-
 	#mobile-nav{
-		padding: 100px 20px 30px 20px;
+		padding: 50px 30px;
+	}
+
+	#mobile-nav h1{
+		font-size: 2.7em;
+	}
+
+	.gallery{
+		width: 100%;
+		float: none;
+	}
+	
+	.person{
+		width: 100%;
+		float: none;
+	}
+
+	.practical-links  ul li{
+		display: block;
+		margin: 2px 0;
+		text-align: center;
+	}
+
+	.time{
+		width: 25%;
+	}
+
+	.event{
+		width: 75%;
+		padding-left: 10px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 90%;
 	}
 }

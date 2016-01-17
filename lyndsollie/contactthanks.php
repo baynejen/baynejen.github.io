@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lynds and Ollie | We're getting married!</title>
+	<title>RSVP | Lynds and Ollie</title>
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +15,20 @@
 	<![endif]-->
 </head>
 <body>
-	<audio autoplay>
-  		<source src="song.m4a" type="audio/mpeg">
-	</audio>
 	<div class="page-wrapper">	
-
-<!-- NAV -->
-	
+<!-- nav -->
 		<nav>
 			<div class="nav-content">
-				<h1><a href="#">Lynds<img src="images/flower.jpg">Ollie</a></h1>
+				<h1><a href="index.html">Lynds<img src="images/flower.jpg">Ollie</a></h1>
 				<h3>23.07.16 - West Yorkshire</h3>
 				<div class="nav-links">
 					<ul>
-						<li><a href="#" class="highlighted">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="bigday.html">The Big Day</a></li>
 						<li><a href="bridalparty.html">Bridal Party</a></li>
 						<li><a href="practical-travel.html">Practical</a></li>
 						<li><a href="gifts.html">Gifts</a></li>
-						<li><a href="rsvp.html">RSVP</a></li>
+						<li><a href="rsvp.html" class="highlighted">RSVP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -42,16 +37,16 @@
 <!-- MOBILE NAV -->
 
 		<div id="mobile-nav">
-			<h1><a href="#">Lynds<img src="images/flower.jpg">Ollie</a></h1>
+			<h1><a href="index.html">Lynds<img src="images/flower.jpg">Ollie</a></h1>
 			<div id='cssmenu'>
 				<ul>
 					<li><h3>23.07.16 - West Yorkshire</h3></li>
-				   	<li><a href="#" class="highlighted">Home</a></li>
+				   	<li><a href="index.html">Home</a></li>
 				   	<li><a href="bigday.html">The Big Day</a></li>
 				   	<li><a href="bridalparty.html">Bridal Party</a></li>
 				   	<li><a href="practical-travel.html">Practical</a></li>
 				   	<li><a href="gifts.html">Gifts</a></li>
-				   	<li><a href="rsvp.html">RSVP</a></li>
+				   	<li><a href="rsvp.html" class="highlighted">RSVP</a></li>
 				</ul>
 			</div>
 		</div>
@@ -59,25 +54,14 @@
 <!-- BODY -->
 	
 		<div class="body-wrapper">
-			<div class="content-wrapper clearfix">
-				<div id="gallery-container" class="clearfix">
-					<div class="gallery">
-						<img src="images/home/1.jpg">
-					</div>
-					<div class="gallery">
-						<img src="images/home/2.jpg">
-					</div>
-					<div class="gallery">
-						<img src="images/home/3.jpg">
-					</div>
-					<div class="gallery">
-						<img src="images/home/4.jpg">
-					</div>
-				</div>
-				<div id="story-container">
-					<h2>We're getting married!</h2>
-					<h3>A warm welcome to our wondrous wedding website!</h3>
-					<p>As you may have gathered from our skinny little invites; we decided to save the trees and go full on 2016 to make you an easy to navigate, multi-device-functioning webpage for all your wedding related questions and queries.<br><br>Simply click on the relevant tab and read away! As you read this please raise the very first toast of the wedding to the incredibly talented Jen Bayne for embracing her inner Zuckerberg and crafting this site for us - with real actual code and everything.<br><br>Please remember to RSVP by March 30th!<br><br>Lots of love,<br><br>Lyndsay and Ollie xXx</p>
+			<div class="content-wrapper">
+				<div id="rsvp">
+					<h2>Thank you!</h2>
+					<p>Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us:
+					<br><br>
+					Email us - <a href="mailto:youremail@email.com" target="_blank">youremail@email.com</a>
+					<br>
+					Give us a call - 12345 678 901</p>
 				</div>
 			</div>
 		</div>
