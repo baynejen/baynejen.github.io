@@ -279,11 +279,11 @@ nav{
 
 /*<--BIG DAY-->*/
 
-#bigday-hero{
+.bigday-hero{
 	width: 100%;
 }
 
-#bigday-hero img{
+.bigday-hero img{
 	width: 100%;
 	display: block;
 }
