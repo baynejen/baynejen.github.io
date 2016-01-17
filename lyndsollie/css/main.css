@@ -156,6 +156,12 @@ nav{
 	padding: 0 10px 0 5px;
 }
 
+#mobile-nav h3{
+	padding: 10px 0 40px 0;
+	font-size: 1em;
+	color: #000;
+}
+
 #cssmenu{
 	display: none;
 }
@@ -165,12 +171,6 @@ nav{
 #cssmenu ul li a,
 #cssmenu #menu-button {
 	display: block;
-}
-
-#cssmenu h3{
-	padding-bottom: 20px;
-	font-size: 1em;
-	color: #000;
 }
 
 #cssmenu a {
@@ -195,7 +195,13 @@ nav{
 	width: 100%;
 	display: block;
 	position: relative;
-	margin-top: -50px;
+	margin-top: -100px;
+}
+
+#cssmenu.small-screen ul{
+	margin-top: 40px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 
 #cssmenu.small-screen ul li{
@@ -209,19 +215,13 @@ nav{
 	display: block;
 }
 
-#cssmenu.small-screen ul li:first-of-type{
-	padding-top: 50px;
-	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
-	margin-bottom: 10px;
-}
-
 #cssmenu.small-screen #menu-button{
 	display: block;
 	padding: 16px 20px;
 	cursor: pointer;
 	top: 0;
 	right: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 #cssmenu.small-screen #menu-button:after {
@@ -788,7 +788,11 @@ footer a:hover{
 	}
 
 	#mobile-nav{
-		padding: 50px 40px;
+		padding: 60px 40px;
+	}
+
+	#mobile-nav h3{
+		padding: 5px 0 40px 0;
 	}
 
 	footer{
@@ -882,10 +886,10 @@ footer a:hover{
 		font-size: 2.3em;
 	}
 
-	#cssmenu.small-screen {
-		margin-top: -45px;
+	#mobile-nav h3{
+		font-size: .9em;
 	}
-
+	
 	.gallery{
 		width: 100%;
 		float: none;
