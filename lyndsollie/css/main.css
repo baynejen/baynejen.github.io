@@ -388,14 +388,14 @@ nav{
 
 .practical-links  ul li{
 	display: inline-block;
-	padding: 15px 0;
+	padding: 10px 0;
 	font-size: .9em;
 	color: #7d8494;
 	margin: 0;
 }
 
 .practical-links ul li a{
-	padding: 15px;
+	padding: 10px 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #7d8494;
@@ -404,7 +404,7 @@ nav{
 .practical-links ul li:hover{
 	color: #fff;
 	background-color: #7b4c96;
-	border-radius: 20px;
+	border-radius: 18px;
 }
 
 .practical-links ul li:hover a{
@@ -414,7 +414,7 @@ nav{
 .practical-links ul li.highlighted{
 	color: #fff;
 	background-color: #7b4c96;
-	border-radius: 20px;
+	border-radius: 18px;
 }
 
 .practical-links ul li.highlighted a{
@@ -525,16 +525,24 @@ nav{
 	text-align: center;
 }
 
+
 #rsvp p{
 	text-align: center;
 	padding: 30px 0;
-	width: 50%;
+}
+
+p#contact{
+	width: 700px;
 	margin: 0 auto;
+	border-top: 1px solid rgba(100,100,100,.2);
+	padding-top: 30px;
+	text-align: right;
 }
 
 #contact-area{
 	width: 700px;
 	margin: 0 auto;
+	padding: 0 0 30px 0;
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -672,10 +680,6 @@ footer a:hover{
 		padding-left: 0;
 		padding-top: 30px;
 	}
-
-	#rsvp p{
-		width: 80%;
-	}
 }
 
 @media only screen and (max-width: 970px){
@@ -751,10 +755,6 @@ footer a:hover{
 		padding: 10px;
 	}
 
-	.practical-links{
-		text-align: center;
-	}
-
 	#accommodation{
 		width: 100%;
 	}
@@ -768,8 +768,9 @@ footer a:hover{
 		padding-top: 20px;
 	}
 
-	#rsvp p{
-		width: 90%;
+
+	p#contact{
+		width: 540px;
 	}
 
 	#contact-area{
@@ -830,8 +831,19 @@ footer a:hover{
 		text-align: left;
 	}
 
+	#rsvp h2{
+		text-align: left;
+	}
+
 	#rsvp p{
+		text-align: left;
+	}
+
+	p#contact{
 		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		border-top: 1px solid rgba(100,100,100,.2);
 	}
 
 	#contact-area{
@@ -867,7 +879,11 @@ footer a:hover{
 	}
 
 	#mobile-nav h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
+	}
+
+	#cssmenu.small-screen {
+		margin-top: -45px;
 	}
 
 	.gallery{
