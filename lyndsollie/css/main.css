@@ -388,10 +388,10 @@ nav{
 }
 
 .practical-links ul{
-	width: 100%;
+	width: 70%;
 	margin: 0 auto;
 	border-bottom: 1px solid rgba(100,100,100,.2);
-	padding-bottom: 
+	padding-bottom: 30px;
 }
 
 .practical-links  ul li{
@@ -752,6 +752,10 @@ footer{
 		border-left: none;
 	}
 
+	.practical-links ul{
+		width: 100%;
+	}
+
 	#practical{
 		padding: 10px;
 	}
@@ -962,7 +966,7 @@ footer{
 	}
 
 	.story-container h2{
-		font-size: 2.1em;
+		font-size: 2.0em;
 	}
 	
 	.person{
@@ -971,7 +975,6 @@ footer{
 	}
 
 	.practical-links ul{
-		border-bottom: 1px solid rgba(100,100,100,.1);
 		padding-bottom: 20px;
 	}
 
