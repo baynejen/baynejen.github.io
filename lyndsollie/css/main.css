@@ -160,7 +160,7 @@ nav{
 }
 
 #mobile-nav h3{
-	padding: 10px 0 40px 0;
+	padding: 5px 0 40px 0;
 	font-size: .9em;
 	color: #7d8494;
 	text-align: center;
@@ -920,10 +920,6 @@ footer{
 }
 
 @media only screen and (max-width: 450px){
-	.body-wrapper{
-		padding: 15px;
-	}
-
 	#mobile-nav{
 		padding: 60px 20px 40px 20px;
 	}
@@ -935,11 +931,6 @@ footer{
 
 	#mobile-nav img{
 		width: 40px;
-	}
-
-	#mobile-nav h3{
-		font-size: .9em;
-		text-align: center;
 	}
 
 	#cssmenu.small-screen{
