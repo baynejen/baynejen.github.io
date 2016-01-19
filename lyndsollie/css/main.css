@@ -390,7 +390,8 @@ nav{
 .practical-links ul{
 	width: 100%;
 	margin: 0 auto;
-	border-bottom: 1px solid rgba(100,100,100)
+	border-bottom: 1px solid rgba(100,100,100,.2);
+	padding-bottom: 
 }
 
 .practical-links  ul li{
@@ -765,6 +766,10 @@ footer{
 
 	.map{
 		width: 50%;
+	}
+
+	#travel{
+		width: 100%;
 	}
 
 	#accommodation{
