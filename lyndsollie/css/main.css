@@ -962,18 +962,6 @@ footer{
 		width: 100%;
 		float: none;
 	}
-
-	#story-container h2{
-		text-align: center;
-	}
-
-	#story-container h3{
-		text-align: center;
-	}
-
-	#bigday-container h2{
-		text-align: center;
-	}
 	
 	.person{
 		width: 100%;
@@ -996,9 +984,6 @@ footer{
 		padding-top: 30px;
 	}
 
-	.address{
-		text-align: center;
-	}
 
 	.time{
 		width: 25%;
