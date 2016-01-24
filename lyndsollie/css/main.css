@@ -532,13 +532,34 @@ nav{
 	padding: 30px 0;
 }
 
+.thing-container{
+	border-bottom: 1px solid rgba(100,100,100,.2);
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.thing-container:last-of-type{
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.thing-container img{
+	width: 100%;
+	padding: 20px 0;
+}
+
 #things p.things-title{
 	font-weight: 700;
 }
 
+#things p.things-info{
+	padding: 20px 0;
+}
+
 #things ul{
-	padding-top: 20px;
 	padding-left: 20px;
+	padding-bottom: 20px;
 }
 
 #things ul li{
@@ -584,7 +605,14 @@ nav{
 
 #rsvp h3{
 	text-align: center;
-	padding: 20px 0 30px 0;
+	padding: 20px 0;
+}
+
+#rsvp p{
+	width: 700px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 p#contact{
@@ -805,6 +833,10 @@ footer{
 		padding-top: 20px;
 	}
 
+	#rsvp p{
+		width: 540px;
+	}
+
 	p#contact{
 		width: 540px;
 	}
@@ -920,6 +952,12 @@ footer{
 
 	#rsvp h3{
 		padding: 30px 0;
+	}
+
+	#rsvp p{
+		width: 100%;
+		text-align: left;
+		padding-bottom: 40px;
 	}
 
 	p#contact{
