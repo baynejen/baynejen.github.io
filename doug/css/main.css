@@ -59,8 +59,6 @@ nav{
 	width: 30%;
 	float: left;
 	font-family: 'Cinzel', serif;
-	height: 120px;
-	padding-top: 14px;
 }
 
 .nav-content .nav-links ul{
@@ -84,6 +82,9 @@ nav{
 	text-decoration: underline;
 }
 
+.nav-content .nav-links a.highlighted{
+	text-decoration: underline;
+}
 
 /*<--MOBILE NAV-->*/
 
@@ -120,6 +121,10 @@ nav{
 
 #cssmenu a:hover {
   	text-decoration: underline;
+}
+
+#cssmenu a.highlighted{
+	text-decoration: underline;
 }
 
 #cssmenu.small-screen {
@@ -161,8 +166,8 @@ nav{
 	right: 20px;
 	top: 17px;
 	display: block;
-	border-top: 2px solid rgba(100,100,100,.6);
-	border-bottom: 2px solid rgba(100,100,100,.6);
+	border-top: 2px solid rgba(100,100,100,.9);
+	border-bottom: 2px solid rgba(100,100,100,.9);
 	width: 22px;
 	height: 3px;
 }
@@ -175,7 +180,7 @@ nav{
 	display: block;
 	width: 22px;
 	height: 2px;
-	background: rgba(100,100,100,.6);
+	background: rgba(100,100,100,.9);
 }
 
 /*<--BODY-->*/
@@ -216,6 +221,126 @@ nav{
 	padding-bottom: 0;
 }
 
+.entry-right ul li{
+	padding: 15px 0;
+	line-height: 1.5em;
+}
+
+.entry-right ul li:first-of-type{
+	padding-top: 0;
+}
+
+/*ABOUT*/
+
+
+#doug{
+	width: 50%;
+	float: left;
+	padding: 50px 25px 50px 50px;
+}
+
+#doug img{
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+
+#maddy{
+	width: 50%;
+	float: left;
+	padding: 50px 50px 50px 25px;
+}
+
+#maddy img{
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+/*GALLERY*/
+
+#gallery{
+	width: 100%;
+	padding: 10px;
+}
+
+#gallery img{
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+}
+
+/*CONTACT*/
+
+#contact{
+	padding: 50px;
+}
+
+#contact a{
+	color: #000;
+}
+
+#contact a:hover{
+	opacity: .6;
+}
+
+#contact-area{
+	width: 100%;
+	padding: 30px 0 50px 0;
+	margin: 0 auto 0 0;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 10px;
+	width: 410px;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	-webkit-appearance:none;
+	border-radius: 0;
+}
+
+#contact-area textarea {
+	height: 140px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 1px solid #ccc;
+}
+
+#contact-area input.submit-button {
+	width: 430px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #a5a5a5;
+	border: 2px solid #a5a5a5;
+	padding: 15px 30px;
+	box-shadow: none;
+	background-image: none;
+	border-image: none;
+	display: block;
+	margin-left: 132px;
+}
+
+#contact-area input.submit-button:hover{
+	background-color: #3a3a3a;
+	border: 2px solid #3a3a3a;
+	color: #fff;
+}
+
+label {
+	float: left;
+	text-align: left;
+	margin-right: 15px;
+	width: 115px;
+	padding-top: 27px;
+	font-size: 1em;
+}
+
+#contact-thanks{
+	padding: 50px 50px 150px 50px;
+}
+
 /*FOOTER*/
 
 footer{
@@ -227,17 +352,33 @@ footer{
 	bottom: 0;
 }
 
-footer p{
+footer .footer-info{
+	width: 70%;
+	float: left;
+}
+
+footer .footer-info p{
 	font-size: .8em;
 	color: #000;
 }
 
-footer a{
+footer .footer-info a{
 	color: #000;
 }
 
-footer a:hover{
+footer .footer-info a:hover{
 	opacity: .6;
+}
+
+footer .social{
+	width: 30%;
+	float: right;
+	text-align: right;
+	margin-top: -5px;
+}
+
+footer .social img{
+	width: 30px;
 }
 
 /*<--CLEARFIX-->*/
@@ -288,22 +429,40 @@ footer a:hover{
 		font-size: 1em;
 	}
 
-
 	nav{
 	  	width: 100%;
 	  	padding: 100px 40px 30px 40px;
 	}
 
-	.nav-content .nav-links{
-		padding-top: 8px;
+	.nav-content .nav-links ul{
+		margin-top: -15px;
+
 	}
 
 	.nav-content .nav-links ul li{
 		padding: 6px 0;
 	}
 
+	#gallery img{
+		width: 50%;
+		float: left;
+	}
+
 	footer{
 		padding: 40px;
+	}
+
+	footer .footer-info{
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	footer .social{
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-top: 30px;
 	}
 }
 
@@ -314,6 +473,43 @@ footer a:hover{
 
 	#mobile-nav{
 		display: block;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#doug{
+		width: 100%;
+		float: none;
+		padding: 50px;
+	}
+
+	#maddy{
+		width: 100%;
+		float: none;
+		padding: 0 50px 50px 50px;
+	}
+
+	#gallery img{
+		width: 100%;
+	}
+
+	#contact-area{
+		padding-top: 10px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 90%;
+		margin-top: 20px;
+	}
+
+	#contact-area input.submit-button {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#contact-area input.submit-button {
+		width: 94%;
+		margin-left: 0;
 	}
 }
 
@@ -330,8 +526,27 @@ footer a:hover{
 		padding-top: 15px;
 	}
 
+	#doug{
+		padding: 30px;
+	}
+
+	#maddy{
+		padding: 0 30px 30px 30px;
+	}
+
+	#contact{
+		padding: 30px;
+	}
+
+	#contact-area input.submit-button {
+		width: 97%;
+	}
+
+	#contact-thanks{
+		padding: 50px 30px 80px 30px;
+	}
+
 	footer{
-		padding: 40px 30px;
-		text-align: center;
+		padding: 30px;
 	}
 }
