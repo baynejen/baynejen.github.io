@@ -806,6 +806,15 @@ footer{
 		padding: 15px;
 	}
 
+	.party-container-3{
+		width: 100%;
+	}
+
+
+	.person-3{
+		width: 33.33%;
+	}
+
 /*	.person-avatar{
 		width: 50%;
 	}
@@ -929,6 +938,14 @@ footer{
 		clear: both;
 		margin: 0 auto;
 		padding-top: 30px;
+	}
+
+	.party-container-3{
+		width: 100%;
+	}
+
+	.person-3{
+		width: 100%;
 	}
 
 /*	.person-avatar{
