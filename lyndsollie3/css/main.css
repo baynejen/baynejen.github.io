@@ -1,0 +1,1168 @@
+@font-face{
+	font-family: 'bakery';
+	src: url(../font/bakery.otf);
+}
+
+body{
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #e0e1e4;
+	text-align: left;
+	color: #000;
+}
+
+.page-wrapper{
+	width: 100%;
+	background-color: #fff;
+}
+
+.body-wrapper{
+	width: 100%;
+	background-color: #edeef0;
+	padding: 50px;
+}
+
+.body-wrapper-bridal{
+	width: 100%;
+	background-color: #edeef0;
+	padding: 50px 20px;
+}
+
+.content-wrapper{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/*	<--TYPOGRAPHY-->*/
+
+h1{
+	font-family: 'bakery', 'Helvetica', sans-serif;
+	font-size: 3.8em;
+	letter-spacing: 0.1em;
+	color: #4e4c86;
+}
+
+h2{
+	font-family: 'bakery', 'Helvetica', sans-serif;
+	font-size: 2.2em;
+	letter-spacing: 0.03em;
+	color: #4e4c86;
+}
+
+h3{
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+}
+
+p{
+	line-height: 1.7em;
+	letter-spacing: 0.01em;
+}
+
+a{
+	color: #923fad;
+	text-decoration: underline;
+}
+
+/*<--NAV-->*/
+
+nav{
+  	width: 100%;
+  	padding: 50px 50px 40px 50px;
+  	max-width: 1400px;
+  	margin: 0 auto;
+  	text-align: center;
+}
+
+.nav-content{
+	width: 100%;
+}
+
+.nav-content h1 a{
+	color: #4e4c86;
+	text-decoration: none;
+}
+
+.nav-content h1 a:hover{
+	color: #f44a3b;
+}
+
+.nav-content img{
+	width: 50px;
+	padding: 0 10px 0 5px;
+}
+
+.nav-content h3{
+	padding: 25px 0;
+}
+
+.nav-content .nav-links{
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.nav-content .nav-links ul{
+	width: 650px;
+	margin: 0 auto;
+	border-top: 1px solid rgba(100, 100, 100, 0.2);
+	padding-top: 10px;
+}
+
+.nav-content .nav-links ul li{
+	display: inline-block;
+	padding: 15px 0;
+	font-size: .9em;
+}
+
+.nav-content .nav-links ul li a{
+	padding: 15px;
+	text-decoration: none;
+	color: #7d8494;
+	letter-spacing: 0.02em;
+}
+
+.nav-content .nav-links ul li:hover a{
+	color: #8241a3;
+	font-weight: 700;
+}
+
+.nav-content .nav-links ul li a.highlighted{
+	color: #8241a3;
+	font-weight: 700;
+}
+
+/*<--MOBILE NAV-->*/
+
+#mobile-nav{
+	background-color: #fff;
+	width: 100%;
+	padding: 60px 20px 40px 20px;
+	display: none;
+}
+
+#mobile-nav h1{
+	font-size: 3.3em;
+	letter-spacing: 0.1em;
+	padding-left: 10px;
+	text-align: center;
+}
+
+#mobile-nav h1 a{
+	text-decoration: none;
+	color: #4e4c86;
+}
+
+#mobile-nav h1 a:hover{
+	color: #f44a3b;
+}
+
+#mobile-nav img{
+	width: 45px;
+	padding: 0 10px 0 5px;
+}
+
+#mobile-nav h3{
+	padding: 5px 0 40px 0;
+	font-size: .9em;
+	color: #7d8494;
+	text-align: center;
+}
+
+#cssmenu{
+	display: none;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+	display: block;
+}
+
+#cssmenu a {
+  	padding: 15px 0;
+  	color: #7d8494;
+	letter-spacing: 0.02em;
+  	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+#cssmenu a:hover {
+	font-weight: 700;
+  	color: #8241a3;
+}
+
+#cssmenu a.highlighted{
+	color: #8241a3;
+	font-weight: 700;
+}
+
+#cssmenu.small-screen{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-top: -180px;
+}
+
+#cssmenu.small-screen ul{
+	margin-top: 15px;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+
+#cssmenu.small-screen ul li{
+	float: none;
+	display: block;
+	font-size: .9em;
+}
+
+#cssmenu.small-screen ul li:last-of-type {
+	float: none;
+	display: block;
+}
+
+#cssmenu.small-screen #menu-button{
+	display: block;
+	padding: 16px 20px;
+	cursor: pointer;
+	top: 0;
+	right: 10px;
+	padding-bottom: 140px;
+}
+
+#cssmenu.small-screen #menu-button:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 17px;
+	display: block;
+	border-top: 2px solid rgba(100,100,100,.9);
+	border-bottom: 2px solid rgba(100,100,100,.9);
+	width: 22px;
+	height: 3px;
+}
+
+#cssmenu.small-screen #menu-button:before {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 27px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: rgba(100,100,100,.9);
+}
+
+/*<--HOME-->*/
+
+#gallery-container{
+	margin: 0 auto;
+	width: 50%;
+	float: left;
+}
+
+#story-container{
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding: 20px 0 10px 30px;
+}
+
+.gallery{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.gallery img{
+	width: 100%;
+	display: block;
+}
+
+#story-container h3{
+	padding: 30px 0;
+}
+
+/*<--BIG DAY-->*/
+
+.bigday-hero{
+	width: 100%;
+}
+
+.bigday-hero img{
+	width: 100%;
+	display: block;
+}
+
+#bigday-container{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#bigday-container h2{
+	padding-bottom: 30px;
+}
+
+.bigday{
+	padding: 25px 0;
+	border-bottom: 1px solid rgba(100,100,100,.2);
+}
+
+.last{
+	border-bottom: 0;
+}
+
+.time{
+	width: 30%;
+	float: left;
+}
+
+.event{
+	width: 70%;
+	float: left;
+}
+
+#reception-picture{
+	width: 100%;
+}
+
+#reception-picture img{
+	width: 100%;
+}
+
+#extra-info h2{
+	padding: 60px 0 20px 0;
+}
+
+/*<--BRIDAL PARTY-->*/
+
+.title-container{
+	width: 100%;
+	border-top: 1px solid rgba(100,100,100,.2);
+	padding-top: 50px;
+}
+
+.title-container:first-of-type{
+	border-top: 0;
+	padding-top: 0;
+}
+
+.title-container h2{
+	text-align: center;
+}
+
+.party-container{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.full{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 35px;
+}
+
+.small{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.person{
+	width: 25%;
+	float: left;
+	padding: 25px;
+	margin: 30px auto 0 auto;
+}
+
+.bridesmaid{
+	width: 16.66%;
+	float: left;
+	padding: 15px;
+	margin: 35px auto 0 auto;
+}
+
+.groomsmen{
+	width: 20%;
+	float: left;
+	padding: 15px;
+	margin: 35px auto 0 auto;
+}
+
+.flowergirl{
+	width: 33.33%;
+	float: left;
+	padding: 25px;
+	margin: 30px auto 0 auto;
+}
+
+.person-avatar{
+	width: 100%;
+	display: block;
+}
+
+.person-avatar img{
+	width: 100%;
+}
+
+.person-info{
+	width: 100%;
+	display: block;
+	padding-top: 20px;
+}
+
+.body-wrapper-bridal h3:last-of-type{
+	padding-bottom: 20px;
+}
+
+/*<--PRACTICAL-->*/
+
+#practical{
+	width: 100%;
+}
+
+.practical-links{
+	text-align: center;
+}
+
+.practical-links ul{
+	width: 70%;
+	margin: 0 auto;
+	border-bottom: 1px solid rgba(100,100,100,.1);
+	padding-bottom: 30px;
+}
+
+.practical-links  ul li{
+	display: inline-block;
+	padding: 10px 0;
+	font-size: .9em;
+	color: #7d8494;
+	margin: 0;
+}
+
+.practical-links ul li a{
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #7d8494;
+}
+
+.practical-links ul li:hover{
+	color: #fff;
+	background-color: #7b4c96;
+	border-radius: 18px;
+}
+
+.practical-links ul li:hover a{
+	color: #fff;
+}
+
+.practical-links ul li.highlighted{
+	color: #fff;
+	background-color: #7b4c96;
+	border-radius: 18px;
+}
+
+.practical-links ul li.highlighted a{
+	color: #fff;
+}
+
+#addresses{
+	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#addresses h3{
+	padding-bottom: 20px;
+}
+
+#service{
+	width: 100%;
+}
+
+#reception{
+	width: 100%;
+	padding-top: 40px;
+	border-top: 1px solid rgba(100,100,100,.2);
+	margin-top: 40px;
+}
+
+.address{
+	float: left;
+	width: 60%;
+}
+
+.map{
+	float: left;
+	width: 40%;
+	padding-left: 20px;
+}
+
+.map img{
+	width: 100%;
+}
+
+.parking{
+	clear: both;
+	padding-top: 20px;
+	width: 100%;
+}
+
+#travel{
+	width: 70%;
+	margin: 40px auto 0 auto;
+	border-top: 1px solid rgba(100,100,100,.2);
+}
+
+#travel h3{
+	padding: 50px 0 10px 0;
+}
+
+#travel ul{
+	padding: 20px 0 20px 20px;
+}
+
+#travel ul li{
+	padding: 10px 0;
+	list-style-type: disc;
+}
+
+#accommodation{
+	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#accommodation h3{
+	padding-top: 30px;
+	border-top: 1px solid rgba(100,100,100,.2);
+	margin-top: 30px;
+}
+
+.accommodation-option{
+	padding-top: 30px;
+}
+
+.accommodation-option p:first-of-type{
+	font-weight: 700;
+}
+
+#things{
+	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#things-hero{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#things-hero img{
+	width: 100%;
+	display: block;
+}
+
+#things h2{
+	padding-bottom: 20px;	
+}
+
+#things h3{
+	padding: 30px 0;
+}
+
+.thing-container{
+	border-bottom: 1px solid rgba(100,100,100,.2);
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.thing-container:last-of-type{
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.thing-container img{
+	width: 100%;
+	padding: 20px 0;
+}
+
+#things p.things-title{
+	font-weight: 700;
+}
+
+#things p.things-info{
+	padding: 20px 0;
+}
+
+#things ul{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#things ul li{
+	padding: 10px 0;
+	list-style-type: disc;
+}
+
+#practical ul li a{
+	line-height: 1.5em;
+}
+
+/*<--GIFTS-->*/
+
+#gifts{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#gifts-content{
+	width: 100%;
+}
+
+#gifts-logo{
+	width: 100%;
+}
+
+#gifts-logo img{
+	padding-top: 30px;
+	width: 100%;
+	display: block;
+}
+
+/*<--RSVP-->*/
+
+#rsvp{
+	width: 100%;
+}
+
+#rsvp h2{
+	text-align: center;
+}
+
+
+#rsvp h3{
+	text-align: center;
+	padding: 20px 0;
+}
+
+#rsvp p{
+	width: 700px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+p#contact{
+	width: 700px;
+	margin: 0 auto;
+	border-top: 1px solid rgba(100,100,100,.2);
+	padding-top: 30px;
+	text-align: right;
+}
+
+#contact-area{
+	width: 700px;
+	margin: 0 auto;
+	padding: 0 0 30px 0;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 410px;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	-webkit-appearance:none;
+	border-radius: 0;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 1px solid #ccc;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #7b4c96;
+	padding: 10px 20px;
+	box-shadow: none;
+	background-image: none;
+	border-image: none;
+}
+
+#contact-area input.submit-button:hover{
+	background-color: #f44a3b;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 260px;
+	padding-top: 18px;
+	font-size: 1em;
+}
+
+/*<--FOOTER-->*/
+
+footer{
+	padding: 30px 50px;
+	width: 100%;
+	text-align: center;
+	background-color: #e0e1e4;
+  	margin: 0 auto;
+	bottom: 0;
+}
+
+.footer-container{
+	max-width: 1400px;
+	background-color: #e0e1e4;
+	margin: 0 auto;
+}
+
+.footer-container p{
+	font-size: .8em;
+	color: #a5a5a5;
+}
+
+.footer-container a{
+	color: #a5a5a5;
+}
+
+.footer-container a:hover{
+	color: #000;
+}
+
+/*<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+/*<--RESPONSIVE-->*/
+
+@media only screen and (max-width: 1250px){
+	.body-wrapper-bridal{
+		padding: 50px;
+	}
+
+	.party-container{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.small{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.person{
+		width: 25%;
+		float: left;
+		padding: 25px;
+		margin: 30px auto 0 auto;
+	}
+
+	.bridesmaid{
+		width: 33.33%;
+		float: left;
+		padding: 20px;
+		margin: 30px auto 0 auto;
+	}
+
+	.groomsmen{
+		width: 20%;
+		float: left;
+		padding: 15px;
+		margin: 35px auto 0 auto;
+	}
+
+	.flowergirl{
+		width: 33.33%;
+		float: left;
+		padding: 25px;
+		margin: 30px auto 0 auto;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.body-wrapper{
+		padding: 35px;
+	}
+
+	.body-wrapper-bridal{
+		padding: 35px;
+	}
+
+	#story-container{
+		padding: 20px 0 0 20px;
+	}
+
+	.gallery{
+		padding: 15px;
+	}
+
+	.title-container:first-of-type{
+		padding-top: 15px;
+	}
+
+	.person{
+		padding: 20px;
+	}
+
+	.groomsmen{
+		width: 33.33%;
+		margin: 30px auto 0 auto;
+	}
+}
+
+@media only screen and (max-width: 970px){
+	nav{
+		display: none;
+	}
+
+	#mobile-nav{
+		display: block;
+	}
+
+	.body-wrapper{
+		padding: 30px;
+	}
+
+	.body-wrapper-bridal{
+		padding: 30px;
+	}
+
+	#gallery-container{
+		width: 100%;
+		float: none;
+	}
+
+	#story-container{
+		width: 100%;
+		float: none;
+		padding: 40px 15px 20px 15px;
+	}
+
+	#bigday-container{
+		width: 100%;
+		padding: 15px;
+	}
+
+	#extra-info h2{
+		padding: 60px 0 20px 0;
+	}
+
+	.person{
+		width: 50%;
+	}
+
+/*	.final{
+		margin-left: 25%;
+	}*/
+
+	.practical-links ul{
+		width: 100%;
+	}
+
+	#practical{
+		padding: 10px;
+	}
+
+	#addresses{
+		width: 100%;
+	}
+
+	.address{
+		width: 50%;
+	}
+
+	.map{
+		width: 50%;
+	}
+
+	#travel{
+		width: 100%;
+	}
+
+	#accommodation{
+		width: 100%;
+	}
+
+	#things{
+		width: 100%;
+	}
+
+	#things-hero{
+		width: 100%;
+	}
+
+	#gifts{
+		width: 100%;
+		padding: 10px;
+	}
+
+	#rsvp h2{
+		padding-top: 20px;
+	}
+
+	#rsvp p{
+		width: 540px;
+	}
+
+	p#contact{
+		width: 540px;
+	}
+
+	#contact-area{
+		width: 540px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.body-wrapper{
+		padding: 20px;
+	}
+
+	.body-wrapper-bridal{
+		padding: 20px;
+	}
+
+	#mobile-nav{
+		padding: 60px 20px 40px 20px;
+	}
+
+	#mobile-nav h1{
+		font-size: 2.4em;
+		text-align: center;
+	}
+
+	#mobile-nav img{
+		width: 40px;
+	}
+
+	#mobile-nav h3{
+		font-size: .9em;
+		text-align: center;
+	}
+
+	#cssmenu.small-screen{
+		margin-top: -150px;
+	}
+
+	#cssmenu.small-screen #menu-button{
+		padding-bottom: 105px;
+	}
+
+	#cssmenu.small-screen ul{
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	#bigday-container{
+		padding: 10px;
+	}
+
+	.person{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.title-container:first-of-type{
+		padding-top: 30px;
+	}
+
+	#service{
+		width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+
+	#reception{
+		width: 100%;
+		float: none;
+		padding-left: 0;
+		border-left: none;
+		border-top: 1px solid rgba(100,100,100,.2);
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+
+	.address{
+		width: 100%;
+		float: none;
+	}
+
+	.map{
+		width: 100%;
+		float: none;
+		padding-left: 0;
+		padding-top: 20px;
+	}
+
+	#rsvp h3{
+		padding: 30px 0;
+	}
+
+	#rsvp p{
+		width: 100%;
+		text-align: left;
+		padding-bottom: 40px;
+	}
+
+	p#contact{
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		border-top: 1px solid rgba(100,100,100,.2);
+	}
+
+	#contact-area{
+		width: 100%;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 95%;
+		display: block;
+		margin-bottom: 25px;
+		padding: 10px;
+	}
+
+	#contact-area input.submit-button {
+		width: 100px;
+		float: none;
+		text-align: center;
+	}
+
+	label {
+		float: none;
+		text-align: left;
+		margin-right: 0;
+		width: 100%;
+		padding-top: 0;
+		display: block;
+	}
+
+	footer{
+		padding: 30px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.body-wrapper{
+		padding: 15px;
+	}
+
+	.body-wrapper-bridal{
+		padding: 15px;
+	}
+
+	#mobile-nav{
+		padding: 60px 20px 40px 20px;
+	}
+
+	#mobile-nav h1{
+		font-size: 2.4em;
+		text-align: center;
+	}
+
+	#mobile-nav img{
+		width: 40px;
+	}
+
+	#cssmenu.small-screen{
+		margin-top: -150px;
+	}
+
+	#cssmenu.small-screen #menu-button{
+		padding-bottom: 105px;
+	}
+
+	#cssmenu.small-screen ul{
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.gallery{
+		width: 100%;
+		float: none;
+	}
+
+	#story-container h2{
+		font-size: 2.1em;
+	}
+
+	.practical-links ul{
+		padding-bottom: 20px;
+	}
+
+	.practical-links  ul li{
+		display: block;
+		margin: 2px 0;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	#accommodation{
+		padding-top: 30px;
+	}
+
+	#things{
+		padding-top: 30px;
+	}
+
+	#things-hero{
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.time{
+		width: 40%;
+	}
+
+	.event{
+		width: 60%;
+		padding-left: 20px;
+	}
+
+	#rsvp h3{
+		text-align: center;
+	}
+
+	p#contact{
+		padding-bottom: 30px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 90%;
+	}
+
+	footer{
+		padding: 30px 20px;
+	}
+}
