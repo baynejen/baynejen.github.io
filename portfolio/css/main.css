@@ -9,7 +9,7 @@ body{
 	text-align: left;
 	background-color: #ecf2f6;
 	color: #5b6164;
-	font-family: Arial, sans-serif;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 #site-wrapper{
@@ -19,35 +19,33 @@ body{
 #body-wrapper{
 	width: 100%;
 	margin: 0 auto;
-	padding: 55px 40px 40px 300px;
-}
-
-.container{
-	padding-bottom: 100px;
-	width: 90%;
+	padding: 40px 60px 40px 380px;
 }
 
 /*	<--TYPOGRAPHY-->*/
 
+
 h1{
-	font-size: 1.8em;
-	color: #c5c8cf;
-	letter-spacing: 0.0em;
+	color: #000;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.3em;
 	padding-bottom: 30px;
-	font-family: 'shorelines', arial, sans-serif;
+	border-bottom: 1px solid rgba(100,100,100,.2);
+	margin-bottom: 30px;
+	font-weight: 500;
 }
 
 h2{
-	color: #5b6164;
+	color: #000;
 	text-align: left;
-	font-size: 1.3em;
-	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 
 p{
 	line-height: 1.5em;
 	letter-spacing: 0.01em;
-	font-family: Arial, sans-serif;
 }
 
 /*	<--NAV-->*/
@@ -55,7 +53,7 @@ p{
 nav{
 	background-color: #fff;
 	position: fixed;
-	width: 240px;
+	width: 320px;
 	z-index: 1;
 	padding: 40px;
 	top: 0;
@@ -67,6 +65,11 @@ nav{
 
 nav img{
 	width: 160px;
+	margin-top: 40px;
+}
+
+nav .logo{
+	margin-top: 20px;
 }
 
 nav ul{
@@ -78,14 +81,22 @@ nav ul li{
 }
 
 nav ul li a{
-	color: #5b6164;
-	opacity: 0.3;
-	font-family: 'Fjalla One', sans-serif;
+	color: #404345;
 	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.9em;
 }
 
-nav a:hover{
-	opacity: 1;
+nav ul li a:hover{
+	border-bottom: solid 1px #e7e7e7;
+    display: inline;
+    padding-bottom: 3px;
+}
+
+.highlighted{
+	border-bottom: solid 1px #e7e7e7;
+    display: inline;
+    padding-bottom: 3px;
 }
 
 #footer{
@@ -93,11 +104,11 @@ nav a:hover{
 	width: 100%;
 	left: 0;
 	position: absolute;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 #social{
-	opacity: 0.3;
+	opacity: 0.7;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
@@ -107,7 +118,7 @@ nav a:hover{
 }
 
 #social img{
-	width: 30px;
+	width: 25px;
 	margin: 0 5px;
 	-webkit-transition: -webkit-transform .08s ease-in-out;
   	transition: transform .08s ease-in-out;
@@ -122,7 +133,6 @@ nav a:hover{
 	color: #5b6164;
 	opacity: 0.3;
 	font-size: 0.7em;
-	font-family: 'Fjalla One', sans-serif;
 }
 
 /*<--MOBILE NAV-->*/
@@ -133,7 +143,6 @@ nav a:hover{
 	padding: 30px;
 	display: none;
 	text-align: left;
-	font-family: 'Fjalla One', sans-serif;
 }
 
 #mobile-nav img{
@@ -153,13 +162,14 @@ nav a:hover{
 
 #cssmenu a {
   	padding: 16px 0;
-  	color: #5b6164;
-	opacity: 0.3;
+  	color: #404345;
+	font-size: 0.9em;
+	font-weight: 500;
   	text-decoration: none;
 }
 
 #cssmenu a:hover {
-  	opacity: 1;
+  text-decoration: underline;
 }
 
 #cssmenu.small-screen {
@@ -169,10 +179,17 @@ nav a:hover{
 	margin-top: -100px;
 }
 
+#cssmenu.small-screen ul{
+	margin-top: 40px;
+}
+
 #cssmenu.small-screen ul li{
 	float: none;
 	display: block;
-	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+}
+
+#cssmenu.small-screen ul li img{
+	float: left;
 }
 
 #cssmenu.small-screen ul li:last-of-type {
@@ -182,7 +199,11 @@ nav a:hover{
 }
 
 #cssmenu.small-screen ul li:first-of-type{
-	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#cssmenu.small-screen ul li a.highlighted-mobile{
+	text-decoration: underline;
 }
 
 #cssmenu.small-screen #menu-button {
@@ -222,14 +243,18 @@ nav a:hover{
 #portfolio{
 	width: 100%;
 	padding-bottom: 40px;
-	margin-top: -50px;
+}
+
+#portfolio h1{
+	width: 90%;
+	margin: 20px auto 20px auto;
 }
 
 .project-wrapper{
-	width: 46%;
+	width: 50%;
 	float: left;
-	padding-right: 4%;
-	padding-bottom: 60px;
+	padding: 5%;
+	padding-bottom: 30px;
 }
 
 .project-wrapper img{
@@ -237,32 +262,40 @@ nav a:hover{
 }
 
 .project-wrapper img:hover{
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .project-info{
 	width: 100%;
-	padding-top: 30px;
+	padding: 30px 0 50px 0;
+	border-bottom: 1px solid rgba(100,100,100,.2);
 }
 
 .project-info a{
 	font-size: 0.9em;
 	color: #5b6164;
-	line-height: 3.5em;
+	line-height: 4.5em;
 	letter-spacing: 0.02em;
-	font-family: 'Fjalla One', sans-serif;
 	text-decoration: none;
+	font-weight: 500;
 }
 
 .project-info a:hover{
-	text-decoration: underline;
+	border-bottom: solid 1px #5b6164;
+    display: inline;
+    padding-bottom: 3px;
 }
 
 /*<--ABOUT-->*/
 
+#about{
+	width: 90%;
+	margin: 30px auto;
+}
+
 #about-image{
-	width: 20%;
-	float: left;
+	width: 40%;
+	float: right;
 }
 
 #about-image img{
@@ -270,9 +303,9 @@ nav a:hover{
 }
 
 #about-description{
-	width: 80%;
+	width: 60%;
 	float: left;
-	padding-left: 20px;
+	padding-right: 60px;
 }
 
 #about-1{
@@ -287,32 +320,63 @@ nav a:hover{
 
 /*<--CONTACT-->*/
 
-#contact ul{
-	padding-top: 30px;
-	list-style-type: square;
-	padding-left: 20px;
+#contact{
+	width: 90%;
+	margin: 30px auto 0 auto;
 }
 
-#contact ul li{
-	padding: 15px 0;
+#contact-area{
+	width: 100%;
+	padding: 0 0 50px 0;
+	margin: 0 auto 0 0;
 }
 
-#contact ul li:first-of-type{
-	padding: 0;
+#contact-area input, #contact-area textarea {
+	padding: 10px;
+	width: 400px;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	-webkit-appearance:none;
+	border-radius: 0;
 }
 
-#contact ul li:last-of-type{
-	padding: 0;
+#contact-area textarea {
+	height: 140px;
 }
 
-#contact ul li a{
-	color: #5b6164;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 1px solid #ccc;
 }
 
-#contact ul li a:hover{
-	text-decoration: underline;
+#contact-area input.submit-button {
+	width: 120px;
+	background-color: #5b6164;	
+	border-color: #5b6164;
+	border-radius: 4px;
+	padding: 12px;
+	box-shadow: none;
+	background-image: none;
+	border-image: none;
+	display: block;
+	font-weight: 500;
+	margin-left: 132px;
+	color: #fff;
+}
+
+#contact-area input.submit-button:hover{
+	background-color: #ebc83f;
+	border-color: #ebc83f;
+}
+
+label {
+	float: left;
+	text-align: left;
+	margin-right: 15px;
+	width: 115px;
+	padding-top: 35px;
+	font-size: 1em;
 }
 
 /*<--MOBILE FOOTER-->*/
@@ -327,7 +391,7 @@ nav a:hover{
 }
 
 #mobile-social{
-	opacity: 0.3;
+	opacity: 0.7;
 	padding-bottom: 20px;
 }
 
@@ -351,7 +415,6 @@ nav a:hover{
 	color: #5b6164;
 	opacity: 0.3;
 	font-size: 0.7em;
-	font-family: 'Fjalla One', sans-serif;
 }
 
 /*	<--CLEARFIX-->*/
@@ -368,36 +431,54 @@ nav a:hover{
 /*	<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1080px){
-	#about-2{
-		display: none;
-	}
-
-	#about-3{
-		display: block;
-	}
-
-	.project-wrapper{
-		width: 90%;
-		float: none;
-		padding-right: 0;
-	}
-}
-
-@media only screen and (max-width: 900px){
 	#about-image{
-		width: 50%;
+		width: 80%;
 		float: none;
+		margin-top: 40px;
 	}
 
 	#about-description{
 		width: 100%;
 		float: none;
 		padding-left: 0;
-		padding-top: 20px;
+		padding-right: 0;
 	}
 
-	#about-3{
-		padding-top: 0;
+	.project-wrapper{
+		width: 100%;
+		float: none;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 95%;
+	}
+
+	label {
+		padding-top: 15px;
+	}
+
+	#contact-area input.submit-button {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	#about{
+		width: 100%;
+	}
+
+	#contact{
+		width: 100%;
+	}
+
+	.project-wrapper{
+		padding: 0;
+		margin-bottom: 50px;
+	}
+
+	#portfolio h1{
+		width: 100%;
+		margin-bottom: 50px;
 	}
 }
 
@@ -416,19 +497,29 @@ nav a:hover{
 		padding: 55px 40px 40px 40px;
 	}
 
-	.container{
+	#portfolio h1{
+		margin-top: 0;
+	}
+
+	#about{
+		margin-top: 0;
+	}
+
+	#about-image{
 		width: 100%;
 	}
 
-	.container:last-of-type{
-		padding-bottom: 20px;
-	}
-
-	.project-wrapper{
-		width: 100%;
+	#contact{
+		margin-top: 0;
 	}
 
 	#mobile-footer{
 		display: block;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.line2{
+		display: none;
 	}
 }
