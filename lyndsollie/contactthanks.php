@@ -59,9 +59,9 @@
 					<h2>Thank you!</h2>
 					<p>Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us:
 					<br><br>
-					Email us - <a href="mailto:youremail@email.com" target="_blank">youremail@email.com</a>
+					Ollie: 07853341968 / <a href="mailto:olliescarth686@gmail.com" target="_blank">olliescarth686@gmail.com</a>
 					<br>
-					Give us a call - 12345 678 901</p>
+					Lyndsay: 07986604574 / <a href="mailto:lyndsay.harris@teachfirst.org.uk" target="_blank">lyndsay.harris@teachfirst.org.uk</a>
 				</div>
 			</div>
 		</div>
