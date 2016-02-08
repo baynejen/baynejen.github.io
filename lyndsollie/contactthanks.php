@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>RSVP | Lynds and Ollie</title>
-	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -19,7 +19,7 @@
 <!-- nav -->
 		<nav>
 			<div class="nav-content">
-				<h1><a href="index.html">Lynds<img src="images/flower.jpg">Ollie</a></h1>
+				<h1><a href="index.html">Lynds<img src="images/flower.jpg" alt="flower">Ollie</a></h1>
 				<h3>23.07.16 - West Yorkshire</h3>
 				<div class="nav-links">
 					<ul>
@@ -28,7 +28,7 @@
 						<li><a href="bridalparty.html">Bridal Party</a></li>
 						<li><a href="practical-travel.html">Practical</a></li>
 						<li><a href="gifts.html">Gifts</a></li>
-						<li><a href="rsvp.html" class="highlighted">RSVP</a></li>
+						<li><a href="#" class="highlighted">RSVP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,16 +37,16 @@
 <!-- MOBILE NAV -->
 
 		<div id="mobile-nav">
-			<h1><a href="index.html">Lynds<img src="images/flower.jpg">Ollie</a></h1>
+			<h1><a href="index.html">Lynds<img src="images/flower.jpg" alt="flower">Ollie</a></h1>
+			<h3>23.07.16 - West Yorkshire</h3>
 			<div id='cssmenu'>
 				<ul>
-					<li><h3>23.07.16 - West Yorkshire</h3></li>
 				   	<li><a href="index.html">Home</a></li>
 				   	<li><a href="bigday.html">The Big Day</a></li>
 				   	<li><a href="bridalparty.html">Bridal Party</a></li>
 				   	<li><a href="practical-travel.html">Practical</a></li>
 				   	<li><a href="gifts.html">Gifts</a></li>
-				   	<li><a href="rsvp.html" class="highlighted">RSVP</a></li>
+				   	<li><a href="#" class="highlighted">RSVP</a></li>
 				</ul>
 			</div>
 		</div>
@@ -56,8 +56,8 @@
 		<div class="body-wrapper">
 			<div class="content-wrapper">
 				<div id="rsvp">
-					<h2>Thank you!</h2>
-					<p>Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us:
+					<h2>Thank you!</h2>					
+					<p id="contact">Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us: 
 					<br><br>
 					Ollie: 07853341968 / <a href="mailto:olliescarth686@gmail.com" target="_blank">olliescarth686@gmail.com</a>
 					<br>
@@ -69,7 +69,9 @@
 <!-- FOOTER -->
 	
 		<footer>
-			<p>&copy; 2016 Lyndsay Harris and Oliver Scarth-Saunders. Website made with love by <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a>.</p>
+			<div class="footer-container">
+				<p>&copy; 2016 Lyndsay Harris and Oliver Scarth-Saunders. Website made by <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a>.</p>
+			</div>
 		</footer>
 	</div>
 </body>
