@@ -668,6 +668,13 @@ p#contact{
 	text-align: right;
 }
 
+p#contact-thanks{
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: right;
+}
+
 #contact-area{
 	width: 700px;
 	margin: 0 auto;
