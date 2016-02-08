@@ -57,7 +57,7 @@
 			<div class="content-wrapper">
 				<div id="rsvp">
 					<h2>Thank you!</h2>					
-					<p id="contact-thanks">Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us: 
+					<p>Your RSVP has been successfully sent. If you've got any questions please don't hesitate to contact us: 
 					<br><br>
 					Ollie: 07853341968 / <a href="mailto:olliescarth686@gmail.com" target="_blank">olliescarth686@gmail.com</a>
 					<br>

@@ -668,13 +668,6 @@ p#contact{
 	text-align: right;
 }
 
-p#contact-thanks{
-	width: 700px;
-	margin: 0 auto;
-	padding-top: 30px;
-	text-align: right;
-}
-
 #contact-area{
 	width: 700px;
 	margin: 0 auto;
@@ -938,10 +931,6 @@ footer{
 		width: 540px;
 	}
 
-	p#contact-thanks{
-		width: 540px;
-	}
-
 	#contact-area{
 		width: 540px;
 	}
@@ -1049,12 +1038,6 @@ footer{
 		border-top: 1px solid rgba(100,100,100,.2);
 	}
 
-	p#contact-thanks{
-		width: 100%;
-		margin: 0 auto;
-		text-align: left;
-	}
-
 	#contact-area{
 		width: 100%;
 	}
@@ -1155,10 +1138,6 @@ footer{
 	}
 
 	p#contact{
-		padding-bottom: 30px;
-	}
-
-	p#contact-thanks{
 		padding-bottom: 30px;
 	}
 
