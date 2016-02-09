@@ -140,7 +140,7 @@ nav ul li a:hover{
 #mobile-nav{
 	background-color: #fff;
 	width: 100%;
-	padding: 30px;
+	padding: 30px 20px 30px 40px;
 	display: none;
 	text-align: left;
 }
@@ -243,6 +243,8 @@ nav ul li a:hover{
 #portfolio{
 	width: 100%;
 	padding-bottom: 40px;
+	max-width: 1400px;
+	float: left;
 }
 
 #portfolio h1{
@@ -291,6 +293,9 @@ nav ul li a:hover{
 #about{
 	width: 90%;
 	margin: 30px auto;
+	max-width: 1400px;
+	float: left;
+	margin-left: 5%;
 }
 
 #about-image{
@@ -323,6 +328,9 @@ nav ul li a:hover{
 #contact{
 	width: 90%;
 	margin: 30px auto 0 auto;
+	max-width: 1400px;
+	float: left;
+	margin-left: 5%;
 }
 
 #contact-area{
@@ -431,6 +439,20 @@ label {
 /*	<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1080px){
+	#portfolio{
+		float: none;
+	}
+
+	#contact{
+		float: none;
+		margin-left: auto;
+	}
+
+	#about{
+		float: none;
+		margin-left: auto;
+	}
+
 	#about-image{
 		width: 80%;
 		float: none;
@@ -450,7 +472,7 @@ label {
 	}
 
 	#contact-area input, #contact-area textarea {
-		width: 95%;
+		width: 90%;
 	}
 
 	label {
