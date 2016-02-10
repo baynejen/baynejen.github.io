@@ -627,6 +627,11 @@ nav{
 	width: 100%;
 }
 
+#gifts-content h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
 #gifts-logo{
 	width: 100%;
 }
@@ -643,10 +648,18 @@ nav{
 	width: 100%;
 }
 
+#rsvp-thank{
+	width: 100%;
+}
+
 #rsvp h2{
 	text-align: center;
 }
 
+#rsvp-thank h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
 
 #rsvp h3{
 	text-align: center;
@@ -655,6 +668,13 @@ nav{
 
 #rsvp p{
 	width: 700px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#rsvp-thank p{
+	width: 80%;
 	padding-bottom: 20px;
 	text-align: center;
 	margin: 0 auto;
@@ -923,6 +943,10 @@ footer{
 		padding-top: 20px;
 	}
 
+	#rsvp-thank h2{
+		padding-top: 20px;
+	}
+
 	#rsvp p{
 		width: 540px;
 	}
@@ -1026,6 +1050,12 @@ footer{
 	}
 
 	#rsvp p{
+		width: 100%;
+		text-align: left;
+		padding-bottom: 40px;
+	}
+
+	#rsvp-thank p{
 		width: 100%;
 		text-align: left;
 		padding-bottom: 40px;

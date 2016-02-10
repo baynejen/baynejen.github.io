@@ -1,6 +1,6 @@
 <?php
 
-$EmailTo = "bayne.jen@gmail.com";
+$EmailTo = "lyndsay.harris@teachfirst.org.uk";
 $Subject = "RSVP to Lynds and Ollie's wedding";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $RSVP = Trim(stripslashes($_POST['RSVP'])); 
@@ -44,7 +44,7 @@ $success = mail($EmailTo, $Subject, $Body, "From: <$Email>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthank.php\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
