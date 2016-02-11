@@ -19,7 +19,7 @@ body{
 #body-wrapper{
 	width: 100%;
 	margin: 0 auto;
-	padding: 40px 60px 40px 380px;
+	padding: 40px 60px 40px 370px;
 }
 
 /*	<--TYPOGRAPHY-->*/
@@ -243,19 +243,19 @@ nav ul li a:hover{
 #portfolio{
 	width: 100%;
 	padding-bottom: 40px;
-	max-width: 1400px;
-	float: left;
+	max-width: 1200px;
+	margin-left: 0;
 }
 
 #portfolio h1{
-	width: 90%;
-	margin: 20px auto 20px auto;
+	width: 92%;
+	margin: 20px auto 40px auto;
 }
 
 .project-wrapper{
 	width: 50%;
 	float: left;
-	padding: 5%;
+	padding: 4%;
 }
 
 .project-wrapper img{
@@ -305,11 +305,14 @@ p.coming-soon{
 /*<--ABOUT-->*/
 
 #about{
-	width: 90%;
-	margin: 30px auto;
-	max-width: 1400px;
-	float: left;
-	margin-left: 5%;
+	width: 100%;
+	margin: 20px 0 30px 0;
+	max-width: 1200px;
+	padding: 0 4%;
+}
+
+#about-container{
+	margin-top: 60px;
 }
 
 #about-image{
@@ -340,11 +343,10 @@ p.coming-soon{
 /*<--CONTACT-->*/
 
 #contact{
-	width: 90%;
-	margin: 30px auto 0 auto;
-	max-width: 1400px;
-	float: left;
-	margin-left: 5%;
+	width: 100%;
+	margin: 20px 0 30px 0;
+	max-width: 1200px;
+	padding: 0 4%;
 }
 
 #contact-area{
@@ -376,7 +378,7 @@ p.coming-soon{
 	width: 120px;
 	background-color: #5b6164;	
 	border-color: #5b6164;
-	border-radius: 4px;
+	border-radius: 3px;
 	padding: 12px;
 	box-shadow: none;
 	background-image: none;
@@ -453,8 +455,17 @@ label {
 /*	<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1080px){
+	h1{
+		margin-bottom: 50px;
+	}
+
 	#portfolio{
 		float: none;
+	}
+
+	#topright img{
+		border-top: 1px solid rgba(100,100,100,.2);
+		padding-top: 60px;
 	}
 
 	#contact{
@@ -467,8 +478,12 @@ label {
 		margin-left: auto;
 	}
 
+	#about-container{
+		margin-top: 0;
+	}
+
 	#about-image{
-		width: 80%;
+		width: 100%;
 		float: none;
 		margin-top: 40px;
 	}
@@ -516,6 +531,14 @@ label {
 		width: 100%;
 		margin-bottom: 50px;
 	}
+
+	#about{
+		padding: 0;
+	}
+
+	#contact{
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: 700px){
@@ -555,7 +578,15 @@ label {
 }
 
 @media only screen and (max-width: 450px){
-	.line2{
+	#mobile-nav{
+		padding: 30px 10px 30px 30px;
+	}
+
+	.line{
 		display: none;
+	}
+
+	#body-wrapper{
+		padding: 45px 30px 30px 30px;
 	}
 }
