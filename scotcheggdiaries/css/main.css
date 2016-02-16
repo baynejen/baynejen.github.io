@@ -3,7 +3,8 @@ body{
 	font-size: 17px;
 	font-family: 'Inconsolata', Courier, serif;
 	text-align: left;
-	background-color: #ecf2f6;
+	background-color: #f5f5f5;
+/*	background-color: #ecf2f6;*/
 }
 
 .page-wrapper{
@@ -64,7 +65,7 @@ nav{
 }
 
 .nav-content{
-	max-width: 1300px;
+	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -234,7 +235,7 @@ nav{
 
 .content-wrapper{
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 

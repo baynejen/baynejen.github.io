@@ -22,20 +22,19 @@
 	
 		<nav>
 			<div>
-				<a href="index.html"><img src="images/logo/logo2.png" alt="logo" class="logo"></a>
-				<img src="images/line.png" alt="line">
+				<a href="index.html"><img src="images/nav/logo/logo2.png" alt="logo" class="logo"></a>
+				<img src="images/nav/line.png" alt="line">
 			</div>
 			<ul>
 				<li><a href="index.html">Portfolio</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="#" class="highlighted">Contact</a></li>
 			</ul>
-			<img src="images/line.png" alt="line">
 			<div id="footer">
 				<div id="social">
-					<a href="https://twitter.com/Jen_Bayne" target="_blank"><img src="images/social/twitter.png" alt="twitter logo"></a>
-					<a href="mailto:bayne.jen@gmail.com" target="_blank"><img src="images/social/email.png" alt="email logo"></a>
-					<a href="https://www.instagram.com/jenbayne/" target="_blank"><img src="images/social/instagram.png" alt="instagram logo"></a>
+					<a href="https://twitter.com/Jen_Bayne" target="_blank"><img src="images/nav/social/twitter.png" alt="twitter logo"></a>
+					<a href="mailto:bayne.jen@gmail.com" target="_blank"><img src="images/nav/social/email.png" alt="email logo"></a>
+					<a href="https://www.instagram.com/jenbayne/" target="_blank"><img src="images/nav/social/instagram.png" alt="instagram logo"></a>
 				</div>
 				<div>
 					<p>Copyright &copy; 2016 Jen Bayne
@@ -47,13 +46,12 @@
 <!-- MOBILE NAV -->
 
 		<div id="mobile-nav">
-			<div>
-				<a href="index.html"><img src="images/logo/logo2.png" alt="logo"></a>
+			<div class="mobile-logo">
+				<img src="images/nav/logo/logo2.png" alt="logo">
 			</div>
 			<div id='cssmenu'>
 				<ul>
-				<li>
-					<img src="images/line.png" alt="line"><img src="images/line.png" alt="line" class="line2"></li>
+					<li><img src="images/nav/line.png" alt="line"><img src="images/nav/line.png" alt="line" class="line"><img src="images/nav/line.png" class="line-half" alt="line"></li>
 				   	<li><a href="index.html">Portfolio</a></li>
 				   	<li><a href="about.html">About</a></li>
 				   	<li><a href="#" class="highlighted-mobile">Contact</a></li>
@@ -64,8 +62,10 @@
 <!-- CONTACT -->
 		
 		<div id="body-wrapper">
-			<div class="container" id="contact">
-				<p>Your message has been sent, thank you! I will get back to you as soon as I can.</p>
+			<div id="contact">
+				<h1>Thanks!</h1>
+				<p>Your message has been sent. I will get back to you as soon as I can. For now, enjoy this playful dog leaping for the stars.</p>
+				<img src="images/contact/leapforthestars.gif">
 			</div>
 		</div>
 
@@ -73,9 +73,9 @@
 
 		<div id="mobile-footer">
 			<div id="mobile-social">
-				<a href="https://twitter.com/Jen_Bayne" target="_blank"><img src="images/social/twitter.png" alt="twitter logo"></a>
-				<a href="mailto:bayne.jen@gmail.com" target="_blank"><img src="images/social/email.png" alt="email logo"></a>
-				<a href="https://www.instagram.com/jenbayne/" target="_blank"><img src="images/social/instagram.png" alt="instagram logo"></a>
+				<a href="https://twitter.com/Jen_Bayne" target="_blank"><img src="images/nav/social/twitter.png" alt="twitter logo"></a>
+				<a href="mailto:bayne.jen@gmail.com" target="_blank"><img src="images/nav/social/email.png" alt="email logo"></a>
+				<a href="https://www.instagram.com/jenbayne/" target="_blank"><img src="images/nav/social/instagram.png" alt="instagram logo"></a>
 			</div>
 			<div>
 				<p>Copyright &copy; 2016 Jen Bayne
