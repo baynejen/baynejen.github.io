@@ -22,12 +22,12 @@
 	
 		<nav>
 			<div>
-				<a href="index.html"><img src="images/nav/logo/logo2.png" alt="logo" class="logo"></a>
+				<a href="/"><img src="images/nav/logo/logo2.png" alt="logo" class="logo"></a>
 				<img src="images/nav/line.png" alt="line">
 			</div>
 			<ul>
-				<li><a href="index.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
+				<li><a href="/">Portfolio</a></li>
+				<li><a href="about">About</a></li>
 				<li><a href="#" class="highlighted">Contact</a></li>
 			</ul>
 			<div id="footer">
@@ -52,8 +52,8 @@
 			<div id='cssmenu'>
 				<ul>
 					<li><img src="images/nav/line.png" alt="line"><img src="images/nav/line.png" alt="line" class="line"><img src="images/nav/line.png" class="line-half" alt="line"></li>
-				   	<li><a href="index.html">Portfolio</a></li>
-				   	<li><a href="about.html">About</a></li>
+				   	<li><a href="/">Portfolio</a></li>
+				   	<li><a href="about">About</a></li>
 				   	<li><a href="#" class="highlighted-mobile">Contact</a></li>
 				</ul>
 			</div>
