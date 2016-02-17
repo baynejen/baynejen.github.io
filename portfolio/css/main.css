@@ -288,7 +288,7 @@ nav ul li a:hover{
 	font-weight: 500;
 }
 
-.project-info a.inline-link{
+a.inline-link{
 	font-size: 1em;
 	color: #5b6164;
 	line-height: 1.5em;
@@ -302,7 +302,7 @@ nav ul li a:hover{
     padding-bottom: 3px;
 }
 
-.project-info a.inline-link:hover{
+a.inline-link:hover{
 	border-bottom: none;
 	padding-bottom: 0;
 	color: #000;
@@ -377,8 +377,13 @@ p.coming-soon{
 }
 
 #about ul li{
-	padding: 5px 0;
+	padding: 8px 0;
 	list-style: disc;
+	line-height: 1.4em;
+}
+
+#about-contact{
+	padding-top: 40px;
 }
 
 /*<--CONTACT-->*/
@@ -500,7 +505,7 @@ label {
 
 /*	<--RESPONSIVE-->*/
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1270px){
 	#about-container{
 		margin-top: 0;
 		border-bottom: none;
@@ -557,7 +562,6 @@ label {
 	#list-2{
 		float: none;
 		width: 100%;
-		margin-top: 30px;
 	}
 
 	#about ul li{
