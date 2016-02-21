@@ -634,11 +634,23 @@ footer .social img{
 
 @media only screen and (max-width: 450px){
 	#mobile-nav{
-		padding: 30px;
+		padding: 30px 25px;
+	}
+
+	.mobile-logo img{
+		width: 200px;
+	}
+
+	.subheading{
+		padding: 50px 0 20px 0;
+	}
+
+	.subheading p{
+		padding: 0 20px 30px 20px;
 	}
 
 	.body-wrapper{
-		padding: 30px;
+		padding: 0;
 	}
 
 	.entry-right{
