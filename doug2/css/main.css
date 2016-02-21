@@ -645,8 +645,8 @@ footer .social img{
 		width: 75%;
 	}
 
-	#cssmenu.small-screen #menu-button{
-		padding-bottom: 150px;
+	#cssmenu.small-screen{
+		margin-top: -155px;
 	}
 
 	.subheading{
