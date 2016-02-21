@@ -149,7 +149,6 @@ nav{
 .mobile-logo p{
 	padding-top: 9px;
 	font-size: 0.9em;
-	width: 95%;
 }
 
 #cssmenu{
@@ -182,7 +181,7 @@ nav{
 	width: 100%;
 	display: block;
 	position: relative;
-	margin-top: -155px;
+	margin-top: -140px;
 }
 
 #cssmenu.small-screen ul li{
@@ -211,7 +210,7 @@ nav{
 	cursor: pointer;
 	top: 0;
 	right: 10px;
-	padding-bottom: 135px;
+	padding-bottom: 150px;
 }
 
 #cssmenu.small-screen #menu-button:after {
@@ -640,6 +639,14 @@ footer .social img{
 
 	.mobile-logo img{
 		width: 200px;
+	}
+
+	.mobile-logo p{
+		width: 75%;
+	}
+
+	#cssmenu.small-screen #menu-button{
+		padding-bottom: 150px;
 	}
 
 	.subheading{
