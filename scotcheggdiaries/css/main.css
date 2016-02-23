@@ -1,10 +1,14 @@
+@font-face{
+	font-family: 'american-typewriter';
+	src: url(../font/American-Typewriter.ttf);
+}
+
 body{
 	width: 100%;
 	font-size: 17px;
-	font-family: 'Inconsolata', Courier, serif;
 	text-align: left;
 	background-color: #f5f5f5;
-/*	background-color: #ecf2f6;*/
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .page-wrapper{
@@ -22,20 +26,39 @@ p a{
 	text-decoration: underline;
 }
 
+h1{
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.1em;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(100,100,100,.1);
+	margin-bottom: 50px;
+	color: #000;
+	letter-spacing: -0.01em;
+}
+
 h2{
-	font-family: 'Karla', sans-serif;
 	font-size: 1.3em;
 	font-weight: 700;
 	line-height: 1.5em;
 	color: black;
 }
 
+h3{
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 1.5em;
+	color: black;
+	padding-bottom: 40px;
+}
+
 h4{
 	font-size: 0.9em;
 	font-weight: 400;
-	font-family: 'Inconsolata', Courier, serif;
+	font-family: 'American-Typewriter', Courier, serif;
 	color: rgba(0,0,0,.5);
 	line-height: 1.5em;
+	padding: 15px 0;
 }
 
 p{
@@ -44,121 +67,103 @@ p{
 
 /*<--NAV-->*/
 
-.scroller_anchor{
-	height: 0;
-	margin:0;
-	padding:0;
-}
-
 nav{
 	background-image: url("../images/nav/gingham.png");	
-  	width: 100%;
-  	height: 150px;
-  	padding: 0 30px;
-  	position: relative;
+	position: fixed;
+	width: 250px;
+	z-index: 1;
+	padding: 40px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	text-align: center;
+	border-right: 4px solid #f4bc46;
 }
 
-.nav-scroller-border{
-	z-index:100;
-	width: 100%;
-	border-bottom: 5px solid #f4bc46;
-}
-
-.nav-content{
-	max-width: 1000px;
-	width: 100%;
+nav .logo{
+	width: 90px;
 	margin: 0 auto;
 }
 
-.nav-content .logo{
-	float: left;
-	height: 150px;
-	padding: 25px 0;
-	width: 15%;
-	text-align: left;
+nav img{
+	width: 100%;
 }
 
-.nav-content .logo img{
-	height: 100px;
+nav ul{
+	width: 100%;
+	padding-top: 30px;
+	font-size: 0.9em;
 }
 
-.nav-content .nav-links{
-	float: right;
-	text-align: right;
-	width: 85%;
+nav ul li{
+	padding: 10px 0;
 }
 
-.nav-content .nav-links ul li{
-	display: inline-block;
-	padding: 0 30px 43px 30px;
-	font-weight: 700;
-	position: relative;
-	margin-top: 100px;
-}
-
-.nav-content .nav-links ul li:last-of-type{
-	padding-right: 0;
-}
-
-.nav-content .nav-links ul a{
+nav ul li a{
+	color: #000;
 	text-decoration: none;
-	color: black;
+	font-weight: 700;
+	opacity: .8;
 }
 
-.nav-content .nav-links ul li:hover{
-	color: rgba(0,0,0,.5);
+nav ul li a:hover{
+	border-bottom: solid 1px #363636;
+    display: inline;
+    padding-bottom: 3px;
 }
 
-.nav-content .nav-links ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 55px;
-  left: 0;
-  width: 155px;
-  display: none;
-  opacity: 0;
-  z-index: 200;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
+nav ul li a.highlighted{
+	border-bottom: solid 1px #363636;
+    display: inline;
+    padding-bottom: 3px;
+    opacity: .9;
 }
 
-.nav-content .nav-links ul li ul li { 
-  background: #f4bc46; 
-  display: block; 
-  color: #000;
-  font-weight: 400;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 0;
+#footer{
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	margin-bottom: 20px;
 }
 
-.nav-content .nav-links ul li ul li:hover {
-	background: #f3d07c;
-	color: black;
+#social{
+	padding-bottom: 15px;
+	padding-top: 20px;
 }
 
-.nav-content .nav-links ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible; 
+#social img{
+	width: 30px;
+	margin: 0 5px;
+	-webkit-transition: -webkit-transform .08s ease-in-out;
+  	transition: transform .08s ease-in-out;
+  	opacity: .8;
+}
+
+#social img:hover{
+	-webkit-transform: rotate(9deg);
+  	transform: rotate(9deg);
+}
+
+#footer p{
+	color: #3f495a;
+	font-size: 0.7em;
 }
 
 /*<--MOBILE NAV-->*/
 
 #mobile-nav{
 	width: 100%;
-	padding: 30px 0 10px 0;
-	display: block;
-	text-align: left;
+	padding: 30px 50px;
 	display: none;
+	text-align: left;
+	border-bottom: 4px solid #f4bc46;
+	background-image: url("../images/nav/gingham.png");	
 }
 
-#mobile-nav img{
-	width: 160px;
+.mobile-logo img{
+	width: 140px;
 }
 
 #cssmenu{
@@ -173,25 +178,48 @@ nav{
 }
 
 #cssmenu a {
-  	padding: 15px 0;
+  	padding: 16px 0;
   	color: #000;
+	font-size: 0.9em;
+	font-weight: 700;
   	text-decoration: none;
+  	opacity: .8;
 }
 
 #cssmenu a:hover {
-  	color: rgba(0,0,0,.5);
+  	text-decoration: underline;
 }
 
 #cssmenu.small-screen {
 	width: 100%;
 	display: block;
 	position: relative;
-	margin-top: -80px;
+	margin-top: -70px;
+}
+
+#cssmenu.small-screen ul{
+	margin-top: 30px;
+	margin-left: 10px;
 }
 
 #cssmenu.small-screen ul li{
 	float: none;
 	display: block;
+}
+
+#cssmenu.small-screen ul li img{
+	float: left;
+}
+
+#cssmenu.small-screen ul li:last-of-type {
+	float: none;
+	display: block;
+	border-bottom: none;
+}
+
+#cssmenu.small-screen ul li a.highlighted{
+	text-decoration: underline;
+	opacity: .9;
 }
 
 #cssmenu.small-screen #menu-button {
@@ -200,13 +228,13 @@ nav{
 	cursor: pointer;
 	top: 0;
 	right: 10px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 }
 
 #cssmenu.small-screen #menu-button:after {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 17px;
 	display: block;
 	border-top: 2px solid #000;
@@ -218,7 +246,7 @@ nav{
 #cssmenu.small-screen #menu-button:before {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 27px;
 	display: block;
 	width: 22px;
@@ -229,42 +257,47 @@ nav{
 /*<--BODY-->*/
 
 .body-wrapper{
-	padding: 50px 30px;
+	padding: 50px 50px 50px 300px;
 	width: 100%;
 }
 
 .content-wrapper{
 	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
+	max-width: 900px;
 }
 
 .egg-entry{
 	width: 100%;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(100,100,100,.2);
 }
 
 .entry-left{
 	float: left;
-	width: 20%;
-	padding-right: 20px 
+	width: 40%;
+	padding-right: 40px 
+}
+
+.entry-left h4:first-of-type{
+	padding-bottom: 0;
+}
+
+.entry-left h4:last-of-type{
+	padding-top: 5px;
+}
+
+p.rating{
+	padding-top: 15px;
+	font-weight: bold;
 }
 
 .entry-right{
 	float: left;
-	width: 80%;
-}
-
-.egg-name{
-	padding-bottom: 20px;
-}
-
-.description{
-	padding-top: 20px;
+	width: 60%;
 }
 
 .egg-image{
-	padding-top: 20px;
 	width: 100%;
 }
 
@@ -272,62 +305,131 @@ nav{
 	width: 100%;
 }
 
-.about-image{
-	padding-top: 20px;
+/*<--ABOUT-->*/
+
+
+.about-entry{
 	width: 100%;
-	padding-bottom: 20px;
+}
+
+.about-left{
+	float: left;
+	width: 60%;
+	padding-right: 40px 
+}
+
+p.about-description{
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+.about-right{
+	float: left;
+	width: 40%;
+}
+
+.about-image{
+	width: 100%;
 }
 
 .about-image img{
-	width: 400px;
-}
-
-.contact{
-	padding-bottom: 20px;
-}
-
-/*FOOTER*/
-
-.footer{
-	padding: 30px;
 	width: 100%;
-	background-color: #f3d07c;
-	border-top: 5px solid #f4bc46;
 }
 
-.footer p{
-	font-size: 0.9em;
-	font-weight: 700;
-	color: rgba(0,0,0,.5);
-	line-height: 35px;
+/*<--CONTACT-->*/
+
+#contact{
+	padding: 40px 0;
+	width: 100%;
 }
 
-.footer a{
-	color: rgba(0,0,0,.5);
-}
-
-.footer a:hover{
-	color: rgba(0,0,0,.9);
-}
-
-.copyright{
+#contact-area{
 	width: 50%;
 	float: left;
 }
 
-.social{
-	width: 50%;
+#contact-area form{
+	width: 100%;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 10px;
+	width: 80%;
+	font-size: 1em;
+	margin: 0px 0px 30px 0px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	-webkit-appearance:none;
+	border-radius: 0;
+}
+
+#contact-area textarea {
+	height: 140px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 1px solid #ccc;
+}
+
+#contact-area input.submit-button {
+	width: 84%;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f4bc46;
+	border: 2px solid #f4bc46;
+	padding: 15px 30px;
+	border-radius: 2px;
+	box-shadow: none;
+	background-image: none;
+	border-image: none;
+	display: block;
+}
+
+#contact-area input.submit-button:hover{
+	background-color: #3a3a3a;
+	border: 2px solid #3a3a3a;
+	color: #fff;
+}
+
+label {
+	text-align: left;
+	padding-right: 15px;
+	width: 30%;
+	font-size: 1em;
+}
+
+#contact-thanks{
+	padding: 50px 50px 150px 50px;
+}
+
+#twitter{
 	float: right;
-	text-align: right;
+	width: 50%;
 }
 
-.social img{
-	width: 35px;
-	opacity: .7;
+/*<--MOBILE FOOTER-->*/
+
+.mobile-footer{
+	display: none;
+	background-color: #fff;
+	text-align: center;
+	border-top: 1px solid rgba(100,100,100,.2);
+	padding: 30px 20px;
 }
 
-.social img:hover{
-	opacity: 1;
+.mobile-social{
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.mobile-social img{
+	width: 30px;
+	opacity: .8;
+}
+
+.mobile-copyright{
+	width: 100%;
+	font-size: .7em;
 }
 
 /*<--CLEARFIX-->*/
@@ -341,19 +443,17 @@ nav{
 	height: 0; 
 }
 
-@media only screen and (max-width: 900px){
-	.body-wrapper{
-		padding: 40px 30px;
-	}
+/*<--RESPONSIVE-->*/
 
+@media only screen and (max-width: 1000px){
 	.entry-left{
 		float: none;
 		width: 100%;
 		padding-right: 0;
 	}
 
-	.entry-left h2{
-		padding-bottom: 10px;
+	p.rating{
+		padding-bottom: 30px;
 	}
 
 	.entry-right{
@@ -361,31 +461,78 @@ nav{
 		width: 100%;
 	}
 
-	.scroller_anchor{
-		display: none;
+	.about-left{
+		float: none;
+		width: 100%;
+		padding-right: 0;
 	}
 
+	.about-right{
+		float: none;
+		width: 100%;
+	}
+
+	#contact-area{
+		width: 100%;
+		float: none;
+	}
+
+	#twitter{
+		width: 100%;
+		float: none;
+	}
+
+	#twitter h3{
+		padding-top: 40px;
+		border-top: 1px solid rgba(100,100,100,.1);
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 700px){
 	nav{
-		background-image: url("../images/nav/gingham.png");	
-	  	height: auto;
-	  	border-bottom: 5px solid #f4bc46;
-	}
-
-	.nav-scroller-border{
-		display: none;
-	}
-
-	/*.nav-content{
 		display: none;
 	}
 
 	#mobile-nav{
 		display: block;
-	}*/
+	}
+
+	.mobile-footer{
+		display: block;
+	}
+
+	.body-wrapper{
+		padding: 50px;
+	}
+
+	h1{
+		padding-bottom: 50px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 90%;
+	}
+
+	#contact-area input.submit-button{
+		width: 94%;
+	}
 }
 
 @media only screen and (max-width: 500px){
-	.about-image img{
-		width: 100%;
+	#mobile-nav{
+		padding: 30px;
+	}
+
+	.body-wrapper{
+		padding: 50px 30px;
+	}
+
+	#contact-area input, #contact-area textarea {
+		width: 94%;
+	}
+
+	#contact-area input.submit-button{
+		width: 99%;
 	}
 }

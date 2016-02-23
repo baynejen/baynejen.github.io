@@ -1,28 +1,112 @@
-// This function will be executed when the user scrolls the page.
-$(window).scroll(function(e) {
-    // Get the position of the location where the scroller starts.
-    var scroller_anchor = $(".scroller_anchor").offset().top;
-     
-    // Check if the user has scrolled and the current position is after the scroller start location and if its not already fixed at the top 
-    if ($(this).scrollTop() >= scroller_anchor && $('.nav-scroller-border').css('position') != 'fixed') 
-    {    // Change the CSS of the scroller to hilight it and fix it at the top of the screen.
-        $('.nav-scroller-border').css({
-            'position': 'fixed',
-            'top': '0px'
-        });
-        // Changing the height of the scroller anchor to that of scroller so that there is no change in the overall height of the page.
-        $('.scroller_anchor').css('height', '5px');
-    } 
-    else if ($(this).scrollTop() < scroller_anchor && $('.nav-scroller-border').css('position') != 'relative') 
-    {    // If the user has scrolled back to the location above the scroller anchor place it back into the content.
-         
-        // Change the height of the scroller anchor to 0 and now we will be adding the scroller back to the content.
-        $('.scroller_anchor').css('height', '0px');
-         
-        // Change the CSS and put it back to its original position.
-        $('.nav-scroller-border').css({
-            'background': '#ecf2f6',
-            'position': 'relative'
-        });
-    }
+(function($) {
+
+  $.fn.menumaker = function(options) {
+      
+      var cssmenu = $(this), settings = $.extend({
+        title: "",
+        format: "dropdown",
+        breakpoint: 900,
+        sticky: false
+      }, options);
+
+      return this.each(function() {
+        cssmenu.find('li ul').parent().addClass('has-sub');
+        if (settings.format != 'select') {
+          cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
+          $(this).find("#menu-button").on('click', function(){
+            $(this).toggleClass('menu-opened');
+            var mainmenu = $(this).next('ul');
+            if (mainmenu.hasClass('open')) { 
+              mainmenu.hide().removeClass('open');
+            }
+            else {
+              mainmenu.show().addClass('open');
+              if (settings.format === "dropdown") {
+                mainmenu.find('ul').show();
+              }
+            }
+          });
+
+          multiTg = function() {
+            cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+            cssmenu.find('.submenu-button').on('click', function() {
+              $(this).toggleClass('submenu-opened');
+              if ($(this).siblings('ul').hasClass('open')) {
+                $(this).siblings('ul').removeClass('open').hide();
+              }
+              else {
+                $(this).siblings('ul').addClass('open').show();
+              }
+            });
+          };
+
+          if (settings.format === 'multitoggle') multiTg();
+          else cssmenu.addClass('dropdown');
+        }
+
+        else if (settings.format === 'select')
+        {
+          cssmenu.append('<select style="width: 100%"/>').addClass('select-list');
+          var selectList = cssmenu.find('select');
+          selectList.append('<option>' + settings.title + '</option>', {
+                                                         "selected": "selected",
+                                                         "value": ""});
+          cssmenu.find('a').each(function() {
+            var element = $(this), indentation = "";
+            for (i = 1; i < element.parents('ul').length; i++)
+            {
+              indentation += '-';
+            }
+            selectList.append('<option value="' + $(this).attr('href') + '">' + indentation + element.text() + '</option');
+          });
+          selectList.on('change', function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        }
+
+        if (settings.sticky === true) cssmenu.css('position', 'fixed');
+
+        resizeFix = function() {
+          if ($(window).width() > settings.breakpoint) {
+            cssmenu.find('ul').show();
+            cssmenu.removeClass('small-screen');
+            if (settings.format === 'select') {
+              cssmenu.find('select').hide();
+            }
+            else {
+              cssmenu.find("#menu-button").removeClass("menu-opened");
+            }
+          }
+
+          if ($(window).width() <= settings.breakpoint && !cssmenu.hasClass("small-screen")) {
+            cssmenu.find('ul').hide().removeClass('open');
+            cssmenu.addClass('small-screen');
+            if (settings.format === 'select') {
+              cssmenu.find('select').show();
+            }
+          }
+        };
+        resizeFix();
+        return $(window).on('resize', resizeFix);
+
+      });
+  };
+})(jQuery);
+
+(function($){
+$(document).ready(function(){
+
+$(document).ready(function() {
+  $("#cssmenu").menumaker({
+    title: "",
+    format: "dropdown"
+  });
+
+  $("#cssmenu a").each(function() {
+  	var linkTitle = $(this).text();
+  	$(this).attr('data-title', linkTitle);
+  });
 });
+
+});
+})(jQuery);

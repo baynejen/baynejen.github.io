@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About | The Scotch Egg Diaries</title>
+	<title>Contact | The Scotch Egg Diaries</title>
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,8 +24,8 @@
 			</div>
 			<ul>
 				<li><a href="index.html">home</a></li>
-				<li><a href="#" class="highlighted">about</a></li>
-				<li><a href="contact.html">contact</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="contact.html" class="highlighted">contact</a></li>
 			</ul>
 			<div id="footer">
 				<div id="social">
@@ -45,9 +45,9 @@
 			</div>
 			<div id='cssmenu'>
 				<ul>
-				   	<li><a href="index.html">home</a></li>
-				   	<li><a href="#" class="highlighted">about</a></li>
-				   	<li><a href="contact.html">contact</a></li>
+				   	<li><a href="index.html" class="highlighted">home</a></li>
+				   	<li><a href="about.html">about</a></li>
+				   	<li><a href="contact.html" class="highlighted">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -57,20 +57,8 @@
 	
 		<div class="body-wrapper">
 			<div class="content-wrapper">
-			<h1>About The Scotch Egg Diaries</h1>
-				<div class="about-entry clearfix">
-					<div class="about-left">
-						<h2>It started with a Scotch Egg pyramid.</h2>
-						<p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis quis nulla vitae blandit. Vivamus lobortis dui nec turpis finibus, a dignissim ex faucibus.</p>
-						<h2>What makes a perfect Scotch Egg?</h2>
-						<p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis quis nulla vitae blandit. Vivamus lobortis dui nec turpis finibus, a dignissim ex faucibus.</p>
-					</div>
-					<div class="about-right">
-						<div class="about-image">
-							<img src="images/me.jpg">
-						</div>
-					</div>
-				</div>
+				<h1>Contact</h1>
+				<p>Thank you, your message has been sent! We'll respond once we've stopped eating Scotch Eggs.</p>
 			</div>
 		</div>
 
