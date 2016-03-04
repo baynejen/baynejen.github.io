@@ -330,6 +330,10 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 450px){
+	h1{
+		font-size: 3.0em;
+	}
+
 	nav ul li{
 		padding: 0 15px;
 	}
