@@ -238,6 +238,13 @@ footer a:hover{
 
 /*<--RESPONSIVE-->*/
 
+@media only screen and (max-width: 1024px){
+	#home{	
+		background: none;
+		background-color: #3f495a; 
+	}
+}
+
 @media only screen and (max-width: 900px){
 	h2{	
 		padding-bottom: 40px;
@@ -277,11 +284,6 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 700px){
-	#home{	
-		background: none;
-		background-color: #3f495a; 
-	}
-
 	hr{
 		margin-bottom: 140px;
 	}
