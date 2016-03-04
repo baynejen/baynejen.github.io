@@ -35,7 +35,7 @@ p{
 
 /*<--NAV-->*/
 
-#hero{
+#home{
 	background: url("../images/bg.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -99,7 +99,7 @@ nav ul li a:hover{
 
 /*<--ABOUT-->*/
 
-#about-wrapper{
+#about{
 	padding: 70px;
 	width: 100%;
 }
@@ -146,7 +146,7 @@ hr{
 
 /*PUBLICATIONS*/
 
-#publications-wrapper{
+#publications{
 	padding: 70px;
 	width: 100%;
 	background-color: #f6f6f6;
@@ -169,16 +169,16 @@ hr{
 
 /*CONTACT*/
 
-#contact-wrapper{
+#contact{
 	padding: 70px;
 	width: 100%;
 }
 
-#contact-wrapper p{
+#contact p{
 	text-align: center;
 }
 
-#contact-wrapper p:first-of-type{
+#contact p:first-of-type{
 	padding-bottom: 20px;
 }
 
@@ -243,7 +243,7 @@ footer a:hover{
 		padding-bottom: 40px;
 	}
 
-	#about-wrapper{
+	#about{
 		padding: 60px;
 	}
 
@@ -263,7 +263,7 @@ footer a:hover{
 		padding: 0 0 0 40px;
 	}
 
-	#publications-wrapper{
+	#publications{
 		padding: 60px;
 	}
 
@@ -271,13 +271,13 @@ footer a:hover{
 		width: 80%;
 	}
 
-	#contact-wrapper{
+	#contact{
 		padding: 60px;
 	}
 }
 
 @media only screen and (max-width: 700px){
-	#hero{	
+	#home{	
 		background: none;
 		background-color: #3f495a; 
 	}
@@ -312,7 +312,7 @@ footer a:hover{
 		padding: 0 40px;
 	}
 
-	#about-wrapper{
+	#about{
 		padding: 60px 40px;
 	}
 
@@ -320,11 +320,11 @@ footer a:hover{
 		padding-top: 40px;
 	}
 
-	#publications-wrapper{
+	#publications{
 		padding: 60px 40px;
 	}
 
-	#contact-wrapper{
+	#contact{
 		padding: 60px 40px;
 	}
 }
@@ -333,7 +333,6 @@ footer a:hover{
 	#logo{
 		padding: 0 30px;
 	}
-
 
 	h1{
 		font-size: 3.0em;
@@ -351,15 +350,15 @@ footer a:hover{
 		padding-right: 0;
 	}
 
-	#about-wrapper{
+	#about{
 		padding: 60px 30px;
 	}
 
-	#publications-wrapper{
+	#publications{
 		padding: 60px 30px;
 	}
 
-	#contact-wrapper{
+	#contact{
 		padding: 60px 30px;
 	}
 }
