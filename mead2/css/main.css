@@ -158,6 +158,10 @@ hr{
 	margin: 0 auto;
 }
 
+.publication:last-of-type{
+	padding-bottom: 0;
+}
+
 .publication-detail{
 	padding-bottom: 5px;
 	font-size: 1.1em;
