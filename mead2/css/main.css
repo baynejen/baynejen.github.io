@@ -244,8 +244,15 @@ footer a:hover{
 
 @media only screen and (max-width: 1024px){
 	#home{	
-		background: none;
-		background-color: #3f495a; 
+		background: url("../images/bg.jpg");	 
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	margin: 0;
+	  /*	background-position: 50% 0;*/
+/*		background: none;
+		background-color: #3f495a; */
 	}
 }
 
