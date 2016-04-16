@@ -130,12 +130,12 @@ nav{
 /*<--MOBILE NAV-->*/
 
 #mobile-nav{
-	background-color: #1f1f21;
+	background-color: #fff;
 	width: 100%;
 	padding: 40px;
 	display: none;
 	text-align: left;
-	color: #fff;
+	color: #1f1f21;
 	font-family: 'Cinzel', serif;
 }
 
@@ -148,7 +148,7 @@ nav{
 }
 .mobile-logo p{
 	padding-top: 9px;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 #cssmenu{
@@ -191,7 +191,7 @@ nav{
 }
 
 #cssmenu.small-screen ul li a{
-	color: #fff;
+	color: #1f1f21;
 }
 
 #cssmenu.small-screen ul li:last-of-type {
@@ -219,8 +219,8 @@ nav{
 	right: 0;
 	top: 17px;
 	display: block;
-	border-top: 2px solid rgba(255,255,255,.9);
-	border-bottom: 2px solid rgba(255,255,255,.9);
+	border-top: 2px solid rgba(0,0,0,.9);
+	border-bottom: 2px solid rgba(0,0,0,.9);
 	width: 22px;
 	height: 3px;
 }
@@ -233,7 +233,7 @@ nav{
 	display: block;
 	width: 22px;
 	height: 2px;
-	background: rgba(255,255,255,.9);
+	background: rgba(0,0,0,.9);
 }
 
 /*<--BODY-->*/
