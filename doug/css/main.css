@@ -2,7 +2,7 @@ body{
 	width: 100%;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #d8d8d8;
+	background-color: #eeeeee;
 	text-align: left;
 	color: #000
 }
@@ -14,13 +14,15 @@ body{
 /*	<--TYPOGRAPHY-->*/
 
 h1{
-	font-size: 5.2em;
-	font-family: 'Tangerine', cursive;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	padding-bottom: 30px;
+	font-family: 'Cinzel', serif;
 }
 
 h2{
-	font-size: 1.5em;
-	line-height: 1.5em;
+	font-size: 1.3em;
+	line-height: 1.4em;
 	padding-bottom: 30px;
 	font-family: 'Cinzel', serif;
 }
@@ -34,31 +36,37 @@ p{
 
 nav{
   	width: 100%;
-  	padding: 100px 50px 40px 50px;
-  	background-color: #ebebeb;
-  	max-width: 1200px;
+  	padding: 100px 40px 40px 40px;
   	margin: 0 auto;
+  	background-color: #1f1f21;
+  	color: #fff;
+  	font-family: 'Cinzel', serif;
 }
 
 .nav-content{
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .nav-content .logo{
-	width: 70%;
+	width: 33%;
 	float: left;
+}
+
+.nav-content .logo img{
+	width: 250px;
 }
 
 .nav-content .logo p{
 	padding-top: 9px;
-	font-family: 'Cinzel', serif;
-	font-size: .9em;
+	font-size: 0.9em;
 }
 
 .nav-content .nav-links{
-	width: 30%;
-	float: left;
-	font-family: 'Cinzel', serif;
+	width: 67%;
+	float: right;
+	padding-top: 114px;
 }
 
 .nav-content .nav-links ul{
@@ -66,39 +74,81 @@ nav{
 }
 
 .nav-content .nav-links ul li{
-	display: block;
-	padding: 4px 0;
+	display: inline-block;
+	padding: 0 15px;
 	position: relative;
 	text-align: right;
-	font-size: .9em;
+	float: right;
+	letter-spacing: 0.05em;
 }
 
-.nav-content a{
+.nav-content .nav-links ul li:first-of-type{
+	padding-right: 0;
+}
+
+.nav-content .nav-links ul li p{
+	line-height: 1em;
+	border-bottom: 1px solid white;
+	padding-bottom: 2px
+}
+
+.nav-content .nav-links a{
 	text-decoration: none;
-	color: #000;
+	color: #fff;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
 }
 
-.nav-content .nav-links ul li:hover{
-	text-decoration: underline;
+.nav-content .nav-links a:before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #fff;
+	height: 1px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
-.nav-content .nav-links a.highlighted{
-	text-decoration: underline;
+.nav-content .nav-links a:hover:before, .nav-content .nav-links a:focus:before, .nav-content .nav-links a:active:before {
+  left: 0;
+  right: 0;
 }
 
 /*<--MOBILE NAV-->*/
 
 #mobile-nav{
-	background-color: #ebebeb;
+	background-color: #1f1f21;
 	width: 100%;
-	padding: 90px 40px 30px 40px;
+	padding: 40px;
 	display: none;
 	text-align: left;
+	color: #fff;
+	font-family: 'Cinzel', serif;
 }
 
-#mobile-nav a{
-	text-decoration: none;
-	color: #000;
+.mobile-logo{
+	width: 100%;
+}
+
+.mobile-logo img{
+	width: 250px;
+}
+.mobile-logo p{
+	padding-top: 9px;
+	font-size: 0.9em;
 }
 
 #cssmenu{
@@ -131,14 +181,17 @@ nav{
 	width: 100%;
 	display: block;
 	position: relative;
-	margin-top: -65px;
+	margin-top: -140px;
 }
 
 #cssmenu.small-screen ul li{
 	float: none;
 	display: block;
 	border-bottom: 1px solid rgba(100, 100, 100, 0.1);
-	font-size: .9em;
+}
+
+#cssmenu.small-screen ul li a{
+	color: #fff;
 }
 
 #cssmenu.small-screen ul li:last-of-type {
@@ -157,17 +210,17 @@ nav{
 	cursor: pointer;
 	top: 0;
 	right: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
 }
 
 #cssmenu.small-screen #menu-button:after {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 17px;
 	display: block;
-	border-top: 2px solid rgba(100,100,100,.9);
-	border-bottom: 2px solid rgba(100,100,100,.9);
+	border-top: 2px solid rgba(255,255,255,.9);
+	border-bottom: 2px solid rgba(255,255,255,.9);
 	width: 22px;
 	height: 3px;
 }
@@ -175,19 +228,19 @@ nav{
 #cssmenu.small-screen #menu-button:before {
 	content: "";
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 27px;
 	display: block;
 	width: 22px;
 	height: 2px;
-	background: rgba(100,100,100,.9);
+	background: rgba(255,255,255,.9);
 }
 
 /*<--BODY-->*/
 
 .body-wrapper{
 	width: 100%;
-	background-color: #ebebeb;
+	padding: 40px;
 }
 
 .content-wrapper{
@@ -210,7 +263,7 @@ nav{
 .entry-right{
 	float: left;
 	width: 50%;
-	padding: 50px; 
+	padding: 50px;
 }
 
 .content-wrapper p{
@@ -232,11 +285,31 @@ nav{
 
 /*ABOUT*/
 
+.subheading{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.subheading h1{
+	font-weight: 700;
+}
+
+.subheading p{
+	padding: 0 15%;
+	padding-bottom: 30px;
+}
+
+#about{
+	padding: 40px;
+}
 
 #doug{
 	width: 50%;
 	float: left;
-	padding: 50px 25px 50px 50px;
+	padding-right: 25px;
 }
 
 #doug img{
@@ -248,7 +321,7 @@ nav{
 #maddy{
 	width: 50%;
 	float: left;
-	padding: 50px 50px 50px 25px;
+	padding-left: 25px;
 }
 
 #maddy img{
@@ -264,15 +337,24 @@ nav{
 }
 
 #gallery img{
-	width: 33.33%;
+	width: 50%;
 	float: left;
 	padding: 10px;
+}
+
+#gallery img:hover{
+	opacity: 0.9;
 }
 
 /*CONTACT*/
 
 #contact{
 	padding: 50px;
+	width: 100%;
+}
+
+#contact p{
+	text-align: center;
 }
 
 #contact a{
@@ -280,24 +362,29 @@ nav{
 }
 
 #contact a:hover{
-	opacity: .6;
+	opacity: .8;
 }
 
 #contact-area{
+	width: 75%;
+	padding: 0 0 50px 0;
+	margin: 0 auto;
+}
+
+#contact-area form{
 	width: 100%;
-	padding: 30px 0 50px 0;
-	margin: 0 auto 0 0;
 }
 
 #contact-area input, #contact-area textarea {
 	padding: 10px;
-	width: 410px;
+	width: 65%;
 	font-size: 1em;
 	margin: 0px 0px 10px 0px;
 	border: 1px solid #ccc;
 	margin-top: 10px;
 	-webkit-appearance:none;
 	border-radius: 0;
+	float: right;
 }
 
 #contact-area textarea {
@@ -309,12 +396,13 @@ nav{
 }
 
 #contact-area input.submit-button {
-	width: 430px;
+	width: 68%;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #4c4c4c;
-	border: 2px solid #4c4c4c;
+	background-color: #1f1f21;
+	border: 2px solid #1f1f21;
 	padding: 15px 30px;
+	border-radius: 2px;
 	box-shadow: none;
 	background-image: none;
 	border-image: none;
@@ -331,25 +419,33 @@ nav{
 label {
 	float: left;
 	text-align: left;
-	margin-right: 15px;
-	width: 115px;
-	padding-top: 27px;
+	padding-right: 15px;
+	width: 30%;
 	font-size: 1em;
+	line-height: 60px;
 }
 
 #contact-thanks{
 	padding: 50px 50px 150px 50px;
 }
 
+.amp{
+	font-family: 'Playfair Display', serif;
+}
+
 /*FOOTER*/
 
 footer{
-	padding: 50px;
+	padding: 60px 40px;
 	width: 100%;
-	background-color: #ebebeb;
-  	max-width: 1200px;
+	background-color: #1f1f21;
   	margin: 0 auto;
 	bottom: 0;
+}
+
+.footer-container{
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 footer .footer-info{
@@ -359,15 +455,16 @@ footer .footer-info{
 
 footer .footer-info p{
 	font-size: .8em;
-	color: #000;
+	color: #dddddd;
+	letter-spacing: 0.05em;
 }
 
 footer .footer-info a{
-	color: #000;
+	color: #dddddd;
 }
 
 footer .footer-info a:hover{
-	opacity: .6;
+	color: #fff;
 }
 
 footer .social{
@@ -394,22 +491,29 @@ footer .social img{
 
 /*<--RESPONSIVE-->*/
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1070px){
+	nav{
+		display: none;
+	}
+
+	#mobile-nav{
+		display: block;
+	}
+
 	.entry-right{
 		padding: 35px; 
 	}
 
-	h2{
-		font-size: 1.4em;
+	.entry-right h1, .entry-right h2{
 		padding-bottom: 20px;
 	}
 
-	.content-wrapper p{
+	.entry-right p{
 		font-size: .95em;
 	}
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 860px){
 	.entry-left{
 		float: none;
 		width: 100%;
@@ -418,38 +522,48 @@ footer .social img{
 	.entry-right{
 		float: none;
 		width: 100%;
-		padding: 40px; 
+		padding: 50px; 
 	}
 
 	.entry-right:first-of-type{
 		padding-top: 0;
 	}
 
-	.content-wrapper p{
+	.entry-right h2{
+		border-top: 1px solid rgba(100,100,100,.1);
+		padding-top: 50px;
+	}
+
+	.entry-right p{
 		font-size: 1em;
 	}
 
-	nav{
-	  	width: 100%;
-	  	padding: 100px 40px 30px 40px;
+	h1, h2{
+		padding-bottom: 30px;
 	}
 
-	.nav-content .nav-links ul{
-		margin-top: -15px;
-
+	.entry-right h1, .entry-right h2{
+		padding-bottom: 30px;
 	}
 
-	.nav-content .nav-links ul li{
-		padding: 6px 0;
+	.subheading p{
+		padding: 0 0 30px 0;
 	}
 
-	#gallery img{
-		width: 50%;
-		float: left;
+	#contact-area input, #contact-area textarea {
+		width: 95%;
+		margin: 10px 0 30px 0;
+		float: none;
 	}
 
-	footer{
-		padding: 40px;
+	label{
+		float: none;
+		line-height: 1em;
+	}
+
+	#contact-area input.submit-button {
+		width: 100%;
+		margin-left: 0;
 	}
 
 	footer .footer-info{
@@ -462,30 +576,48 @@ footer .social img{
 		width: 100%;
 		float: none;
 		text-align: center;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 }
 
-@media only screen and (max-width: 700px){
-	nav{
-		display: none;
+@media only screen and (max-width: 650px){
+	#about{
+		padding: 0;
 	}
 
-	#mobile-nav{
-		display: block;
-	}
-}
-
-@media only screen and (max-width: 600px){
 	#doug{
 		width: 100%;
 		float: none;
-		padding: 50px;
+		padding: 0;
+	}
+
+	#doug img{
+		padding-bottom: 0;
+	}
+
+	#doug h2{
+		padding: 50px 50px 30px 50px;
+	}
+
+	#doug p{
+		padding: 0 50px 50px 50px;
 	}
 
 	#maddy{
 		width: 100%;
 		float: none;
+		padding: 0;
+	}
+
+	#maddy img{
+		padding-bottom: 0;
+	}
+
+	#maddy h2{
+		padding: 50px 50px 30px 50px;
+	}
+
+	#maddy p{
 		padding: 0 50px 50px 50px;
 	}
 
@@ -494,28 +626,37 @@ footer .social img{
 	}
 
 	#contact-area{
-		padding-top: 10px;
-	}
-
-	#contact-area input, #contact-area textarea {
-		width: 90%;
-		margin-top: 20px;
-	}
-
-	#contact-area input.submit-button {
 		width: 100%;
-		margin-left: 0;
-	}
-
-	#contact-area input.submit-button {
-		width: 94%;
-		margin-left: 0;
 	}
 }
 
 @media only screen and (max-width: 450px){
 	#mobile-nav{
-		padding: 90px 10px 30px 20px;
+		padding: 30px 25px;
+	}
+
+	.mobile-logo img{
+		width: 200px;
+	}
+
+	.mobile-logo p{
+		width: 75%;
+	}
+
+	#cssmenu.small-screen{
+		margin-top: -155px;
+	}
+
+	.subheading{
+		padding: 50px 0 20px 0;
+	}
+
+	.subheading p{
+		padding: 0 20px 30px 20px;
+	}
+
+	.body-wrapper{
+		padding: 0;
 	}
 
 	.entry-right{
@@ -526,11 +667,19 @@ footer .social img{
 		padding-top: 15px;
 	}
 
-	#doug{
+	#doug h2{
 		padding: 30px;
 	}
 
-	#maddy{
+	#doug p{
+		padding: 0 30px 30px 30px;
+	}
+
+	#maddy h2{
+		padding: 30px;
+	}
+
+	#maddy p{
 		padding: 0 30px 30px 30px;
 	}
 
@@ -538,8 +687,10 @@ footer .social img{
 		padding: 30px;
 	}
 
-	#contact-area input.submit-button {
-		width: 97%;
+	#contact-area input, #contact-area textarea {
+		width: 92%;
+		margin: 10px 0 30px 0;
+		float: none;
 	}
 
 	#contact-thanks{
@@ -547,6 +698,6 @@ footer .social img{
 	}
 
 	footer{
-		padding: 30px;
+		padding: 30px 25px;
 	}
 }

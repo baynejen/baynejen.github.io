@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -18,54 +18,57 @@
 </head>
 <body>
 	<div class="page-wrapper">	
-<!-- nav -->
+
+<!-- NAV -->
+	
 		<nav>
 			<div class="nav-content clearfix">
 				<div class="logo">
-					<h1><a href="index.html">Sforzando</a></h1>
-					<p>Classical Soprano and Piano/Organ Duo</p>
+					<a href="index.html"><img src="images/logo.png" alt="sforzando logo"></a>
+					<p>Classical Soprano <span class="amp">&amp;</span> Piano/Organ Duo</p>
 				</div>
 				<div class="nav-links">
-					<ul>
-						<a href="index.html"><li>Home</li></a>
-						<a href="about.html" ><li>Who we are</li></a>
-						<a href="gallery.html"><li>Gallery</li></a>
-						<a href="audio.html"><li>Audio and video</li></a>
-						<a href="#" class="highlighted"><li>Contact</li></a>
+					<ul>						
+						<li><p>Contact</p></li>
+						<li><a href="audio.html">Audio <span class="amp">&amp;</span> video</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about.html">Who we are</a></li>
+						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-
 <!-- MOBILE NAV -->
 
 		<div id="mobile-nav">
-			<div>
-				<h1><a href="index.html">Sforzando</a></h1>
+			<div class="mobile-logo">
+				<a href="index.html"><img src="images/logo.png" alt="sforzando logo"></a>
+				<p>Classical Soprano <span class="amp">&amp;</span> Piano/Organ Duo</p>
 			</div>
-
 			<div id='cssmenu'>
 				<ul>
-				   <li><a href="index.html">Home</a></li>
-				   <li><a href="about.html">Who we are</a></li>
-				   <li><a href="gallery.html">Gallery</a></li>
-				   <li><a href="audio.html" >Audio and video</a></li>
-				   <li><a href="#" class="highlighted">Contact</a></li>
+				   	<li><a href="index.html">Home</a></li>
+				   	<li><a href="about.html">Who we are</a></li>
+				   	<li><a href="gallery.html">Gallery</a></li>
+				   	<li><a href="audio.html">Audio <span class="amp">&amp;</span> video</a></li>
+				   	<li><a href="#" class="highlighted">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 
 
-<!-- body -->
+<!-- BODY -->
 	
 		<div class="body-wrapper">
+		<div class="subheading">
+			<h1>Contact Sforzando</h1>
+			<p>To make a booking or if you would like any further information, please make contact with us using the form below. Please let us know the nature of the occasion (e.g. wedding, function) and if you have any specific requests regarding repertoire. If you would like to discuss this over the phone, please include a contact telephone number and a choice of convenient times to call back.</p>
+		</div>
 			<div class="content-wrapper clearfix">
 				<div id="contact">
-					<h2>Contact us</h2>
-					<p>To make a booking or if you would like any further information, please make contact with us using the form below. Please let us know the nature of the occasion (e.g. wedding, function) and if you have any specific requests regarding repertoire. If you would like to discuss this over the phone, please include a contact telephone number and a choice of convenient times to call back.</p>
 					<div id="contact-area">
-						<form method="post" action="contactengine.php">
+						<form method="post" action="contactengine.php" class="clearfix">
 							<label for="Name">Your Name:</label><br>
 							<input type="text" name="Name" id="Name" /><br>
 
@@ -87,14 +90,15 @@
 <!-- FOOTER -->
 	
 		<footer>
-			<div class="footer-info">
-				<p>&copy; 2016 Douglas Holligan and Madeleine Kearns. Website by <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a>.</p>
-			</div>
-			<div class="social">
-				<a href="#" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+			<div class="footer-container clearfix">
+				<div class="footer-info">
+					<p>&copy; 2016 Douglas Holligan and Madeleine Kearns. Website by <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a>.</p>
+				</div>
+				<div class="social">
+					<a href="#" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+				</div>
 			</div>
 		</footer>
 	</div>
-
 </body>
 </html>
