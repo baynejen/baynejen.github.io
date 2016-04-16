@@ -396,7 +396,7 @@ nav{
 }
 
 #contact-area input.submit-button {
-	width: 69%;
+	width: 68%;
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #1f1f21;
@@ -499,9 +499,7 @@ footer .social img{
 	#mobile-nav{
 		display: block;
 	}
-}
 
-@media only screen and (max-width: 950px){
 	.entry-right{
 		padding: 35px; 
 	}
@@ -510,7 +508,7 @@ footer .social img{
 		padding-bottom: 20px;
 	}
 
-	.content-wrapper p{
+	.entry-right p{
 		font-size: .95em;
 	}
 }
@@ -536,7 +534,7 @@ footer .social img{
 		padding-top: 50px;
 	}
 
-	.content-wrapper p{
+	.entry-right p{
 		font-size: 1em;
 	}
 
