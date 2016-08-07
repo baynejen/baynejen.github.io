@@ -36,7 +36,7 @@ p{
 
 nav{
   	width: 100%;
-  	padding: 100px 40px 40px 40px;
+  	padding: 45px 40px 40px 40px;
   	margin: 0 auto;
   	background-color: #1f1f21;
   	color: #fff;
@@ -398,11 +398,10 @@ nav{
 #contact-area input.submit-button {
 	width: 68%;
 	text-transform: uppercase;
-	color: #fff;
-	background-color: #1f1f21;
-	border: 2px solid #1f1f21;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #1f1f21;
 	padding: 15px 30px;
-	border-radius: 2px;
 	box-shadow: none;
 	background-image: none;
 	border-image: none;
@@ -411,9 +410,7 @@ nav{
 }
 
 #contact-area input.submit-button:hover{
-	background-color: #3a3a3a;
-	border: 2px solid #3a3a3a;
-	color: #fff;
+	opacity: .7;
 }
 
 label {
