@@ -82,11 +82,11 @@ p{
 
 label[for="nav-trigger"] {
     position: fixed;
-    top: 40px;
+    top: 27px;
     left: 10px;
     z-index: 0;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     background-image: url("../images/icons/offsite-menu.png");
     background-size: contain;
@@ -537,8 +537,13 @@ footer .footer-info a:hover{
 
 @media only screen and (max-width: 650px){
 	nav{
-		padding: 30px 70px;
+		padding: 20px 70px;
 	}
+
+	.nav-content .logo img{
+		width: 150px;
+	}
+
 	.nav-content .logo p{
 		display: none;
 	}
