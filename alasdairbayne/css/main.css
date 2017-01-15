@@ -205,6 +205,7 @@ nav{
 	display: inline-block;
 	height: 75px;
 	padding: 0 20px;
+	text-transform: uppercase;
 }
 
 .scroller .selected{
@@ -232,11 +233,16 @@ nav{
   	display:none;
   	width:100%;
 	background: #ecf2f6;
-	border-top: 2px solid #d5d8df;
+	/*border-top: 1px solid #d5d8df;*/
 	width:100%;
 	text-align:center;
 	position: relative;
   	margin:0 auto;
+	text-transform: uppercase;
+}
+
+.mobile-menu div{
+	display: block;
 }
 
 .mobile-menu li a {
@@ -368,7 +374,7 @@ hr{
 .film-divider{
 	padding: 0;
 	margin: 0 auto;
-	height: 6px;
+	height: 2px;
 	border: 0;
 	background-color: #ecf2f6;
 	width:90%;
@@ -508,8 +514,8 @@ hr{
 .avatar img{
 	border-radius: 0%;
 	width: 100%;
-	border-bottom: 8px solid #ff584c;
-}
+/*	border-bottom: 8px solid #ff584c;
+*/}
 
 p.about-subtitle{
 	padding: 0 0 6% 0;
@@ -866,10 +872,11 @@ p.email{
 	}
 
 	.mobile-menu .lines{
-		display: inline-block;
+		display: block;
 		vertical-align: top;
-		margin-left: -6.5em;
-		padding-right: 5.5em;
+		padding-top: 10px;
+	/*	margin-left: -6.5em;*/
+		/*padding-left: 5.5em;*/
 	}
 
 	.mobile-menu .lines img{
@@ -1000,7 +1007,7 @@ p.email{
 	}
 
 	.avatar{
-		width: 80%;
+		width: 100%;
 		padding-top: 5%;
 	}
 
