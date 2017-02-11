@@ -558,6 +558,10 @@ footer .footer-info a:hover{
 }
 
 @media only screen and (max-width: 650px){
+	h1, h2{
+		text-align: center;
+	}
+
 	nav{
 		padding: 30px 70px;
 	}
