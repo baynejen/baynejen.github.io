@@ -210,29 +210,33 @@ nav{
 
 /*<--HOMEPAGE-->*/
 
-.entry-image-container{
-	float: left;
-	width: 50%;
-}
-
-.entry-image img{
+.entry-container{
 	width: 100%;
 	padding: 40px;
 }
 
-.entry-text-container{
+.entry-container:first-of-type{
+	padding-bottom: 0;
+}
+
+#h1-small-only{
+	padding: 40px 40px 20px 40px;
+	text-align: center;
+	display: none;
+}
+
+.entry-img, .entry-text{
 	float: left;
 	width: 50%;
-	padding: 40px 100px;
+}
+
+.entry-img img{
+	padding: 40px;
+	width: 100%;
 }
 
 .entry-text{
-	width: 100%;
-	margin: 0 auto;
-}
-
-.entry-text:first-of-type{
-	padding-bottom: 80px;
+	padding: 40px;
 }
 
 /*<--ABOUT-->*/
@@ -468,8 +472,20 @@ footer .footer-info a:hover{
 /*<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1070px){
-	.entry-text-container{
-		padding: 40px;
+	h1{
+		font-size: 1.7em;
+	}
+
+	h2{
+		font-size: 1.7em;
+	}
+
+	.entry-img img{
+		padding: 20px;
+	}
+
+	.entry-text{
+		padding: 20px;
 	}
 
 	#about h2, #about p{
@@ -486,24 +502,30 @@ footer .footer-info a:hover{
 }
 
 @media only screen and (max-width: 860px){
-	.entry-image-container{
+	.entry-container{
+		padding: 0;
+	}
+
+	#h1-small-only{
+		display: block;
+	}
+
+	#h1-big-only{
+		display: none;
+	}
+
+	.entry-img, .entry-text{
 		float: none;
 		width: 100%;
 	}
 
-	.entry-image{
-		width: 50%;
-		float: left;
-	}
-
-	.entry-image img{
-		padding: 25px;
-	}
-
-	.entry-text-container{
-		float: none;
+	.entry-img img{
+		padding: 40px;
 		width: 100%;
-		padding: 30px 150px 30px 30px;
+	}
+
+	.entry-text{
+		padding: 40px;
 	}
 
 	#doug{
@@ -560,21 +582,20 @@ footer .footer-info a:hover{
 		text-decoration: underline;
 	}
 
-	.entry-image{
-		float: none;
-		width: 100%;
+	#h1-small-only{
+		padding: 20px;
 	}
 
-	.entry-image img{
-		padding: 30px;
+	.entry-img img{
+		padding: 20px;
 	}
 
-	.entry-text-container{
-		padding-right: 30px;
+	.entry-text{
+		padding: 20px;
 	}
 
 	#about{
-		padding: 20px 30px 30px 30px;
+		padding: 20px;
 	}
 
 	#doug{
@@ -615,12 +636,14 @@ footer .footer-info a:hover{
 
 	#gallery img{
 		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	#contact{
 		width: 100%;
 		float: none;
-		padding-bottom: 10px;
+		padding: 10px 20px;
 	}
 
 	#contact-area{
@@ -630,7 +653,7 @@ footer .footer-info a:hover{
 	#contact-info{
 		width: 100%;
 		float: none;
-		padding: 0 40px 40px 40px;
+		padding: 0 20px 20px 20px;
 	}
 }
 
