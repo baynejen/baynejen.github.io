@@ -416,6 +416,7 @@ footer{
 
 .footer-container{
 	max-width: 1200px;
+	margin: 0 auto;
 }
 
 footer .footer-links{
