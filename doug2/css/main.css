@@ -26,7 +26,7 @@ h2{
 }
 
 p{
-	line-height: 1.7em;
+	line-height: 1.5em;
 	letter-spacing: 0.03em;
 }
 
@@ -34,7 +34,7 @@ p{
 
 .offsite-navigation {
     list-style: none;
-    background: #eeeeee;
+    background: #13111f;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -43,7 +43,7 @@ p{
     bottom: 0;
     left: 0;
     z-index: 0;
-    padding: 15px 25px;
+    padding: 15px 0;
     overflow: scroll;
 }
 
@@ -56,23 +56,33 @@ p{
 }
 
 .offsite-navigation .offsite-nav-item a{
-	padding: 20px 0;
+	padding: 20px 0 20px 20px;
 	text-align: left;
 	display: inline-block;
-	color: #13111f;
-	text-decoration: none;
-	font-weight: 600;
+	color: #fff;
+	text-decoration: none!important;
+	font-size: 15px;
 }
 
 #top{
 	padding-top: 30px;
 }
 
+.offsite-nav-item-selected{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
 .offsite-navigation .offsite-nav-item-selected a{
-	color: #13111f;
-	border-bottom: 3px solid;
-	padding-bottom: 3px;
-	margin-bottom: 20px;
+	border-left: 5px solid white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+
+.offsite-nav-item a:hover{
+	color:#fedd6d;
+	text-decoration: none!important;
 }
 
 .nav-trigger {
@@ -82,8 +92,8 @@ p{
 
 label[for="nav-trigger"] {
     position: fixed;
-    top: 37px;
-    left: 10px;
+    top: 48px;
+    left: 30px;
     z-index: 0;
     width: 20px;
     height: 20px;
@@ -113,7 +123,7 @@ label[for="nav-trigger"] {
 
 nav{
   	width: 100%;
-  	padding: 20px 25px;
+  	padding: 30px 20px 0 20px;
   	margin: 0 auto;
   	background-color: #13111f;
   	color: #1f1f21;
@@ -138,15 +148,14 @@ nav{
 
 .nav-content .logo p{
 	padding-top: 15px;
-	color: #fedd6d;
+	color: #fff;
 	letter-spacing: 0.1em;
-	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 .nav-content .nav-links{
 	width: 100%;
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 .nav-content .nav-links ul{
@@ -156,17 +165,17 @@ nav{
 
 .nav-content .nav-links ul li{
 	display: inline-block;
-	padding: 0 15px;
+	padding: 0 25px;
 	position: relative;
 	text-align: center;
 	letter-spacing: 0.05em;
-  	font-size: .9em;
+	font-size: 15px;
 }
 
 .nav-content .nav-links ul li p{
 	color: #fff;
-	border-bottom: 3px solid;
-
+	border-bottom: 5px solid;
+	padding-bottom: 10px;
 }
 
 .nav-content .nav-links a{
@@ -175,8 +184,9 @@ nav{
 }
 
 .nav-content .nav-links a:hover{
-	border-bottom: 3px solid;
-	padding-bottom: 5px;
+	color: #fedd6d;
+/*	border-bottom: 5px solid;
+	padding-bottom: 12px;*/
 }
 
 /*	<--- UNIVERSAL BODY WRAPPER --->*/
@@ -225,6 +235,10 @@ nav{
 	display: none;
 }
 
+.small-title{
+	font-size: 18px;
+}
+
 .entry-img, .entry-text{
 	float: left;
 	width: 50%;
@@ -237,6 +251,12 @@ nav{
 
 .entry-text{
 	padding: 40px;
+}
+span.review-subtitle{
+	opacity: 0.5;
+}
+p.review{
+	padding-top: 25px;
 }
 
 /*<--ABOUT-->*/
@@ -564,7 +584,7 @@ footer .footer-info a:hover{
 	}
 
 	nav{
-		padding: 30px 70px;
+		padding: 40px 70px;
 	}
 
 	.nav-content .logo img{
