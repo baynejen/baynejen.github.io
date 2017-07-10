@@ -336,6 +336,7 @@ p.review{
 
 #audio{
 	padding: 10px 40px 40px 40px;
+	width: 100%;
 }
 
 #audio p{
@@ -347,6 +348,7 @@ p.review{
 }
 .audio audio{
 	margin-bottom: 20px;
+	width: 50%;
 }
 #soundcloud{
 	width: 100%;
@@ -573,10 +575,14 @@ footer .footer-info a:hover{
 	#maddy{
 		padding-left: 20px;
 	}
-	#soundcloud iframe{
+
+	.audio audio{
 		width: 100%;
-		float: none;
-		padding: 20px 0;
+	}
+	#soundcloud iframe{
+		width: 100%!important;
+		float: none!important;
+		padding: 20px 0!important;
 	}
 
 	#contact-area input, #contact-area textarea {
