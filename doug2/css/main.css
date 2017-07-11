@@ -230,10 +230,26 @@ nav{
 	padding-bottom: 0;
 }
 
+#h1-big-only{
+	padding-bottom: 10px;
+}
+
+#h2-big-only{
+	font-size: 18px;
+	padding-bottom: 40px;
+}
+
 #h1-small-only{
 	padding: 40px 40px 20px 40px;
 	text-align: center;
 	display: none;
+}
+#h2-small-only{
+	padding: 10px 40px;
+	text-align: center;
+	display: none;
+	font-size: 1em;
+	line-height: 1.4em;
 }
 
 .small-title{
@@ -549,8 +565,14 @@ footer .footer-info a:hover{
 	#h1-small-only{
 		display: block;
 	}
+	#h2-small-only{
+		display: block;
+	}
 
 	#h1-big-only{
+		display: none;
+	}
+	#h2-big-only{
 		display: none;
 	}
 
