@@ -24,6 +24,13 @@ h2{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 }
+h3{
+	font-size: 1.3em;
+	line-height: 1.2em;
+	padding-bottom: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
 
 p{
 	line-height: 1.5em;
@@ -74,7 +81,7 @@ p{
 }
 
 .offsite-navigation .offsite-nav-item-selected a{
-	border-left: 5px solid white;
+	border-left: 7px solid white;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15px;
@@ -175,7 +182,7 @@ nav{
 
 .nav-content .nav-links ul li p{
 	color: #fff;
-	border-bottom: 5px solid;
+	border-bottom: 7px solid;
 	padding-bottom: 10px;
 }
 
@@ -276,6 +283,13 @@ p.review{
 	padding-top: 25px;
 }
 
+.piano-key{
+	height: 8px;
+	width: 60px;
+	background-color: #13111f;
+	margin-top: 40px;
+}
+
 /*<--ABOUT-->*/
 
 .subheading{
@@ -313,7 +327,7 @@ p.review{
 	padding-bottom: 30px;
 }
 
-#about h2, #about p{
+#about h3, #about p{
 	padding-right: 120px;
 }
 
@@ -397,9 +411,8 @@ p.review{
 	padding: 10px;
 	width: 60%;
 	font-size: 1em;
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
 	border: 1px solid #ccc;
-	margin-top: 10px;
 	-webkit-appearance:none;
 	border-radius: 0;
 	float: right;
@@ -448,7 +461,7 @@ label {
 #contact-info{
 	float: left;
 	width: 40%;
-	padding: 10px 100px 40px 40px;
+	padding: 20px 40px 40px 40px;
 }
 
 #contact-info a{
@@ -532,10 +545,6 @@ footer .footer-info a:hover{
 		font-size: 1.7em;
 	}
 
-	h2{
-		font-size: 1.7em;
-	}
-
 	.entry-img img{
 		padding: 20px;
 	}
@@ -544,13 +553,13 @@ footer .footer-info a:hover{
 		padding: 20px;
 	}
 
-	#about h2, #about p{
+	#about h3, #about p{
 		padding-right: 60px;
 	}
 
-	#contact-info{
+/*	#contact-info{
 		padding-right: 60px;
-	}
+	}*/
 
 	#contact-area input.submit-button{
 		width: 25%;
@@ -624,13 +633,19 @@ footer .footer-info a:hover{
 	}
 
 	#contact-info{
-		padding: 10px 30px 10px 10px;
+		padding: 10px;
 	}
 }
 
 @media only screen and (max-width: 650px){
-	h1, h2{
+	h1{
 		text-align: center;
+	}
+	h2{
+		text-align: left;
+	}
+	h3{
+		text-align: left;
 	}
 
 	nav{
@@ -683,30 +698,30 @@ footer .footer-info a:hover{
 		padding-bottom: 0;
 	}
 
-	#doug h2{
+	#doug h3{
 		padding: 40px 0 30px 0;
 	}
 
 	#doug p{
-		padding: 0 0 40px 0;
+		padding: 0;
 	}
 
 	#maddy{
 		width: 100%;
 		float: none;
-		padding: 0;
+		padding: 40px 0 0 0;
 	}
 
 	#maddy img{
 		padding-bottom: 0;
 	}
 
-	#maddy h2{
+	#maddy h3{
 		padding: 40px 0 30px 0;
 	}
 
 	#maddy p{
-		padding: 0 0 40px 0;
+		padding: 0;
 	}
 
 	#gallery img{
@@ -726,9 +741,11 @@ footer .footer-info a:hover{
 	#contact-info{
 		width: 100%;
 		float: none;
-		padding: 0 20px 20px 20px;
+		padding: 20px 20px 60px 20px;
 	}
-}
+	.piano-key{
+		width: 50px;
+	}
 
 @media only screen and (max-width: 450px){
 	.body-wrapper{
