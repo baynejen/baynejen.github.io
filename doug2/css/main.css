@@ -66,7 +66,7 @@ p{
 	padding: 20px 0 20px 20px;
 	text-align: left;
 	display: inline-block;
-	color: #13111f;
+	color: white;
 	text-decoration: none!important;
 	font-size: 15px;
 }
@@ -81,7 +81,7 @@ p{
 }
 
 .offsite-navigation .offsite-nav-item-selected a{
-	border-left: 7px solid #13111f;
+	border-left: 7px solid white;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15px;
@@ -688,13 +688,6 @@ footer .footer-info a:hover{
 
 	.offsite-navigation .offsite-nav-item a:active{
 		text-decoration: underline;
-	}
-	.offsite-navigation .offsite-nav-item a{
-		color: #fff!important;
-	}
-
-	.offsite-navigation .offsite-nav-item-selected a{
-		border-left: 7px solid white!important;
 	}
 
 	#h1-small-only{
