@@ -81,11 +81,7 @@ p{
 }
 
 .offsite-navigation .offsite-nav-item-selected a{
-<<<<<<< HEAD
 	border-left: 7px solid #13111f;
-=======
-	border-left: 7px solid white;
->>>>>>> b671adda99bebc2aab7efa184959860f4533d7e4
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15px;
