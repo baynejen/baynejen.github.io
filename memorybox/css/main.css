@@ -451,6 +451,10 @@ footer{
 	padding: 3% 0;
 }
 
+.portfolio{
+	text-decoration: underline;
+}
+
 #icons{
 	width: 14%;
 	padding-top: 2%;
@@ -458,8 +462,8 @@ footer{
 }
 
 .icon-col{
-	width: 20%;
-	margin: 0 2.5%;
+	width: 33%;
+	padding: 0 6.5%;
 	float: left;
 	display: inline-block;
 	text-align: center;
@@ -525,8 +529,7 @@ footer{
 
 	#icons{
 		width: 17%;
-		padding-top: 3.5%;
-	}
+    }
 }
 
 

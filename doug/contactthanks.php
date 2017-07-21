@@ -46,7 +46,7 @@
 						<li><a href="about">About</a></li>				
 						<li><a href="gallery">Gallery</a></li>
 						<li><a href="audiovid">Audio and Video</a></li>
-						<li><p>Contact</p></li>
+						<li><a href="contact"><p>Contact</p></li>
 
 					</ul>
 				</div>
