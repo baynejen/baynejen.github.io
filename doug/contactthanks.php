@@ -19,11 +19,11 @@
 <!-- OFFSITE NAVIGATION -->	
 
 	<ul class="offsite-navigation">
-	   	<li class="offsite-nav-item"><a href="index.html">Home</a></li>
-	    <li class="offsite-nav-item"><a href="about.html">About</a></li>
-	    <li class="offsite-nav-item"><a href="gallery.html">Gallery</a></li>
-	    <li class="offsite-nav-item"><a href="audio.html">Audio and Video</a></li>
-	    <li class="offsite-nav-item offsite-nav-item-selected"><a href="#">Contact</a></li>
+	   	<li class="offsite-nav-item"><a href="index">Home</a></li>
+	    <li class="offsite-nav-item"><a href="about">About</a></li>
+	    <li class="offsite-nav-item"><a href="gallery">Gallery</a></li>
+	    <li class="offsite-nav-item"><a href="audiovid">Audio and Video</a></li>
+	    <li class="offsite-nav-item offsite-nav-item-selected"><a href="contact">Contact</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -37,15 +37,15 @@
 		<nav>
 			<div class="nav-content clearfix">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo-new.png" alt="sforzando logo"></a>
+					<a href="index"><img src="images/logo-new.png" alt="sforzando logo"></a>
 					<p>Classical Soprano and Piano-Organ Duo</p>
 				</div>
 				<div class="nav-links">
 					<ul>	
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>				
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="audio.html">Audio and Video</a></li>
+						<li><a href="index">Home</a></li>
+						<li><a href="about">About</a></li>				
+						<li><a href="gallery">Gallery</a></li>
+						<li><a href="audiovid">Audio and Video</a></li>
 						<li><p>Contact</p></li>
 
 					</ul>
@@ -55,7 +55,7 @@
 
 <!-- BODY -->
 	
-		<<div class="body-wrapper">
+		<div class="body-wrapper">
 			<div class="content-wrapper clearfix">
 				<div id="contact-thanks">
 					<h2>Thank you!</h2>
@@ -71,10 +71,10 @@
 				<div class="footer-links">
 					<ul>
 						<li><a href="https://www.facebook.com/sforzando.org/?ref=page_internal" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
-						<li><a href="about.html">About Sforzando</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="audio.html">Audio and video</a></li>
-						<li><a href="contact.html">Contact us</a></li>
+						<li><a href="about">About Sforzando</a></li>
+						<li><a href="gallery">Gallery</a></li>
+						<li><a href="audiovid">Audio and video</a></li>
+						<li><a href="contact">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="footer-info">
