@@ -148,6 +148,15 @@ hr{
 	text-align: justify;
 }
 
+.gifs{
+	width: 100%;
+}
+
+.gifs img{
+	width: 100%;
+	padding: 60px 0;
+}
+
 /*PUBLICATIONS*/
 
 #publications{
@@ -312,6 +321,14 @@ footer a:hover{
 		float: none;
 		width: 100%;
 		padding: 60px 0 0 0;
+	}
+
+	.gifs{
+		padding-top: 60px;
+	}
+
+	.gifs img{
+		padding: 0;
 	}
 
 	.publication{
