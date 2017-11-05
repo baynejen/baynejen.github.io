@@ -29,8 +29,8 @@ p{
 }
 
 a{
-	color: #fff;
-	text-decoration: none;
+	text-decoration: underline;
+	color: #46464f;
 }
 
 
@@ -39,7 +39,7 @@ a{
 
 .offsite-navigation {
     list-style: none;
-   background: #d7dbdf;
+   	background: #d7dbdf;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -63,11 +63,12 @@ a{
 }
 
 .offsite-navigation .offsite-nav-item a{
-	padding: 25px;
+	padding: 20px 25px;
 	text-align: left;
 	display: block;
 	font-weight: bold;
 	color: #46464f;
+	text-decoration: none;
 }
 
 .offsite-nav-item-balloon{
@@ -97,7 +98,7 @@ a{
 label[for="nav-trigger"] {
     position: fixed;
     top: 35px;
-    left: 25px;
+    left: 15px;
     z-index: 0;
     width: 25px;
     height: 25px;
@@ -204,7 +205,7 @@ header nav ul a li{
 }
 
 #homepage-title h1{
-	padding: 5% 0 15% 0;
+	padding: 4% 0 14% 0;
 }
 
 #balloon{
@@ -216,6 +217,10 @@ header nav ul a li{
 	width: 8%;
 	text-align: center;
 	max-width: 155px;
+}
+
+#slogan-wrapper{
+	padding: 40px;
 }
 
 
@@ -240,8 +245,8 @@ header nav ul a li{
 	padding: 0;
 }
 
-.spacing-fix{
-	margin: 0 0 0 .08em;
+.content h2{
+	padding: 5% 0 2% 0;
 }
 
 .columns{
@@ -284,7 +289,6 @@ p.detail{
 .scrollup{
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 0 5% 0;
 }
 
 .scrollup img{
@@ -301,12 +305,10 @@ p.detail{
 /*	<---SUBPAGE NAVIGATION--->*/
 
 
-
-nav.subpage-nav{
+nav#subpage-nav{
 	color: #46464f;
 	width: 100%;
 	position: static;
-	background-color: #d7dbdf;
 }
 
 .homepage-redirect{
@@ -320,7 +322,7 @@ nav.subpage-nav{
 	width: 100%;
 }
 
-nav.subpage-nav ul{
+nav#subpage-nav ul{
 	width: 100%;
 	list-style: none;
 	background-color: #fff;
@@ -329,7 +331,7 @@ nav.subpage-nav ul{
 	margin: 0 auto;
 }
 
-nav.subpage-nav ul li{
+nav#subpage-nav ul li{
 	display: inline-block;
 	padding: 2%;
 	letter-spacing: 0.05em;
@@ -338,11 +340,11 @@ nav.subpage-nav ul li{
 	opacity: .6;
 }
 
-nav.subpage-nav ul li:hover{
+nav#subpage-nav ul li:hover{
 	color: #46464f;
 }
 
-nav.subpage-nav ul li.section-selected{
+nav#subpage-nav ul li.section-selected{
 	opacity: 1;
 }
 
@@ -351,33 +353,8 @@ nav.subpage-nav ul li.section-selected{
 	background-color: #fff;
 }
 
-#allmemories-image{
+.subpage-image-wrapper img{
 	width: 12.5%;
-	text-align: center;
-}
-
-#music-image{
-	width: 7.5%;
-	text-align: center;
-}
-
-#culture-image{
-	width: 10.5%;
-	text-align: center;
-}
-
-#travel-image{
-	width: 9.5%;
-    text-align: center;
-}
-
-#fooddrink-image{
-	width: 8%;
-	text-align: center;
-}
-
-#comedy-image{
-	width: 8%;
 	text-align: center;
 }
 
@@ -386,18 +363,20 @@ nav.subpage-nav ul li.section-selected{
 
 
 footer{
-	background-color: #46464f;
-	color: #fff;
+	background-color: #fff;
+	color: #46464f;
 	font-size: .9em;
 	width: 100%;
 	letter-spacing: 0.06em;
 	font-weight: 400;
-	padding: 2% 0;
+	padding: 3% 0;
+	text-decoration: none;
 }
 
-.portfolio{
-	text-decoration: underline;
+footer a{
+	color: #46464f;
 }
+
 
 /*	<--CLEARFIX-->*/
 
@@ -421,76 +400,11 @@ footer{
 	}
 }
 
-
 @media screen and (max-width: 2100px){
 	#balloon{
 		margin-top: -4%;
 	}
 }
-
-@media screen and (max-width: 1200px){
-	header nav ul li{
-		padding: 3.5% 2.5%;
-	}
-
-	#balloon{
-		margin-top: -4.5%;
-	}
-
-	#balloon img{
-		width: 9%;
-	}
-
-	.homepage-redirect{
-		margin-top: 3.5%;
-		width: 3%;
-	}
-
-	nav.subpage-nav ul{
-		padding: 3% 0;
-	}
-
-	#allmemories-image{
-		width: 15%;
-	}
-
-	#music-image{
-		width: 10%;
-	}
-
-	#culture-image{
-		width: 13%;
-	}
-
-	#travel-image{
-		width: 12%;
-	}
-
-	#fooddrink-image{
-		width: 10%;
-	}
-
-	#comedy-image{
-		width: 10%;
-	}
-
-	.col{
-		width: 44%;
-		float: left;
-		display: inline-block;
-		margin: 3%;
-	}
-
-	.content-wrapper{
-		padding: 0 4% 4% 4%;
-	}
-
-	.scrollup img{
-		width: 4%;
-	}
-
-}
-
 
 @media screen and (max-width: 1000px){
 	#balloon{
@@ -507,12 +421,19 @@ footer{
 		width: 3.5%;
 	}
 
-	nav.subpage-nav ul{
+	.col{
+		width: 42%;
+		float: left;
+		display: inline-block;
+		margin: 4%;
+	}
+
+	nav#subpage-nav ul{
 		padding: 4% 0;
 	}	
 
-	footer{
-		padding: 4% 0;
+	.scrollup img{
+		width: 5%;
 	}
 }
 
@@ -547,55 +468,14 @@ footer{
 	}
 
 	.content-wrapper{
-		padding: 0 7% 4% 7%;
+		padding: 0 7% 2% 7%;
 	}
 
-	.col{
-		width: 42%;
-		float: left;
-		display: inline-block;
-		margin: 4%;
-	}
-
-	nav.subpage-nav{
+	nav#subpage-nav{
 		display: none;
 	}
 
-	#allmemories-image{
-		width: 18%;
-	}
-
-	#music-image{
-		width: 11.5%;
-	}
-
-	#culture-image{
-		width: 15%;
-	}
-
-	#travel-image{
-		width: 14%;
-	}
-
-	#fooddrink-image{
-		width: 12%;
-	}
-
-	#comedy-image{
-		width: 12%;
-	}
-
-	.scrollup{
-		padding: 4% 0 8% 0;
-	}
-
-	.scrollup img{
-		width: 5%;
-	}
-
 }
-
-
 
 @media screen and (max-width: 600px){
 	#homepage-title h1{
@@ -603,8 +483,7 @@ footer{
 	}
 
 	.content h2{
-		padding: 10% 0 5% 0;
-		font-size: 1.2em;
+		padding: 10% 0;
 	}
 
 	#balloon{
@@ -616,38 +495,14 @@ footer{
 	}
 
 	.col{
-		width: 80%;
+		width: 90%;
 		float: none;
 		display: block;
-		margin: 10%;
+		margin: 5% auto;
 	}
 	
-	#allmemories-image{
-		width: 25%;
-	}
-
-	#music-image{
-		width: 14.5%;
-	}
-
-	#culture-image{
-		width: 18%;
-	}
-
-	#travel-image{
-		width: 17%;
-	}
-
-	#fooddrink-image{
-		width: 15%;
-	}
-
-	#comedy-image{
-		width: 15%;
-	}
-
-	.scrollup{
-		padding: 0 0 14% 0;
+	.subpage-image-wrapper img{
+		width: 20%;
 	}
 
 	.scrollup img{
@@ -658,10 +513,6 @@ footer{
 
 
 @media screen and (max-width: 400px){
-	.offsite-navigation .offsite-nav-item a{
-		padding: 20px 25px;
-	}
-
 	#homepage-title h1{
 		padding: 25% 0 30% 0;
 		font-size: 2.1em;
@@ -673,10 +524,6 @@ footer{
 
 	#balloon img{
 		width: 25%;
-	}
-
-	#allmemories-image, #music-image, #culture-image, #travel-image, #fooddrink-image, #comedy-image{
-		margin-top: 6%
 	}
 
 }
