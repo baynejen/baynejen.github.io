@@ -29,7 +29,7 @@ p a{
 h1{
 	font-size: 1.4em;
 	font-weight: 700;
-	line-height: 1.1em;
+	line-height: 1.4em;
 	padding-bottom: 40px;
 	border-bottom: 1px solid rgba(100,100,100,.1);
 	margin-bottom: 50px;
@@ -138,7 +138,6 @@ nav ul li a.highlighted{
 	margin: 0 5px;
 	-webkit-transition: -webkit-transform .08s ease-in-out;
   	transition: transform .08s ease-in-out;
-  	opacity: .8;
 }
 
 #social img:hover{
@@ -307,7 +306,6 @@ p.rating{
 
 /*<--ABOUT-->*/
 
-
 .about-entry{
 	width: 100%;
 }
@@ -424,7 +422,6 @@ label {
 
 .mobile-social img{
 	width: 30px;
-	opacity: .8;
 }
 
 .mobile-copyright{
