@@ -97,8 +97,8 @@ a{
 
 label[for="nav-trigger"] {
     position: fixed;
-    top: 35px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     z-index: 0;
     width: 25px;
     height: 25px;
@@ -483,7 +483,7 @@ footer a{
 	}
 
 	.content h2{
-		padding: 10% 0;
+		padding: 10% 0 5% 0;
 	}
 
 	#balloon{
