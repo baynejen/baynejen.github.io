@@ -10,7 +10,9 @@ body{
 	background-color: #fff;
 }
 
+
 /*	<--TYPOGRAPHY-->*/
+
 
 h1{
 	font-size: 3.5em;
@@ -33,10 +35,12 @@ p{
 	font-family: 'Helvetica Neue', sans-serif;
 }
 
+
 /*<--NAV-->*/
 
+
 #home{
-	background: url("../images/bg.jpg") no-repeat center center fixed;	 
+	background: url("../images/bg2.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -48,8 +52,21 @@ p{
 
 nav{
 	text-align: center;
-	width: 100%;
+	width: 50%;
 }
+
+nav.left-nav{
+	text-align: left;
+	float: left;
+	padding-left: 30px;
+}
+
+nav.right-nav{
+	text-align: right;
+	float: right;
+	padding-right: 30px;
+}
+
 
 nav ul{
 	padding: 40px 0;
@@ -57,7 +74,7 @@ nav ul{
 
 nav ul li{
 	display: inline-block;
-	padding: 0 35px;
+	padding: 0 20px;
 	position: relative;
 	letter-spacing: 0.08em;
 }
@@ -65,10 +82,30 @@ nav ul li{
 nav ul li a{
 	text-decoration: none;
 	color: #fff;
-	opacity: .8
+	opacity: .9;
 }
 
 nav ul li a:hover{
+	border-bottom: 2px solid white;
+	padding-bottom: 2px;
+	opacity: 1;
+}
+
+.subpage nav ul li a{
+	color: #000;
+	text-decoration: none;
+	opacity: .9;
+}
+
+.subpage nav ul li a:hover{
+	border-bottom: 2px solid black;
+	padding-bottom: 2px;
+	opacity: 1;
+}
+
+.subpage nav ul li a.selected{
+	border-bottom: 2px solid black;
+	padding-bottom: 2px;
 	opacity: 1;
 }
 
@@ -78,13 +115,16 @@ nav ul li a:hover{
 	position: absolute;
   	top: 50%; left: 50%;
  	transform: translate(-50%,-50%);
+ 	padding: 0 30px;
 }
 
 #logo span{
 	font-size: .35em;
 }
 
+
 /*<--BODY-->*/
+
 
 .content-wrapper{
 	width: 100%;
@@ -101,7 +141,9 @@ nav ul li a:hover{
 	color: #6095cc;
 }
 
+
 /*<--ABOUT-->*/
+
 
 #about{
 	padding: 70px;
@@ -116,16 +158,6 @@ nav ul li a:hover{
 #avatar img{
 	width: 100%;
 	border-radius: 50%;
-	border: 10px solid #f6f6f6;
-}
-
-hr{
-	width: 100%;
-	margin: -135px auto 70px auto;
-	border: 0;
-	padding: 0;
-	height: 10px;
-	background-color: #f6f6f6;
 }
 
 .description{
@@ -148,16 +180,9 @@ hr{
 	text-align: justify;
 }
 
-.gifs{
-	width: 100%;
-}
-
-.gifs img{
-	width: 100%;
-	padding: 60px 0;
-}
 
 /*PUBLICATIONS*/
+
 
 #publications{
 	padding: 70px;
@@ -184,7 +209,40 @@ hr{
 	color: #8e8e8e;
 }
 
+span.bold{
+    font-weight: bold;
+}
+
+
+/*ORBITAL*/
+
+
+.orbital{
+	padding: 40px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.gif{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.gif img{
+	width: 100%;
+	text-align: center;
+}
+
+.orbital p{
+	width: 60%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+
 /*CONTACT*/
+
 
 #contact{
 	padding: 70px;
@@ -216,12 +274,13 @@ hr{
 	background-color: #fbfbfb;
 }
 
+
 /*FOOTER*/
 
+
 footer{
-	padding: 40px;
+	padding: 0 40px 40px 40px;
 	width: 100%;
-	border-top: 1px solid rgba(100,100,100,.2);
 	bottom: 0;
 }
 
@@ -241,7 +300,9 @@ footer a:hover{
 	opacity: .6;
 }
 
+
 /*<--CLEARFIX-->*/
+
 
 .clearfix:after { 
 	visibility: hidden; 
@@ -252,37 +313,62 @@ footer a:hover{
 	height: 0; 
 }
 
+
 /*<--RESPONSIVE-->*/
+
 
 @media only screen and (max-width: 1024px){
 	#home{	
-		background: url("../images/bg.jpg");	 
+		background: url("../images/bg2.jpg");	 
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
 	  	margin: 0;
-	  /*	background-position: 50% 0;*/
-/*		background: none;
-		background-color: #3f495a; */
 	}
 }
 
 @media only screen and (max-width: 900px){
+	nav{
+		text-align: center;
+		width: 100%;
+	}
+
+	nav.left-nav,nav.right-nav{
+		text-align: center;
+		float: none;
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	nav ul{
+		padding: 30px 0;
+	}
+
+	nav.right-nav ul{
+		width: 75%;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+
+	nav ul li a{
+		opacity: 1;
+	}
+
+	.subpage nav ul li a{
+		opacity: 1;
+	}
+
 	h2{	
 		padding-bottom: 40px;
 	}
 
-	#about{
+	#about,#publications,#contact,.orbital{
 		padding: 60px;
 	}
 
 	#avatar{
 		width: 200px;
-	}
-
-	hr{
-		margin: -110px auto 50px auto;
 	}
 
 	.column-left{
@@ -293,22 +379,14 @@ footer a:hover{
 		padding: 0 0 0 40px;
 	}
 
-	#publications{
-		padding: 60px;
-	}
-
 	.publication{
 		width: 80%;
-	}
-
-	#contact{
-		padding: 60px;
 	}
 }
 
 @media only screen and (max-width: 700px){
-	hr{
-		margin-bottom: 140px;
+	#avatar{
+		padding-bottom: 40px;
 	}
 
 	.column-left{
@@ -323,56 +401,22 @@ footer a:hover{
 		padding: 60px 0 0 0;
 	}
 
-	.gifs{
-		padding-top: 60px;
-	}
-
-	.gifs img{
-		padding: 0;
-	}
-
 	.publication{
+		width: 100%;
+	}
+
+	.orbital .gif,.orbital p{
 		width: 100%;
 	}
 }
 
-@media only screen and (max-width: 600px){
-	nav ul li{
-		padding: 0 25px;
-	}
-
-	#logo{
-		padding: 0 40px;
-	}
-
-	#about{
-		padding: 60px 40px;
-	}
-
-	.column-right{
-		padding-top: 40px;
-	}
-
-	#publications{
-		padding: 60px 40px;
-	}
-
-	#contact{
-		padding: 60px 40px;
-	}
-}
-
 @media only screen and (max-width: 450px){
-	#logo{
-		padding: 0 30px;
-	}
-
-	h1{
-		font-size: 3.0em;
+	nav ul{
+		padding: 20px 0;
 	}
 
 	nav ul li{
-		padding: 0 8px;
+		padding: 0 10px;
 	}
 
 	nav ul li:first-of-type{
@@ -383,15 +427,11 @@ footer a:hover{
 		padding-right: 0;
 	}
 
-	#about{
-		padding: 60px 30px;
+	nav.right-nav ul{
+		width: 90%;
 	}
 
-	#publications{
-		padding: 60px 30px;
-	}
-
-	#contact{
+	#logo,#about,#publications,#contact,.orbital{
 		padding: 60px 30px;
 	}
 }
