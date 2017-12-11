@@ -367,14 +367,6 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 900px){
-	#global-nav{
-		position: static;
-	}
-
-	.orbital h2{
-		padding-top: 20px;
-	}
-
 	nav{
 		text-align: center;
 		width: 100%;
@@ -431,6 +423,14 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 700px){
+	#global-nav{
+		position: static;
+	}
+
+	.orbital h2{
+		padding-top: 20px;
+	}
+
 	#avatar{
 		padding-bottom: 40px;
 	}
