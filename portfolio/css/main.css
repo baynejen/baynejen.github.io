@@ -52,11 +52,13 @@ p{
 	letter-spacing: 0.01em;
 }
 
+
 /*	<--NAV-->*/
 
-nav{
-	background-color: #fff;
+
+nav#global-nav{
 	position: fixed;
+	background-color: #fff;
 	width: 320px;
 	z-index: 1;
 	padding: 40px;
@@ -66,6 +68,8 @@ nav{
 	display: block;
 	text-align: left;
 	border-right: 1px solid #f0f0f0;
+	-webkit-transition: height .3s, line-height .3s; /* Safari */
+	transition: height .3s, line-height .3s;
 }
 
 nav h1 a{
@@ -77,6 +81,10 @@ nav h1 a{
 
 nav h1 a:hover{
 	color: black;
+}
+
+span.title-break{
+	display: block;
 }
 
 nav ul{
@@ -449,7 +457,7 @@ label {
 	}
 
 	#contact-area input, #contact-area textarea {
-		width: 90%;
+		width: 97%;
 	}
 
 	label {
@@ -462,7 +470,7 @@ label {
 }
 
 @media only screen and (max-width: 850px){
-	nav{
+	nav#global-nav{
 		background-color: #fff;
 		position: sticky;
 		width: 100%;
@@ -472,6 +480,32 @@ label {
 		border-right: none;
 	}
 
+	span.title-break{
+		display: inline-block;
+	}
+
+	nav#global-nav.scrolled-nav{
+	padding: 20px 40px;
+	}
+
+	.site-title {
+		display: inline-block;
+		-webkit-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.scrolled-nav .scrolled-ul{
+		padding-top: 10px;
+	}
+
+	.scrolled-nav .site-title  {
+ 		font-size: .5em;
+	}
+
+	.scrolled-nav h1{
+		line-height: 12px;
+	}
+
 	nav ul{
 		padding-top: 20px;
 	}
@@ -479,6 +513,10 @@ label {
 	nav ul li{
 		padding: 10px;
 		display: inline-block;
+	}
+
+	nav ul li:first-of-type{
+		padding-left: 0;
 	}
 
 	#footer{
@@ -500,7 +538,7 @@ label {
 	}
 
 	#about,#contact{
-		width: 96%;
+		width: 100%;
 		margin: 0 auto!important;
 		padding: 0!important;
 	}
@@ -515,14 +553,19 @@ label {
 
 	#contact-area input.submit-button{
 		width: 94%;
+		margin: 0 auto;
+		margin-top: 20px;
 	}
 }
 
 
 @media only screen and (max-width: 500px){
-	nav{
-		position: relative;
+	nav#global-nav{
+		/*position: relative;*/
 		padding: 30px;
+	}
+	nav#global-nav h1{
+		font-size: 3em;
 	}
 
 	.project-wrapper{
@@ -534,6 +577,10 @@ label {
 		padding: 45px 30px 30px 30px;
 	}
 	#contact-area input.submit-button{
-		width: 96%;
+		width: 99%;
+	}
+
+	#contact-area input, #contact-area textarea{
+		width: 92%;
 	}
 }
