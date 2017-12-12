@@ -478,7 +478,7 @@ label {
 		padding: 40px;
 		border-bottom: 1px solid #f0f0f0;
 		border-right: none;
-		bottom: auto;
+		bottom: auto!important;
 	}
 
 	span.title-break{
@@ -526,7 +526,7 @@ label {
 
 	#body-wrapper{
 		width: 100%;
-		margin: 200px auto 0 auto;
+		margin: 200px auto 0 auto!important;
 		padding: 55px 40px 40px 40px;
 	}
 
@@ -575,7 +575,7 @@ label {
 
 	#body-wrapper{
 		padding: 45px 30px 30px 30px;
-		margin-top: 165px;
+		margin-top: 165px!important;
 	}
 
 	#contact-area input.submit-button{
