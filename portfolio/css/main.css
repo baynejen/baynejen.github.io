@@ -167,7 +167,7 @@ nav ul li a:hover{
 }
 
 .project-wrapper img:hover{
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 .project-info{
@@ -175,12 +175,13 @@ nav ul li a:hover{
 	padding: 30px 0 60px 0;
 }
 
-.project-info a{
+.description a{
 	color: #000;
 }
 
-.project-info a:hover{
-	color: #fee03d;
+.description a:hover{
+	border-bottom: 0!important;
+	opacity: .7
 }
 
 a.redirect{
@@ -189,22 +190,22 @@ a.redirect{
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	font-weight: 500;
+	border-bottom: 2px solid black;
+	padding-bottom: 2px;
 }
 
-.project-info a:hover{
-	color: #fee03d;
-    display: inline;
+a.redirect:hover{
+	opacity: .7;
+	border-bottom: 2px solid rgba(0,0,0,.7)
 }
 
-a.inline-link{
-	font-size: 1em;
+#about-contact a{
 	color: black;
-	line-height: 1.5em;
 	text-decoration: underline;
 }
 
-a.inline-link:hover{
-	opacity: 1;
+#about-contact a:hover{
+	opacity: .7;
 }
 
 p.coming-soon{
@@ -472,7 +473,6 @@ label {
 @media only screen and (max-width: 850px){
 	nav#global-nav{
 		background-color: #fff;
-		position: sticky!important;
 		width: 100%;
 		z-index: 1;
 		padding: 40px;
@@ -486,7 +486,7 @@ label {
 	}
 
 	nav#global-nav.scrolled-nav{
-	padding: 20px 40px;
+		padding: 20px 40px;
 	}
 
 	.site-title {
@@ -526,7 +526,7 @@ label {
 
 	#body-wrapper{
 		width: 100%;
-		margin: 0 auto;
+		margin: 200px auto 0 auto;
 		padding: 55px 40px 40px 40px;
 	}
 
@@ -562,7 +562,6 @@ label {
 
 @media only screen and (max-width: 500px){
 	nav#global-nav{
-		/*position: relative;*/
 		padding: 30px;
 	}
 	nav#global-nav h1{
@@ -576,7 +575,9 @@ label {
 
 	#body-wrapper{
 		padding: 45px 30px 30px 30px;
+		margin-top: 165px;
 	}
+
 	#contact-area input.submit-button{
 		width: 99%;
 	}
