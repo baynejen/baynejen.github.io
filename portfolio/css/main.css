@@ -220,14 +220,14 @@ p.coming-soon{
 /*<--ABOUT-->*/
 
 #about{
-	width: 100%;
-	margin: 20px 0 30px 0;
+	width: 96%;
+	margin: 20px auto;
 	max-width: 1200px;
-	padding: 0 4%;
+	padding: 0;
 }
 
 #about-container{
-	margin-top: 60px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	padding-bottom: 20px;
 }
@@ -289,15 +289,15 @@ p.coming-soon{
 /*<--CONTACT-->*/
 
 #contact{
-	width: 100%;
-	margin: 20px 0 30px 0;
+	width: 96%;
+	margin: 20px auto;
 	max-width: 1200px;
-	padding: 0 4%;
+	padding: 0;
 }
 
 #contact-area{
 	width: 100%;
-	padding: 0;
+	padding: 0 0 100px 0;
 	margin: 0 auto 0 0;
 }
 
@@ -534,6 +534,10 @@ label {
 		margin-top: 0;
 	}
 
+	.portfolio-mobile{
+		padding: 55px 25px 40px 25px!important;
+	}
+
 	.project-wrapper{
 		padding: 2%;
 	}
@@ -576,6 +580,10 @@ label {
 	#body-wrapper{
 		padding: 45px 30px 30px 30px;
 		margin-top: 165px!important;
+	}
+
+	.portfolio-mobile{
+		padding: 45px 20px 40px 20px!important;
 	}
 
 	#contact-area input.submit-button{
