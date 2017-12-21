@@ -23,12 +23,12 @@
 	
 		<nav id="global-nav">
 			<div>
-				<h1><a href="index.html" target="_blank" class="site-title">Jen <span class="title-break">Bayne.</a></h1>
+				<h1><a href="index.html" class="site-title">Jen <span class="title-break">Bayne.</a></h1>
 			</div>
 			<ul class="scrolled-ul">
 				<li><a href="index">Portfolio</a></li>
 				<li><a href="about">About</a></li>
-				<li><a href="#" class="highlighted">Contact</a></li>
+				<li><a href="contact" class="highlighted">Contact</a></li>
 			</ul>
 			<div id="footer">
 				<div id="social">
@@ -40,10 +40,11 @@
 
 <!-- CONTACT -->
 		
-		<div id="body-wrapper">
+		<div id="body-wrapper" class="contactthanks">
 			<div id="contact">
 				<h2>Thanks!</h2>
 				<p>Your message has been sent. I will get back to you as soon as I can. For now, enjoy this playful dog leaping for the stars.</p>
+				<img src="images/contact/leapforthestars.gif">
 			</div>
 		</div>
 
