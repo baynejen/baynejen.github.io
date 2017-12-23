@@ -277,11 +277,13 @@ p.coming-soon{
 #list-1{
 	float: left;
 	width: 50%;
+	padding-right: 15px;
 }
 
 #list-2{
 	float: left;
 	width: 50%;
+	padding-left: 15px;
 }
 
 #about ul{
@@ -436,19 +438,21 @@ label {
 		padding: 0 0 0 20px;
 	}
 
-	.list-container{
-		padding-bottom: 40px;
-	}
-
 	#list-1{
 		float: none;
 		width: 100%;
+		padding-right: 0;
 	}
 
 	#list-2{
 		float: none;
 		width: 100%;
 		padding-top: 40px;
+		padding-left: 0;
+	}
+
+	.list-container{
+		padding-bottom: 40px;
 	}
 
 	#about ul li{
@@ -560,6 +564,19 @@ label {
 		width: 100%;
 	}
 
+	#list-1{
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+	}
+
+	#list-2{
+		width: 50%;
+		float: left;
+		padding-left: 15px;
+		padding-top: 0;
+	}
+
 	#mobile-footer{
 		display: block;
 	}
@@ -600,6 +617,19 @@ label {
 
 	.portfolio-mobile{
 		padding: 45px 22px 40px 22px!important;
+	}
+
+	#list-1{
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	#list-2{
+		float: none;
+		width: 100%;
+		padding-top: 40px;
+		padding-left: 0;
 	}
 
 	#contact-area input.submit-button{
