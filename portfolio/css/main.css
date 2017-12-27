@@ -89,6 +89,9 @@ nav h1 a{
 
 nav h1 a:hover{
 	color: black;
+	-webkit-transition: color .4s;  /*Safari */
+	transition: color .4s;
+
 }
 
 span.title-break{
