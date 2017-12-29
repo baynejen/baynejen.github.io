@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE ftml>
 <html>
 <head>
 	<title>Contact | The Scotch Egg Diaries</title>
@@ -7,8 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>	
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -20,11 +18,12 @@
 
 		<nav>
 			<div class="logo">
-				<a href="index.html"><img src="images/nav/logo2.png" alt="logo"></a>
+				<a href="index.html"><img src="images/nav/logo3.png" alt="logo"></a>
 			</div>
+			<h1> the <br> scotch <br> egg <br> diaries <br></h1>
 			<ul>
 				<li><a href="index.html">home</a></li>
-				<!-- <li><a href="about.html">about</a></li> -->
+				<li><a href="about.html">about</a></li>
 				<li><a href="contact.html" class="highlighted">contact</a></li>
 			</ul>
 			<div id="footer">
@@ -37,31 +36,15 @@
 			</div>
 		</nav>
 
-<!-- MOBILE NAV -->
-
-		<div id="mobile-nav">
-			<div class="mobile-logo">
-				<img src="images/nav/logo.png" alt="logo">
-			</div>
-			<div id='cssmenu'>
-				<ul>
-				   	<li><a href="index.html">home</a></li>
-				   <!-- 	<li><a href="about.html">about</a></li> -->
-				   	<li><a href="contact.html" class="highlighted">contact</a></li>
-				</ul>
-			</div>
-		</div>
-
-
 <!-- BODY -->
 	
 		<div class="body-wrapper">
 			<div class="content-wrapper">
-				<h1>Contact</h1>
+				<h2>Contact</h2>
 				<p>Fellow scotch egg enthusiast? Please feel free to get in touch and share your top finds, thoughts and musings. No egg will be left unturned!</p>
 				<div id="contact" class="clearfix">
 					<div id="contact-area">
-						<h3>Send me a message</h3>
+						<h4 class="h4-large">Send me a message</h4>
 						<form method="post" action="contactengine.php" class="clearfix">
 							<label for="Name">Your Name:</label><br>
 							<input type="text" name="Name" id="Name" /><br>
@@ -77,7 +60,7 @@
 						<div style="clear: both;"></div>
 					</div>
 					<div id="twitter">
-						<h3>Follow me on Twitter</h3>
+						<h4 class="h4-large">Follow me on Twitter</h4>
 						<a class="twitter-timeline" href="https://twitter.com/scotcheggdiary" data-widget-id="667087638852186112">Tweets by @scotcheggdiary</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>

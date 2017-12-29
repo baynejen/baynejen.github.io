@@ -1,8 +1,3 @@
-@font-face{
-	font-family: 'shorelines';
-	src: url(../font/shorelines.otf);
-}
-
 body{
 	width: 100%;
 	font-size: 16px;
@@ -26,11 +21,10 @@ body{
 /*	<--TYPOGRAPHY-->*/
 
 h1{
-	font-size: 4em;
+	font-size: 4.4em;
 }
 
 h2{
-	color: #000;
 	text-align: left;
 	font-size: 1.3em;
 	line-height: 1.5em;
@@ -41,18 +35,25 @@ h2{
 }
 
 h3{
-	color: #000;
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 500;
 }
 
 h4{
 	font-size: 1em;
-	color: black;
 	text-align: left;
 	font-weight: bold;
 	padding-bottom: 20px;
+	line-height: 1.4em;
+}
+
+h5{
+	font-size: .7em;
+	text-align: left;
+	opacity: .6;
+	line-height: 1.4em;
+	text-transform: uppercase;
 }
 
 p{
@@ -60,9 +61,15 @@ p{
 	letter-spacing: 0.01em;
 }
 
+a{
+	color: #000;
+}
+
+*::selection{
+	background: #fee03d;
+}
 
 /*	<--NAV-->*/
-
 
 nav#global-nav{
 	position: fixed;
@@ -75,9 +82,7 @@ nav#global-nav{
 	left: 0;
 	display: block;
 	text-align: left;
-	border-right: 1px solid #f0f0f0;
-	/*-webkit-transition: height .3s, line-height .3s;*/ /* Safari */
-	/*transition: height .3s, line-height .3s;*/
+	border-right: 1px solid #ececec;
 }
 
 nav h1 a{
@@ -91,7 +96,6 @@ nav h1 a:hover{
 	color: black;
 	-webkit-transition: color .4s;  /*Safari */
 	transition: color .4s;
-
 }
 
 span.title-break{
@@ -107,11 +111,11 @@ nav ul li{
 }
 
 nav ul li a{
-	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 0.9em;
 	text-align: left;
+	position: relative;
 }
 
 nav ul li a:hover{
@@ -148,11 +152,6 @@ nav ul li a:hover{
   	transform: rotate(9deg);
 }
 
-#footer p{
-	color: #000;
-	font-size: 0.7em;
-}
-
 /*  <--PORTFOLIO--->*/
 
 #portfolio{
@@ -161,91 +160,126 @@ nav ul li a:hover{
 	margin-left: 0;
 }
 
-#portfolio h2{
-	width: 96%;
-	margin: 20px auto 40px auto;
+.columns{
+	padding-top: 30px;
+}
+
+.masonry{
+	column-count: 2;
+	column-gap: 2em;
 }
 
 .project-wrapper{
-	float: left;
-	width: 33%;
-	padding: 2%;
+	display: inline-block;
+	margin: 0 0 3em;
+    width: 100%;
 }
 
 .project-wrapper img{
 	width: 100%;
-	border: 1px solid #f0f0f0;
+	border: 1px solid #ececec;
+	border-radius: 4x;
 }
 
 .project-wrapper a img:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
-.project-info{
+.project-wrapper h3{
 	width: 100%;
-	padding: 30px 0 60px 0;
+	padding: 15px 0 10px 0;
 }
 
-.description a{
-	color: #000;
+.project-wrapper a{
+	text-decoration: none;
 }
 
-.description a:hover{
-	border-bottom: 0!important;
-	opacity: .7
+.project-wrapper h3:hover{
+	opacity: .7;
 }
 
-a.redirect{
-	color: #000;
-	line-height: 4.5em;
-	letter-spacing: 0.02em;
+/*<--PORTFOLIO SUBPAGES-->*/
+
+#portfolio .back{
+	padding-bottom: 30px;
+	font-size: .9em;
+	margin-top: 10px;
+}
+
+#portfolio .back a{
+	text-decoration: none;
+	background-color: #fee03d;
+	padding: 5px;
+}
+
+#portfolio .back a:hover{
+	opacity: .7;
+}
+
+#portfolio .back-left{
+	float: left;
+	width: 50%;
+	padding-top: 40px;
+}
+
+#portfolio .disabled{
+	opacity: .4;
+}
+
+#portfolio .back-right{
+	float: right;
+	width: 50%;
+	text-align: right;
+	padding-top: 40px;
+}
+
+#portfolio .description{
+	margin: 0 auto 10px auto;
+}
+
+#portfolio .description a:hover{
+	opacity: .7;
+}
+
+#portfolio .link{
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+#portfolio .link a{
 	text-decoration: none;
 	font-weight: 500;
-	border-bottom: 2px solid black;
-	padding-bottom: 2px;
 }
 
-a.redirect:hover{
-	opacity: .7;
-	border-bottom: 2px solid rgba(0,0,0,.7)
-}
-
-#about-contact a{
-	color: black;
-	text-decoration: underline;
-}
-
-#about-contact a:hover{
+#portfolio .link a:hover{
 	opacity: .7;
 }
 
-p.coming-soon{
-	font-size: 0.9em;
-	color: #000;
-	line-height: 4.5em;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	font-weight: bold;
+.portfolio-wrapper{
+	float: left;
+	width: 50%;
+	padding: 2%;
+}
+
+.portfolio-wrapper img{
+	width: 100%;
+	border: 1px solid #f0f0f0;
 }
 
 /*<--ABOUT-->*/
 
 #about{
-	width: 96%;
-	margin: 20px auto;
 	max-width: 1200px;
 	padding: 0;
 }
 
 #about-container{
-	margin-top: 50px;
 	margin-bottom: 40px;
 	padding-bottom: 20px;
 }
 
 #about-image{
-	width: 40%;
-	float: right;
+	width: 80%
 }
 
 #about-image img{
@@ -253,9 +287,7 @@ p.coming-soon{
 }
 
 #about-description{
-	width: 60%;
-	float: left;
-	padding-right: 60px;
+	width: 80%;
 }
 
 #about-1{
@@ -299,11 +331,17 @@ p.coming-soon{
 	line-height: 1.4em;
 }
 
+#about-contact a{
+	text-decoration: underline;
+}
+
+#about-contact a:hover{
+	opacity: .7;
+}
+
 /*<--CONTACT-->*/
 
 #contact{
-	width: 96%;
-	margin: 20px auto;
 	max-width: 1200px;
 	padding: 0;
 }
@@ -397,6 +435,10 @@ label {
 /*	<--RESPONSIVE-->*/
 
 @media only screen and (max-width: 1270px){
+	.masonry-large{
+		column-count: 1;
+	}
+
 	#about-container{
 		margin-top: 0;
 		border-bottom: none;
@@ -406,30 +448,24 @@ label {
 
 	#about-image{
 		width: 100%;
-		float: none;
-		margin-top: 20px;
 	}
 
 	#about-description{
 		width: 100%;
-		float: none;
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
-
 
 @media only screen and (max-width: 1080px){
 	h2{
 		margin-bottom: 40px;
 	}
 
-	#about h2{
-		padding-bottom: 20px;
+	.masonry{
+		column-count: 1;
 	}
 
-	.project-info{
-		padding-bottom: 40px;
+	#about h2{
+		padding-bottom: 20px;
 	}
 
 	#about-3 h2{
@@ -470,10 +506,6 @@ label {
 	#contact img{
 		padding-top: 40px;
 		width: 100%;
-	}
-
-	.project-wrapper{
-		width: 50%;
 	}
 
 	#contact-area input, #contact-area textarea {
@@ -545,26 +577,22 @@ label {
 
 	#body-wrapper{
 		width: 100%;
-		margin: 200px auto 0 auto!important;
-		padding: 55px 40px 40px 40px;
+		margin: 210px auto 0 auto!important;
+		padding: 40px;
 	}
 
-	#portfolio h2{
-		margin-top: 0;
+	.masonry{
+		column-count: 2;
 	}
 
-	.portfolio-mobile{
-		padding: 55px 25px 40px 25px!important;
+	.masonry-large{
+		column-count: 1;
 	}
 
 	#about,#contact{
 		width: 100%;
 		margin: 0 auto!important;
 		padding: 0!important;
-	}
-
-	#about-image{
-		width: 100%;
 	}
 
 	#list-1{
@@ -595,6 +623,11 @@ label {
 	}
 }
 
+@media only screen and (max-width:700px){
+	.masonry{
+		column-count: 1;
+	}
+}
 
 @media only screen and (max-width: 500px){
 	nav#global-nav.scrolled-nav{
@@ -608,18 +641,9 @@ label {
 		font-size: 3em;
 	}
 
-	.project-wrapper{
-		width: 100%;
-		float: none;
-	}
-
 	#body-wrapper{
-		padding: 45px 30px 30px 30px;
+		padding: 30px;
 		margin-top: 165px!important;
-	}
-
-	.portfolio-mobile{
-		padding: 45px 22px 40px 22px!important;
 	}
 
 	#list-1{

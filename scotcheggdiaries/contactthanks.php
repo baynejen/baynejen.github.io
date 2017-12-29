@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE ftml>
 <html>
 <head>
 	<title>Contact | The Scotch Egg Diaries</title>
@@ -6,9 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -20,8 +18,9 @@
 
 		<nav>
 			<div class="logo">
-				<a href="index.html"><img src="images/nav/logo2.png" alt="logo"></a>
+				<a href="index.html"><img src="images/nav/logo3.png" alt="logo"></a>
 			</div>
+			<h1> the <br> scotch <br> egg <br> diaries <br></h1>
 			<ul>
 				<li><a href="index.html">home</a></li>
 				<li><a href="about.html">about</a></li>
@@ -32,33 +31,18 @@
 					<a href="https://twitter.com/scotcheggdiary" target="_blank"><img src="images/twitter/twitter.png" alt="twitter logo"></a>
 				</div>
 				<div>
-					<p>&copy; 2017 Jen Bayne
+					<p>&copy; 2017 <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>
 				</div>
 			</div>
 		</nav>
-
-<!-- MOBILE NAV -->
-
-		<div id="mobile-nav">
-			<div class="mobile-logo">
-				<img src="images/nav/logo.png" alt="logo">
-			</div>
-			<div id='cssmenu'>
-				<ul>
-				   	<li><a href="index.html" class="highlighted">home</a></li>
-				   	<li><a href="about.html">about</a></li>
-				   	<li><a href="contact.html" class="highlighted">contact</a></li>
-				</ul>
-			</div>
-		</div>
-
 
 <!-- BODY -->
 	
 		<div class="body-wrapper">
 			<div class="content-wrapper">
-				<h1>Contact</h1>
+				<h2>Contact</h2>
 				<p>Thank you, your message has been sent! We'll respond once we've stopped eating Scotch Eggs.</p>
+				
 			</div>
 		</div>
 
@@ -70,7 +54,7 @@
 				<a href="https://twitter.com/scotcheggdiary" target="_blank"><img src="images/twitter/twitter.png" alt="twitter logo"></a>
 			</div>
 			<div class="mobile-copyright">
-				<p>Copyright &copy; 2017 Jen Bayne</p>
+				<p>Copyright &copy; 2017 <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>
 			</div>
 		</div>
 
