@@ -272,8 +272,8 @@ nav ul li a:hover{
 }
 
 #portfolio .subheader{
-	font-weight: bold;
-	padding: 20px 0 10px 0;
+	font-weight: 600;
+	padding: 25px 0 5px 0;
 }
 
 #portfolio .description{
@@ -286,12 +286,10 @@ nav ul li a:hover{
 
 #portfolio .link{
 	padding-bottom: 20px;
-	font-weight: 500;
 }
 
 #portfolio .link a{
 	text-decoration: none;
-	font-weight: 500;
 }
 
 #portfolio .link a:hover{
