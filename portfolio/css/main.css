@@ -310,6 +310,10 @@ nav ul li a:hover{
 	padding: 0;
 }
 
+#about-description a:hover{
+	opacity: .7;
+}
+
 #about-container{
 	margin-bottom: 40px;
 	padding-bottom: 20px;
