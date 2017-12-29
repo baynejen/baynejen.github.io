@@ -7,6 +7,10 @@ body{
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+*{
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 #site-wrapper{
 	width: 100%;
 }
@@ -152,7 +156,69 @@ nav ul li a:hover{
   	transform: rotate(9deg);
 }
 
-/*  <--PORTFOLIO--->*/
+/*  <--PORTFOLIO NAVIGATION --->*/
+
+.filters{
+	text-align: right;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px!important;
+    border: none;
+    background-color: #fee03d;
+    font-size: .9em;
+    margin: 2px 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+#portfolio .back{
+	padding-bottom: 30px;
+	font-size: .9em;
+	margin-top: 10px;
+}
+
+.filters .back{
+	margin-top: 0!important;
+}
+
+#portfolio .back a{
+	text-decoration: none;
+	background-color: #fee03d;
+	padding: 5px;
+}
+
+#portfolio .back a:hover{
+	opacity: .7;
+}
+
+#portfolio .back-left{
+	float: left;
+	width: 50%;
+	padding-top: 40px;
+}
+
+#portfolio .disabled{
+	opacity: .4;
+}
+
+#portfolio .back-right{
+	float: right;
+	width: 50%;
+	text-align: right;
+	padding-top: 40px;
+}
+
+/*<-- PORTFOLIO -->*/
 
 #portfolio{
 	width: 100%;
@@ -200,41 +266,18 @@ nav ul li a:hover{
 
 /*<--PORTFOLIO SUBPAGES-->*/
 
-#portfolio .back{
-	padding-bottom: 30px;
-	font-size: .9em;
-	margin-top: 10px;
+#portfolio h4{
+	font-weight: 400;
+	opacity: .5;
 }
 
-#portfolio .back a{
-	text-decoration: none;
-	background-color: #fee03d;
-	padding: 5px;
-}
-
-#portfolio .back a:hover{
-	opacity: .7;
-}
-
-#portfolio .back-left{
-	float: left;
-	width: 50%;
-	padding-top: 40px;
-}
-
-#portfolio .disabled{
-	opacity: .4;
-}
-
-#portfolio .back-right{
-	float: right;
-	width: 50%;
-	text-align: right;
-	padding-top: 40px;
+#portfolio .subheader{
+	font-weight: bold;
+	padding: 20px 0 10px 0;
 }
 
 #portfolio .description{
-	margin: 0 auto 10px auto;
+	padding: 10px 0;
 }
 
 #portfolio .description a:hover{
@@ -456,8 +499,8 @@ label {
 }
 
 @media only screen and (max-width: 1080px){
-	h2{
-		margin-bottom: 40px;
+	.filters{
+		text-align: left;
 	}
 
 	.masonry{
@@ -581,6 +624,11 @@ label {
 		padding: 40px;
 	}
 
+	.btn{
+	    padding: 10px!important;
+	    margin: 0 3px 0 0;
+	}
+
 	.masonry{
 		column-count: 2;
 	}
@@ -626,6 +674,11 @@ label {
 @media only screen and (max-width:700px){
 	.masonry{
 		column-count: 1;
+	}
+
+	.btn{
+	    padding: 10px!important;
+	    margin: 3px 3px 3px 0;
 	}
 }
 
