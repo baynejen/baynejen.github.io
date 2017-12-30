@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Thank You | Jen Bayne</title>
+	<title>Jen Bayne | Thank You</title>
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 	
 		<nav id="global-nav">
 			<div>
-				<h1><a href="index.html" class="site-title">Jen <span class="title-break">Bayne.</a></h1>
+				<h1><a href="index" class="site-title">Jen <span class="title-break">Bayne.</a></h1>
 			</div>
 			<ul class="scrolled-ul">
 				<li><a href="index">Portfolio</a></li>
