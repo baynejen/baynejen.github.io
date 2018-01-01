@@ -362,6 +362,10 @@ nav{
   	margin: 0;
 }
 
+#rows a{
+	text-decoration: none;
+}
+
 /*	<--SUBPAGE CONTENT -->*/
 
 .content-wrapper{
