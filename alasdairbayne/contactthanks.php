@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alasdair Bayne | Film writer, editor, director</title>
+	<title>Contact | Alasdair Bayne</title>
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -18,21 +17,21 @@
 	<div class="site-wrapper">
 
 
-<!-- NAV (desktop) -->
+<!-- NAV -->
 
 
 		<div id="homepage-nav-wrapper">
 		<div class="nav-wrapper">
 			<div class="nav-contents">
 				<nav class="clearfix">
-					<div class="logo"><a href="#"><h1>Alasdair Bayne.</h1></a>
+					<div class="logo"><a href="/"><h1>Alasdair Bayne.</h1></a>
 						<p>Independent Director and Freelance Editor</p>
 					</div>
 					<div class="nav-links">
 						<ul>
 							<li><a href="drama">My Work</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li><a href="contact" class="highlighted">Contact</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -50,14 +49,13 @@
 			</div>
 			<div class="nav-contents">
 				<nav class="clearfix">
-					<div class="logo"><a href="#"><h1>Alasdair Bayne.</h1></a>
-						<p>Independent Director and Freelance Editor</p>
+					<div class="logo"><a href="/"><h1>Alasdair Bayne.</h1></a>
 					</div>
 					<div class="nav-links">
 						<ul>
 							<li><a href="drama">My Work</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li><a href="contact" class="highlighted">Contact</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -69,33 +67,13 @@
 
 
 		<div class="body-wrapper">
-			<div id="rows">
-				<div id="col-1">
-					<a href="drama">
-						<h3>Drama</h3>
-					</a>
-				</div>
-				<div id="col-2">
-					<a href="documentary">
-						<h3>Documentary</h3>
-					</a>
-				</div>
-				<div id="col-3">
-					<a href="future">
-						<h3>Future Projects</h3>
-					</a>
-				</div>
-				<div id="col-4">
-					<a href="editing">
-						<h3>Editing/VFX</h3>
-					</a>
-				</div>
-				<div id="col-5">
-					<a href="storyboarding">
-						<h3>Storyboards</h3>
-					</a>
-				</div>
+			<div class="content-wrapper">
+				<h2>Thank you</h2>
+				<hr>
+				<p class="contact-subtitle thanks">Your message has been sent. I will get back to you as soon as I can</p>
+				
 			</div>
+		</div>
 
 
 <!-- FOOTER -->		
@@ -119,6 +97,7 @@
 				</div>	
 			</div>
 		</div>
+
 	</div>
 </body>
 </html>

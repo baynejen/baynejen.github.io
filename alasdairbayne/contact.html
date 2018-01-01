@@ -25,12 +25,12 @@
 			<div class="nav-contents">
 				<nav class="clearfix">
 					<div class="logo"><a href="/"><h1>Alasdair Bayne.</h1></a>
+						<p>Independent Director and Freelance Editor</p>
 					</div>
 					<div class="nav-links">
 						<ul>
 							<li><a href="drama">My Work</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="blog">Blog</a></li>
 							<li><a href="#" class="highlighted">Contact</a></li>
 						</ul>
 					</div>
@@ -55,7 +55,6 @@
 						<ul>
 							<li><a href="drama">My Work</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="blog">Blog</a></li>
 							<li><a href="#" class="highlighted">Contact</a></li>
 						</ul>
 					</div>
@@ -69,25 +68,23 @@
 
 		<div class="body-wrapper">
 			<div class="content-wrapper">
-				<h2>Get in Touch</h2>
+				<h2>Contact</h2>
 				<hr>
-				<p class="contact-subtitle">Whether you're interested in future collaborations or want to discuss projects in my portfolio, please feel free to get in touch via one of the below methods.</p>
-				<div id="social-connect">
-					<ul>
-						<li>
-							<a href="mailto:alasdairbayne@hotmail.co.uk"><img src="images/contact/contact-mail.png">Send me an Email</a>
-						</li>
-						<li>
-							<a href="https://vimeo.com/alibayne"><img src="images/contact/contact-vimeo.png">Follow me on Vimeo</a>
-						</li>
-						<li>
-							<a href="http://alasdairbayne.tumblr.com/"><img src="images/contact/contact-tumblr.png">Follow me on Tumblr</a>
-						</li>
-						<li>
-							<a href="https://uk.linkedin.com/in/alibayne"><img src="images/contact/contact-linkedin.png">Connect on LinkedIn</a>
-						</li>
+				<p class="contact-subtitle">Whether you're interested in future collaborations or want to discuss projects in my portfolio, please feel free to get in touch below.</p>
+				<div id="contact-area">
+					<form method="post" action="contactengine.php">
+						<label for="Name">Your Name:</label><br>
+						<input type="text" name="Name" id="Name" /><br>
 
-					</ul>
+						<label for="Email">Email Address:</label><br>
+						<input type="text" name="Email" id="Email" /><br>
+						
+						<label for="Message">Message:</label><br />
+						<textarea name="Message" rows="20" cols="20" id="Message"></textarea><br>
+
+						<input type="submit" name="submit" value="Submit" class="submit-button" />
+					</form>
+					<div style="clear: both;"></div>
 				</div>
 			</div>
 		</div>
@@ -98,8 +95,19 @@
 
 		<div class="footer-wrapper">
 			<div class="footer-contents">		
+				<div class="social-container" class="clearfix">
+					<div class="icon">
+						<a href="https://vimeo.com/alibayne"><img src="images/base/vimeo-icon.png"></a>
+					</div>		
+					<div class="icon">
+						<a href="http://alasdairbayne.tumblr.com/"><img src="images/base/tumblr-icon.png"></a>
+					</div>	
+					<div class="icon">
+						<a href="https://www.linkedin.com/in/alibayne"><img src="images/base/linkedin-icon.png"></a>
+					</div>	
+				</div>
 				<div class="copyright">
-					<p>Copyright 2017 Alasdair Bayne.</p>
+					<p>© 2018 Alasdair Bayne. Website by <a href="jen-bayne.com" target="_blank">Jen Bayne</a></p>
 				</div>	
 			</div>
 		</div>
