@@ -70,7 +70,7 @@
 			<div class="content-wrapper">
 				<h2>Thank you</h2>
 				<hr>
-				<p class="contact-subtitle thanks">Your message has been sent. I will get back to you as soon as I can</p>
+				<p class="contact-subtitle thanks">Your message has been sent. I will get back to you as soon as I can.</p>
 				
 			</div>
 		</div>
