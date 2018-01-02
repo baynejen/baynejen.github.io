@@ -93,7 +93,7 @@
 					</div>	
 				</div>
 				<div class="copyright">
-					<p>© 2018 Alasdair Bayne. Website by <a href="jen-bayne.com" target="_blank">Jen Bayne</a></p>
+					<p>© 2018 Alasdair Bayne. Website by <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>
 				</div>	
 			</div>
 		</div>
