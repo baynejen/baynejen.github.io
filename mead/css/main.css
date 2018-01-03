@@ -447,6 +447,10 @@ footer a:hover{
 		padding: 40px;
 	}
 
+	.subpage-wrapper p{
+		padding-bottom: 40px;
+	}
+
 	#avatar{
 		padding-bottom: 40px;
 	}
