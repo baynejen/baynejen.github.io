@@ -10,7 +10,6 @@ body{
 
 *{
 	font-family: 'Helvetica Neue', Arial, sans-serif;
-	cursor: pointer;
 }
 
 #site-wrapper{
@@ -69,6 +68,7 @@ p{
 
 a{
 	color: #000;
+	cursor: pointer;
 }
 
 *::selection{
@@ -183,6 +183,10 @@ nav ul li a:hover{
   padding: 0;
 }
 
+.btn:hover{
+	opacity: .8;
+}
+
 #portfolio .back{
 	padding-bottom: 30px;
 	font-size: .9em;
@@ -197,6 +201,10 @@ nav ul li a:hover{
 	text-decoration: none;
 	background-color: #fee03d;
 	padding: 5px;
+}
+
+#portfolio .back a:hover{
+	opacity: .8;
 }
 
 #portfolio .back-left{
@@ -259,7 +267,7 @@ nav ul li a:hover{
 }
 
 .project-wrapper h3:hover{
-	opacity: .7;
+	opacity: .6;
 }
 
 /*<--PORTFOLIO SUBPAGES-->*/
