@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trouva</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script2.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css" />
+	<!--[if IE]>
+  	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+	<script>
+		setTimeout(function(){
+		$.colorbox({
+		html:"<div></div><h2>Follow Florence</h2><p>Like their taste? Follow them and we’ll notify know when they add a new list.</p><button>Follow</button><a>Not now</a>",
+		className: "cta",
+		width: 450,
+		height: 450
+		});
+		}, 1000);
+	</script>
+	<div class="site-wrapper">
+
+<!-- NAV: BEGIN -->
+
+		<nav>
+			<div class="nav-top clearfix">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="Trouva logo"></a>
+				</div>
+				<div class="menu-top">
+					<ul>
+						<li><a href="#">My account</a></li>
+						<li><a href="#">Lists</a></li>
+						<li><a href="#">Basket</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				<div class="menu-bottom">
+					<ul>
+						<li><a href="#" class="highlight">Sale</a></li>
+						<li><a href="#">New In</a></li>
+						<li><a href="#">Homewares</a></li>
+						<li><a href="#">Lifestyle</a></li>
+						<li><a href="#">Womens</a></li>
+						<li><a href="#">Mens</a></li>
+						<li><a href="#">Kids</a></li>
+						<li><a href="#">Boutiques</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- NAV: END -->
+	
+<!-- USER HERO: BEGIN -->
+
+		<div class="user-hero-container">
+			<div class="user-hero clearfix">
+				<div class="user-details-container clearfix">
+					<div class="avatar">
+						<a href="#"><img src="images/florence.png"></a>
+					</div>
+					<div class="user-details">
+						<h1><a href="#">Florence Nightengale</a></h1>
+						<p>London</p>
+					</div>
+				</div>
+				<div class="button-container">
+					<button class="button" id="toggle" onclick="myFunction()">Follow</button>
+				</div>
+			</div>
+		</div>
+
+<!-- BODY 1: BEGIN -->		
+		
+		<div class="body-wrapper clearfix">
+			<div class="user-menu">
+				<ul>
+					<li class="selected"><a href="#">Lists</a></li>
+					<li><a href="#">Boutiques</a></li>
+					<li><a href="#">Following</a></li>
+					<li><a href="#">Followers</a></li>
+				</ul>
+			</div>
+			<div class="lists-container">
+				<div>
+					<h2>Florence's lists</h2>
+				</div>
+				<div class="clearfix">
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+					<div class="list">
+						<a href="list.html">
+							<img src="images/1.jpg">
+							<h3>List name</h3>
+							<p class="subtitle">51 products</p>
+							<p class="link">View list</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- BODY 1: END -->
+
+<!-- BODY 2: BEGIN -->
+
+		<div class="body2">
+			<div class="body-wrapper columns clearfix">
+				<div class="featured-user col">
+					<div class="intro">
+						<h4>Featured Trouvarians</h4>
+						<p>Like someone’s taste? Follow them and we’ll notify know when they add a new list.</p>
+					</div>
+				</div>
+				<div class="featured-user col">
+					<div class="user clearfix">
+						<div class="user-snippet">
+							<a href="profile.html">
+								<div class="avatar-small">
+									<img src="images/user-3.png">
+								</div>
+								<h5>User name</h5>
+								<div class="button-small">View
+								</div>
+							</a>
+						</div>
+						<div class="clearfix grid">
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/2.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/2.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/2.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/2.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-user col">
+					<div class="user clearfix">
+						<div class="user-snippet">
+							<a href="profile.html">
+								<div class="avatar-small">
+									<img src="images/user-2.png">
+								</div>
+								<h5>User name</h5>
+								<div class="button-small">View
+								</div>
+							</a>
+						</div>
+						<div class="clearfix grid">
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/7.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/7.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/7.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/7.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-user col">
+					<div class="user clearfix">
+						<div class="user-snippet">
+							<a href="profile.html">
+								<div class="avatar-small">
+									<img src="images/user-1.png">
+								</div>
+								<h5>User name</h5>
+								<div class="button-small">View
+								</div>
+							</a>
+						</div>
+						<div class="clearfix grid">
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/8.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/8.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/8.jpg"></a>
+							</div>
+							<div class="small-grid">
+								<a href="profile.html"><img src="images/8.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button-static pad">
+				<a href="community.html">Shop community finds</a>
+			</div>
+		</div>
+
+<!-- BODY 2: END -->
+
+<!-- FOOTER: BEGIN -->
+
+		<footer>
+			<div class="footer-inner clearfix">
+				<ul>
+					<li><h6>Customer service</h6></li>
+					<li><a href="#">Delivery & returns</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Refer a friend</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+				<ul>
+					<li><h6>Boutiques</h6></li>
+					<li><a href="#">Boutique login</a></li>
+					<li><a href="#">Join our community</a></li>
+					<li><a href="#">Recommend a boutique</a></li>
+					<li><a href="#">Become an affiliate</a></li>
+					<li><a href="#">Boutique awards 2017</a></li>
+				</ul>
+				<ul>
+					<li><h6>Stay in the know</h6></li>
+					<li><a href="#">Stories</a></li>
+					<li><a href="#">Edits</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Pinterest</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+				<ul>
+					<li><h6>The company</h6></li>
+					<li><a href="#">Our story</a></li>
+					<li><a href="#">Our values</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Our team</a></li>
+					<li><a href="#">Press</a></li>
+				</ul>
+			</div>
+		</footer>
+
+<!-- FOOTER: END -->
+		
+	</div>
+</body>
+</html>
