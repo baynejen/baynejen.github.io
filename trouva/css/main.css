@@ -434,6 +434,10 @@ button{
     width: 163px;
 }
 
+.share-hook{
+	z-index: 1000;
+}
+
 /*<-- LIST PAGE -->*/
 
 .list-intro{
