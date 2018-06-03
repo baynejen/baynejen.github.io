@@ -88,9 +88,6 @@
 					<div class="icon">
 						<a href="http://alasdairbayne.tumblr.com/"><img src="images/base/tumblr-icon.png"></a>
 					</div>	
-					<div class="icon">
-						<a href="https://www.linkedin.com/in/alibayne"><img src="images/base/linkedin-icon.png"></a>
-					</div>	
 				</div>
 				<div class="copyright">
 					<p>© 2018 Alasdair Bayne. Website by <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>

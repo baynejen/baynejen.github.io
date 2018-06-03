@@ -3,7 +3,7 @@ body{
 	font-size: 17px;
 	font-family: Georgia, serif;
 	text-align: center;
-	background-color: #ecf2f6;
+	background-color: #eef1f3;
 }
 
 .site-wrapper{
@@ -31,13 +31,17 @@ h1{
 
 h2{
 	font-size: 1.7em;
-	color: #3f415f;
-	letter-spacing: 0.06em;
+	color: #1f2035;
+	letter-spacing: 0.03em;
+	padding-top: 30px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	padding-bottom: 30px;
 }
 
 h3{
 	font-size: 3em;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.03em;
 	text-align: center;
 	padding: 22% 0;
 	text-transform: uppercase;
@@ -47,7 +51,7 @@ h3{
 h4{
 	font-size: 1.4em;
 	letter-spacing: 0.03em;
-	color: #3f415f;
+	color: #1f2035;
 }
 
 p{
@@ -59,7 +63,7 @@ p{
 
 a{
 	width: 100%;
-	color: #3f415f;
+	color: #1f2035;
 }
 
 p a{
@@ -134,12 +138,12 @@ nav{
 }
 
 .logo a:hover{
-	color: #3f415f;
+	color: #1f2035;
 }
 
 .logo p{
-	color: #3f415f;
-	padding-top: 5px;
+	color: #1f2035;
+	padding-top: 10px;
 	font-size: .9em;
 }
 
@@ -168,10 +172,10 @@ nav{
 
 .nav-links a{
 	text-transform: uppercase;
-	color: #3f415f;
+	color: #1f2035;
 	font-weight: 700;
 	font-size: .9em;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.03em;
 	text-decoration: none;
 }
 
@@ -194,7 +198,7 @@ nav{
 .scroller{
 	text-align: center;
 	margin: 0 auto;
-	background-color: #ecf2f6;
+	background-color: #eef1f3;
 	width: 100%;
 	z-index:100;
 	height: 75px;
@@ -213,22 +217,23 @@ nav{
 	text-transform: uppercase;
 }
 
-.scroller .selected{
-	color: #3f415f;
-}
-
 .scroller a{
 	font-weight: 700;
 	font-size: .9em;
-	letter-spacing: 0.05em;
-	color: rgba(63,65,95,.5);
+	letter-spacing: 0.03em;
 	padding: 30px 0;
 	line-height: 75px;
 	text-decoration: none;
+	opacity: .4;
 }
 
+.scroller .selected{
+	opacity: 1;
+}
+
+
 .scroller a:hover{
-	color: #3f415f;
+	opacity: 1;
 }
 
 /*<--HAMBURGER NAV-->*/
@@ -236,7 +241,7 @@ nav{
 .mobile-menu {
   	display:none;
   	width:100%;
-	background: #ecf2f6;
+	background: #eef1f3;
 	width:100%;
 	text-align:center;
 	position: relative;
@@ -271,11 +276,11 @@ nav{
 }
 
 .mobile-menu li a.selected{
-	color: #3f415f;
+	color: #1f2035;
 }
 
 .mobile-menu li a:hover{
-	color: #3f415f;
+	color: #1f2035;
 }
 
 .mobile-menu li ul {
@@ -297,7 +302,7 @@ nav{
 	padding: 5px 0;
 	display: none;
   	cursor: pointer;
-  	color: #3f415f;
+  	color: #1f2035;
   	font-size: 0.9em;
   	font-weight: 700;
 	letter-spacing: 0.05em;
@@ -372,8 +377,8 @@ nav{
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 5%;
-	color: #494951;
+	padding: 30px;
+	color: #1f2035;
 }
 
 hr{
@@ -382,14 +387,15 @@ hr{
 	margin: 25px auto;
 	height: 4px;
 	border: 0;
-	background-color: #3f415f;
+	background-color: #1f2035;
 	width: 6%;
+	display: none;
 }
 
 .vimeo-wrapper{
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
-	padding: 5% 0;
+	padding: 40px 0;
 	text-align: center;
 }
 
@@ -409,10 +415,14 @@ hr{
 	height: 100%;
 }
 
+.embed-container iframe{
+	border: 1px solid #eef1f3;
+}
+
 .film-image{
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
-	padding: 5% 0;
+	padding: 40px 0;
 }
 
 .film-image img{
@@ -420,7 +430,7 @@ hr{
 }
 
 .editing-image{
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	padding: 2% 0;
 }
@@ -439,8 +449,9 @@ hr{
 }
 
 .film-content-wrapper{
-	width: 100%;
+	width: 80%;
 	text-align: left;
+	margin: 0 auto;
 }
 
 .spacer{
@@ -459,7 +470,7 @@ hr{
 }
 
 .film-content-right{
-	float: left;
+	float: right;
 	width: 35%;
 	margin-left: 5%;
 }
@@ -470,7 +481,7 @@ hr{
 }
 
 .film-content-wrapper h4{
-	padding: 8% 0 2%;
+	padding: 30px 0;
 }
 
 .film-content-wrapper h4:first-of-type{
@@ -482,7 +493,7 @@ hr{
 }
 
 .film-content-wrapper ul li{
-	padding: 1% 0;
+	padding: 10px 0;
 	line-height: 1.5em;
 	font-weight: 300;
 	font-size: 1em;
@@ -500,6 +511,10 @@ hr{
     border-right: 6px solid transparent;
     display:inline-block;
     vertical-align:middle;
+}
+
+.film-content-wrapper ul li:hover >.triangle, .about-festivals ul li:hover > .triangle{
+	transform: rotate(20deg);
 }
 
 .attribution{
@@ -530,10 +545,11 @@ hr{
 }
 
 .about-festivals{
-	width: 100%;
+	width: 80%;
 	text-align: left;
 	column-count: 2;
-	padding-top: 40px
+	padding-top: 30px;
+	margin: 0 auto;
 }
 
 .about-festivals ul{
@@ -574,7 +590,7 @@ hr{
 }
 
 p.contact-subtitle{
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -625,6 +641,12 @@ p.thanks{
 #contact-area input.submit-button:hover{
 	opacity: .8;
 	cursor: pointer;
+}
+
+::placeholder{
+	font-family: Georgia, serif;
+	opacity: .5;
+	font-size: 14px;
 }
 
 label {
@@ -818,15 +840,6 @@ label {
 		width: 20%;
 	}
 
-	.content-wrapper{
-		max-width: 90%;
-		padding: 8% 0;
-	}
-
-	.vimeo-wrapper{
-		padding: 8% 0;
-	}
-
 	.avatar{
 		width: 40%;
 	}
@@ -854,6 +867,10 @@ label {
 
 	nav{
 		padding: 20px;
+	}
+
+	.vimeo-wrapper, .film-content-wrapper, .film-image, .about-festivals{
+		width: 100%;
 	}
 }
 
@@ -958,7 +975,11 @@ label {
 		width: 100%;
 		margin-left: 0;
 		display: block;
-		padding-top: 8%;
+		padding-top: 30px;
+	}
+
+	.no-pad{
+		padding-top: 0;
 	}
 
 	.vimeo-wrapper{
@@ -996,10 +1017,6 @@ label {
 		width: 90%;
 		margin: 0 auto;
 		display: block;
-	}
-
-	.film-image{
-		padding: 8% 0;
 	}
 
 	#social-connect li{
@@ -1046,10 +1063,6 @@ label {
 		width: 40%;
 	}
 
-	.content-wrapper{
-		padding: 10% 0;
-	}
-
 	.avatar{
 		width: 100%;
 		padding-top: 5%;
@@ -1085,20 +1098,12 @@ label {
 		width: 60%;
 	}
 
-	.content-wrapper{
-		max-width: 85%;
-	}
-
-	.film-content-wrapper h4{
-		padding: 8% 0;
-	}
-
 	.film-content-wrapper h4:first-of-type{
-		padding-top: 4%;
+		padding-top: 30px;
 	}
 
 	.film-image{
-		padding: 10% 0;
+		padding: 30px 0;
 	}
 
 	.partner-logo{
@@ -1136,6 +1141,14 @@ label {
 
 	#contact-area input, #contact-area textarea{
 		width: 92%;
+	}
+
+	.content-wrapper{
+		padding: 20px;
+	}
+
+	h2{
+		padding-top: 20px;
 	}
 }
 

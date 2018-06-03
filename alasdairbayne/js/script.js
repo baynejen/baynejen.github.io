@@ -21,7 +21,7 @@ $(window).scroll(function(e) {
          
         // Change the CSS and put it back to its original position.
         $('.scroller').css({
-            'background': '#ecf2f6',
+            'background': '#eef1f3',
             'position': 'relative'
         });
     }
