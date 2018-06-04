@@ -416,7 +416,7 @@ hr{
 }
 
 .embed-container iframe{
-	border: 1px solid #eef1f3;
+	background-color: black;
 }
 
 .film-image{
