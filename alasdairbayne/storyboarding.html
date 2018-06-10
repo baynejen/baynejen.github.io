@@ -21,178 +21,150 @@
 <body>
 	<div class="site-wrapper">
 
-
 <!-- NAV -->
 
-
-		<div class="nav-wrapper-alt">
-			<div class="nav-contents">
-				<nav class="clearfix">
-					<div class="logo"><a href="/"><h1>Alasdair Bayne</h1></a>
-						<p>Independent Director and Freelance Editor</p>
-					</div>
-					<div class="nav-links">
-						<ul>
-							<li><a href="#" class="highlighted">My Work</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
+		<nav class="clearfix nav-wrapper">
+			<div class="logo">
+				<a href="index"><h1>Alasdair Bayne</h1></a>
+				<p>Independent Director and Freelance Editor</p>
 			</div>
-		</div>
-
-
-<!-- NAV (responsive) -->
-
-
-		<div id="homepage-nav-wrapper-responsive">
-			<div class="nav-mountain">
-				<img src="images/base/mountain-top-small.png">
+			<div class="nav-links">
+				<ul>
+					<li><a href="#">My Work</a></li>
+					<li><a href="about" class="opacity">About</a></li>
+					<li><a href="contact" class="opacity">Contact</a></li>
+				</ul>
 			</div>
-			<div class="nav-contents">
-				<nav class="clearfix submenu">
-					<div class="logo"><a href="/"><h1>Alasdair Bayne</h1></a>
-					</div>
-					<div class="nav-links">
-						<ul>
-							<li><a href="#" class="highlighted">My Work</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-
-
-<!-- SUBMENU (hamburger) -->
-
-
-		<nav class="mobile-menu">
-			<label for="show-menu" class="show-menu"><div>Storyboards</div><div class="lines"><img src="images/base/arrow.png"/></div></label>
-			<input type="checkbox" id="show-menu">
-			<ul id="menu">
-				<li><a href="drama">Drama</a></li>
-				<li><a href="documentary">Documentary</a></li>
-				<li><a href="future">Future Projects</a></li>
-				<li><a href="editing">Editing/VFX</a></li>	
-				<li><a href="#" class="selected">Storyboards</a></li>			
-			</ul>
 		</nav>
 
-
-<!-- SCROLLER SUBNAV -->
-
+<!-- CONTENT -->		
 		
-		<div class="scroller_anchor">
-		</div>
-			<div class="scroller">
+		<div class="body-wrapper">
+			<div class="small-nav">
 				<ul>
 					<li><a href="drama">Drama</a></li>
 					<li><a href="documentary">Documentary</a></li>
 					<li><a href="future">Future Projects</a></li>
-					<li><a href="editing">Editing/VFX</a></li>
-					<li><a href="#" class="selected">Storyboards</a></li>
+					<li><a href="#" class="selected">Editing/VFX</a></li>
+					<li><a href="storyboarding">Storyboards</a></li>
 				</ul>
 			</div>
-
-
-<!-- CONTENT -->		
-
-		
-		<div class="body-wrapper">
-			<div class="content-wrapper">
-				<h2>Bird, 2012</h2>
+			<div class="small-nav-mobile">
+				<label for="show-menu" class="show-menu">
+					<div>Editing/VFX</div>
+					<div class="lines">
+						<img src="images/base/arrow.png"/>
+					</div>
+				</label>
+				<input type="checkbox" id="show-menu">
+				<ul id="menu">
+					<li><a href="drama">Drama</a></li>
+					<li><a href="documentary">Documentary</a></li>
+					<li><a href="future">Future Projects</a></li>
+					<li><a href="#" class="selected">Editing/VFX</a></li>
+					<li><a href="storyboarding">Storyboards</a></li>
+				</ul>
 			</div>
-
-			<div id="carousel">
-	        	<div class="container">
-			        <div class="row">
-			        	<div class="span12">
-							<div id="owl-example" class="owl-carousel">
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page003.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page004.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page005.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page006.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page007.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page008.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page009.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page010.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page011.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page012.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page013.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page014.jpg">
-								</div>
-								<div class="item">
-									<img src="images/portfolio/storyboard/storyboard1_page015.jpg">
-								</div>
-							</div>
-			        	</div>
-			        </div>
-	        	</div>
-	      	</div>
-			<script>
-			    $(document).ready(function($) {
-			      $("#owl-example").owlCarousel();
-			    });
-			    $("body").data("page", "frontpage");
-			</script>
-			<div class="content-wrapper">
-				<h2>Haftasonu, 2016</h2>
-				<div class="editing-image clearfix">
-					<img src="images/portfolio/storyboard/21shot4.jpg" class="left">
-					<img src="images/portfolio/storyboard/haftasonu1.jpg" class="right">
+			<div class="body-container">
+				<div class="content-wrapper">
+					<h2>Bird, 2012</h2>
 				</div>
-				<div class="editing-image clearfix">
-					<img src="images/portfolio/storyboard/21shot1.jpg" class="left">
-					<img src="images/portfolio/storyboard/haftasonu2.jpg" class="right">
+				<div id="carousel">
+		        	<div class="container">
+				        <div class="row">
+				        	<div class="span12">
+								<div id="owl-example" class="owl-carousel">
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page003.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page004.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page005.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page006.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page007.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page008.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page009.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page010.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page011.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page012.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page013.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page014.jpg">
+									</div>
+									<div class="item">
+										<img src="images/portfolio/storyboard/storyboard1_page015.jpg">
+									</div>
+								</div>
+				        	</div>
+				        </div>
+		        	</div>
+		      	</div>
+				<script>
+				    $(document).ready(function($) {
+				      $("#owl-example").owlCarousel();
+				    });
+				    $("body").data("page", "frontpage");
+				</script>
+				<div class="content-wrapper">
+					<h2>Haftasonu, 2016</h2>
+					<div class="storyboard-image clearfix">
+						<img src="images/portfolio/storyboard/21shot4.jpg" class="left">
+						<img src="images/portfolio/storyboard/haftasonu1.jpg" class="right">
+					</div>
+					<div class="storyboard-image clearfix">
+						<img src="images/portfolio/storyboard/21shot1.jpg" class="left">
+						<img src="images/portfolio/storyboard/haftasonu2.jpg" class="right">
+					</div>
 				</div>
 			</div>
 		</div>
 		
-
+		
 <!-- FOOTER -->		
 
-
-		<div class="footer-wrapper">
-			<div class="footer-contents">		
-				<div class="social-container" class="clearfix">
-					<div class="icon">
-						<a href="https://vimeo.com/alibayne"><img src="images/base/vimeo-icon.png"></a>
-					</div>		
-					<div class="icon">
-						<a href="http://alasdairbayne.tumblr.com/"><img src="images/base/tumblr-icon.png"></a>
-					</div>	
-				</div>
-				<div class="copyright">
-					<p>© 2018 Alasdair Bayne. Website by <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>
-				</div>	
+		
+		<div class="partners">
+			<div class="partners-container clearfix">
+				<img src="images/about/partners/raindance.jpg">
+				<img src="images/about/partners/encounters.jpg">
+				<img src="images/about/partners/sftn.png">
+				<img src="images/about/partners/bafta.jpg">
+				<img src="images/about/partners/cs.jpg">
+				<img src="images/about/partners/inscript.jpg">
 			</div>
 		</div>
+		<footer>
+			<div class="social-container" class="clearfix">
+				<div class="icon">
+					<a href="https://vimeo.com/alibayne"><img src="images/base/vimeo-icon.png"></a>
+				</div>		
+				<div class="icon">
+					<a href="http://alasdairbayne.tumblr.com/"><img src="images/base/tumblr-icon.png"></a>
+				</div>	
+			</div>
+			<div class="copyright">
+				<p>© 2018 Alasdair Bayne. Website by <a href="http://jen-bayne.com/" target="_blank">Jen Bayne</a></p>
+			</div>	
+		</footer>
 	</div>
 </body>
 </html>

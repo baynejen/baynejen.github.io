@@ -19,6 +19,9 @@
 	width: 80%;
 	margin: 0 auto;
 	-ms-touch-action: pan-y;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
 }
 .owl-carousel .owl-wrapper{
 	display: none;
@@ -69,5 +72,11 @@
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width:1000px){
+	.owl-carousel{
+		width: 100%;
+	}
 }
 
