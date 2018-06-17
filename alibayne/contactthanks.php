@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alasdair Bayne | Film writer, editor, director</title>
+	<title>Contact | Alasdair Bayne</title>
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -19,62 +18,27 @@
 
 <!-- NAV -->
 
-
 		<nav class="clearfix nav-wrapper">
 			<div class="logo">
-				<a href="#"><h1>Alasdair Bayne</h1></a>
+				<a href="index"><h1>Alasdair Bayne</h1></a>
 				<p>Independent Director and Freelance Editor</p>
 			</div>
 			<div class="nav-links">
 				<ul>
-					<li><a href="drama.html">My Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="drama">My Work</a></li>
+					<li><a href="about">About</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 
-
 <!-- BODY -->
 
-
 		<div class="body-wrapper">
-			<div id="homepage-wrapper" class="clearfix">
-				<div class="homepage-content">
-					<a href="drama.html">
-						<img src="images/homepage/drama.jpg" class="top">
-						<div class="homepage-header">Drama</div>
-					</a>
-				</div>
-				<div class="homepage-content">
-					<a href="documentary.html">
-						<img src="images/homepage/documentary.jpg" class="top">
-						<div class="homepage-header">Documentaries</div>
-					</a>
-				</div>
-				<div class="homepage-content">
-					<a href="future.html">
-						<img src="images/homepage/future.jpg" class="top">
-						<div class="homepage-header">Future Projects</div>
-					</a>
-				</div>
-				<div class="homepage-content">
-					<a href="editing.html">
-						<img src="images/homepage/editing.jpg">
-						<div class="homepage-header">Editing/VFX</div>
-					</a>
-				</div>
-				<div class="homepage-content">
-					<a href="storyboarding.html">
-						<img src="images/homepage/storyboard.jpg">
-						<div class="homepage-header">Storyboards</div>
-					</a>
-				</div>
-				<div class="homepage-content">
-					<a href="contact.html">
-						<img src="images/homepage/contact.jpg">
-						<div class="homepage-header">Contact</div>
-					</a>
+			<div class="body-container">
+				<div class="content-wrapper">
+					<h2>Thank you</h2>
+					<p class="contact-subtitle thanks">Your message has been sent. I will get back to you as soon as I can.</p>
 				</div>
 			</div>
 		</div>
@@ -82,7 +46,7 @@
 
 <!-- FOOTER -->		
 
-
+		
 		<div class="partners">
 			<div class="partners-container clearfix">
 				<img src="images/about/partners/raindance.jpg">
