@@ -1,0 +1,93 @@
+#hero{
+    padding-top: 190px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-content: center;
+    background-color: white;
+}
+#hero h1{
+    margin: 0 auto 0 0;
+    max-width: 850px;
+    width: 80%;
+}
+#hero h1 a{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline;
+    border-bottom: 2px solid white;
+}
+#hero h1 a:hover {
+    border-bottom: 3px solid #4b4bfb;
+}
+.fadeIn.start {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.fadeIn {
+    opacity: 0;
+}
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px){
+	#hero{
+	    padding-top: 240px;
+	    padding-bottom: 140px;
+	}
+	#hero h1{
+	    margin: 0 auto 0 0;
+	    max-width: 650px;
+	    width: 100%;
+	}
+	#hero h1 a{
+	    -webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+	    display: inline;
+	    border-bottom: 2px solid white;
+	}
+	#hero h1 a:hover {
+	    border-bottom: 3px solid #4b4bfb;
+	}
+	.fadeIn.start {
+	    -webkit-animation-name: fadeIn;
+	    animation-name: fadeIn;
+	}
+	.fadeIn {
+	    opacity: 0;
+	}
+	.animated {
+	    -webkit-animation-duration: 1.5s;
+	    animation-duration: 1.5s;
+	    -webkit-animation-fill-mode: both;
+	    animation-fill-mode: both;
+	}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){
+	#hero h1{
+	    max-width: 850px;
+	}
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

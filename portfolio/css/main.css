@@ -1,3 +1,18 @@
+@font-face{
+	font-family: 'bebas-regular';
+	src: url(../font/BebasNeueRegular.otf);
+}
+
+@font-face{
+	font-family: 'bebas-bold';
+	src: url(../font/BebasNeueBold.otf);
+}
+
+@font-face{
+	font-family: 'bebas-book';
+	src: url(../font/BebasNeueBook.otf);
+}
+
 body{
 	width: 100%;
 	font-size: 16px;

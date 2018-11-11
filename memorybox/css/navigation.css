@@ -1,0 +1,186 @@
+nav{
+	width: 100%;
+	position: fixed;
+	display: none;
+	background-color: #f6f6f6;
+	padding: 40px 20px;
+}
+.homepage-redirect{
+	margin-left: 20px;
+	top: 20px;
+	width: 30px;
+	position: absolute;
+  	-webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+}
+.homepage-redirect img{
+	width: 100%;
+   	-webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+}
+.homepage-redirect:hover{
+	-webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.hide{
+	display: none;
+}
+nav ul{
+	list-style: none;
+	font-weight: 800;
+	width: 100%;
+}
+nav ul li{
+	display: inline-block;
+	padding: 0 15px;
+	letter-spacing: 0.5px;
+	-webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+ 	font-size: 15px;
+ 	opacity: .5;
+}
+nav ul li.section-selected, nav ul li.section-selected-sub{
+  opacity: 1;
+}
+nav ul li.section-selected-sub a{
+  color: #242448;
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+nav ul:hover > li{
+	opacity: .5;
+}
+nav ul:hover > li a{
+  color: #242448;
+}
+nav ul li:hover{
+	opacity: 1;
+}
+
+/*<--- SCROLLED NAV --->*/
+
+.scrolled-nav{
+	padding: 20px;
+	box-shadow: 0 0 4px rgba(0,0,0,.1);
+    -webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+}
+.scrolled-nav .homepage-redirect{
+	margin-left: 0;
+	margin-top: -5px;
+    -webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+}
+.scrolled-nav .homepage-redirect img{
+	width: 60%;
+    -webkit-transition: all .05s ease-in-out;
+  	-moz-transition: all .05s ease-in-out;
+  	-o-transition: all .05s ease-in-out;
+ 	transition: all .05s ease-in-out;
+}
+
+/*MOBILE NAVIGATION*/
+
+.menu-icon{
+	position: fixed;
+  z-index: 2000;
+  margin: 0;
+  padding: 10px;
+	font-size: 25px;
+	cursor: pointer;
+	background-color: #f6f6f6;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #fff; 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+	z-index: 5000;
+}
+.overlay-content {
+    position: relative;
+    top: 23%; 
+    width: 100%; 
+    text-align: center; 
+}
+.overlay a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    opacity: .5;
+    display: block; 
+    transition: 0.3s; 
+}
+.overlay img{
+	width: 40px;
+}
+.overlay a.section-selected{
+  opacity: 1;
+}
+.overlay a.section-selected-sub{
+	opacity: 1;
+	color: #242448;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    padding: 0;
+    font-weight: 400;
+}
+.overlay a.closebtn{
+  opacity: 1;
+}
+
+#nav-home{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-icon{
+    	display: none;
+    }
+    nav{
+    	display: block;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    nav{
+    	display: block;
+    }
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

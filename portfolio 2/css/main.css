@@ -1,0 +1,116 @@
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../fonts/AvenirLTStd-Black.otf);
+}
+body{
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	color: #14103c;
+	font-family: Avenir, 'AvenirRoman', Avenir, arial, sans-serif;
+	background-color: #ffffff;
+	letter-spacing: 0.5px;
+}
+main{
+	position: relative;
+    z-index: 10;
+    display: block;
+    width: 100%;
+}
+*{
+	font-family: Avenir, 'AvenirRoman', Avenir, arial, sans-serif;
+}
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+*::selection{
+	background: #fee03d;
+}
+section, footer{
+	padding: 0 20px;
+	position: relative;
+	z-index: 100;
+}
+
+/*TABLET */
+@media only screen and (min-width: 768px){
+	section, footer{
+		padding: 0 50px;
+	}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){
+	main{
+		margin-bottom: 700px;
+	}
+}
+
+/*	<--TYPOGRAPHY-->*/
+
+h1, h2, h3, h4, h5{
+	font-weight: 700;
+}
+h1{
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0;
+}
+h2{
+	font-size: 30px;
+	line-height: 1.5em;
+}
+h3{
+	font-size: 16px;
+	padding: 25px 0 15px 0;
+}
+h4{
+	font-size: 18px;
+	padding-bottom: 40px;
+}
+h5{
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 22px;
+}
+p{
+	line-height: 1.5em;
+}
+a{
+	color: #4b4bfb;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 768px){
+	h1{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 18px;
+	}
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

@@ -5,605 +5,653 @@
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:400,800" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="script2.js"></script>
+	<script type="text/javascript" src="js/back-to-top.js"></script>
+	<script type="text/javascript" src="js/equal-height.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/scroll-menu.js"></script>
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body id="scroll-up">
 
 <!-- OFFSITE NAVIGATION -->
 
-	<ul class="offsite-navigation">
-		<li class="offsite-nav-item-balloon"><a href="/"><img src="images/icons/hotairballoon.png"></a></li>
-	   	<li class="offsite-nav-item"><a href="memories">All Memories</a></li>
-	    <li class="offsite-nav-item"><a href="#">Music</a></li>
-	    <li class="offsite-nav-item"><a href="culture">Culture</a></li>
-	    <li class="offsite-nav-item"><a href="travel">Travel</a></li>
-	    <li class="offsite-nav-item"><a href="fooddrink">Food &amp; Drink</a></li>
-	    <li class="offsite-nav-item"><a href="comedy">Comedy</a></li>
-	</ul>
-
-	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-	<label for="nav-trigger"></label>
-	<div class="overlay"></div>
-
-	<div class="wrapper clearfix">
-
-<!-- HEADER -->
-
-		<nav id="subpage-nav">
-			<div class="homepage-redirect">
-				<a href="/"><img src="images/icons/hotairballoon.png"></a>
-			</div>
-			<ul>
-				<a href="memories"><li>All Memories</li></a><a href="#"><li class="section-selected">
-				Music</li></a><a href="culture"><li>Culture</li></a><a href="travel"><li>
-				Travel</li></a><a href="fooddrink"><li>
-				Food &amp; Drink</li></a><a href="comedy"><li>
-				Comedy</li></a>
-			</ul>
-		</nav>
-
-		<div class="subpage-image-wrapper">
-			<img src="images/icons/music.png">
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="/" class="section-selected-sub"><img src="images/icons/hotairballoon.png"></a>
+			<a href="#" class="section-selected-sub">Music</a>
+			<a href="culture">Culture</a>
+			<a href="travel">Travel</a>
+			<a href="fooddrink">Food &amp; Drink</a>
+			<a href="comedy">Comedy</a>
 		</div>
+	</div>
+	<div class="menu-icon">
+		<span onclick="openNav()">&#9776;</span>
+	</div>
+
+	<!-- NAV -->
+
+	<nav id="nav-home">
+		<div class="homepage-redirect">
+			<a href="/"><img src="images/icons/hotairballoon.png"></a>
+		</div>
+		<ul>
+			<li class="section-selected-sub"><a href="#">Music</a></li>
+			<li><a href="culture">Culture</a></li>
+			<li><a href="travel">Travel</a></li>
+			<li><a href="fooddrink">Food &amp; Drink</a></li>
+			<li><a href="comedy">Comedy</a></li>
+		</ul>
+	</nav>
 
 <!-- CONTENT -->
+	
+	<h2>Music</h2>
+	<div class="subpage-image-wrapper">
+		<img src="images/icons/music.png"">
+	</div>
 
-		<section class="content-wrapper">
-			<div class="content">
-				<div class="columns clearfix">
-					<div class="col">
-						<img src="images/content/music/frightenedrabbit-16mar.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Frightened Rabbit</p>
-							<p class="intro-text-details">02 Forum, London</p>
-							<p class="intro-text-details">16.03.18</p>
-							<p class="detail"></p>
-						</div>
+	<section class="content-wrapper">
+		<div class="content">
+			<div class="columns clearfix">
+				<div class="col">
+					<img src="images/content/music/greenman-16aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Green Man Festival</p>
+						<p class="intro-text-details">Brecon Beacons, Wales</p>
+						<p class="intro-text-details">16.08.18 - 20.08.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/boniver-21feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Bon Iver</p>
-							<p class="intro-text-details">Eventim Apollo, London</p>
-							<p class="intro-text-details">21.02.18</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/deathcab-18jun.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Death Cab for Cutie</p>
+						<p class="intro-text-details">Royal Festival Hall, London</p>
+						<p class="intro-text-details">18.06.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/fleetfoxes-26nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Fleet Foxes</p>
-							<p class="intro-text-details">02 Brixton, London</p>
-							<p class="intro-text-details">26.11.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/national-2jun.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The National</p>
+						<p class="intro-text-details">Victoria Park, London</p>
+						<p class="intro-text-details">02.06.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/johnnyflynn-17oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Johnny Flynn & the Sussex Wit</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">17.10.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/mulvey-22may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Nick Mulvey</p>
+						<p class="intro-text-details">Royal Albert Hall, London</p>
+						<p class="intro-text-details">22.05.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/national-28sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The National</p>
-							<p class="intro-text-details">Eventim Apollo, London</p>
-							<p class="intro-text-details">28.09.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/mastersystem-1may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Mastersystem</p>
+						<p class="intro-text-details">Oslo, London</p>
+						<p class="intro-text-details">01.05.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/lcd-22sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">LCD Soundsystem</p>
-							<p class="intro-text-details">Alexandra Palaca, London</p>
-							<p class="intro-text-details">22.09.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/frightenedrabbit-16mar.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Frightened Rabbit</p>
+						<p class="intro-text-details">02 Forum, London</p>
+						<p class="intro-text-details">16.03.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/otherguys-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Other Guys</p>
-							<p class="intro-text-details">Surgeons Hall, Edinburgh</p>
-							<p class="intro-text-details">26.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/boniver-21feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Bon Iver</p>
+						<p class="intro-text-details">Eventim Apollo, London</p>
+						<p class="intro-text-details">21.02.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/citadel-16july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Citadel</p>
-							<p class="intro-text-details">Victoria Park, London</p>
-							<p class="intro-text-details">16.07.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/fleetfoxes-26nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Fleet Foxes</p>
+						<p class="intro-text-details">02 Brixton, London</p>
+						<p class="intro-text-details">26.11.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/glasto-21june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Glastonbury</p>
-							<p class="intro-text-details">Somerset</p>
-							<p class="intro-text-details">21.06.17 - 26.06.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/johnnyflynn-17oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Johnny Flynn & the Sussex Wit</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">17.10.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/altj-16june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">alt-j</p>
-							<p class="intro-text-details">The 02, London</p>
-							<p class="intro-text-details">16.06.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/national-28sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The National</p>
+						<p class="intro-text-details">Eventim Apollo, London</p>
+						<p class="intro-text-details">28.09.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/bushstock-10june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Bushstock</p>
-							<p class="intro-text-details">Shepherds Bush, London</p>
-							<p class="intro-text-details">10.06.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/lcd-22sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">LCD Soundsystem</p>
+						<p class="intro-text-details">Alexandra Palaca, London</p>
+						<p class="intro-text-details">22.09.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/razorlight-7june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Razorlight</p>
-							<p class="intro-text-details">Boston Music Room, London</p>
-							<p class="intro-text-details">07.06.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/otherguys-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Other Guys</p>
+						<p class="intro-text-details">Surgeons Hall, Edinburgh</p>
+						<p class="intro-text-details">26.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/haim-31may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Haim</p>
-							<p class="intro-text-details">Islington Assembly Hall, London</p>
-							<p class="intro-text-details">31.05.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/citadel-16july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Citadel</p>
+						<p class="intro-text-details">Victoria Park, London</p>
+						<p class="intro-text-details">16.07.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/amadoumariam-24may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Amadou and Mariam</p>
-							<p class="intro-text-details">Koko, London</p>
-							<p class="intro-text-details">24.05.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/glasto-21june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Glastonbury</p>
+						<p class="intro-text-details">Somerset</p>
+						<p class="intro-text-details">21.06.17 - 26.06.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/blocparty-11feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Bloc Party</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">11.02.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/altj-16june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">alt-j</p>
+						<p class="intro-text-details">The 02, London</p>
+						<p class="intro-text-details">16.06.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/frightenedrabbit-7dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Frightened Rabbit</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">07.12.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/bushstock-10june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Bushstock</p>
+						<p class="intro-text-details">Shepherds Bush, London</p>
+						<p class="intro-text-details">10.06.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/jakebugg-1nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Jake Bugg</p>
-							<p class="intro-text-details">02 Brixton, London</p>
-							<p class="intro-text-details">01.11.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/razorlight-7june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Razorlight</p>
+						<p class="intro-text-details">Boston Music Room, London</p>
+						<p class="intro-text-details">07.06.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/beatyheart-6oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Beaty Heart</p>
-							<p class="intro-text-details">The Bussey Building, London</p>
-							<p class="intro-text-details">06.10.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/haim-31may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Haim</p>
+						<p class="intro-text-details">Islington Assembly Hall, London</p>
+						<p class="intro-text-details">31.05.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/mogwai-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Mogwai</p>
-							<p class="intro-text-details">Playhouse, Edinburgh</p>
-							<p class="intro-text-details">27.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/amadoumariam-24may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Amadou and Mariam</p>
+						<p class="intro-text-details">Koko, London</p>
+						<p class="intro-text-details">24.05.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/citadel-17july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Citadel Festival</p>
-							<p class="intro-text-details">Victoria Park, London</p>
-							<p class="intro-text-details">17.07.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/blocparty-11feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Bloc Party</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">11.02.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/barnett-13july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Courtney Barnett</p>
-							<p class="intro-text-details">Somerset House, London</p>
-							<p class="intro-text-details">13.07.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/frightenedrabbit-7dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Frightened Rabbit</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">07.12.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/glastonbury-22june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Glastonbury Festival</p>
-							<p class="intro-text-details">Worthy Farm, Somerset</p>
-							<p class="intro-text-details">22.06.16 - 27.06.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/jakebugg-1nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Jake Bugg</p>
+						<p class="intro-text-details">02 Brixton, London</p>
+						<p class="intro-text-details">01.11.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/staves-14june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Staves</p>
-							<p class="intro-text-details">Royal Festival Hall, London</p>
-							<p class="intro-text-details">14.06.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/beatyheart-6oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Beaty Heart</p>
+						<p class="intro-text-details">The Bussey Building, London</p>
+						<p class="intro-text-details">06.10.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/frightenedrabbit-14apr.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Frightened Rabbit</p>
-							<p class="intro-text-details">St John at Hackney Church, London</p>
-							<p class="intro-text-details">14.04.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/mogwai-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Mogwai</p>
+						<p class="intro-text-details">Playhouse, Edinburgh</p>
+						<p class="intro-text-details">27.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/sundarakarma-10mar.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Sundara Karma</p>
-							<p class="intro-text-details">Dingwalls, London</p>
-							<p class="intro-text-details">10.03.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/citadel-17july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Citadel Festival</p>
+						<p class="intro-text-details">Victoria Park, London</p>
+						<p class="intro-text-details">17.07.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/beirut-12feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Beirut</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">12.02.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/barnett-13july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Courtney Barnett</p>
+						<p class="intro-text-details">Somerset House, London</p>
+						<p class="intro-text-details">13.07.16</p>
+						<p class="detail"></p>
 					</div>
-						<div class="col">
-						<img src="images/content/music/youthlagoon-9feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Youth Lagoon</p>
-							<p class="intro-text-details">Village Underground, London</p>
-							<p class="intro-text-details">09.02.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/glastonbury-22june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Glastonbury Festival</p>
+						<p class="intro-text-details">Worthy Farm, Somerset</p>
+						<p class="intro-text-details">22.06.16 - 27.06.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/witheredhand-7jan.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Withered Hand</p>
-							<p class="intro-text-details">The Lexington, London</p>
-							<p class="intro-text-details">07.01.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/staves-14june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Staves</p>
+						<p class="intro-text-details">Royal Festival Hall, London</p>
+						<p class="intro-text-details">14.06.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/coldplay-3dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Coldplay</p>
-							<p class="intro-text-details">St John at Hackney Church, London</p>
-							<p class="intro-text-details">03.12.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/frightenedrabbit-14apr.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Frightened Rabbit</p>
+						<p class="intro-text-details">St John at Hackney Church, London</p>
+						<p class="intro-text-details">14.04.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/daugher-19nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Daugher</p>
-							<p class="intro-text-details">St John at Hackney Church, London</p>
-							<p class="intro-text-details">19.11.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/sundarakarma-10mar.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Sundara Karma</p>
+						<p class="intro-text-details">Dingwalls, London</p>
+						<p class="intro-text-details">10.03.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/staves-9nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Staves</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">09.11.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/beirut-12feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Beirut</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">12.02.16</p>
+						<p class="detail"></p>
 					</div>
+				</div>
 					<div class="col">
-						<img src="images/content/music/metric-14oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Metric</p>
-							<p class="intro-text-details">Kentish Town Forum, London</p>
-							<p class="intro-text-details">14.10.15</p>
-							<p class="detail"></p>
-						</div>
+					<img src="images/content/music/youthlagoon-9feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Youth Lagoon</p>
+						<p class="intro-text-details">Village Underground, London</p>
+						<p class="intro-text-details">09.02.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/florence-28sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Florence and the Machine</p>
-							<p class="intro-text-details">The Roundhouse, London</p>
-							<p class="intro-text-details">28.09.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/witheredhand-7jan.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Withered Hand</p>
+						<p class="intro-text-details">The Lexington, London</p>
+						<p class="intro-text-details">07.01.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/beirut-24sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Beirut</p>
-							<p class="intro-text-details">O2 Brixton, London</p>
-							<p class="intro-text-details">24.09.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/coldplay-3dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Coldplay</p>
+						<p class="intro-text-details">St John at Hackney Church, London</p>
+						<p class="intro-text-details">03.12.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/libertines-10sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Libertines (almost...)</p>
-							<p class="intro-text-details">Electric Ballroom, London</p>
-							<p class="intro-text-details">10.09.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/daugher-19nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Daugher</p>
+						<p class="intro-text-details">St John at Hackney Church, London</p>
+						<p class="intro-text-details">19.11.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/ootb-29aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Out of the Blue</p>
-							<p class="intro-text-details">George Square Theatre, Edinburgh</p>
-							<p class="intro-text-details">29.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/staves-9nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Staves</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">09.11.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/tubularbells-21aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tubular Bells for Two</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">21.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/metric-14oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Metric</p>
+						<p class="intro-text-details">Kentish Town Forum, London</p>
+						<p class="intro-text-details">14.10.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/tallestman-23june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Tallest Man on Earth</p>
-							<p class="intro-text-details">KOKO, London</p>
-							<p class="intro-text-details">23.06.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/florence-28sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Florence and the Machine</p>
+						<p class="intro-text-details">The Roundhouse, London</p>
+						<p class="intro-text-details">28.09.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/deathcab-10june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Death Cab for Cutie</p>
-							<p class="intro-text-details">02 Shepherds Bush, London</p>
-							<p class="intro-text-details">10.06.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/beirut-24sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Beirut</p>
+						<p class="intro-text-details">O2 Brixton, London</p>
+						<p class="intro-text-details">24.09.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/admiral-3june.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Admiral Fallow</p>
-							<p class="intro-text-details">Bush Hall, London</p>
-							<p class="intro-text-details">03.06.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/libertines-10sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Libertines (almost...)</p>
+						<p class="intro-text-details">Electric Ballroom, London</p>
+						<p class="intro-text-details">10.09.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/bas-11may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Belle and Sebastian</p>
-							<p class="intro-text-details">Westminster Central Hall, London</p>
-							<p class="intro-text-details">11.05.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/ootb-29aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Out of the Blue</p>
+						<p class="intro-text-details">George Square Theatre, Edinburgh</p>
+						<p class="intro-text-details">29.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/seashanty-25apr.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Trad Academy Sea Shanty Choir</p>
-							<p class="intro-text-details">The Round Chapel, London</p>
-							<p class="intro-text-details">25.04.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/tubularbells-21aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tubular Bells for Two</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">21.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/bailen-21mar.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Bailen</p>
-							<p class="intro-text-details">Mercury Lounge, New York</p>
-							<p class="intro-text-details">21.03.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/tallestman-23june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Tallest Man on Earth</p>
+						<p class="intro-text-details">KOKO, London</p>
+						<p class="intro-text-details">23.06.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/laroux-3feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">La Roux</p>
-							<p class="intro-text-details">KOKO, London</p>
-							<p class="intro-text-details">03.02.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/deathcab-10june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Death Cab for Cutie</p>
+						<p class="intro-text-details">02 Shepherds Bush, London</p>
+						<p class="intro-text-details">10.06.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/firstaidkit-27jan.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">First Aid Kit</p>
-							<p class="intro-text-details">Hammersmith Apollo, London</p>
-							<p class="intro-text-details">27.01.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/admiral-3june.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Admiral Fallow</p>
+						<p class="intro-text-details">Bush Hall, London</p>
+						<p class="intro-text-details">03.06.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/witheredhand-6jan.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Withered Hand</p>
-							<p class="intro-text-details">The Lexington, London</p>
-							<p class="intro-text-details">06.01.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/bas-11may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Belle and Sebastian</p>
+						<p class="intro-text-details">Westminster Central Hall, London</p>
+						<p class="intro-text-details">11.05.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/deaconblue-20dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Deacon Blue</p>
-							<p class="intro-text-details">Usher Hall, Edinburgh</p>
-							<p class="intro-text-details">20.12.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/seashanty-25apr.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Trad Academy Sea Shanty Choir</p>
+						<p class="intro-text-details">The Round Chapel, London</p>
+						<p class="intro-text-details">25.04.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/frightenedrabbit-8nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Frightened Rabbit</p>
-							<p class="intro-text-details">02 Academy, London</p>
-							<p class="intro-text-details">08.11.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/bailen-21mar.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Bailen</p>
+						<p class="intro-text-details">Mercury Lounge, New York</p>
+						<p class="intro-text-details">21.03.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/forcione-24aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Antonio Forcione</p>
-							<p class="intro-text-details">Assembly, Edinburgh</p>
-							<p class="intro-text-details">24.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/laroux-3feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">La Roux</p>
+						<p class="intro-text-details">KOKO, London</p>
+						<p class="intro-text-details">03.02.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/postal-19may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Postal Service</p>
-							<p class="intro-text-details">O2 Academy, London</p>
-							<p class="intro-text-details">19.05.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/firstaidkit-27jan.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">First Aid Kit</p>
+						<p class="intro-text-details">Hammersmith Apollo, London</p>
+						<p class="intro-text-details">27.01.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/eels-21mar.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Eels</p>
-							<p class="intro-text-details">O2 Academy, London</p>
-							<p class="intro-text-details">21.03.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/witheredhand-6jan.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Withered Hand</p>
+						<p class="intro-text-details">The Lexington, London</p>
+						<p class="intro-text-details">06.01.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/toxic-28feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Airborne Toxic Event</p>
-							<p class="intro-text-details">KOKO, London</p>
-							<p class="intro-text-details">28.02.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/deaconblue-20dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Deacon Blue</p>
+						<p class="intro-text-details">Usher Hall, Edinburgh</p>
+						<p class="intro-text-details">20.12.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/fak-20nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">First Aid Kit</p>
-							<p class="intro-text-details">02 Shepherds Bush, London</p>
-							<p class="intro-text-details">20.11.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/frightenedrabbit-8nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Frightened Rabbit</p>
+						<p class="intro-text-details">02 Academy, London</p>
+						<p class="intro-text-details">08.11.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/vocal-10aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Vocal Orchestra</p>
-							<p class="intro-text-details">Udderbelly, Edinburgh</p>
-							<p class="intro-text-details">10.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/forcione-24aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Antonio Forcione</p>
+						<p class="intro-text-details">Assembly, Edinburgh</p>
+						<p class="intro-text-details">24.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/metric-2july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Metric</p>
-							<p class="intro-text-details">02 Shepherds Bush, London</p>
-							<p class="intro-text-details">02.07.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/postal-19may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Postal Service</p>
+						<p class="intro-text-details">O2 Academy, London</p>
+						<p class="intro-text-details">19.05.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/kiwanuka-23may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Michael Kiwanuka</p>
-							<p class="intro-text-details">02 Shepherds Bush, London</p>
-							<p class="intro-text-details">23.05.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/eels-21mar.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Eels</p>
+						<p class="intro-text-details">O2 Academy, London</p>
+						<p class="intro-text-details">21.03.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/temper-21may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Temper Trap</p>
-							<p class="intro-text-details">KOKO, London</p>
-							<p class="intro-text-details">21.05.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/toxic-28feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Airborne Toxic Event</p>
+						<p class="intro-text-details">KOKO, London</p>
+						<p class="intro-text-details">28.02.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/jayz-19may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Jay-Z and Kanye West</p>
-							<p class="intro-text-details">O2, London</p>
-							<p class="intro-text-details">19.05.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/fak-20nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">First Aid Kit</p>
+						<p class="intro-text-details">02 Shepherds Bush, London</p>
+						<p class="intro-text-details">20.11.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/music/drytheriver-23jan.jpg">
-						<div class="image-description">
-						<p class="intro-text-what">Dry The River</p>
-							<p class="intro-text-details">XOYO, London</p>
-							<p class="intro-text-details">23.01.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/vocal-10aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Vocal Orchestra</p>
+						<p class="intro-text-details">Udderbelly, Edinburgh</p>
+						<p class="intro-text-details">10.08.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/metric-2july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Metric</p>
+						<p class="intro-text-details">02 Shepherds Bush, London</p>
+						<p class="intro-text-details">02.07.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/kiwanuka-23may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Michael Kiwanuka</p>
+						<p class="intro-text-details">02 Shepherds Bush, London</p>
+						<p class="intro-text-details">23.05.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/temper-21may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Temper Trap</p>
+						<p class="intro-text-details">KOKO, London</p>
+						<p class="intro-text-details">21.05.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/jayz-19may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Jay-Z and Kanye West</p>
+						<p class="intro-text-details">O2, London</p>
+						<p class="intro-text-details">19.05.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/music/drytheriver-23jan.jpg">
+					<div class="image-description">
+					<p class="intro-text-what">Dry The River</p>
+						<p class="intro-text-details">XOYO, London</p>
+						<p class="intro-text-details">23.01.12</p>
+						<p class="detail"></p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<div class="scrollup">
-			<a href="#nav-trigger"><img src="images/icons/hand.png"></a>
 		</div>
+	</section>
+	<div class="scrollup">
+		<a href="#scroll-up"><img src="images/icons/hand.png"></a>
+	</div>
 
 <!-- FOOTER -->		
 
-		<footer>
-			<p>&copy; 2018 <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a></p>
-		</footer>
+	<footer>
+		<p>&copy; 2018 <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a></p>
+	</footer>
 
-	</div>
 </body>
 </html>

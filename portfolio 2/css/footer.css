@@ -1,0 +1,86 @@
+footer{
+	background-color: #fee03d;
+	width: 100%;
+	padding-top: 40px;
+    z-index: 1;
+}
+.contact-container{
+	max-width: 1400px;
+    margin: 0 auto;
+}
+footer p{
+	font-size: 16px;
+	line-height: 28px;
+}
+footer ul.contact-links{
+	padding-top: 50px;
+}
+footer ul.contact-links li{
+	padding-bottom: 20px;
+	font-size: 14px;
+	word-wrap: break-word;
+	line-height: 26px;
+}
+footer ul.contact-links li a{
+	font-weight: 700;
+	color: #1a1738;
+}
+footer ul.contact-links li a{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+footer ul.contact-links li a:hover{
+	color: black;
+	opacity: .6;
+}
+footer p.footer{
+	padding: 40px 0 20px 0;
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 768px){
+	footer{
+		padding-top: 50px;
+	}
+	footer ul.contact-links{
+		padding-top: 50px;
+	}
+	footer ul.contact-links li{
+		font-size: 20px;
+		padding-bottom: 40px;
+	}
+	footer p.footer{
+		padding: 50px 0;
+	}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 900px){
+	footer{
+		padding-top: 70px;
+		position: fixed;
+	    z-index: 1;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	}
+	footer p{
+		width: 40%;
+	}
+	footer p.footer{
+		padding: 70px 0;
+	}
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

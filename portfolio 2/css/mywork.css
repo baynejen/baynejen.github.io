@@ -1,0 +1,104 @@
+#my-work{
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+}
+.portfolio-card{
+  width: 100%;
+  padding-bottom: 50px;
+}
+.portfolio-card-top {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.content-image{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.portfolio-card p{
+	font-size: 15px;
+  opacity: 0.9;
+	line-height: 26px;
+}
+p.date{
+	text-transform: uppercase;
+	padding-top: 15px;
+	font-size: 12px;
+	font-weight: 700;
+}
+p.view-project{
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4b4bfb;
+  display: inline-block;
+  line-height: 16px;
+  border-bottom: 1px solid #4b4bfb;
+  text-transform: uppercase;
+}
+.fadeIn-top{
+  top: 20%;
+}
+
+
+/*TABLET*/
+@media only screen and (min-width: 768px){
+  .portfolio-card{
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .portfolio-card-top{
+    float: left;
+    width: 40%;
+  }
+  .portfolio-card-bottom{
+    float: left;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 40%;
+    padding: 0 0px 70px 40px;
+  }
+  p.view-project{
+    border-bottom: 1px solid white;
+  }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){
+  .portfolio-card .portfolio-card-top img, .portfolio-card-bottom p.view-project{
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .portfolio-container:hover .portfolio-card .portfolio-card-top img{
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+  .portfolio-container:hover .portfolio-card .portfolio-card-bottom p.view-project{
+    border-bottom: 1px solid #4b4bfb;
+  }
+  .portfolio-card-bottom{
+    width: 40%;
+    padding: 0 60px 120px 60px;
+  }
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

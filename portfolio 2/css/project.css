@@ -1,0 +1,127 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 50;
+    padding-top: 90px;
+}
+#closebtn {
+    padding: 35px 70px;
+    font-size: 40px;
+    color: #1a1738;
+    position: absolute;
+    top: 0;
+	right: 0;  
+	width: 80px;
+	transition: 0.3s;
+	position: fixed;
+	z-index: 0;
+	background-color: white;
+}
+#closebtn span{
+	transition: all 0.3s ease-in-out 0s;
+	display: inline-block;
+}
+#closebtn span:hover{
+	cursor: pointer;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+/*.sidenav .portfolio-inside .close{
+	width: 100%;
+    padding: 30px 0 10px 0;
+}
+.sidenav .portfolio-inside .close a{
+    color: #1a1738;
+    border-bottom: 2px solid;
+}*/
+
+@media only screen and (min-width: 768px){
+/*	.sidenav .portfolio-inside .close{
+		width: 50%;
+	    max-width: 700px;
+	    margin: 0 auto;
+	    padding: 0 0 70px 0;
+	}*/
+}
+
+/*<--PORTFOLIO CONTENT-->*/
+
+.portfolio-inside{
+	padding: 0px 40px 40px 40px;
+	position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.portfolio-content{
+	width: 100%;
+	padding: 0 0 20px 0;
+}
+.portfolio-content h5{
+	padding: 10px 0;
+}
+.portfolio-content .subheader{
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 30px 0 0 0;
+}
+.portfolio-content .tools{
+	opacity: .5;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 20px;
+}
+.portfolio-content .description{
+	padding: 20px 0;
+	font-size: 17px;
+	line-height: 27px;
+}
+.portfolio-content a:hover{
+	border-bottom: 1px solid;
+}
+.portfolio-image{
+	width: 100%;
+}
+.portfolio-image img{
+	width: 100%;
+}
+.portfolio-image img.padding-top{
+	padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px){
+	.portfolio-content{
+		width: 50%;
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 0 0 50px 0;
+	}
+	.portfolio .subheader{
+		padding: 25px 0 5px 0;
+	}
+	.portfolio-image{
+		width: 80%;
+		margin: 0 auto;
+		padding: 0 0 40px 0;
+	}
+}
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

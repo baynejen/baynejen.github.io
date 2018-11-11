@@ -5,642 +5,680 @@
 	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> -->
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:400,800" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="script2.js"></script>
+	<script type="text/javascript" src="js/back-to-top.js"></script>
+	<script type="text/javascript" src="js/equal-height.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/scroll-menu.js"></script>
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body id="scroll-up">
 
 <!-- OFFSITE NAVIGATION -->
 
-	<ul class="offsite-navigation">
-		<li class="offsite-nav-item-balloon"><a href="/"><img src="images/icons/hotairballoon.png"></a></li>
-	   	<li class="offsite-nav-item"><a href="memories">All Memories</a></li>
-	    <li class="offsite-nav-item"><a href="music">Music</a></li>
-	    <li class="offsite-nav-item"><a href="culture">Culture</a></li>
-	    <li class="offsite-nav-item"><a href="travel">Travel</a></li>
-	    <li class="offsite-nav-item"><a href="fooddrink">Food &amp; Drink</a></li>
-	    <li class="offsite-nav-item"><a href="#">Comedy</a></li>
-	</ul>
-
-	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-	<label for="nav-trigger"></label>
-	<div class="overlay"></div>
-
-	<div class="wrapper clearfix">
-
-<!-- HEADER -->
-
-		<nav id="subpage-nav">
-			<div class="homepage-redirect">
-				<a href="/"><img src="images/icons/hotairballoon.png"></a>
-			</div>
-			<ul>
-				<a href="memories"><li>All Memories</li></a><a href="music"><li>
-				Music</li></a><a href="culture"><li>
-				Culture</li></a><a href="travel"><li>
-				Travel</li></a><a href="fooddrink"><li>
-				Food &amp; Drink</li></a><a href="#"><li class="section-selected">
-				Comedy</li></a>
-			</ul>
-		</nav>
-		
-		<div class="subpage-image-wrapper">
-			<img src="images/icons/comedy.png"">
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="/" class="section-selected-sub"><img src="images/icons/hotairballoon.png"></a>
+			<a href="music">Music</a>
+			<a href="culture">Culture</a>
+			<a href="travel">Travel</a>
+			<a href="fooddrink">Food &amp; Drink</a>
+			<a href="#" class="section-selected-sub">Comedy</a>
 		</div>
+	</div>
+	<div class="menu-icon">
+		<span onclick="openNav()">&#9776;</span>
+	</div>
+
+	<!-- NAV -->
+
+	<nav id="nav-home">
+		<div class="homepage-redirect">
+			<a href="/"><img src="images/icons/hotairballoon.png"></a>
+		</div>
+		<ul>
+			<li><a href="music">Music</a></li>
+			<li><a href="culture">Culture</a></li>
+			<li><a href="travel">Travel</a></li>
+			<li><a href="fooddrink">Food &amp; Drink</a></li>
+			<li class="section-selected-sub"><a href="#">Comedy</a></li>
+		</ul>
+	</nav>
 
 <!-- CONTENT -->
+	
+	<h2>Comedy</h2>
+	<div class="subpage-image-wrapper">
+		<img src="images/icons/comedy.png"">
+	</div>
 
-		<section class="content-wrapper">
-			<div class="content">
-				<div class="columns clearfix">
-					<div class="col">
-						<img src="images/content/comedy/mcintyre-1feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Michael McIntyre</p>
-							<p class="intro-text-details">Beacon Theatre, New York</p>
-							<p class="intro-text-details">01.02.18</p>
-							<p class="detail"></p>
-						</div>
+	<section class="content-wrapper">
+		<div class="content">
+			<div class="columns clearfix">
+				<div class="col">
+					<img src="images/content/comedy/omielan-5aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Luisa Omielan: Politics for Bitches</p>
+						<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
+						<p class="intro-text-details">05.08.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/morpurgo-24oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Joseph Morpurgo: Hammerhead</p>
-							<p class="intro-text-details">Soho Theatre, London</p>
-							<p class="intro-text-details">24.10.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/andyfield-3aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Andy Field: The Love Tonight</p>
+						<p class="intro-text-details">Just the Tonic, Edinburgh</p>
+						<p class="intro-text-details">03.08.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-18oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key: Megadate</p>
-							<p class="intro-text-details">Soho Theatre, London</p>
-							<p class="intro-text-details">18.10.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/pin-3aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Pin: Backstage</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">03.08.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/tapeface-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tape Face</p>
-							<p class="intro-text-details">Pleasance, Edinburgh</p>
-							<p class="intro-text-details">27.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/flight-1jul.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Flight of the Conchords</p>
+						<p class="intro-text-details">Eventim Apollo, London</p>
+						<p class="intro-text-details">01.07.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/milo-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Milo McCabe as Troy Hawke</p>
-							<p class="intro-text-details">Laughing Horse, Edinburgh</p>
-							<p class="intro-text-details">27.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/mcintyre-1feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Michael McIntyre</p>
+						<p class="intro-text-details">Beacon Theatre, New York</p>
+						<p class="intro-text-details">01.02.18</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/paulcurrie-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Paul Currie: Cats in my Mouth</p>
-							<p class="intro-text-details">Heroes @ The Hive, Edinburgh</p>
-							<p class="intro-text-details">26.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/morpurgo-24oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Joseph Morpurgo: Hammerhead</p>
+						<p class="intro-text-details">Soho Theatre, London</p>
+						<p class="intro-text-details">24.10.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/acaster-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">James Acaster: Recognise</p>
-							<p class="intro-text-details">Pleasanace, Edinburgh</p>
-							<p class="intro-text-details">25.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-18oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key: Megadate</p>
+						<p class="intro-text-details">Soho Theatre, London</p>
+						<p class="intro-text-details">18.10.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/nickhelm-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Nick Helm: Masterworks in Progress</p>
-							<p class="intro-text-details">Pleasanace, Edinburgh</p>
-							<p class="intro-text-details">25.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/tapeface-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tape Face</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">27.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-24aug2.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key: Work in Progres</p>
-							<p class="intro-text-details">Pleasance, Edinburgh</p>
-							<p class="intro-text-details">24.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/milo-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Milo McCabe as Troy Hawke</p>
+						<p class="intro-text-details">Laughing Horse, Edinburgh</p>
+						<p class="intro-text-details">27.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/breakingthenews-24aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Breaking the News</p>
-							<p class="intro-text-details">BBC at the Edinburgh Festivals, Edinburgh</p>
-							<p class="intro-text-details">24.08.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/paulcurrie-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Paul Currie: Cats in my Mouth</p>
+						<p class="intro-text-details">Heroes @ The Hive, Edinburgh</p>
+						<p class="intro-text-details">26.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/acaster-7march.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">James Acaster: Represent</p>
-							<p class="intro-text-details">Soho Theatre, London</p>
-							<p class="intro-text-details">07.03.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/acaster-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">James Acaster: Recognise</p>
+						<p class="intro-text-details">Pleasanace, Edinburgh</p>
+						<p class="intro-text-details">25.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/acaster-27feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">James Acaster: Recognise</p>
-							<p class="intro-text-details">Soho Theatre, London</p>
-							<p class="intro-text-details">27.02.17</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/nickhelm-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Nick Helm: Masterworks in Progress</p>
+						<p class="intro-text-details">Pleasanace, Edinburgh</p>
+						<p class="intro-text-details">25.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/acaster-5dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">James Acaster - Reset</p>
-							<p class="intro-text-details">Lyric Theatre, London</p>
-							<p class="intro-text-details">05.12.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-24aug2.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key: Work in Progres</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">24.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/newsrevue-29aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">NewsRevue 2016</p>
-							<p class="intro-text-details">Pleasance, Edinburgh</p>
-							<p class="intro-text-details">29.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/breakingthenews-24aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Breaking the News</p>
+						<p class="intro-text-details">BBC at the Edinburgh Festivals, Edinburgh</p>
+						<p class="intro-text-details">24.08.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/carldonnelly-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Carl Donnelly: Bad Man Tings</p>
-							<p class="intro-text-details">Pleasance, Edinburgh</p>
-							<p class="intro-text-details">26.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/acaster-7march.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">James Acaster: Represent</p>
+						<p class="intro-text-details">Soho Theatre, London</p>
+						<p class="intro-text-details">07.03.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/randy-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Randy Writes a Novel</p>
-							<p class="intro-text-details">Underbelly, Edinburgh</p>
-							<p class="intro-text-details">25.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/acaster-27feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">James Acaster: Recognise</p>
+						<p class="intro-text-details">Soho Theatre, London</p>
+						<p class="intro-text-details">27.02.17</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davidodoherty-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty: Big Time</p>
-							<p class="intro-text-details">Assembly Hall, Edinburgh</p>
-							<p class="intro-text-details">25.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/acaster-5dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">James Acaster - Reset</p>
+						<p class="intro-text-details">Lyric Theatre, London</p>
+						<p class="intro-text-details">05.12.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/daphne-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Daphne's Second Show</p>
-							<p class="intro-text-details">Pleasance, Edinburgh</p>
-							<p class="intro-text-details">25.08.16</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/newsrevue-29aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">NewsRevue 2016</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">29.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-18dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Arts Theatre, London</p>
-							<p class="intro-text-details">18.12.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/carldonnelly-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Carl Donnelly: Bad Man Tings</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">26.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/morpurgo-8oct.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Joseph Morpurgo</p>
-							<p class="intro-text-details">The Invisible Dot, London</p>
-							<p class="intro-text-details">08.10.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/randy-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Randy Writes a Novel</p>
+						<p class="intro-text-details">Underbelly, Edinburgh</p>
+						<p class="intro-text-details">25.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/carldonnelly-29aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Carl Donnelly</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">29.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davidodoherty-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty: Big Time</p>
+						<p class="intro-text-details">Assembly Hall, Edinburgh</p>
+						<p class="intro-text-details">25.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/showstoppers-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Showstopper!</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">27.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/daphne-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Daphne's Second Show</p>
+						<p class="intro-text-details">Pleasance, Edinburgh</p>
+						<p class="intro-text-details">25.08.16</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/robbeckett-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Rob Beckett</p>
-							<p class="intro-text-details">Pleasance Dome, Edinburgh</p>
-							<p class="intro-text-details">27.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-18dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Arts Theatre, London</p>
+						<p class="intro-text-details">18.12.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/whentheshit-27aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">When the Shit Hits the Fan</p>
-							<p class="intro-text-details">Assembly Hall, Edinburgh</p>
-							<p class="intro-text-details">27.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/morpurgo-8oct.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Joseph Morpurgo</p>
+						<p class="intro-text-details">The Invisible Dot, London</p>
+						<p class="intro-text-details">08.10.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davidodoherty-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">George Square Theatre, Edinburgh</p>
-							<p class="intro-text-details">26.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/carldonnelly-29aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Carl Donnelly</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">29.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/thepin-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Pin</p>
-							<p class="intro-text-details">Pleasance Dome, Edinburgh</p>
-							<p class="intro-text-details">25.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/showstoppers-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Showstopper!</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">27.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-24aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">24.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/robbeckett-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Rob Beckett</p>
+						<p class="intro-text-details">Pleasance Dome, Edinburgh</p>
+						<p class="intro-text-details">27.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/morpurgo-24aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Joseph Morpurgo</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">24.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/whentheshit-27aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">When the Shit Hits the Fan</p>
+						<p class="intro-text-details">Assembly Hall, Edinburgh</p>
+						<p class="intro-text-details">27.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/andrewmaxwell-20aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Andrew Maxwell</p>
-							<p class="intro-text-details">George Square Theatre, Edinburgh</p>
-							<p class="intro-text-details">20.08.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davidodoherty-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">George Square Theatre, Edinburgh</p>
+						<p class="intro-text-details">26.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/liveatchapel-25july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Live at the Chapel</p>
-							<p class="intro-text-details">Union Chapel, London</p>
-							<p class="intro-text-details">25.07.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/thepin-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Pin</p>
+						<p class="intro-text-details">Pleasance Dome, Edinburgh</p>
+						<p class="intro-text-details">25.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-21apr.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">21.04.15</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-24aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">24.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-17dec.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">The Arts Theatre, London</p>
-							<p class="intro-text-details">17.12.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/morpurgo-24aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Joseph Morpurgo</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">24.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davidod-23aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">George Square Theatre, Edinburgh</p>
-							<p class="intro-text-details">23.08.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/andrewmaxwell-20aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Andrew Maxwell</p>
+						<p class="intro-text-details">George Square Theatre, Edinburgh</p>
+						<p class="intro-text-details">20.08.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/breakingbad-23aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">One Man Breaking Bad</p>
-							<p class="intro-text-details">The Stand, Edinburgh</p>
-							<p class="intro-text-details">23.08.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/liveatchapel-25july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Live at the Chapel</p>
+						<p class="intro-text-details">Union Chapel, London</p>
+						<p class="intro-text-details">25.07.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-23aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">23.08.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-21apr.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">21.04.15</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davegorman-22aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Dave Gorman</p>
-							<p class="intro-text-details">International Book Festival, Edinburgh</p>
-							<p class="intro-text-details">22.08.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-17dec.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">The Arts Theatre, London</p>
+						<p class="intro-text-details">17.12.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/donnelly-22aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Carl Donnelly</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">22.08.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davidod-23aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">George Square Theatre, Edinburgh</p>
+						<p class="intro-text-details">23.08.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-14july.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">14.07.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/breakingbad-23aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">One Man Breaking Bad</p>
+						<p class="intro-text-details">The Stand, Edinburgh</p>
+						<p class="intro-text-details">23.08.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/showstoppers-20apr.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Showstopper!</p>
-							<p class="intro-text-details">Udderbelly, London</p>
-							<p class="intro-text-details">20.04.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-23aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">23.08.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/simonamstell-1apr.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Simon Amstell</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">01.04.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davegorman-22aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Dave Gorman</p>
+						<p class="intro-text-details">International Book Festival, Edinburgh</p>
+						<p class="intro-text-details">22.08.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-20feb.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">20.02.14</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/donnelly-22aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Carl Donnelly</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">22.08.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/babycandy-30aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Baby Wants Candy</p>
-							<p class="intro-text-details">Leicester Square Theatre, London</p>
-							<p class="intro-text-details">30.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-14july.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">14.07.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/improvised-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Aaaand Now for Something Completely Improvised</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">26.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/showstoppers-20apr.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Showstopper!</p>
+						<p class="intro-text-details">Udderbelly, London</p>
+						<p class="intro-text-details">20.04.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/babycandy-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Baby Wants Candy</p>
-							<p class="intro-text-details">Assembly, Edinburgh</p>
-							<p class="intro-text-details">26.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/simonamstell-1apr.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Simon Amstell</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">01.04.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/goldsmith-26aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Comedian's Comedian</p>
-							<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
-							<p class="intro-text-details">26.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-20feb.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">20.02.14</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/david-25aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">25.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/babycandy-30aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Baby Wants Candy</p>
+						<p class="intro-text-details">Leicester Square Theatre, London</p>
+						<p class="intro-text-details">30.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/newsreview-24aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">NewsRevue</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">24.08.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/improvised-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Aaaand Now for Something Completely Improvised</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">26.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/david-5jun.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">05.06.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/babycandy-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Baby Wants Candy</p>
+						<p class="intro-text-details">Assembly, Edinburgh</p>
+						<p class="intro-text-details">26.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/free-10may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Free Shows</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">10.05.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/goldsmith-26aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Comedian's Comedian</p>
+						<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
+						<p class="intro-text-details">26.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/timkey-2may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Tim Key</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">02.05.13</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/david-25aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">25.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/deadcat-7aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Dead Cat Bounce</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">07.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/newsreview-24aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">NewsRevue</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">24.08.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/fourshows-22nov.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Four Edinburgh Shows</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">22.11.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/david-5jun.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">05.06.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davidod-24sep.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">Invisible Dot, London</p>
-							<p class="intro-text-details">24.09.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/free-10may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Free Shows</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">10.05.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/davidod-11aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">David O'Doherty</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">11.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/timkey-2may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Tim Key</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">02.05.13</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/aida-9aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Fascinating Aida</p>
-							<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
-							<p class="intro-text-details">09.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/deadcat-7aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Dead Cat Bounce</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">07.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/screws-6aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Four Screws Loose</p>
-							<p class="intro-text-details">Assembly, Edinburgh</p>
-							<p class="intro-text-details">06.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/fourshows-22nov.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Four Edinburgh Shows</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">22.11.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/newsrevue-5aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">NewsRevue</p>
-							<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
-							<p class="intro-text-details">05.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davidod-24sep.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">Invisible Dot, London</p>
+						<p class="intro-text-details">24.09.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/spank-5aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Spank!</p>
-							<p class="intro-text-details">Underbelly, Edinburgh</p>
-							<p class="intro-text-details">05.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/davidod-11aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">David O'Doherty</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">11.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/spank-4aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Spank!</p>
-							<p class="intro-text-details">Underbelly, Edinburgh</p>
-							<p class="intro-text-details">04.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/aida-9aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Fascinating Aida</p>
+						<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
+						<p class="intro-text-details">09.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/blanks-3aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Blanks' Big Break</p>
-							<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
-							<p class="intro-text-details">03.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/screws-6aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Four Screws Loose</p>
+						<p class="intro-text-details">Assembly, Edinburgh</p>
+						<p class="intro-text-details">06.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/sammyj-3aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Sammy J and Randy</p>
-							<p class="intro-text-details">Underbelly, Edinburgh</p>
-							<p class="intro-text-details">03.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/newsrevue-5aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">NewsRevue</p>
+						<p class="intro-text-details">Pleasance Courtyard, Edinburgh</p>
+						<p class="intro-text-details">05.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/pajama-2aug.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">The Pajama Men</p>
-							<p class="intro-text-details">Spiegeltent, Edinburgh</p>
-							<p class="intro-text-details">02.08.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/spank-5aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Spank!</p>
+						<p class="intro-text-details">Underbelly, Edinburgh</p>
+						<p class="intro-text-details">05.08.12</p>
+						<p class="detail"></p>
 					</div>
-					<div class="col">
-						<img src="images/content/comedy/frisky-24may.jpg">
-						<div class="image-description">
-							<p class="intro-text-what">Frisky and Mannish</p>
-							<p class="intro-text-details">Underbelly, London</p>
-							<p class="intro-text-details">24.05.12</p>
-							<p class="detail"></p>
-						</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/spank-4aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Spank!</p>
+						<p class="intro-text-details">Underbelly, Edinburgh</p>
+						<p class="intro-text-details">04.08.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/blanks-3aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Blanks' Big Break</p>
+						<p class="intro-text-details">Gilded Balloon, Edinburgh</p>
+						<p class="intro-text-details">03.08.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/sammyj-3aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Sammy J and Randy</p>
+						<p class="intro-text-details">Underbelly, Edinburgh</p>
+						<p class="intro-text-details">03.08.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/pajama-2aug.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">The Pajama Men</p>
+						<p class="intro-text-details">Spiegeltent, Edinburgh</p>
+						<p class="intro-text-details">02.08.12</p>
+						<p class="detail"></p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/content/comedy/frisky-24may.jpg">
+					<div class="image-description">
+						<p class="intro-text-what">Frisky and Mannish</p>
+						<p class="intro-text-details">Underbelly, London</p>
+						<p class="intro-text-details">24.05.12</p>
+						<p class="detail"></p>
 					</div>
 				</div>
 			</div>
-		</section>
-			<div class="scrollup">
-			<a href="#nav-trigger"><img src="images/icons/hand.png"></a>
 		</div>
+	</section>
+	<div class="scrollup">
+		<a href="#scroll-up"><img src="images/icons/hand.png"></a>
+	</div>
 	
 <!-- FOOTER -->
 		
-		<footer>
-			<p>&copy; 2018 <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a></p>
-		</footer>
+	<footer>
+		<p>&copy; 2018 <a href="http://www.jen-bayne.com" target="_blank">Jen Bayne</a></p>
+	</footer>
 
-	</div>
 </body>
 </html>
