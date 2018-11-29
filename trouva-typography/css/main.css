@@ -270,7 +270,7 @@ p, .body-copy{
 
 /*SMALL BODY COPY*/
 .body-copy-small{
-	color: var(--navy75);
+	color: var(--navy);
 	font-family: 'Circular-Book';
 	font-size: 12px;
 	line-height: 18px;
