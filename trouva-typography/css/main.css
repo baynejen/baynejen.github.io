@@ -84,10 +84,13 @@ hr{
 	height: 1px;
 	border: none;
 	background-color: var(--navy50);
-	opacity: .4;
+	opacity: .2;
 	margin-bottom: 40px;
 	margin-top: 0;
 	padding: 0;
+}
+.spacer{
+	height: 40px;
 }
 
 @media only screen and (min-width: 1024px) {
