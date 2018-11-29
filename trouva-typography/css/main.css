@@ -41,23 +41,32 @@ body{
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 }
-nav{
+nav, 
+.sub-nav{
 	width: 100%;
 	margin-bottom: 32px;
 }
-nav div{
-	display: inline-block;
+nav.nav-opacity{
+	opacity: .4;
+}
+nav div,
+.sub-nav div{
+	display: table;
 	font-family: 'Circular-Book';
 	color: var(--navy);
 	margin-right: 16px;
 	padding-bottom: 2px;
+	margin-bottom: 8px;
 }
-nav div a{
+nav div a,
+.sub-nav div a{
 	color: var(--navy);
 	text-decoration: none;
 }
 nav div.nav-selected,
-nav div:hover{
+nav div:hover,
+.sub-nav div.nav-selected,
+.sub-nav div:hover{
 	border-bottom: 1px solid var(--navy);
 }
 .intro{
@@ -72,6 +81,11 @@ nav div:hover{
 	body{
 		width: 60%;
 		padding: 48px;
+	}
+	nav div,
+	.sub-nav div{
+		display: inline-block;
+		margin-bottom: 0;
 	}
 	.intro{
 		width: 50%;
@@ -124,7 +138,7 @@ hr{
     font-family: "Inconsolata", monospace, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    margin-left: 76px;
+    margin-top: 24px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -135,6 +149,8 @@ hr{
 	.layout-annotation{
 		width: 30%;
 		float: left;
+		margin-left: 76px;
+		margin-top: 0;
 	}
 } 
 
