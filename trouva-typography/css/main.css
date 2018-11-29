@@ -1,20 +1,20 @@
 /*FONTS*/
 
 @font-face {
-    font-family: 'CoreHeavy';
+    font-family: 'Core-Sans-Heavy';
   	src: url('../fonts/core-sans/core-sans.woff2') format('woff2');
   	font-style: normal;
   	font-weight: normal;
 }
 @font-face {
-    font-family: 'CircularBold';
+    font-family: 'Circular-Bold';
     src: url('../fonts/circular/lineto-circular-bold.woff') format('woff'),
        url('../fonts/circular/lineto-circular-bold.woff2') format('woff2');
   	font-style: normal;
   	font-weight: normal;
 }
 @font-face {
-    font-family: 'CircularBook';
+    font-family: 'Circular-Book';
   	src: url('../fonts/circular/lineto-circular-book.woff') format('woff'),
        url('../fonts/circular/lineto-circular-book.woff2') format('woff2');
   	font-style: normal;
@@ -47,7 +47,7 @@ nav{
 }
 nav div{
 	display: inline-block;
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	color: var(--navy);
 	margin-right: 16px;
 	padding-bottom: 2px;
@@ -85,7 +85,7 @@ section{
 }
 .section-title{
 	color: var(--navy50);
-	font-family: 'CoreHeavy';
+	font-family: 'Core-Sans-Heavy';
 	font-size: 16px;
 	text-transform: uppercase;
 	padding: 0;
@@ -119,14 +119,12 @@ hr{
 }
 .layout-annotation{
 	width: 100%;
-}
-.layout-annotation span{
 	color: #1c89d5;
     display: inline-block;
     font-family: "Inconsolata", monospace, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    margin-left: 60px;
+    margin-left: 76px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -143,128 +141,128 @@ hr{
 /*TYPOGRAPHY STYLES*/
 
 /*HEADER LARGE*/
-.header-large {
+h1, .header-large {
     color: var(--navy);
-    font-family: 'CoreHeavy';
-    font-size: 32px;
-    line-height: 40px;
+    font-family: 'Circular-Bold';
+    font-size: 30px;
+    line-height: 38px;
 }
 .header-large-1 {
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
     font-size: 40px;
     line-height: 50px;
 }
 .header-large-2 {
-	font-family: 'CoreHeavy';
+	font-family: 'Circular-Bold';
     font-size: 30px;
     line-height: 38px;
 }
 .header-large-3 {
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
     font-size: 30px;
     line-height: 38px;
     text-transform: uppercase;
 }
 .header-large-4 {
-	font-family: 'CoreHeavy';
+	font-family: 'Circular-Bold';
     font-size: 28px;
     line-height: 35px;
 }
 .header-large-5 {
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
     font-size: 28px;
     line-height: 35px;
 }
 
 /*HEADER-MEDIUM*/
-.header-medium{
+h2, .header-medium{
 	color: var(--navy);
-	font-family: 'CircularBook';
-	font-size: 24px;
-    line-height: 30px;
+	font-family: 'Circular-Book';
+	font-size: 22px;
+    line-height: 33px;
 }
 .header-medium-1 {
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
     font-size: 26px;
     line-height: 39px;
 }
 .header-medium-2 {
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
     font-size: 22px;
     line-height: 27px;
     text-transform: uppercase;
 }
 .header-medium-3 {
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
     font-size: 22px;
     line-height: 33px;
 }
 
 /*HEADER-SMALL*/
-.header-small{
+h3, .header-small{
 	color: var(--navy);
-	font-family: 'CircularBold';
-	font-size: 16px;
-    line-height: 24px;
+	font-family: 'Circular-Book';
+	font-size: 18px;
+    line-height: 29px;
 }
 .header-small-1{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
 	font-size: 18px;
     line-height: 23px;
 }
 .header-small-2{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 18px;
     line-height: 29px;
     text-transform: uppercase;
 }
 .header-small-3{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 18px;
     line-height: 22px;
 }
 .header-small-4{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
 	font-size: 16px;
 	line-height: 22px;
 	text-transform: uppercase;
 }
 
 /*BODY COPY*/
-.body-copy-normal{
+p, .body-copy{
 	color: var(--navy);
-	font-family: 'CircularBook';
-	font-size: 16px;
-	line-height: 24px;
-}
-.body-copy-normal-1{
-	font-family: 'CircularBook';
-	font-size: 16px;
-	line-height: 22px;
-}
-.body-copy-normal-2{
-	font-family: 'CircularBook';
-	font-size: 15px;
-	line-height: 21px;
-}
-.body-copy-normal-3{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Book';
 	font-size: 14px;
 	line-height: 20px;
 }
-.body-copy-normal-4{
-	font-family: 'CircularBook';
+.body-copy-1{
+	font-family: 'Circular-Book';
+	font-size: 16px;
+	line-height: 22px;
+}
+.body-copy-2{
+	font-family: 'Circular-Book';
+	font-size: 15px;
+	line-height: 21px;
+}
+.body-copy-3{
+	font-family: 'Circular-Bold';
+	font-size: 14px;
+	line-height: 20px;
+}
+.body-copy-4{
+	font-family: 'Circular-Book';
 	font-size: 14px;
 	line-height: 50px;
 	text-transform: uppercase;
 }
-.body-copy-normal-5{
-	font-family: 'CircularBook';
+.body-copy-5{
+	font-family: 'Circular-Book';
 	font-size: 14px;
 	line-height: 34px;
 }
-.body-copy-normal-6{
-	font-family: 'CircularBook';
+.body-copy-6{
+	font-family: 'Circular-Book';
 	font-size: 14px;
 	line-height: 18px;
 	font-style: italic;
@@ -273,57 +271,61 @@ hr{
 /*SMALL BODY COPY*/
 .body-copy-small{
 	color: var(--navy75);
-	font-family: 'CircularBook';
-	font-size: 14px;
-	line-height: 31px;
+	font-family: 'Circular-Book';
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
 }
 .body-copy-small-1{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
 	font-size: 13px;
 	line-height: 16px;
+	text-transform: none;
 }
 .body-copy-small-2{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
 .body-copy-small-3{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
 	font-size: 12px;
 	line-height: 18px;
+	text-transform: none;
 }
 .body-copy-small-4{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 12px;
 	line-height: 48px;
 	text-transform: uppercase;
 }
 .body-copy-small-5{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 12px;
 	line-height: 28px;
+	text-transform: none;
 }
 .body-copy-small-6{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 11px;
 	line-height: 20px;
 	text-transform: uppercase;
 }
 .body-copy-small-7{
-	font-family: 'CircularBold';
+	font-family: 'Circular-Bold';
 	font-size: 10px;
 	line-height: 13px;
 	text-transform: uppercase;
 }
 .body-copy-small-8{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 10px;
 	line-height: 15px;
 	text-transform: uppercase;
 }
 .body-copy-small-9{
-	font-family: 'CircularBook';
+	font-family: 'Circular-Book';
 	font-size: 9px;
 	line-height: 11px;
 	text-transform: uppercase;
