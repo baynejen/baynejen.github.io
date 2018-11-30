@@ -170,6 +170,8 @@ section{
 .layout-annotation{
 	width: 100%;
 	color: #1c89d5;
+	background-color: #f3f9fd;
+	padding: 16px;
     display: inline-block;
     font-family: "Inconsolata", monospace, sans-serif;
     font-size: 14px;
