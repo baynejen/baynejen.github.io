@@ -46,9 +46,6 @@ nav,
 	width: 100%;
 	margin-bottom: 32px;
 }
-nav.nav-opacity{
-	opacity: .4;
-}
 nav div,
 .sub-nav div{
 	display: table;
@@ -119,6 +116,9 @@ hr{
 .spacer{
 	height: 40px;
 }
+.title{
+	margin-bottom: 32px;
+}
 
 
 /*TYPOGRAPHY LAYOUT*/
@@ -162,6 +162,10 @@ h1, .header-large {
     font-family: 'Circular-Bold';
     font-size: 30px;
     line-height: 38px;
+}
+.title h1{
+	font-family: 'Core-Sans-Heavy';
+	text-transform: uppercase;
 }
 .header-large-1 {
 	font-family: 'Circular-Book';
