@@ -29,63 +29,115 @@
     --aqua:#48A9A6;
     --navy50:#9B99A4;
     --navy10:#EBEAEC;
+    --white:#FFFFFF;
 }
 
 /*BASE STYLES*/
 
 body{
-	padding: 24px;
 	width: 100%;
 	margin: 0 auto;
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 }
-nav, 
+.container-full-width{
+	padding: 24px;
+	width: 100%;
+}
+.container-navy{
+	background-color: var(--navy);
+}
+.container-white{
+	background-color: var(--white);
+}
+hr{
+	height: 1px;
+	border: none;
+	background-color: var(--navy50);
+	opacity: .2;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	padding: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.container-full-width{
+		padding: 48px;
+	}
+	.container-fixed-width{
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+/*HEADER*/
+.title{
+	margin-bottom: 32px;
+	display: table;
+}
+.title a{
+	text-decoration: none;
+}
+.title div,
+.title h2{
+	display: table-cell;
+    vertical-align: middle;
+    color: var(--white);
+}
+.title img{
+	width: 24px;
+	margin-right: 16px;
+}
+.header{
+	width: 100%;
+}
+
+@media only screen and (min-width: 1024px){
+	.header{
+		width: 50%;
+	}
+}
+
+/*NAV*/
+nav{
+	width: 100%;
+}
 .sub-nav{
 	width: 100%;
 	margin-bottom: 32px;
+	margin-top: 32px;
 }
 nav div,
 .sub-nav div{
 	display: table;
 	font-family: 'Circular-Book';
-	color: var(--navy);
 	margin-right: 16px;
 	padding-bottom: 3px;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
-nav div a,
+nav div a{
+	color: var(--white);
+	text-decoration: none;
+}
 .sub-nav div a{
 	color: var(--navy);
 	text-decoration: none;
 }
 nav div.nav-selected,
-nav div:hover,
+nav div:hover{
+	border-bottom: 1px solid var(--white);
+}
 .sub-nav div.nav-selected,
 .sub-nav div:hover{
 	border-bottom: 1px solid var(--navy);
 }
-.intro{
-	margin-bottom: 64px;
-	width: 100%;
-}
-.intro h3{
-	margin-bottom: 16px;
-}
 
 @media only screen and (min-width: 1024px) {
-	body{
-		width: 60%;
-		padding: 48px;
-	}
 	nav div,
 	.sub-nav div{
 		display: inline-block;
 		margin-bottom: 0;
-	}
-	.intro{
-		width: 50%;
 	}
 }
 
@@ -104,22 +156,6 @@ section{
 	font-weight: normal;
 	border-bottom: 1px solid;
 }
-hr{
-	height: 1px;
-	border: none;
-	background-color: var(--navy50);
-	opacity: .2;
-	margin-bottom: 40px;
-	margin-top: 0;
-	padding: 0;
-}
-.spacer{
-	height: 40px;
-}
-.title{
-	margin-bottom: 32px;
-}
-
 
 /*TYPOGRAPHY LAYOUT*/
 
@@ -163,9 +199,10 @@ h1, .header-large {
     font-size: 30px;
     line-height: 38px;
 }
-.title h1{
+.header-large-universal{
 	font-family: 'Core-Sans-Heavy';
 	text-transform: uppercase;
+	margin-bottom: 8px;
 }
 .header-large-1 {
 	font-family: 'Circular-Book';

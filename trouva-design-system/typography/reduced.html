@@ -15,107 +15,122 @@
 <body>
 
 	<!-- NAVIGATION -->
-	<div class="title">
-		<h1>Trouva design system</h1>
+	<div class="container-full-width container-navy">
+		<div class="container-fixed-width">
+			<div class="title clearfix">
+				<a href="../index.html">
+					<div class="monogram"><img src="../img/monogram.svg"></div>
+					<h2>Design system</h2>
+				</a>
+			</div>
+			<nav>
+				<div><a href="../index.html">Home</a></div>
+				<div class="nav-selected"><a href="current.html">Typography</a></div>
+				<div><a href="../design-principles.html">Design Principles</a></div>
+			</nav>
+		</div>
 	</div>
-	<nav>
-		<!-- <div><a href="index.html">Home</a></div> -->
-		<div class="nav-selected"><a href="#">Typography</a></div>
-		<div><a href="../design-principles.html">Design Principles</a></div>
-	</nav>
-	<hr>
-	<div class="intro">
-		<h3 class="header-small header-small-1">Retail panel typography audit</h3>
-		<p class="body-copy-normal body-copy-normal-2">This represents a consolidation of the existing font styles into those which are most consistently used in the retail panel. Reducing what we currently use would bring greater consistency, and is the first step to a unified typography system across all Trouva projects.</p>
+
+	<!-- TITLE -->
+	<div class="container-full-width container-white">
+		<div class="container-fixed-width">
+			<div class="header">
+				<h1 class="header-large header-large-universal">Retail panel typography audit</h1>
+				<h3 class="header-small">This represents a consolidation of the existing font styles into those which are most consistently used across the retail panel. Reducing what we currently use would bring greater consistency, and is the first step to a unified typography system across all of Trouva's projects.</h3>
+			</div>
+			<!-- SUBNAV -->
+			<div class="sub-nav">
+				<div><a href="current.html">Current styles</a></div>
+				<div class="nav-selected"><a href="#">Reduced styles</a></div>
+			</div>
+			<hr>
+
+			<!-- TYPOGRAPHY -->
+			<section>
+				<!-- LARGE HEADER -->
+				<div class="font-container clearfix">
+					<div class="font-column font-title">
+						<h1 class="header-large">Large Header running over two lines</h1>
+					</div>
+					<div class="layout-annotation">h1, .header-large{
+						<br>
+						&nbsp;font-family: 'Circular-Bold';
+						<br>
+						&nbsp;font-size: 30px;
+						<br>
+						&nbsp;line-height: 38px;
+						<br>}
+					</div>
+				</div>
+		
+				<!-- MEDIUM HEADER -->
+				<div class="font-container clearfix">
+					<div class="font-column font-title">
+						<h2 class="header-medium">Medium Header running over<br>two lines</h2>
+					</div>
+					<div class="layout-annotation">h2, .header-medium{
+						<br>
+						&nbsp;font-family: 'Circular-Book';
+						<br>
+						&nbsp;font-size: 22px;
+						<br>
+						&nbsp;line-height: 33px;
+						<br>}
+					</div>
+				</div>
+		
+				<!-- SMALL HEADER -->
+				<div class="font-container clearfix">
+					<div class="font-column font-title">
+						<h3 class="header-small">Small Header running over<br>two lines</h3>
+					</div>
+					<div class="layout-annotation">h3, .header-small{
+						<br>
+						&nbsp;font-family: 'Circular-Book';
+						<br>
+						&nbsp;font-size: 18px;
+						<br>
+						&nbsp;line-height: 29px;
+						<br>}
+					</div>
+				</div>
+		
+				<!-- BODY COPY -->
+				<div class="font-container clearfix">
+					<div class="font-column font-title">
+						<p class="body-copy">Body Copy. Whether it’s following up on meeting actions, fixing problems without being asked, or fostering understanding when communication breaks down. Trouva people are committed to getting it done. To keep moving forward, we continuously seek opportunities to improve and develop our skills so we can grow together on our journey.</p>
+					</div>
+					<div class="layout-annotation">p, .body-copy{
+						<br>
+						&nbsp;font-family: 'Circular-Book';
+						<br>
+						&nbsp;font-size: 14px;
+						<br>
+						&nbsp;line-height: 20px;
+						<br>}
+					</div>
+				</div>
+		
+				<!-- SMALL BODY TEXT -->
+				<div class="font-container clearfix">
+					<div class="font-column font-title">
+						<p class="body-copy-small">Body Copy Small. To keep moving forward, we continuously seek opportunities to improve and develop our skills so we can grow together on our journey.</p>
+					</div>
+					<div class="layout-annotation">.body-copy-small{
+						<br>
+						&nbsp;font-family: 'Circular-Book';
+						<br>
+						&nbsp;font-size: 12px;
+						<br>
+						&nbsp;line-height: 18px;
+						<br>
+						&nbsp;text-transform: uppercase;
+						<br>}
+					</div>
+				</div>
+				<hr>
+			</section>
+		</div>
 	</div>
-	<div class="sub-nav">
-		<div><a href="current.html">Current styles</a></div>
-		<div class="nav-selected"><a href="#">Reduced styles</a></div>
-	</div>
-	<hr>
-	<!-- TYPOGRAPHY -->
-	<section>
-		<!-- LARGE HEADER -->
-		<div class="font-container clearfix">
-			<div class="font-column font-title">
-				<h1 class="header-large">Large Header running over two lines</h1>
-			</div>
-			<div class="layout-annotation">h1, .header-large{
-				<br>
-				&nbsp;font-family: 'Circular-Bold';
-				<br>
-				&nbsp;font-size: 30px;
-				<br>
-				&nbsp;line-height: 38px;
-				<br>}
-			</div>
-		</div>
-		
-		<!-- MEDIUM HEADER -->
-		<div class="font-container clearfix">
-			<div class="font-column font-title">
-				<h2 class="header-medium">Medium Header running over<br>two lines</h2>
-			</div>
-			<div class="layout-annotation">h2, .header-medium{
-				<br>
-				&nbsp;font-family: 'Circular-Book';
-				<br>
-				&nbsp;font-size: 22px;
-				<br>
-				&nbsp;line-height: 33px;
-				<br>}
-			</div>
-		</div>
-		
-		<!-- SMALL HEADER -->
-		<div class="font-container clearfix">
-			<div class="font-column font-title">
-				<h3 class="header-small">Small Header running over<br>two lines</h3>
-			</div>
-			<div class="layout-annotation">h3, .header-small{
-				<br>
-				&nbsp;font-family: 'Circular-Book';
-				<br>
-				&nbsp;font-size: 18px;
-				<br>
-				&nbsp;line-height: 29px;
-				<br>}
-			</div>
-		</div>
-		
-		<!-- BODY COPY -->
-		<div class="font-container clearfix">
-			<div class="font-column font-title">
-				<p class="body-copy">Body Copy. Whether it’s following up on meeting actions, fixing problems without being asked, or fostering understanding when communication breaks down. Trouva people are committed to getting it done. To keep moving forward, we continuously seek opportunities to improve and develop our skills so we can grow together on our journey.</p>
-			</div>
-			<div class="layout-annotation">p, .body-copy{
-				<br>
-				&nbsp;font-family: 'Circular-Book';
-				<br>
-				&nbsp;font-size: 14px;
-				<br>
-				&nbsp;line-height: 20px;
-				<br>}
-			</div>
-		</div>
-		
-		<!-- SMALL BODY TEXT -->
-		<div class="font-container clearfix">
-			<div class="font-column font-title">
-				<p class="body-copy-small">Body Copy Small. To keep moving forward, we continuously seek opportunities to improve and develop our skills so we can grow together on our journey.</p>
-			</div>
-			<div class="layout-annotation">.body-copy-small{
-			<br>
-				&nbsp;font-family: 'Circular-Book';
-				<br>
-				&nbsp;font-size: 12px;
-				<br>
-				&nbsp;line-height: 18px;
-				<br>
-				&nbsp;text-transform: uppercase;
-				<br>}
-		</div>
-	</section>
-	<hr>
 </body>
 </html>
