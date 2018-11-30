@@ -182,11 +182,14 @@ section{
 
 @media only screen and (min-width: 1024px) {
 	.font-column{
-		width: 33.33%;
+		width: 30%;
 		float: left;
 	}
+	.font-column:first-of-type{
+		width: 40%;
+	}
 	.layout-annotation{
-		width: 30%;
+		width: 40%;
 		float: left;
 		margin-left: 76px;
 		margin-top: 0;
