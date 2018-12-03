@@ -60,13 +60,19 @@ hr{
 	margin-top: 40px;
 	padding: 0;
 }
+.margin-bottom-small{
+	margin-bottom: 16px;
+}
+.margin-bottom-medium{
+	margin-bottom: 24px;
+}
 
 @media only screen and (min-width: 1024px) {
 	.container-full-width{
 		padding: 48px;
 	}
 	.container-fixed-width{
-		width: 60%;
+		width: 70%;
 		margin: 0 auto;
 	}
 }
@@ -95,7 +101,7 @@ hr{
 
 @media only screen and (min-width: 1024px){
 	.header{
-		width: 50%;
+		width: 60%;
 	}
 }
 
@@ -105,8 +111,8 @@ nav{
 }
 .sub-nav{
 	width: 100%;
-	margin-bottom: 32px;
-	margin-top: 32px;
+	margin-bottom: 40px;
+	margin-top: 40px;
 }
 nav div,
 .sub-nav div{
@@ -182,17 +188,54 @@ section{
 
 @media only screen and (min-width: 1024px) {
 	.font-column{
-		width: 30%;
+		width: 50%;
 		float: left;
+		padding-left: 60px;
 	}
 	.font-column:first-of-type{
-		width: 40%;
+		padding-left: 0;
 	}
 	.layout-annotation{
 		width: 40%;
-		float: left;
-		margin-left: 76px;
+		float: right;
+		margin-left: 60px;
 		margin-top: 0;
+	}
+} 
+
+/*DESIGN PRINCIPLE LAYOUT*/
+
+.design-principle{
+ 	width: 100%;
+ 	margin-bottom: 32px;
+}
+ul li{
+	color: var(--navy);
+	font-family: 'Circular-Book';
+	font-size: 18px;
+	line-height: 29px;
+    list-style-type: disc;
+    margin-left: 24px;
+    padding-bottom: 8px;
+}
+.design-principle-details{
+	width: 100%;
+	color: #1c89d5;
+	background-color: #f3f9fd;
+	padding: 16px;
+    display: inline-block;
+    font-family: "Inconsolata", monospace, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.design-principle{
+		width: 60%;
+	}
+	.design-principle-details{
+		width: 30%;
 	}
 } 
 
@@ -208,7 +251,6 @@ h1, .header-large {
 .header-large-universal{
 	font-family: 'Core-Sans-Heavy';
 	text-transform: uppercase;
-	margin-bottom: 8px;
 }
 .header-large-1 {
 	font-family: 'Circular-Book';
