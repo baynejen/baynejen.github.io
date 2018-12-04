@@ -66,6 +66,9 @@ hr{
 .margin-bottom-medium{
 	margin-bottom: 24px;
 }
+.margin-bottom-large{
+	margin-bottom: 48px;
+}
 
 @media only screen and (min-width: 1024px) {
 	.container-full-width{
@@ -166,7 +169,8 @@ section{
 
 /*TYPOGRAPHY LAYOUT*/
 
-.font-container{
+.font-container,
+.design-principle{
  	width: 100%;
  	margin-bottom: 32px;
  	padding-bottom: 32px;
@@ -174,7 +178,8 @@ section{
 .font-column{
 	width: 100%;
 }
-.layout-annotation{
+.layout-annotation,
+.design-principle-details{
 	width: 100%;
 	color: #1c89d5;
 	background-color: #f3f9fd;
@@ -183,7 +188,10 @@ section{
     font-family: "Inconsolata", monospace, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    margin-top: 24px;
+
+}
+.layout-annotation{
+	margin-top: 24px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -194,21 +202,24 @@ section{
 	}
 	.font-column:first-of-type{
 		padding-left: 0;
+		width: 40%;
 	}
 	.layout-annotation{
-		width: 40%;
-		float: right;
+		width: 30%;
+		float: left;
 		margin-left: 60px;
 		margin-top: 0;
+	}
+	.design-princple{
+		width: 60%;
+	}
+	.design-principle-details{
+		width: 30%;
 	}
 } 
 
 /*DESIGN PRINCIPLE LAYOUT*/
 
-.design-principle{
- 	width: 100%;
- 	margin-bottom: 32px;
-}
 ul li{
 	color: var(--navy);
 	font-family: 'Circular-Book';
@@ -218,25 +229,12 @@ ul li{
     margin-left: 24px;
     padding-bottom: 8px;
 }
-.design-principle-details{
-	width: 100%;
-	color: #1c89d5;
-	background-color: #f3f9fd;
-	padding: 16px;
-    display: inline-block;
-    font-family: "Inconsolata", monospace, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 24px;
-}
 
 @media only screen and (min-width: 1024px) {
 	.design-principle{
 		width: 60%;
 	}
-	.design-principle-details{
-		width: 30%;
-	}
+
 } 
 
 /*TYPOGRAPHY STYLES*/
