@@ -220,7 +220,8 @@ section{
 
 /*DESIGN PRINCIPLE LAYOUT*/
 
-ul li{
+.design-principle ul li,
+.design-principle-links ul li{
 	color: var(--navy);
 	font-family: 'Circular-Book';
 	font-size: 18px;
@@ -228,6 +229,27 @@ ul li{
     list-style-type: disc;
     margin-left: 24px;
     padding-bottom: 8px;
+}
+.design-principle-links ul li{
+	list-style-type: none;
+	margin-left: 0;
+	border-bottom: 1px solid transparent;
+	display: table;
+	padding-bottom: 0;
+	margin-bottom: 12px;
+}
+.design-principle-links ul li:before{
+  	content: "—";
+}
+.design-principle-links ul li a{
+	margin-left: 12px;
+}
+.design-principle-links ul li a:hover{
+	border-bottom: 1px solid var(--navy);
+}
+.design-principle-links ul li a{
+	text-decoration: none;
+	color: var(--navy);
 }
 
 @media only screen and (min-width: 1024px) {
