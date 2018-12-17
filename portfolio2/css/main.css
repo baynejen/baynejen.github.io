@@ -12,14 +12,16 @@ body{
 	text-align: left;
 	color: #14103c;
 	font-family: Avenir, 'AvenirRoman', Avenir, arial, sans-serif;
-	background-color: #ffffff;
+	background-color: #fff;
 	letter-spacing: 0.5px;
 }
 main{
 	position: relative;
-    z-index: 10;
+    z-index: 20;
     display: block;
     width: 100%;
+    background-color: #fff;
+    padding-bottom: 50px;
 }
 *{
 	font-family: Avenir, 'AvenirRoman', Avenir, arial, sans-serif;
@@ -37,7 +39,6 @@ main{
 section, footer{
 	padding: 0 20px;
 	position: relative;
-	z-index: 100;
 }
 
 /*TABLET */
@@ -70,7 +71,8 @@ h2{
 }
 h3{
 	font-size: 16px;
-	padding: 25px 0 15px 0;
+	display: inline-block;
+	margin-bottom: 15px;
 }
 h4{
 	font-size: 18px;
@@ -93,14 +95,15 @@ a{
 /*TABLET AND DESKTOP*/
 @media only screen and (min-width: 768px){
 	h1{
-		font-size: 40px;
+		font-size: 45px;
 		line-height: 60px;
-	}
-	h4{
-		font-size: 20px;
 	}
 	h3{
 		font-size: 18px;
+		line-height: 26px;
+	}
+	h4{
+		font-size: 20px;
 	}
 }
 

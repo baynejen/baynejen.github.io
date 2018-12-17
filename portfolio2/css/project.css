@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 50;
@@ -22,7 +22,7 @@
 	transition: 0.3s;
 	position: fixed;
 	z-index: 0;
-	background-color: white;
+	background-color: #ffffff;
 }
 #closebtn span{
 	transition: all 0.3s ease-in-out 0s;

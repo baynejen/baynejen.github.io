@@ -2,15 +2,15 @@ footer{
 	background-color: #fee03d;
 	width: 100%;
 	padding-top: 40px;
-    z-index: 1;
+    z-index: 10;
 }
 .contact-container{
 	max-width: 1400px;
     margin: 0 auto;
 }
 footer p{
-	font-size: 16px;
-	line-height: 28px;
+	font-size: 15px;
+	line-height: 30px;
 }
 footer ul.contact-links{
 	padding-top: 50px;
@@ -61,7 +61,6 @@ footer p.footer{
 	footer{
 		padding-top: 70px;
 		position: fixed;
-	    z-index: 1;
 	    bottom: 0;
 	    left: 0;
 	    right: 0;

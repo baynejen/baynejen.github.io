@@ -1,10 +1,11 @@
 #about{
     display: block;
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     padding-bottom: 50px;
     max-width: 1400px;
     margin: 0 auto;
+    z-index: 50;
 }
 .about-description{
 	width: 100%;
@@ -23,8 +24,9 @@
 }
 .about-description .about-text p.small-description{
 	font-size: 15px;
-	line-height: 26px;
+	line-height: 30px;
 	padding-top: 40px;
+	font-weight: 400;
 }
 .about-description a{
 	-webkit-transition: all 0.3s ease;
@@ -47,22 +49,19 @@
 
 /*TABLET*/
 @media only screen and (min-width: 768px){
-	#about{
+/*	#about{
 		padding-bottom: 70px;
-	}
-	.about-description{
+	}*/
+/*	.about-description{
 		padding-top: 70px;
-	}
+	}*/
 	.about-description .about-text{
 		width: 60%;
 	}
 	.about-description .about-text p{
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 36px;
-	}
-	.about-description .about-text p.small-description{
-		font-size: 16px;
-		line-height: 28px;
+		font-weight: 500;
 	}
 }
 

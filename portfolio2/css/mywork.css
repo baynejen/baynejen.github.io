@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
 }
 .portfolio-card{
   width: 100%;
@@ -24,7 +24,8 @@
 .portfolio-card p{
 	font-size: 15px;
   opacity: 0.9;
-	line-height: 26px;
+  font-weight: 500;
+	line-height: 30px;
 }
 p.date{
 	text-transform: uppercase;
@@ -32,20 +33,9 @@ p.date{
 	font-size: 12px;
 	font-weight: 700;
 }
-p.view-project{
-  padding-top: 15px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #4b4bfb;
-  display: inline-block;
-  line-height: 16px;
-  border-bottom: 1px solid #4b4bfb;
-  text-transform: uppercase;
-}
 .fadeIn-top{
   top: 20%;
 }
-
 
 /*TABLET*/
 @media only screen and (min-width: 768px){
@@ -71,7 +61,7 @@ p.view-project{
   }
 }
 
-/*DESKTOP*/
+/* DESKTOP */
 @media only screen and (min-width: 1024px){
   .portfolio-card .portfolio-card-top img, .portfolio-card-bottom p.view-project{
     -moz-transition: all 0.4s;
@@ -79,12 +69,20 @@ p.view-project{
     transition: all 0.4s;
   }
   .portfolio-container:hover .portfolio-card .portfolio-card-top img{
-    -moz-transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
   }
-  .portfolio-container:hover .portfolio-card .portfolio-card-bottom p.view-project{
-    border-bottom: 1px solid #4b4bfb;
+  .portfolio-container:hover .portfolio-card .portfolio-card-bottom h3{
+    background-color: #14103c;
+    background-image: -webkit-linear-gradient(-270deg, #14103c 100%,#14103c 0%);
+    background-image: linear-gradient(0deg,#14103c 100%,#14103c 0%);
+    color: #14103c;
+    background-repeat: repeat-x;
+    text-shadow: -0.18em 0 0 #fff, 0.18em 0 0 #fff, -0.12em 0 0 #fff, 0.12em 0 0 #fff, -0.06em 0 0 #fff, 0.06em 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff;
+    background-position: 0 95%;
+    background-color: transparent;
+    background-size: 200% 1px;
   }
   .portfolio-card-bottom{
     width: 40%;
@@ -93,7 +91,6 @@ p.view-project{
 }
 
 /*	<--CLEARFIX-->*/
-
 .clearfix:after { 
 	visibility: hidden; 
 	display: block; 
