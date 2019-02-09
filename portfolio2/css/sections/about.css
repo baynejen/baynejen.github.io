@@ -26,9 +26,6 @@
 	background-color: transparent;
 	background-size: 200% 1px;
 }
-.about-description .about-img{
-	float: right;
-} 
 .about-description .about-img img{
 	width: 100%;
 }
@@ -36,7 +33,7 @@
 /*TABLET*/
 @media only screen and (min-width: 768px){
 	.about-description .about-text{
-		width: 90%;
+		width: 85%;
 	}
 }
 
@@ -53,7 +50,7 @@
 		width: 40%;
 	}
 	.about-description .about-img{
-		width: 45%;
+		width: 40%;
 		float: right;
 	} 
 }
