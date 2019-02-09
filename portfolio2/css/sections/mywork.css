@@ -17,6 +17,9 @@
   width: 100%;
   opacity: 0;
 }
+.portfolio-card:first-of-type{
+  opacity: 1;
+}
 .portfolio-card-top {
   position: relative;
   width: 100%;
