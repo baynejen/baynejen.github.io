@@ -19,7 +19,7 @@
 	right: 0;  
 	transition: 0.3s;
 	position: fixed;
-	z-index: 0;
+	z-index: 1;
 }
 #closebtn span{
 	transition: all 0.3s ease-in-out 0s;

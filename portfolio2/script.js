@@ -93,27 +93,32 @@ $(document).ready(function(){
 // SIDE NAV
 function openNavTrouva() {
   document.getElementById("trouva").style.width = "100%";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("hero-anchor").style.overflow = "hidden";
   document.getElementById("sticky").style.display = "none";
 }
 function openNavArtfinder() {
   document.getElementById("artfinder").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("hero-anchor").style.position = "relative";  
   document.getElementById("sticky").style.display = "none";
 }
 function openNavCocoaRunners() {
   document.getElementById("cocoaRunners").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("sticky").style.display = "none";
 }
 function openNavMemoryBox() {
   document.getElementById("memoryBox").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("sticky").style.display = "none";
 }
 function openNavPersonalPortfolios() {
   document.getElementById("personalPortfolios").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("sticky").style.display = "none";
 }
 function closeNav() {
