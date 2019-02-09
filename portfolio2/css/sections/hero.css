@@ -1,19 +1,24 @@
 #hero{
-    width: 100%;
-	align-content: center;
-	height: 100vh;
-	position: relative;
+	width: 100%;
+}
+.fadeIn.start {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.fadeIn {
+    opacity: 0;
+}
+.hero-animate {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	padding-top: var(--spacing-xxlarge);
 }
 #hero h1{
 	width: 100%;
 	text-align: left;
 	color: var(--blue-dark);
-	position: absolute;
-	top: 50%; 
-	left: 50%;
-	transform: translate(-50%,-50%);
-	padding-left: var(--spacing-medium);
-	padding-right: var(--spacing-medium);
 	padding-top: var(--spacing-xlarge);
 }
 #hero h1 span{
@@ -38,40 +43,28 @@
 	background-color: transparent;
 	background-size: 200% 2px;
 }
-.fadeIn.start {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-.fadeIn {
-    opacity: 0;
-}
-.animated {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
 
-/* TALL MOBILE  */
-@media (max-width: 450px) and (min-height: 750px){
-	#hero{
-		height: auto;
-	}
+/* SMALL MOBILE ONLY */
+@media only screen and (max-width: 320px) {
 	#hero h1{
-		position: relative;
-		top: auto;
-		left: auto;
-		transform: none;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: var(--spacing-xxxlarge);
-		padding-bottom: var(--spacing-xxlarge);
+		padding-top: var(--spacing-large);
 	}
 }
 
 /* TABLET */
 @media only screen and (min-width: 768px){
+	#hero{
+		height: 100vh;
+		position: relative;
+	}
+	.hero-animate {
+		padding-top: 0;
+	}
 	#hero h1{
+		position: absolute;
+		top: 45%; 
+		left: 50%;
+		transform: translate(-50%,-50%);
 		max-width: 528px;
 		margin: 0 auto;
 		padding-top: 0;

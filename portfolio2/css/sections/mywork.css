@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: var(--spacing-xxlarge);
 }
 .portfolio-container{
   display: block;
@@ -47,6 +48,9 @@ p.date{
 
 /*TABLET*/
 @media only screen and (min-width: 768px){
+  #my-work{
+    padding-top: 0;
+  }
   .portfolio-card{
     position: relative;
   }
