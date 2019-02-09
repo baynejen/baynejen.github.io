@@ -128,5 +128,6 @@ function closeNav() {
   document.getElementById("memoryBox").style.width = "0";
   document.getElementById("personalPortfolios").style.width = "0";
   document.getElementById("hero-anchor").style.overflow = "auto";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("sticky").style.display = "block";
 }
