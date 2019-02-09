@@ -29,9 +29,11 @@
   display: block;
   height: auto;
 }
-p.date{
+.portfolio-card-bottom p.portfolio-description{
+  padding-bottom: var(--spacing-small);
+}
+.portfolio-card-bottom p.date{
 	text-transform: uppercase;
-	padding-top: var(--spacing-small);
 	font-size: 12px;
 	font-weight: 700;
 }
@@ -39,18 +41,12 @@ p.date{
   top: 20%;
 }
 
-/* MOBILE ONLY */
-@media only screen and (max-width: 768px){
-  .portfolio-card-bottom p.portfolio-description{
-    font-size: 15px;
-  }
-}
-
 /*TABLET*/
 @media only screen and (min-width: 768px){
-  #my-work{
-    padding-top: 0;
+  .portfolio-container{
+    padding-bottom: var(--spacing-xlarge);
   }
+  /* Positions the image and details next to each other */
   .portfolio-card{
     position: relative;
   }
@@ -72,6 +68,9 @@ p.date{
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px){
+  #my-work{
+    padding-top: var(--spacing-xlarge);
+  }
   .portfolio-card-top{
     width: 35%;
   }
@@ -79,7 +78,7 @@ p.date{
     width: 45%;
     padding: 0 var(--spacing-xlarge) var(--spacing-large) var(--spacing-xlarge);
   }
-  /* ANIMATE IMAGES ON HOVER   */
+  /* Animates the images on hover   */
   .portfolio-card .portfolio-card-top img{
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -93,8 +92,7 @@ p.date{
 }
 
 /* UNIVERSAL */
-
-/* ANIMATE CONTENT IN */
+/* Animates the content in on scroll */
 .animatable {
   /* initially hide animatable objects */
   visibility: hidden;

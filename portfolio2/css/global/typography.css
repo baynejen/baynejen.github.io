@@ -10,11 +10,12 @@ h1{
 h2{
 	font-size: 24px;
 	line-height: 1.3em;
-	margin-bottom: var(--spacing-small);
+	padding-bottom: var(--spacing-small);
 }
 h3{
 	font-size: 32px;
 	line-height: 1.5em;
+	padding-bottom: var(--spacing-small);
 }
 h4{
 	font-size: 24px;
@@ -29,10 +30,10 @@ h5{
 h6{
     font-size: 16px;
     line-height: 1.3em;
-    padding: var(--spacing-medium) 0;
+    padding-bottom: var(--spacing-medium);
 }
 p{
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.9em;
 }
 a{
@@ -45,5 +46,11 @@ a{
 @media only screen and (min-width: 768px){
 	h1{
 		font-size: 96px;
+	}
+	h6{
+		font-size: 24px;
+	}
+	p{
+		font-size: 16px;
 	}
 }

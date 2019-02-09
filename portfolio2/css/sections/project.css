@@ -11,8 +11,7 @@
     padding-top: var(--spacing-xlarge);
 }
 #closebtn {
-    padding: 0;
-    margin: var(--spacing-medium) var(--spacing-large);
+    padding: var(--spacing-small);
     font-size: 40px;
     color: var(--blue-dark);
     position: absolute;
@@ -25,6 +24,8 @@
 #closebtn span{
 	transition: all 0.3s ease-in-out 0s;
 	display: inline-block;
+	width: 40px;
+    text-align: center;
 }
 #closebtn span:hover{
 	cursor: pointer;
@@ -33,9 +34,8 @@
 }
 
 /*<--PORTFOLIO CONTENT-->*/
-
 .portfolio-inside{
-	padding: 0 var(--spacing-large) var(--spacing-large) var(--spacing-large);
+	padding: 0 var(--spacing-medium) var(--spacing-medium) var(--spacing-medium);
 	position: relative;
     display: block;
     width: 100%;
@@ -48,35 +48,43 @@
 }
 .portfolio-content .date{
 	text-transform: uppercase;
-    padding: var(--spacing-small) 0;
+    padding-bottom: var(--spacing-medium);
     font-size: 12px;
     font-weight: 700;
+}
+.portfolio-content p.description{
+	padding-bottom: var(--spacing-medium);
 }
 .portfolio-content a:hover{
 	border-bottom: 1px solid;
 }
-.portfolio-image, .portfolio-image img{
-	width: 100%;
+.portfolio-image{
+	padding-bottom: var(--spacing-large);
 }
-.portfolio-image img.padding-top{
-	padding-top: var(--spacing-large);
+.portfolio-image img{
+	width: 100%;
 }
 .portfolio-content a.portfolio-link{
 	padding-top: var(--spacing-medium);
 	display: inline-block;
 }
 
-/* TABLET AND DESKTOP */
+/* TABLET */
 @media only screen and (min-width: 768px){
 	.portfolio-content{
 		width: 50%;
 		max-width: 720px;
 		margin: 0 auto;
-		padding-bottom: var(--spacing-large);
 	}
 	.portfolio-image{
-		width: 75%;
+		width: 85%;
 		margin: 0 auto;
-		padding-bottom: var(--spacing-large);
+	}
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px){
+	.portfolio-image{
+		width: 75%;
 	}
 }

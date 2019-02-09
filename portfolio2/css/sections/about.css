@@ -33,13 +33,6 @@
 	width: 100%;
 }
 
-/* MOBILE ONLY */
-@media only screen and (max-width: 768px){
-	.about-description .about-text p{
-		font-size: 15px;
-	}	
-}
-
 /*TABLET*/
 @media only screen and (min-width: 768px){
 	.about-description .about-text{
@@ -49,6 +42,9 @@
 
 /*DESKTOP*/
 @media only screen and (min-width: 1024px){ 
+	#about{
+		padding-top: var(--spacing-xlarge);
+	}
 	.about-description{
 		padding-top: var(--spacing-xlarge);
 	}

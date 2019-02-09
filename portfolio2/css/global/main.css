@@ -29,7 +29,7 @@ main{
 	z-index: 20;
 	display: block;
 	width: 100%;
-	margin-bottom: 70vh;
+	margin-bottom: 75vh;
 }
 nav, section, footer{
 	padding-left: var(--spacing-medium);
@@ -52,9 +52,6 @@ nav, section, footer{
 	nav, section, footer{
 		padding-left: var(--spacing-large);
 		padding-right: var(--spacing-large);
-	}
-	main{
-		height: 90vh;
 	}
 }
 

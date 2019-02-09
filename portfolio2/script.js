@@ -11,6 +11,7 @@ jQuery(function($) {
       var offset = $(window).scrollTop() + $(window).height(),
           $animatables = $('.animatable');
       // Unbind scroll handler if we have no animatables
+      //Behaviour for tablet and desktop
       if (mq.matches){
         if ($animatables.length == 0) {
           $(window).off('scroll', doAnimations);
@@ -18,11 +19,12 @@ jQuery(function($) {
         // Check all animatables and animate them if necessary
         $animatables.each(function(i) {
           var $animatable = $(this);
-          if (($animatable.offset().top + $animatable.height() - 150) < offset) {
+          if (($animatable.offset().top + $animatable.height() - 250) < offset) {
             $animatable.removeClass('animatable').addClass('animated');
           }
         });
       }
+      //Behaviour for mobile
       else{
         if ($animatables.length == 0) {
           $(window).off('scroll', doAnimations);
@@ -89,13 +91,37 @@ $(document).ready(function(){
 });
 
 // SIDE NAV
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+function openNavTrouva() {
+  document.getElementById("trouva").style.width = "100%";
+  document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("sticky").style.display = "none";
+}
+function openNavArtfinder() {
+  document.getElementById("artfinder").style.width = "100%";
+  document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("sticky").style.display = "none";
+}
+function openNavCocoaRunners() {
+  document.getElementById("cocoaRunners").style.width = "100%";
+  document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("sticky").style.display = "none";
+}
+function openNavMemoryBox() {
+  document.getElementById("memoryBox").style.width = "100%";
+  document.getElementById("hero-anchor").style.overflow = "hidden";
+  document.getElementById("sticky").style.display = "none";
+}
+function openNavPersonalPortfolios() {
+  document.getElementById("personalPortfolios").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
   document.getElementById("sticky").style.display = "none";
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("trouva").style.width = "0";
+  document.getElementById("artfinder").style.width = "0";
+  document.getElementById("cocoaRunners").style.width = "0";
+  document.getElementById("memoryBox").style.width = "0";
+  document.getElementById("personalPortfolios").style.width = "0";
   document.getElementById("hero-anchor").style.overflow = "auto";
   document.getElementById("sticky").style.display = "block";
 }

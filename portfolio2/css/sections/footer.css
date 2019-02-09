@@ -8,16 +8,13 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 70vh;
+	height: 75vh;
 }
 .contact-container{
 	max-width: 1400px;
     margin: 0 auto;
 }
 footer p.footer-paragraph{
-	padding-bottom: var(--spacing-large);
-}
-.footer-links{
 	padding-bottom: var(--spacing-large);
 }
 .footer-links span a{
@@ -41,27 +38,8 @@ p.copyright{
     padding-bottom: var(--spacing-large);
 }
 
-/* MOBILE ONLY */
-@media only screen and (max-width: 768px){
-	footer p.footer-paragraph,
-	.footer-links,
-	p.copyright{
-		font-size: 15px;
-	}
-}
-
-/* SMALL MOBILE */
-@media only screen and (max-width: 320px){
-	.footer-links{
-		font-size: 12px;
-	}
-}
-
 /* TABLET */
 @media only screen and (min-width: 768px){
-	footer{
-		height: 90vh;
-	}
 	footer p{
 		width: 90%;
 	}
