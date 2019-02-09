@@ -1,0 +1,8 @@
+:root {
+	--spacing-extrasmall: 8px;
+	--spacing-small: 16px;
+	--spacing-medium: 24px;
+	--spacing-large: 48px; 
+	--spacing-extralarge: 72px;
+	--spacing-extraextralarge: 140px;
+}

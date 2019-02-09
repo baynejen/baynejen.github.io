@@ -1,0 +1,77 @@
+/* IMPORT GLOBAL CSS */
+@import url("reset.css");
+@import url("breakpoints.css");
+@import url("colours.css");
+@import url("spacing.css");
+@import url("typography.css");
+/* IMPORT PAGE CSS FILES */
+@import url("../navigation.css");
+@import url("../hero.css");
+@import url("../mywork.css");
+@import url("../project.css");
+@import url("../about.css");
+@import url("../footer.css");
+
+body, main, header, #hero, #my-work, .sidenav, #closebtn, #about{
+	background-color: var(--white);
+}
+body{
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	color: var(--blue-dark);
+	font-family: 'Karla', arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+main{
+	position: relative;
+	z-index: 20;
+	display: block;
+	width: 100%;
+	margin-bottom: 90vh;
+	/* padding-bottom: var(--spacing-large); */
+}
+nav, section, footer{
+	padding-left: var(--spacing-medium);
+	padding-right: var(--spacing-medium);
+	position: relative;
+}
+*, *:before, *:after{
+  	margin: 0;
+  	padding: 0;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing:border-box;
+  	box-sizing: border-box;
+}
+*::selection{
+	background-color: var(--yellow-bright);
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 768px){
+	nav, section, footer{
+		padding-left: var(--spacing-large);
+		padding-right: var(--spacing-large);
+	}
+	/* main{
+		margin-bottom: 90vh;
+		padding-bottom: var(--spacing-large);
+	} */
+}
+
+/*DESKTOP*/
+/* @media only screen and (min-width: 1024px){
+	
+} */
+
+/*	<--CLEARFIX-->*/
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}

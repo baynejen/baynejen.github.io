@@ -1,0 +1,111 @@
+header{
+	width: 100%;
+	padding: 0;
+    z-index: 100;
+    display: block;
+	margin: 0;
+}
+#sticky{
+	position: fixed;
+}
+nav{
+    display: block;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+	padding-top: var(--spacing-medium);
+	padding-bottom: var(--spacing-medium);
+}
+.nav-container{
+	width: 100%;
+}
+.monogram {
+	width: 100%;
+}
+.monogram img{
+	width: 48px;
+	vertical-align: middle;
+}
+.monogram img:hover{
+	transform: rotate(5deg)
+}
+.menu{
+	text-align: left;
+	width: 100%;
+	margin-top: var(--spacing-medium);
+}
+nav ul li{
+	padding-left: var(--spacing-extrasmall);
+	padding-right: var(--spacing-extrasmall);
+	display: inline-block;
+}
+nav ul li:first-of-type{
+	padding-left: 0;
+}
+nav ul li a{
+	color: var(--blue-dark);
+	font-size: 12px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid var(--white);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+nav ul li a:hover{
+	background-color: var(--blue-dark);
+    background-image: -webkit-linear-gradient(-270deg, var(--blue-dark) 100%,var(--blue-dark) 0%);
+    background-image: linear-gradient(0deg,var(--blue-dark) 100%,var(--blue-dark) 0%);
+    color: var(--blue-dark);
+    background-repeat: repeat-x;
+    text-shadow: -0.18em 0 0 var(--white), 0.18em 0 0 var(--white), -0.12em 0 0 var(--white), 0.12em 0 0 var(--white), -0.06em 0 0 var(--white), 0.06em 0 0 var(--bluewhite), 0 -1px 0 var(--white), 0 1px 0 var(--white);
+    background-position: 0 95%;
+    background-color: transparent;
+    background-size: 200% 1px;
+}
+.scrolled-nav{
+	background-color: var(--white);
+}
+.scrolled-nav nav{
+	padding-top: var(--spacing-small);
+	padding-bottom: var(--spacing-small);
+}
+.scrolled-nav .nav-container{
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+.scrolled-nav .monogram img{
+	width: 32px;
+}
+.scrolled-nav nav .menu{
+	margin-top: var(--spacing-small);
+}
+.scrolled-nav nav ul li a{
+	color: var(--blue-dark);
+	border-bottom: 1px solid var(--white);
+}
+.monogram img, .scrolled-nav, .scrolled-nav .menu{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 768px){
+	nav{
+		display: flex;
+	}
+	.monogram {
+		float: left;
+	}
+	.menu{
+		text-align: right;
+		float: right;
+		margin-top: 0;
+	}
+	nav ul li:last-of-type{
+		padding-right: 0;
+	}
+	.scrolled-nav nav .menu{
+		margin-top: 0;
+	}
+}

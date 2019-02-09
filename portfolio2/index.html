@@ -3,36 +3,27 @@
 <head>
 	<title>Jen Bayne | Product Designer</title>
 	<!-- meta data -->
-	<meta name="description" content="Product Manager and UX/UI Designer specialising in responsive website and email design." />
-	<meta property="og:title" content="Jen Bayne | Web Design Portfolio" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="jen-bayne.com" />
-	<meta property="og:image" content="http://jen-bayne.com/images/portfolio/artfinder/artfinder1.jpg" />
-	<meta property="og:description" content="Product Manager and UX/UI Designer specialising in responsive website and email design." /> 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Product Manager and UX/UI Designer specialising in responsive website and email design." />
+		<meta property="og:title" content="Jen Bayne | Web Design Portfolio" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="jen-bayne.com" />
+		<meta property="og:image" content="http://jen-bayne.com/images/portfolio/artfinder/artfinder1.jpg" />
+		<meta property="og:description" content="Jen Bayne | Product Designer" /> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- favicon -->
-	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+		<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+	<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<!-- css -->
-	<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/navigation.css">
-	<link rel="stylesheet" type="text/css" href="css/hero.css">
-	<link rel="stylesheet" type="text/css" href="css/mywork.css">
-	<link rel="stylesheet" type="text/css" href="css/project.css">
-	<link rel="stylesheet" type="text/css" href="css/about.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="css/import.css">
 	<!-- javascript -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/scroll-menu.js"></script> 
-	<script type="text/javascript" src="js/scroll-smooth.js"></script> 
-	<script type="text/javascript" src="js/menu-highlight.js"></script> 
-	<script type="text/javascript" src="js/column-alignment.js"></script> 
-	<script type="text/javascript" src="js/side-nav.js"></script> 
+	<script type="text/javascript" src="script.js"></script> 
 	<!--[if IE]>
-  	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body id="hero-anchor">
@@ -43,7 +34,7 @@
 		<div class="nav-container">
 			<nav class="clearfix">
 				<div class="monogram">
-					<a href="#hero-anchor" class="site-title"><img src="images/index/monogram.svg" alt="Jen Bayne"></a>
+					<a href="#hero-anchor" class="site-title"><img src="images/index/monogram-red.svg" alt="Jen Bayne"></a>
 				</div>
 				<ul class="menu" id="main-nav">
 					<li><a href="#my-work">My work</a></li>
@@ -54,17 +45,19 @@
 		</div>
 	</header>
 
-	<!-- HEADER -->
+<!-- HEADER -->
 	
 	<main>
 		<section id="hero">
 			<div class="animated fadeIn start">
-				<!-- <p class="subheader">Hello</p> -->
-				<h1 class="animated fadeIn">Jen Bayne is a product designer at <a href="https://www.trouva.com/" target="_blank">Trouva</a> with over eight years experience in eCommerce startups.</h1>
+				<h1 class="animated fadeIn">Jen Bayne.
+					<br>
+					<span>I'm a senior product designer at <a href="https://www.trouva.com/" target="_blank">Trouva</a> in London, with over eight years experience in eCommerce startups. You can find me on <a href="#">Twitter</a>, <a href="#">LinkedIn</a>, and <a href="#">Github</a>.</span>
+				</h1>
 			</div>
 		</section>
 
-	<!-- MY WORK -->
+<!-- MY WORK -->
 		
 		<section id="my-work">
 			<div class="clearfix columns">
@@ -75,16 +68,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Trouva</h2>
-							<p class="subheader">2018 - present</p>
-							<p class="tools">Product design</p>
+							<h3>Trouva</h3>
+							<p class="date">2018 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -93,19 +85,19 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
-				<span style="cursor:pointer" onclick="openNav()" class="portfolio-container">
-					<div class="portfolio-card col clearfix">
+				<span class="portfolio-container">
+					<div class="portfolio-card col clearfix animatable fadeInUp">
 						<div class="portfolio-card-top">
 							<img class="content-image" src="images/index/trouva.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Trouva</h3>
+							<h2>Trouva</h2>
 							<p>Senior Product Designer at Trouva, the world’s leading marketplace for independent boutiques and one of the 5 fastest growing tech businesses in the UK. 
 							</p>
 							<p class="date">2018 - Present</p>
@@ -119,17 +111,16 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Artfinder</h2>
-							<p class="subheader">2010 - 2017</p>
-							<p class="tools">UX, UI, Product management</p>
+							<h3>Artfinder</h3>
+							<p class="date">2010 - 2017</p>
 							<p class="description">Artfinder is the world's largest online marketplace for original art. With over 10,000 artists and customers around the world, Artfinder is disrupting the high end art market to bring affordable, original art to the masses.</p>
 							<p class="description">As Product Manager and lead UX/UI designer I worked closely with a team of developers to define the product roadmap and design solutions our artist and customers would love.</p>
-							<p class="subheader">2011: The early days (going appy!)</p>
+							<h6>2011: The early days (going appy!)</h6>
 							<p class="description">When Artfinder launched in 2011 the business model was radically different. As a content site with no eCommerce functionality, we partnered with galleries around the world to create an online database of art. We had a responsive website and iOS app, which was featured by Apple as one of their top new apps. This app used image recnogition technology to allow you to recognise a painting in a gallery and find out more information.</p>
 							<p class="description">During this time, I worked closely with the development and design teams to build and iterate wireframes for the app and produce brand appropriate copy and content. We found that the onboarding flow was key in encouraging users to sign up to Artfinder, a important source of lead generation for the business. We used user feedback to make iterative improvements to the app, such as improving load time and integrating our Art of the Day feature, with daily push notifcatins to alert the user to the daily artwork.</p>
-							<p class="subheader">2013: Time to pivot!</p>
+							<h6>2013: Time to pivot!</h6>
 							<p class="description">In 2013 Artfinder pivoted to an eCommerce business model. It was an exciting time for the business; we had to work fast and change our way of thinking drastically. The site went through several iterations as we figured out what our customers and artists wanted. During this time I established processes for product management and user experience design which allowed the business to scale and grow.</p>
-							<p class="subheader">2015: Discovery over search</p>
+							<h6>2015: Discovery over search</h6>
 							<p class="description">The art market is like no other. Traditionally high end and reticent to move online, it's alien to the masses. So much anxiety surrounds buying art, so we had to take the opportunity to bust the myths about buying art. Through extensive research and testing, we learned that our customers rarely knew exactly what they wanted. We needed to deviate from a classic eCommerce user experience and focus on personalisation. We developed a system for recommeding artworks based on collaborative filtering, and began to adapt the user experience to focus on art 'discovery' over traditional search. Our aim was to foster a relationship with our users, help them discover their art taste, and make them feel comfortable buying art for the first time. This new focus is what differentiated Artfinder from its competitors and allowed us to stand out.</p>
 						</div>
 						<div class="portfolio-image">
@@ -139,9 +130,9 @@
 							<img src="images/portfolio/artfinder/artfinder3.jpg" alt="Artfinder">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">2016: Time for a rebrand</p>
+							<h6>2016: Time for a rebrand</h6>
 							<p class="description">In 2016 Artfinder worked with London-based agency <a href="https://www.wearedesignstudio.com/" target="_blank">Design Studio</a> on a complete rebrand. Once the new brand guidelines were finalised we had only 4 months to completely redevelop the website, our emails, social channels and all collateral. I collaborated with the team at Design Studio out of their office to redesign the website according to their new guidelines. It was an exciting period, one which required close attention to detail (so as to not butcher the new brand!) balanced with fast action. I established a process of priority for redesigning the website, and with our lead front-end developer built a development style guide that allowed the developers to quickly update the website's base styling and rebuild key pages from scratch.</p>
-							<p class="subheader">My process</p>
+							<h6>My process</h6>
 							<p class="description">My process was user-centric, using insight collected from user testing, focus groups, direct feedback and data analysis to determine the product evolution. From this initial ideation phase, each project was then passed through rigorous UX exercises, where user flows, wireframes and prototypes were iterated upon before UI design and technical specs were polished off.</p>
 						</div>
 						<div class="portfolio-image">
@@ -151,21 +142,21 @@
 							<img src="images/portfolio/artfinder/artfinder10.jpg" alt="Artfinder">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">Highlights</p>
+							<h6>Highlights</h6>
 							<p class="description">With a flair for both iterative optimisation and ‘big picture’ thinking, achievements include introducing AB testing, device-specific analysis and usability testing as core processes, integrating personalisation into the UX, and redesigning the search interface, checkout flow and navigation. I developed several new features end to end, including in-context visualisation and framing.</p>
 							<p class="description">Through active participation in sprint planning, daily tech standups and QA reviews, I’ve developed good technical awareness and learn fast. Skilled at leading group brainstorm sessions, I brought momentum to every project I was involved in and successfully established a cross-departmental ‘tribe’ culture. A core member of Artfinder since its birth, I’m proud to have seen it grow from nothing to become the world’s largest original art marketplace with 10,000 artists.</p>
-							<p class="subheader"><a href="http://www.artfinder.com" target="_blank">www.artfinder.com</a></p>
+							<a href="http://www.artfinder.com" target="_blank">www.artfinder.com</a>
 						</div>
 					</div>
 				</div>
-				<span style="cursor:pointer" onclick="openNav()" class="portfolio-container">
-					<div class="portfolio-card col clearfix">
+				<span class="portfolio-container">
+					<div class="portfolio-card col clearfix animatable fadeInUp">
 						<div class="portfolio-card-top">
 							<img class="content-image" src="images/index/artfinder.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Artfinder</h3>
-							<p>UX and UI design and product management within an agile product team at Artfinder, the world's largest online marketplace for original art.</p>
+							<h2>Artfinder</h2>
+							<p>UI/UX Designer and Product Manager in an agile product team at Artfinder, the world's largest online marketplace for original art.</p>
 							<p class="date">2010 - 2017</p>
 						</div>
 					</div>
@@ -177,16 +168,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -195,20 +185,20 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
-				<span style="cursor:pointer" onclick="openNav()" class="portfolio-container">
-					<div class="portfolio-card col clearfix">
+				<span class="portfolio-container">
+					<div class="portfolio-card col clearfix animatable fadeInUp">
 						<div class="portfolio-card-top">
 							<img class="content-image" src="images/index/cocoa.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Cocoa Runners</h3>
-							<p>Freelance UX consultancy and email development for an eCommerce and subscription service for craft chocolate.</p>
+							<h2>Cocoa Runners</h2>
+							<p>Freelance UX consultancy and email design for an eCommerce and subscription service for craft chocolate.</p>
 							<p class="date">2012 - 2018</p>
 						</div>
 					</div>
@@ -220,16 +210,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -238,19 +227,19 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
-				<span style="cursor:pointer" onclick="openNav()" class="portfolio-container">
-					<div class="portfolio-card col clearfix">
+				<span class="portfolio-container">
+					<div class="portfolio-card col clearfix animatable fadeInUp">
 						<div class="portfolio-card-top">
 							<img class="content-image" src="images/index/memory.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Memory Box</h3>
+							<h2>Memory Box</h2>
 							<p>Design and development of a custom website to archive my personal collection of ticket stubs.</p>
 							<p class="date">2015</p>
 						</div>
@@ -263,16 +252,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -281,40 +269,41 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
 				<span style="cursor:pointer" onclick="openNav()" class="portfolio-container">
-					<div class="portfolio-card col clearfix">
+					<div class="portfolio-card col clearfix animatable fadeInUp">
 						<div class="portfolio-card-top">
 							<img class="content-image" src="images/index/sforzando.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Personal portfolios</h3>
+							<h2>Personal portfolios</h2>
 							<p>Bespoke design and development for various portfolio websites</p>
 							<p class="date">2015 - 2017</p>
 						</div>
 					</div>
 				</span>	
+
+
 			<!-- SFORZANDO -->
 
 				<!-- <div id="mySidenav" class="sidenav clearfix">
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -323,9 +312,9 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
@@ -335,7 +324,7 @@
 							<img class="content-image" src="images/index/sforzando.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Sforzando</h3>
+							<h2>Sforzando</h2>
 							<p>Design and development of a custom portfolio for Sforzando, a classical piano-organ and vocal duo from Edinburgh.</p>
 							<p class="date">2017</p>
 						</div>
@@ -348,16 +337,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -366,9 +354,9 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
@@ -378,7 +366,7 @@
 							<img class="content-image" src="images/index/mead.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Alexander Mead</h3>
+							<h2>Alexander Mead</h2>
 							<p>Design and development of an academic research portfolio for a post-doctoral astrophysicist.</p>
 							<p class="date">2016</p>
 						</div>
@@ -391,16 +379,15 @@
 				  	<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><span>&times;</span></a>
 					<div class="portfolio-inside">
 						<div class="portfolio-content">
-							<h2>Alasdair Bayne</h2>
-							<p class="subheader">2015 - present</p>
-							<p class="tools">UX, UI, HTML, CSS</p>
+							<h3>Alasdair Bayne</h3>
+							<p class="date">2015 - present</p>
 							<p class="description"><a href="#">Alasdair Bayne</a> is an award-winning filmmaker and editor based in London. His work has been shown at Raindance Film Festival, Edinburgh International Film Festival, and has received BAFTA New Talent awards.</p>
 						</div>
 						<div class="portfolio-image">
 							<img src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The brief</p>
+							<h6>The brief</h6>
 							<p class="description">I was asked to create a website that could display Alasdair's personal projects alongside his professional work, making use of both visual and video content. It should be easy to navigate on desktop and mobile, and should have contact information.</p>
 						</div>
 						<div class="portfolio-image">
@@ -409,9 +396,9 @@
 							<img class="padding-top" src="images/portfolio/alibayne/alibayne1.jpg" alt="Alasdair Bayne">
 						</div>
 						<div class="portfolio-content">
-							<p class="subheader">The process</p>
+							<h6>The process</h6>
 							<p class="description">I began by wireframing to establish a consistent structure that could be used across all projects. Alasdair has a variety of content, from documentary filmmaking to storyboarding and VFX work, so I worked to create a site structure that could accomodate all this in an intuitive way.</p>
-							<p class="subheader"><a href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a></p>
+							<a class="portfolio-link" href="http://www.alasdairbayne.com" target="_blank">www.alasdairbayne.com</a>
 						</div>
 					</div>
 				</div>
@@ -421,7 +408,7 @@
 							<img class="content-image" src="images/index/bayne.jpg">
 						</div>
 						<div class="portfolio-card-bottom">
-							<h3>Alasdair Bayne</h3>
+							<h2>Alasdair Bayne</h2>
 							<p>Design and development of a bespoke portfolio website for an award-winning editor and director.</p>
 							<p class="date">2015</p>
 						</div>
@@ -430,30 +417,32 @@
 				
 			<!-- SCOTCH EGG DIARIES -->
 			
-					<div class="portfolio-card col clearfix">
-						<div class="portfolio-card-top">
-							<img class="content-image" src="images/portfolio/image_default.jpg">
-						</div>
-						<div class="portfolio-card-bottom">
-							<h3>Scotch Egg Diaries</h3>
-							<p>Design and development of a bespoke portfolio website for a filmmaker and editor.</p>
-							<p class="date">Coming late 2018</p>
-						</div>
+				<div class="portfolio-card col clearfix animatable fadeInUp">
+					<div class="portfolio-card-top">
+						<img class="content-image" src="images/portfolio/image_default.jpg">
 					</div>
-				</span>
+					<div class="portfolio-card-bottom">
+						<h2>Scotch Egg Diaries</h2>
+						<p>Design and development of a bespoke portfolio website for a filmmaker and editor.</p>
+						<p class="date">Coming late 2018</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<!-- ABOUT -->
+<!-- ABOUT -->
 
 		<section id="about">
 			<div class="about-description clearfix">
 				<div class="about-text">
 					<h4>About me</h4>
-					<p>I'm a versatile and passionate Product Design and Product Design with over 7 years in high growth London startups. My passion lies in user and data-driven design, conversion rate optimisation, and agile methodology. I'm currently working as Senior Product Designer at <a href="#">Trouva</a>, a London-based VC-funded startup.</p>
-					<p class="small-description">I'm a versatile and passionate Product Design and Product Design with over 7 years in high growth London startups. My passion lies in user and data-driven design, conversion rate optimisation, and agile methodology. I'm currently working as Senior Product Designer at <a href="#">Trouva</a>, a London-based VC-funded startup. Born in Edinburgh, based in South London.</p>
+					<p>I'm a versatile and passionate Product Designer with over 8 years experience in high growth eCommerce startups. I'm currently working as Senior Product Designer at <a href="#">Trouva</a>, a London-based VC-funded startup.</p>
+					<h5>How I design</h5>
+					<p>I am conscious of the impact that design can have on both the user's experience and the business' goals. I design for both, using data and user research to educate myself about the user's problems in order to design and build solutions that have a real impact. I enjoy balancing focused conversion rate optimisation with bigger picture thinking, and work best within an agile, collaborative team.</p>
+					<h5>Skills</h5>
+					<p>I'm a versatile and passionate Product Design and Product Design with over 7 years in high growth London startups. My passion lies in user and data-driven design, conversion rate optimisation, and agile methodology. I'm currently working as Senior Product Designer at <a href="#">Trouva</a>, a London-based VC-funded startup. Born in Edinburgh, based in South London.</p>
 				</div>
-				<div class="about-img">
+				<div class="about-img animatable fadeInUp">
 					<img src="images/me4.jpg" alt="jen bayne portrait">
 				</div>
 			</div>
@@ -493,18 +482,19 @@
 		</section>
 	</main>
 	
-	<!-- FOOTER -->		
+<!-- FOOTER -->		
 		
 	<footer>
 		<div class="contact-container">
 			<h4>Get in touch</h4>
-			<p>I'd be delighted to discuss future freelance projects or collaborations. Feel free to contact me and I'll get back to you as soon as I can.</p>
-			<ul class="contact-links">
-				<li><a href="mailto:hello@jen-bayne.com">— Email</a></li>
-				<li><a href="twitter.com/jen_bayne">— Twitter</a></li>
-				<li><a href="linkedin.com/in/baynejen">— Linkedin</a></li>
-			</ul>
-			<p class="footer">© Jen Bayne 2018</p>
+			<p class="footer-paragraph">I'd be delighted to discuss future freelance projects or collaborations. Feel free to contact me and I'll get back to you as soon as I can.</p>
+			<div class="footer-links">
+				<span><a href="#">Email</a> / </span>
+				<span><a href="#">Twitter</a> / </span>
+				<span><a href="#">LinkedIn</a> / </span>
+				<span><a href="#">Github</a></span>
+			</div>
+			<p class="copyright">© Jen Bayne 2019</p>
 		</div>
 	</footer>
 	<div id="contact"></div>

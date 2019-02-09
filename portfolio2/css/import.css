@@ -1,0 +1,15 @@
+/* global */
+@import url("global/reset.css");
+@import url("global/colours.css");
+@import url("global/main.css");
+@import url("global/spacing.css");
+@import url("global/typography.css");
+
+/* components */
+
+@import url("sections/about.css");
+@import url("sections/footer.css");
+@import url("sections/hero.css");
+@import url("sections/mywork.css");
+@import url("sections/navigation.css");
+@import url("sections/project.css");
