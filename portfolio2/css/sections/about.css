@@ -1,22 +1,18 @@
 #about{
     display: block;
-    width: 100%;
+	width: 100%;
+	padding-top: var(--spacing-large);
     padding-bottom: var(--spacing-large);
     max-width: 1400px;
     margin: 0 auto;
-    z-index: 50;
+	z-index: 50;
 }
 .about-description{
-	width: 100%;
 	position: relative;
 	border-top: 1px solid var(--grey-light);
 	padding-top: var(--spacing-large);
 }
-.about-description .about-text{
-	width: 100%;
-}
 .about-description .about-text p{
-	width: 100%;
 	padding-bottom: var(--spacing-large);
 }
 .about-description a:hover{
@@ -31,32 +27,37 @@
 	background-size: 200% 1px;
 }
 .about-description .about-img{
-	width: 100%;
 	float: right;
 } 
 .about-description .about-img img{
 	width: 100%;
 }
 
+/* MOBILE ONLY */
+@media only screen and (max-width: 768px){
+	.about-description .about-text p{
+		font-size: 15px;
+	}	
+}
+
 /*TABLET*/
 @media only screen and (min-width: 768px){
 	.about-description .about-text{
-		width: 60%;
+		width: 90%;
 	}
 }
 
 /*DESKTOP*/
-@media only screen and (min-width: 900px){ 
+@media only screen and (min-width: 1024px){ 
 	.about-description{
-		padding-top: var(--spacing-extralarge);
+		padding-top: var(--spacing-xlarge);
 	}
 	.about-description .about-text{
 		float: left;
 		width: 40%;
 	}
 	.about-description .about-img{
-		width: 50%;
+		width: 45%;
 		float: right;
-		padding-left: var(--spacing-medium);
 	} 
 }

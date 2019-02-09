@@ -1,27 +1,40 @@
 // FADE CONTENT IN 
-
-// https://codepen.io/bramus/pen/yikfd
-
-// Trigger CSS animations on scroll.
-// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
-
+  // https://codepen.io/bramus/pen/yikfd
+  // CSS Animations (extracted from http://glifo.uiparade.com/)
+  // Trigger CSS animations on scroll.
+  // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
 jQuery(function($) {
     // Function which adds the 'animated' class to any '.animatable' in view
+    var mq = window.matchMedia( "(min-width: 768px)" );
     var doAnimations = function() {
       // Calc current offset and get all animatables
       var offset = $(window).scrollTop() + $(window).height(),
           $animatables = $('.animatable');
       // Unbind scroll handler if we have no animatables
-      if ($animatables.length == 0) {
-        $(window).off('scroll', doAnimations);
+      if (mq.matches){
+        if ($animatables.length == 0) {
+          $(window).off('scroll', doAnimations);
+        }
+        // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+          var $animatable = $(this);
+          if (($animatable.offset().top + $animatable.height() - 150) < offset) {
+            $animatable.removeClass('animatable').addClass('animated');
+          }
+        });
       }
-      // Check all animatables and animate them if necessary
-          $animatables.each(function(i) {
-         var $animatable = $(this);
-              if (($animatable.offset().top + $animatable.height() - 200) < offset) {
-          $animatable.removeClass('animatable').addClass('animated');
-              }
-      });
+      else{
+        if ($animatables.length == 0) {
+          $(window).off('scroll', doAnimations);
+        }
+        // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+          var $animatable = $(this);
+          if (($animatable.offset().top + $animatable.height() - 400) < offset) {
+            $animatable.removeClass('animatable').addClass('animated');
+          }
+        });
+      }
     };
     // Hook doAnimations on scroll, and trigger a scroll
     $(window).on('scroll', doAnimations);
@@ -29,51 +42,58 @@ jQuery(function($) {
   }
 );
 
-
-// SMOOTH SCROLL OF MENU\
-
+// SMOOTH SCROLL FOR MENU LINKS
 $(document).ready(function(){
   $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      var target = this.hash;
-      var $target = $(target);
+    var target = this.hash;
+    var $target = $(target);
 
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 400, 'swing', function () {
-          window.location.hash = target;
-      });
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 400, 'swing', function () {
+      window.location.hash = target;
+    });
   });
 });
     
-// MENU SCROLL TO POSITION
-
+// ADAPT MENU ON SCROLL
 $(document).ready(function(){
   var scrollTop = 0;
+  var mq = window.matchMedia( "(min-width: 768px)" );
+
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 600) {
-      $('header').addClass('scrolled-nav');
-    } else if (scrollTop < 600) {
-      $('header').removeClass('scrolled-nav');
+    $('.counter').html(scrollTop);
+
+    if (mq.matches){
+      if (scrollTop >= 600) {
+        $('header').addClass('scrolled-nav');
+      } 
+      else if (scrollTop < 600) {
+        $('header').removeClass('scrolled-nav');
+      } 
     } 
-    
+
+    else{
+      if (scrollTop >= 150) {
+        $('header').addClass('scrolled-nav');
+      } 
+      else if (scrollTop < 150) {
+        $('header').removeClass('scrolled-nav');
+      } 
+    }
+
   }); 
-  
 });
 
-
 // SIDE NAV
-
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
   document.getElementById("hero-anchor").style.overflow = "hidden";
   document.getElementById("sticky").style.display = "none";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("hero-anchor").style.overflow = "auto";

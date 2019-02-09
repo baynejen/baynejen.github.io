@@ -5,9 +5,15 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.portfolio-container{
+  display: block;
+  padding-bottom: var(--spacing-large);
+}
+.portfolio-container:last-of-type{
+  padding-bottom: 0;
+}
 .portfolio-card{
   width: 100%;
-  padding-bottom: var(--spacing-large);
   opacity: 0;
 }
 .portfolio-card-top {
@@ -31,10 +37,64 @@ p.date{
 .fadeIn-top{
   top: 20%;
 }
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 768px){
+  .portfolio-card-bottom p.portfolio-description{
+    font-size: 15px;
+  }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px){
+  .portfolio-card{
+    position: relative;
+  }
+  .portfolio-card-top{
+    float: left;
+    width: 40%;
+    padding-bottom: 0;
+  }
+  .portfolio-card-bottom{
+    float: left;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 40%;
+    padding: 0 0 var(--spacing-medium) var(--spacing-large);
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px){
+  .portfolio-card-top{
+    width: 35%;
+  }
+  .portfolio-card-bottom{
+    width: 45%;
+    padding: 0 var(--spacing-xlarge) var(--spacing-large) var(--spacing-xlarge);
+  }
+  /* ANIMATE IMAGES ON HOVER   */
+  .portfolio-card .portfolio-card-top img{
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .portfolio-container:hover .portfolio-card .portfolio-card-top img{
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
+}
+
+/* UNIVERSAL */
+
+/* ANIMATE CONTENT IN */
 .animatable {
-/* initially hide animatable objects */
+  /* initially hide animatable objects */
   visibility: hidden;
-/* initially pause animatable objects their animations */
+  /* initially pause animatable objects their animations */
   -webkit-animation-play-state: paused;   
   -moz-animation-play-state: paused;     
   -ms-animation-play-state: paused;
@@ -42,21 +102,18 @@ p.date{
   animation-play-state: paused; 
 }
 .animated {
-/* show objects being animated */
+  /* show objects being animated */
   visibility: visible;
-  
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  
   -webkit-animation-duration: .8s;
   -moz-animation-duration: .8s;
   -ms-animation-duration: .8s;
   -o-animation-duration: .8s;
   animation-duration: .8s;
-
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -ms-animation-play-state: running;
@@ -64,7 +121,6 @@ p.date{
   animation-play-state: running;
 }
 @-webkit-keyframes fadeInUp {
-/* CSS Animations (extracted from http://glifo.uiparade.com/) */
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(40px);
@@ -111,47 +167,4 @@ p.date{
 	-moz-animation-name: fadeInUp;
 	-o-animation-name: fadeInUp;
   animation-name: fadeInUp;
-}
-
-/*TABLET*/
-@media only screen and (min-width: 768px){
-  .portfolio-card{
-    position: relative;
-    padding-bottom: var(--spacing-extralarge);
-  }
-  .portfolio-card-top{
-    float: left;
-    width: 35%;
-    padding-bottom: 0;
-  }
-  .portfolio-card-bottom{
-    float: left;
-    width: 60%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 40%;
-    padding: 0 0 var(--spacing-extralarge) var(--spacing-large);
-  }
-  p.view-project{
-    border-bottom: 1px solid var(--white);
-  }
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 1024px){
-  .portfolio-card .portfolio-card-top img, .portfolio-card-bottom p.view-project{
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  .portfolio-container:hover .portfolio-card .portfolio-card-top img{
-    -moz-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
-  }
-  .portfolio-card-bottom{
-    width: 40%;
-    padding: 0 var(--spacing-extralarge) var(--spacing-extraextralarge) var(--spacing-extralarge);
-  }
 }

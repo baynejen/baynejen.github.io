@@ -8,7 +8,7 @@
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 51;
-    padding-top: var(--spacing-extralarge);
+    padding-top: var(--spacing-xlarge);
 }
 #closebtn {
     padding: 0;

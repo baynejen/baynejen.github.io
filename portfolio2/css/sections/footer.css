@@ -2,13 +2,13 @@ footer{
 	background-color: var(--blue-dark);
 	color:var(--white);
 	width: 100%;
-	padding-top: var(--spacing-extralarge);
+	padding-top: var(--spacing-large);
 	z-index: 10;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 90vh;
+	height: 85vh;
 }
 .contact-container{
 	max-width: 1400px;
@@ -23,10 +23,14 @@ footer p.footer-paragraph{
 .footer-links span a{
 	font-weight: 700;
 	color: var(--white);
-	margin: 0 var(--spacing-small);
+	margin: 0 var(--spacing-xsmall);
+	line-height: 1.9em;
 }
 .footer-links span:first-of-type > a{
 	margin-left: 0;
+}
+.footer-links span:last-of-type > a{
+	margin-right: 0;
 }
 .footer-links span a:hover{
 	border-bottom: 1px solid var(--white);
@@ -37,14 +41,36 @@ p.copyright{
     padding-bottom: var(--spacing-large);
 }
 
-/*DESKTOP*/
-@media only screen and (min-width: 900px){
+/* MOBILE ONLY */
+@media only screen and (max-width: 768px){
+	footer p.footer-paragraph,
+	.footer-links,
+	p.copyright{
+		font-size: 15px;
+	}
+}
+
+/* SMALL MOBILE */
+@media only screen and (max-width: 320px){
+	.footer-links{
+		font-size: 12px;
+	}
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px){
 	footer{
-		/* position: fixed;
-	    bottom: 0;
-	    left: 0;
-		right: 0;
-		height: 90vh; */
+		height: 90vh;
+	}
+	footer p{
+		width: 90%;
+	}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1020px){
+	footer{
+		padding-top: var(--spacing-xlarge);
 	}
 	footer p{
 		width: 40%;

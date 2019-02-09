@@ -36,8 +36,8 @@ nav{
 	margin-top: var(--spacing-medium);
 }
 nav ul li{
-	padding-left: var(--spacing-extrasmall);
-	padding-right: var(--spacing-extrasmall);
+	padding-left: var(--spacing-xsmall);
+	padding-right: var(--spacing-xsmall);
 	display: inline-block;
 }
 nav ul li:first-of-type{
@@ -62,25 +62,20 @@ nav ul li a:hover{
     background-color: transparent;
     background-size: 200% 1px;
 }
-.scrolled-nav{
-	background-color: var(--white);
-}
+
+/* SCROLLED NAV */
 .scrolled-nav nav{
 	padding-top: var(--spacing-small);
 	padding-bottom: var(--spacing-small);
 }
 .scrolled-nav .nav-container{
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.08);
 }
 .scrolled-nav .monogram img{
 	width: 32px;
 }
 .scrolled-nav nav .menu{
 	margin-top: var(--spacing-small);
-}
-.scrolled-nav nav ul li a{
-	color: var(--blue-dark);
-	border-bottom: 1px solid var(--white);
 }
 .monogram img, .scrolled-nav, .scrolled-nav .menu{
 	-webkit-transition: all 0.3s ease;

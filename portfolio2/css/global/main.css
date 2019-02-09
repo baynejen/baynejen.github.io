@@ -30,7 +30,6 @@ main{
 	display: block;
 	width: 100%;
 	margin-bottom: 90vh;
-	/* padding-bottom: var(--spacing-large); */
 }
 nav, section, footer{
 	padding-left: var(--spacing-medium);
@@ -48,22 +47,13 @@ nav, section, footer{
 	background-color: var(--yellow-bright);
 }
 
-/*TABLET AND DESKTOP*/
+/*TABLET*/
 @media only screen and (min-width: 768px){
 	nav, section, footer{
 		padding-left: var(--spacing-large);
 		padding-right: var(--spacing-large);
 	}
-	/* main{
-		margin-bottom: 90vh;
-		padding-bottom: var(--spacing-large);
-	} */
 }
-
-/*DESKTOP*/
-/* @media only screen and (min-width: 1024px){
-	
-} */
 
 /*	<--CLEARFIX-->*/
 

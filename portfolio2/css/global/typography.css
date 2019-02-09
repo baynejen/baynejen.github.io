@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
 }
 h1{
-	font-size: 40px;
+	font-size: 48px;
 	line-height: 1.1em;
 }
 h2{
@@ -24,7 +24,7 @@ h4{
 h5{
 	font-size: 16px;
 	line-height: 1.4em;
-	padding-bottom: var(--spacing-medium);
+	padding-bottom: var(--spacing-large);
 }
 h6{
     font-size: 16px;
@@ -41,18 +41,9 @@ a{
 	text-decoration: none;
 }
 
-/*TABLET */
+/*TABLET AND DESKTOP*/
 @media only screen and (min-width: 768px){
 	h1{
 		font-size: 96px;
-		line-height: 1.1em;
-	}
-}
-
-/*DESKTOP*/
-@media only screen and (min-width: 1024px){
-	h1{
-		font-size: 96px;
-		line-height: 1.1em;
 	}
 }
