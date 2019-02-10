@@ -90,47 +90,47 @@ $(document).ready(function(){
   }); 
 });
 
-// SIDE NAV
-function openNavTrouva() {
-  document.getElementById("trouva").style.width = "100%";
-  document.getElementById("hero-anchor").style.position = "relative";
+// PROJECT OVERLAY
+// This hides the sticky header and removes scrolling on the body behind the overlay
+var changeBodyAndHeader = function(){
   document.getElementById("hero-anchor").style.overflow = "hidden";
   document.getElementById("hero-anchor").style.height = "100%";
   document.getElementById("hero-anchor").style.margin = "0";
+  document.getElementById("hero-anchor").style.position = "relative";
   document.getElementById("sticky").style.display = "none";
+}
+// This opens the overlay for each project and applies the header and body styles
+function openNavTrouva() {
+  document.getElementById("trouva").style.width = "100%";
+  $('#trouva').scrollTop(0);
+  document.getElementById('trouva').scrollIntoView();
+  return $(changeBodyAndHeader);
 }
 function openNavArtfinder() {
   document.getElementById("artfinder").style.width = "100%";
-  document.getElementById("hero-anchor").style.overflow = "hidden";
-  document.getElementById("hero-anchor").style.height = "100%";
-  document.getElementById("hero-anchor").style.margin = "0";
-  document.getElementById("hero-anchor").style.position = "relative";  
-  document.getElementById("sticky").style.display = "none";
+  $('#artfinder').scrollTop(0);
+  document.getElementById('trouva').scrollIntoView();
+  return $(changeBodyAndHeader);
 }
 function openNavCocoaRunners() {
   document.getElementById("cocoaRunners").style.width = "100%";
-  document.getElementById("hero-anchor").style.overflow = "hidden";
-  document.getElementById("hero-anchor").style.height = "100%";
-  document.getElementById("hero-anchor").style.margin = "0";
-  document.getElementById("hero-anchor").style.position = "relative";
-  document.getElementById("sticky").style.display = "none";
+  $('#cocoaRunners').scrollTop(0);
+  document.getElementById('trouva').scrollIntoView();
+  return $(changeBodyAndHeader);
 }
 function openNavMemoryBox() {
   document.getElementById("memoryBox").style.width = "100%";
-  document.getElementById("hero-anchor").style.overflow = "hidden";
-  document.getElementById("hero-anchor").style.height = "100%";
-  document.getElementById("hero-anchor").style.margin = "0";
-  document.getElementById("hero-anchor").style.position = "relative";
-  document.getElementById("sticky").style.display = "none";
+  $('#memoryBox').scrollTop(0);
+  document.getElementById('trouva').scrollIntoView();
+  return $(changeBodyAndHeader);
 }
 function openNavPersonalPortfolios() {
   document.getElementById("personalPortfolios").style.width = "100%";
-  document.getElementById("hero-anchor").style.overflow = "hidden";
-  document.getElementById("hero-anchor").style.height = "100%";
-  document.getElementById("hero-anchor").style.margin = "0";
-  document.getElementById("hero-anchor").style.position = "relative";
-  document.getElementById("sticky").style.display = "none";
+  $('#personalPortfolios').scrollTop(0);
+  document.getElementById('trouva').scrollIntoView();
+  return $(changeBodyAndHeader);
 }
+// This closes the overlay for each project
 function closeNav() {
   document.getElementById("trouva").style.width = "0";
   document.getElementById("artfinder").style.width = "0";
