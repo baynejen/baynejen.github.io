@@ -1,24 +1,28 @@
 body{
 	font-size: 16px;
 	text-align: center;
-	font-family: 'Assistant', Futura, sans-serif;
+	font-family: Avenir, Helvetica, sans-serif;
     overflow-x: hidden;
     color: #242448;
 	font-weight: 400;
-	background-color: #f6f6f6;
+	background-color: #f8f8f8;
 }
 
 /*<--- TYPOGRAPHY --->*/
 
 h1{
-	font-weight: 800;
+	font-weight: 700;
 	color: #242448;
 }
 h2{
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 28px;
 	padding: 50px;
 	color: #242448;
+}
+h3{
+	font-weight: 500;
+	font-size: 18px;
 }
 p{
 	letter-spacing: 0.5px;
