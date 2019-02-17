@@ -23,8 +23,8 @@ nav{
  	transition: all .05s ease-in-out;
 }
 .homepage-redirect:hover{
-	-webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
+	-webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 .hide{
 	display: none;

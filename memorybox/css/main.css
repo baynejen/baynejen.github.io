@@ -21,8 +21,9 @@ h2{
 	color: #242448;
 }
 h3{
-	font-weight: 500;
-	font-size: 18px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
 }
 p{
 	letter-spacing: 0.5px;
@@ -42,8 +43,8 @@ footer{
 	padding: 20px 0;
 }
 footer a{
-	color: #ff004a;
+	color: #242448;
 }
 footer a:hover{
-	color: #242448;
+	opacity: .8;
 }
