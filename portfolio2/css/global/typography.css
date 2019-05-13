@@ -23,12 +23,12 @@ h4{
 	padding-bottom: var(--spacing-large);
 }
 h5{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.4em;
-	padding-bottom: var(--spacing-medium);
+	padding-bottom: var(--spacing-large);
 }
 h6{
-    font-size: px;
+	font-size: 16px;
     line-height: 1.3em;
     padding-bottom: var(--spacing-medium);
 }
