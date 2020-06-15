@@ -42,6 +42,14 @@
 	float: left;
 }
 
+.owl-carousel .owl-item .item{
+	padding-right: 24px;
+}
+
+.owl-carousel .owl-item .item img{
+	width: 100%;
+}
+
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;
