@@ -13,7 +13,7 @@
 	padding-top: var(--spacing-large);
 }
 .about-description .about-text p{
-	padding-bottom: var(--spacing-large);
+	padding-bottom: var(--spacing-medium);
 }
 .about-description a:hover{
 	background-color: var(--blue-bright);

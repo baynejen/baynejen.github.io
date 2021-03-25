@@ -20,12 +20,13 @@ h3{
 h4{
 	font-size: 24px;
 	line-height: 1.4em;
-	padding-bottom: var(--spacing-large);
+	padding-bottom: var(--spacing-medium);
 }
 h5{
 	font-size: 18px;
 	line-height: 1.4em;
-	padding-bottom: var(--spacing-large);
+	padding-bottom: var(--spacing-medium);
+	padding-top: var(--spacing-small)
 }
 h6{
 	font-size: 16px;
