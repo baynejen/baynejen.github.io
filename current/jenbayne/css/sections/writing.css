@@ -8,14 +8,13 @@
 }
 .article{
 	display: block;
-	margin-bottom: var(--spacing-medium);
+	margin-bottom: var(--spacing-large);
 }
 .article:last-of-type {
 	margin-bottom: 0;
 }
 .article-card{
 	display: block;
-	border: 1px solid var(--grey-light);
 }
 .article-img {
 	width: 100%;
@@ -72,7 +71,7 @@ a.writing-container-link{
 		padding-top: var(--spacing-xlarge);
 	}
 	.article-card .article-img{
-		width: 20%;
+		width: 16%;
 	} 
 	/* Animates the images on hover   */
 	.article-card .article-img img{
