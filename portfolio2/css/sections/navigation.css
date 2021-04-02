@@ -34,18 +34,15 @@ nav{
 	text-align: left;
 	width: 100%;
 	margin-top: var(--spacing-medium);
+	display: flex;
+	justify-content: space-between;
 }
 nav ul li{
-	padding-left: var(--spacing-xsmall);
-	padding-right: var(--spacing-xsmall);
 	display: inline-block;
-}
-nav ul li:first-of-type{
-	padding-left: 0;
 }
 nav ul li a{
 	color: var(--blue-dark);
-	font-size: 12px;
+	font-size: 11px;
 	padding-bottom: 1px;
 	border-bottom: 1px solid var(--white);
 	text-transform: uppercase;
@@ -89,13 +86,20 @@ nav ul li a:hover{
 	nav{
 		display: flex;
 	}
-	.monogram {
-		float: left;
-	}
 	.menu{
-		text-align: right;
-		float: right;
 		margin-top: 0;
+		justify-content: flex-end;
+	}
+	nav ul li{
+		padding-left: var(--spacing-xsmall);
+		padding-right: var(--spacing-xsmall);
+		display: inline-block;
+	}
+	nav ul li a{
+		font-size: 12px;
+	}
+	nav ul li:first-of-type{
+		padding-left: 0;
 	}
 	nav ul li:last-of-type{
 		padding-right: 0;

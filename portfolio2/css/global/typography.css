@@ -8,25 +8,20 @@ h1{
 	line-height: 1.1em;
 }
 h2{
+	font-size: 28px;
+	line-height: 1.5em;
+	padding-bottom: var(--spacing-medium);
+	padding-top: var(--spacing-large);
+}
+h3{
 	font-size: 24px;
 	line-height: 1.3em;
 	padding-bottom: var(--spacing-small);
 }
-h3{
-	font-size: 32px;
-	line-height: 1.5em;
-	padding-bottom: var(--spacing-small);
-}
 h4{
-	font-size: 24px;
-	line-height: 1.4em;
-	padding-bottom: var(--spacing-medium);
-}
-h5{
 	font-size: 18px;
-	line-height: 1.4em;
-	padding-bottom: var(--spacing-medium);
-	padding-top: var(--spacing-small)
+	line-height: 1.3em;
+	padding-bottom: var(--spacing-small);
 }
 h6{
 	font-size: 16px;
@@ -35,7 +30,7 @@ h6{
 }
 p{
 	font-size: 16px;
-	line-height: 1.9em;
+	line-height: 1.7em;
 }
 a{
 	color: var(--blue-bright);
@@ -47,6 +42,9 @@ a{
 @media only screen and (min-width: 768px){
 	h1{
 		font-size: 96px;
+	}
+	h2 {
+		font-size: 36px;
 	}
 	h6{
 		font-size: 24px;
