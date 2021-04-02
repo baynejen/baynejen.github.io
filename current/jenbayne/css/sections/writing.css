@@ -8,7 +8,7 @@
 }
 .article{
 	display: block;
-	margin-bottom: var(--spacing-large);
+	margin-bottom: var(--spacing-xlarge);
 }
 .article:last-of-type {
 	margin-bottom: 0;
@@ -25,7 +25,6 @@
 }
 .article-text {
 	width: 100%;
-	padding: var(--spacing-small);
 	padding-top: var(--spacing-medium);
 }
 .article-text p:first-of-type{
@@ -48,6 +47,9 @@ a.writing-container-link{
 
 /*TABLET*/
 @media only screen and (min-width: 768px){
+	.article{
+		margin-bottom: var(--spacing-large);
+	}
 	.article-card{
 		display: flex;
 		align-items: center;
@@ -58,7 +60,8 @@ a.writing-container-link{
 	.article-text {
 		width: 60%;
 		padding-left: var(--spacing-large);
-		padding-top: var(--spacing-small);
+		padding-top: 0;
+		
 	}
 	.date{
 		font-size: 12px;
